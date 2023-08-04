@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FluentInfo (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "FluentInfo (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
