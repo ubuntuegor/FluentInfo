@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Platforms>x64;x86</Platforms>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="x64\MediaInfo.dll" />
+	  <None Remove="x86\MediaInfo.dll" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(Platform)' == 'x64'">
+		<Content Include="x64\MediaInfo.dll" Link="%(Filename)%(Extension)">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(Platform)' == 'x86'">
+	  <Content Include="x86\MediaInfo.dll" Link="%(Filename)%(Extension)">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Properties\" />
+	</ItemGroup>
+
+</Project>

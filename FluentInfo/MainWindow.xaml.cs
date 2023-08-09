@@ -1,3 +1,4 @@
+using MediaInfoLib;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -24,13 +25,16 @@ namespace FluentInfo
     /// </summary>
     public sealed partial class MainWindow : WinUIEx.WindowEx
     {
+        private readonly MediaInfo mediaInfo = new();
+
         public MainWindow()
         {
             this.InitializeComponent();
             ExtendsContentIntoTitleBar = true;
             SetTitleBar(AppTitleBar);
 
-            String info = "Test\nInfo";
+            mediaInfo.Open("C:\\Users\\windowsegor\\Videos\\2023-07-06 19-20-07.mp4");
+            string info = mediaInfo.Inform();
 
             var inlines = InfoTextBlock.Inlines;
             inlines.Clear();
