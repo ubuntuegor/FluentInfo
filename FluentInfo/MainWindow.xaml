@@ -36,7 +36,10 @@
 
         <MenuBar Grid.Row="1">
             <MenuBarItem Title="File">
-                <MenuFlyoutItem Text="Open">
+                <MenuFlyoutItem Text="Open" Click="OpenFilePicker">
+                    <MenuFlyoutItem.Icon>
+                        <FontIcon Glyph="&#xE838;"/>
+                    </MenuFlyoutItem.Icon>
                     <MenuFlyoutItem.KeyboardAccelerators>
                         <KeyboardAccelerator Modifiers="Control" Key="O"/>
                     </MenuFlyoutItem.KeyboardAccelerators>
@@ -47,21 +50,9 @@
             </MenuBarItem>
         </MenuBar>
 
-        <Border
-            Grid.Row="2"
-            Background="{StaticResource CardBackgroundFillColorDefault}"
-            BorderBrush="{StaticResource CardStrokeColorDefaultBrush}"
-            BorderThickness="1">
-            <ScrollViewer
-                HorizontalScrollMode="Auto"
-                HorizontalScrollBarVisibility="Auto"
-                VerticalScrollMode="Enabled">
-                <TextBlock
-                    x:Name="InfoTextBlock"
-                    Margin="16"
-                    Style="{StaticResource InfoTextStyle}"
-                    IsTextSelectionEnabled="True">No opened file</TextBlock>
-            </ScrollViewer>
-        </Border>
+        <Frame
+            x:Name="RootFrame"
+            IsNavigationStackEnabled="False"
+            Grid.Row="2"/>
     </Grid>
 </winex:WindowEx>
