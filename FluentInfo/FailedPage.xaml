@@ -8,8 +8,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+    <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="4">
         <FontIcon Glyph="&#xE783;" FontSize="24" Foreground="{StaticResource SystemFillColorCriticalBrush}"/>
-        <TextBlock x:Name="ErrorTextBlock" Margin="0,4,0,0" MaxWidth="400" TextWrapping="Wrap" TextAlignment="Center"/>
+        <TextBlock x:Name="errorTextBlock" MaxWidth="400" TextWrapping="Wrap" TextAlignment="Center"/>
     </StackPanel>
 </Page>

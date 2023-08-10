@@ -12,6 +12,7 @@
     <EnableMsixTooling>true</EnableMsixTooling>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="AboutContentPage.xaml" />
     <None Remove="FailedPage.xaml" />
     <None Remove="NoFileOpenPage.xaml" />
     <None Remove="TextViewPage.xaml" />
@@ -44,6 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AboutContentPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="FailedPage.xaml">

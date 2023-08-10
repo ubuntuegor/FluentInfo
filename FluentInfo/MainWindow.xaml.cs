@@ -1,4 +1,5 @@
 using MediaInfoLib;
+using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -13,8 +14,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.Storage.Pickers;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -33,9 +36,9 @@ namespace FluentInfo
         {
             this.InitializeComponent();
             ExtendsContentIntoTitleBar = true;
-            SetTitleBar(AppTitleBar);
+            SetTitleBar(appTitleBar);
 
-            RootFrame.Navigate(typeof(NoFileOpenPage));
+            navigationFrame.Navigate(typeof(NoFileOpenPage));
         }
 
         private async void OpenFilePicker(object sender, RoutedEventArgs e)
@@ -61,12 +64,66 @@ namespace FluentInfo
             if (success)
             {
                 string info = mediaInfo.Inform();
-                RootFrame.Navigate(typeof(TextViewPage), info, new EntranceNavigationTransitionInfo());
+                navigationFrame.Navigate(typeof(TextViewPage), info, new EntranceNavigationTransitionInfo());
             }
             else
             {
-                RootFrame.Navigate(typeof(FailedPage), path, new EntranceNavigationTransitionInfo());
+                navigationFrame.Navigate(typeof(FailedPage), path, new EntranceNavigationTransitionInfo());
             }
+        }
+
+        private void Window_DragOver(object sender, DragEventArgs e)
+        {
+            if (e.DataView.Contains(StandardDataFormats.StorageItems))
+            {
+                e.AcceptedOperation = DataPackageOperation.Copy;
+                e.DragUIOverride.Caption = "Open";
+            }
+            else
+            {
+                e.AcceptedOperation = DataPackageOperation.None;
+            }
+        }
+
+        private async void Window_Drop(object sender, DragEventArgs e)
+        {
+            if (!e.DataView.Contains(StandardDataFormats.StorageItems))
+            {
+                return;
+            }
+
+            var items = await e.DataView.GetStorageItemsAsync();
+
+            if (items.Count == 0)
+            {
+                return;
+            }
+
+            var storageFile = items[0];
+
+            if (!storageFile.IsOfType(StorageItemTypes.File))
+            {
+                return;
+            }
+
+            UpdateInfoForFile(storageFile.Path);
+        }
+
+        private async void HelpMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            var appName = Application.Current.Resources["AppTitleName"];
+            var appVersion = Application.Current.Resources["AppVersion"];
+
+            var dialog = new ContentDialog()
+            {
+                XamlRoot = rootPanel.XamlRoot,
+                Title = String.Format("{0} {1}", appName, appVersion),
+                Content = new AboutContentPage(),
+                CloseButtonText = "Close",
+                Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style,
+            };
+
+            await dialog.ShowAsync();
         }
     }
 }

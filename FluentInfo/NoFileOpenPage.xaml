@@ -8,8 +8,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+    <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="4">
         <FontIcon Glyph="&#xE8E5;" FontSize="24" Foreground="{StaticResource TextFillColorSecondary}"/>
-        <TextBlock Text="Drag a file here" Margin="0,4,0,0" Style="{StaticResource CaptionTextBlockStyle}" Foreground="{StaticResource TextFillColorSecondary}"/>
+        <TextBlock Text="Drag a file here" Style="{StaticResource CaptionTextBlockStyle}" Foreground="{StaticResource TextFillColorSecondary}"/>
     </StackPanel>
 </Page>

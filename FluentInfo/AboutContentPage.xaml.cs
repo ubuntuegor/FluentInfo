@@ -1,9 +1,7 @@
-using MediaInfoLib;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Documents;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
@@ -23,32 +21,16 @@ namespace FluentInfo
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class TextViewPage : Page
+    public sealed partial class AboutContentPage : Page
     {
-        public TextViewPage()
+        public AboutContentPage()
         {
             this.InitializeComponent();
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        private async void SourceCode_Click(object sender, RoutedEventArgs e)
         {
-            string info = e.Parameter as string;
-
-            var inlines = infoTextBlock.Inlines;
-            inlines.Clear();
-
-            var lines = info.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
-
-            foreach (var line in lines)
-            {
-                inlines.Add(new Run
-                {
-                    Text = line
-                });
-                inlines.Add(new LineBreak());
-            }
-
-            base.OnNavigatedTo(e);
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("https://github.com/ubuntuegor/FluentInfo"));
         }
     }
 }

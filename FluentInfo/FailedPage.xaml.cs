@@ -30,7 +30,7 @@ namespace FluentInfo
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            ErrorTextBlock.Text = String.Format("Could not open file: {0}", e.Parameter);
+            errorTextBlock.Text = String.Format("Could not open file: {0}", e.Parameter);
             base.OnNavigatedTo(e);
         }
     }

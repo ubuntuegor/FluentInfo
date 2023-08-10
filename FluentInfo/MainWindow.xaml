@@ -16,7 +16,11 @@
         <MicaBackdrop />
     </Window.SystemBackdrop>
 
-    <Grid>
+    <Grid
+        x:Name="rootPanel"
+        AllowDrop="True"
+        DragOver="Window_DragOver"
+        Drop="Window_Drop">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -24,7 +28,7 @@
         </Grid.RowDefinitions>
 
         <Border
-            x:Name="AppTitleBar"
+            x:Name="appTitleBar"
             Height="32"
             VerticalAlignment="Stretch">
             <StackPanel Margin="16,0" Orientation="Horizontal" VerticalAlignment="Center">
@@ -46,13 +50,14 @@
                 </MenuFlyoutItem>
             </MenuBarItem>
             <MenuBarItem Title="Help">
-                <MenuFlyoutItem Text="About"></MenuFlyoutItem>
+                <MenuFlyoutItem Text="About" Click="HelpMenuItem_Click"></MenuFlyoutItem>
             </MenuBarItem>
         </MenuBar>
 
         <Frame
-            x:Name="RootFrame"
+            x:Name="navigationFrame"
             IsNavigationStackEnabled="False"
+            Background="Transparent"
             Grid.Row="2"/>
     </Grid>
 </winex:WindowEx>
