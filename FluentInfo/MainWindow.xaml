@@ -8,6 +8,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    Title="{StaticResource AppTitleName}"
     MinWidth="300"
     MinHeight="200"
     Width="600"
@@ -31,7 +32,8 @@
             x:Name="appTitleBar"
             Height="32"
             VerticalAlignment="Stretch">
-            <StackPanel Margin="16,0" Orientation="Horizontal" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Image Height="16" Margin="16,0" Source="ms-appx:///Assets/Square44x44Logo.targetsize-32.png" />
                 <TextBlock
                     Text="{StaticResource AppTitleName}"
                     Style="{StaticResource CaptionTextBlockStyle}"/>

@@ -10,13 +10,13 @@
   <Identity
     Name="54ba769b-a0fc-4375-adc2-3e41f468bf05"
     Publisher="CN=windowsegor"
-    Version="1.0.0.0" />
+    Version="1.23.7.0" />
 
   <mp:PhoneIdentity PhoneProductId="54ba769b-a0fc-4375-adc2-3e41f468bf05" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>FluentInfo</DisplayName>
-    <PublisherDisplayName>windowsegor</PublisherDisplayName>
+    <PublisherDisplayName>bnt.to</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -35,11 +35,11 @@
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
         DisplayName="FluentInfo"
-        Description="FluentInfo"
+        Description="See detailed info about any media file."
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"  ShortName="FluentInfo" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>

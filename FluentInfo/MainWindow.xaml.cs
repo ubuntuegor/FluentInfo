@@ -19,6 +19,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.Storage.Pickers;
+using WinUIEx;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -37,6 +38,7 @@ namespace FluentInfo
             this.InitializeComponent();
             ExtendsContentIntoTitleBar = true;
             SetTitleBar(appTitleBar);
+            this.SetIcon("Assets/fluentinfo.ico");
 
             navigationFrame.Navigate(typeof(NoFileOpenPage));
         }
@@ -111,13 +113,12 @@ namespace FluentInfo
 
         private async void HelpMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            var appName = Application.Current.Resources["AppTitleName"];
-            var appVersion = Application.Current.Resources["AppVersion"];
+            var appName = Application.Current.Resources["AppTitleName"] as string;
 
             var dialog = new ContentDialog()
             {
                 XamlRoot = rootPanel.XamlRoot,
-                Title = String.Format("{0} {1}", appName, appVersion),
+                Title = appName,
                 Content = new AboutContentPage(),
                 CloseButtonText = "Close",
                 Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style,
