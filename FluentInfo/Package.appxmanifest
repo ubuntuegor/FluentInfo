@@ -12,8 +12,8 @@
   IgnorableNamespaces="desktop desktop4 desktop5 com uap rescap">
 
 	<Identity
-	  Name="54ba769b-a0fc-4375-adc2-3e41f468bf05"
-	  Publisher="CN=windowsegor"
+	  Name="Bnt.FluentInfo"
+	  Publisher="CN=bnt.to"
 	  Version="1.23.7.0" />
 
 	<mp:PhoneIdentity PhoneProductId="54ba769b-a0fc-4375-adc2-3e41f468bf05" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>

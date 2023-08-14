@@ -24,7 +24,7 @@ inline std::wstring get_module_folder(HMODULE mod = nullptr)
 	}
 
 	PathRemoveFileSpecW(buffer);
-	return { buffer, static_cast<uint64_t>(lstrlenW(buffer)) };
+	return { buffer, static_cast<size_t>(lstrlenW(buffer)) };
 }
 
 struct __declspec(uuid("5C9CE5A1-7DC5-4613-A61B-75A47E86A41C"))
