@@ -42,7 +42,8 @@ namespace FluentInfo
         /// <param name="args">Details about the launch request and process.</param>
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
-            m_window = new MainWindow();
+            var cmdargs = Environment.GetCommandLineArgs();
+            m_window = new MainWindow(cmdargs);
             m_window.CenterOnScreen();
             m_window.Activate();
         }

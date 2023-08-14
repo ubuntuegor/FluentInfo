@@ -33,7 +33,7 @@ struct __declspec(uuid("5C9CE5A1-7DC5-4613-A61B-75A47E86A41C"))
 
 	IFACEMETHODIMP GetTitle(IShellItemArray* psiItemArray, LPWSTR* ppszName) noexcept override
 	{
-		return SHStrDupW(L"Open FluentInfo", ppszName);
+		return SHStrDupW(L"FluentInfo", ppszName);
 	}
 
 	IFACEMETHODIMP GetIcon(IShellItemArray* psiItemArray, LPWSTR* ppszIcon) noexcept override
@@ -105,8 +105,34 @@ struct __declspec(uuid("5C9CE5A1-7DC5-4613-A61B-75A47E86A41C"))
 	}
 
 	IFACEMETHODIMP Invoke(IShellItemArray* psiItemArray, IBindCtx* pbc) noexcept override {
-		std::wstring path = get_module_folder(g_hInst);
-		path += L"\\FluentInfo.exe";
+		if (psiItemArray == nullptr) {
+			return E_FAIL;
+		}
+
+		IShellItem* shellItem = nullptr;
+		HRESULT getItemResult = psiItemArray->GetItemAt(0, &shellItem);
+
+		if (S_OK != getItemResult || nullptr == shellItem) {
+			return E_FAIL;
+		}
+
+		LPWSTR pszPath;
+		HRESULT getDisplayResult = shellItem->GetDisplayName(SIGDN_FILESYSPATH, &pszPath);
+		if (S_OK != getDisplayResult || nullptr == pszPath)
+		{
+			return E_FAIL;
+		}
+
+		std::wstring exePath = get_module_folder(g_hInst);
+		exePath += L"\\FluentInfo.exe";
+
+		std::wstring cmdline{ L"\"" };
+		cmdline += exePath;
+		cmdline += L"\" \"";
+		cmdline += pszPath;
+		cmdline += L"\"";
+
+		CoTaskMemFree(pszPath);
 
 		STARTUPINFO startupInfo{ 0 };
 
@@ -116,7 +142,18 @@ struct __declspec(uuid("5C9CE5A1-7DC5-4613-A61B-75A47E86A41C"))
 
 		PROCESS_INFORMATION processInformation;
 
-		bool result = CreateProcessW(path.c_str(), nullptr, nullptr, nullptr, false, 0, nullptr, nullptr, &startupInfo, &processInformation);
+		bool result = CreateProcessW(
+			exePath.c_str(),
+			cmdline.data(),
+			nullptr,
+			nullptr,
+			false,
+			0,
+			nullptr,
+			nullptr,
+			&startupInfo,
+			&processInformation
+		);
 
 		return S_OK;
 	}

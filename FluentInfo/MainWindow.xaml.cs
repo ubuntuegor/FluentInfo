@@ -33,14 +33,22 @@ namespace FluentInfo
     {
         private readonly MediaInfo mediaInfo = new();
 
-        public MainWindow()
+        public MainWindow(string[] cmdargs)
         {
             this.InitializeComponent();
             ExtendsContentIntoTitleBar = true;
             SetTitleBar(appTitleBar);
             this.SetIcon("Assets/fluentinfo.ico");
 
-            navigationFrame.Navigate(typeof(NoFileOpenPage));
+            if (cmdargs.Length > 1)
+            {
+                var path = cmdargs[1];
+                UpdateInfoForFile(path);
+            }
+            else
+            {
+                navigationFrame.Navigate(typeof(NoFileOpenPage));
+            }
         }
 
         private async void OpenFilePicker(object sender, RoutedEventArgs e)
