@@ -1,6 +1,6 @@
 # FluentInfo
 
-See detailed media information in a modern fashion.
+A MediaInfo GUI that integrates well with Windows 11.
 
 <img src="https://github.com/ubuntuegor/FluentInfo/assets/6959139/7ea5fa8e-c30a-4030-8586-b40fe47829d1" width="500" alt="Interface">
 <br>
