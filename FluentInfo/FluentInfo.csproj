@@ -10,16 +10,16 @@
 		<PublishProfile>win10-$(Platform).pubxml</PublishProfile>
 		<UseWinUI>true</UseWinUI>
 		<EnableMsixTooling>true</EnableMsixTooling>
-		<PackageCertificateThumbprint>3142683691A1AA11479BB5FCDAC24102E03C111D</PackageCertificateThumbprint>
 		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
 		<GenerateAppInstallerFile>False</GenerateAppInstallerFile>
 		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
 		<AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
 		<AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
-		<GenerateTestArtifacts>True</GenerateTestArtifacts>
+		<GenerateTestArtifacts>False</GenerateTestArtifacts>
 		<AppxBundle>Never</AppxBundle>
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
 		<GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+		<PackageCertificateKeyFile>FluentInfo_TemporaryKey.pfx</PackageCertificateKeyFile>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Remove="AboutContentPage.xaml" />
