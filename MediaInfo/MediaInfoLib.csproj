@@ -8,12 +8,15 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<MediaInfoDll Include="https://mediaarea.net/download/binary/libmediainfo0/23.07/MediaInfo_DLL_23.07_Windows_x64_WithoutInstaller.zip" Platform="x64" />
-		<MediaInfoDll Include="https://mediaarea.net/download/binary/libmediainfo0/23.07/MediaInfo_DLL_23.07_Windows_i386_WithoutInstaller.zip" Platform="x86" />
+		<MediaInfoDll Include="source-x64.txt" Platform="x64" />
+		<MediaInfoDll Include="source-x86.txt" Platform="x86" />
 	</ItemGroup>
 
 	<Target Name="GetMediaInfoDlls" Inputs="@(MediaInfoDll)" Outputs="%(MediaInfoDll.Platform)\MediaInfo.dll" BeforeTargets="Compile">
-		<DownloadFile SourceUrl="@(MediaInfoDll)" DestinationFolder="%(MediaInfoDll.Platform)">
+		<ReadLinesFromFile File="@(MediaInfoDll)">
+			<Output TaskParameter="Lines" ItemName="DownloadUrls" />
+		</ReadLinesFromFile>
+		<DownloadFile SourceUrl="@(DownloadUrls)" DestinationFolder="%(MediaInfoDll.Platform)">
 			<Output TaskParameter="DownloadedFile" ItemName="DownloadedZip" />
 		</DownloadFile>
 		<Unzip SourceFiles="@(DownloadedZip)" DestinationFolder="%(MediaInfoDll.Platform)" />
