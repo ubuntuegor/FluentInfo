@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net6.0-windows</TargetFramework>
@@ -8,14 +8,22 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Remove="x64\MediaInfo.dll" />
-	  <None Remove="x86\MediaInfo.dll" />
+		<MediaInfoDll Include="https://mediaarea.net/download/binary/libmediainfo0/23.07/MediaInfo_DLL_23.07_Windows_x64_WithoutInstaller.zip" Platform="x64" />
+		<MediaInfoDll Include="https://mediaarea.net/download/binary/libmediainfo0/23.07/MediaInfo_DLL_23.07_Windows_i386_WithoutInstaller.zip" Platform="x86" />
 	</ItemGroup>
 
+	<Target Name="GetMediaInfoDlls" Inputs="@(MediaInfoDll)" Outputs="%(MediaInfoDll.Platform)\MediaInfo.dll" BeforeTargets="Compile">
+		<DownloadFile SourceUrl="@(MediaInfoDll)" DestinationFolder="%(MediaInfoDll.Platform)">
+			<Output TaskParameter="DownloadedFile" ItemName="DownloadedZip" />
+		</DownloadFile>
+		<Unzip SourceFiles="@(DownloadedZip)" DestinationFolder="%(MediaInfoDll.Platform)" />
+		<RemoveDir Directories="%(MediaInfoDll.Platform)\Developers" />
+	</Target>
+
 	<ItemGroup>
-	  <Content Include="$(Platform)\MediaInfo.dll" Link="%(Filename)%(Extension)">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
+		<Content Include="$(Platform)\MediaInfo.dll" Link="%(Filename)%(Extension)">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
 	</ItemGroup>
 
 	<ItemGroup>
