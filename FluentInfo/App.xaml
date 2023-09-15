@@ -21,7 +21,7 @@
 
             <x:String x:Key="AppTitleName">FluentInfo</x:String>
 
-            <x:String x:Key="MediaInfoLibVersion">23.07</x:String>
+            <x:String x:Key="MediaInfoLibVersion">23.09</x:String>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
