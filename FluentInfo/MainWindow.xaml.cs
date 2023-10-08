@@ -32,6 +32,7 @@ namespace FluentInfo
     public sealed partial class MainWindow : WinUIEx.WindowEx
     {
         private readonly MediaInfo mediaInfo = new();
+        private readonly SettingsHolder settings = SettingsHolder.Instance;
 
         public MainWindow(string[] cmdargs)
         {

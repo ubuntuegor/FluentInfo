@@ -51,6 +51,9 @@
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
             </MenuBarItem>
+            <MenuBarItem Title="View">
+                <ToggleMenuFlyoutItem Text="Wrap text" IsChecked="{x:Bind settings.TextWrapEnabled, Mode=TwoWay}"/>
+            </MenuBarItem>
             <MenuBarItem Title="Help">
                 <MenuFlyoutItem Text="About" Click="HelpMenuItem_Click"></MenuFlyoutItem>
             </MenuBarItem>

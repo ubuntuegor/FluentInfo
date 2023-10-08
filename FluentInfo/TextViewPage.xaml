@@ -13,13 +13,14 @@
         BorderBrush="{StaticResource CardStrokeColorDefaultBrush}"
         BorderThickness="1">
         <ScrollViewer
-            HorizontalScrollMode="Auto"
-            HorizontalScrollBarVisibility="Auto"
+            HorizontalScrollMode="{x:Bind local:Converters.BooleanToScrollMode(settings.TextWrapEnabled), Mode=OneWay}"
+            HorizontalScrollBarVisibility="{x:Bind local:Converters.BooleanToScrollBarVisibility(settings.TextWrapEnabled), Mode=OneWay}"
             VerticalScrollMode="Enabled">
             <TextBlock
                 x:Name="infoTextBlock"
                 Margin="16"
                 Style="{StaticResource InfoTextStyle}"
+                TextWrapping="{x:Bind local:Converters.BooleanToWrapping(settings.TextWrapEnabled), Mode=OneWay}"
                 IsTextSelectionEnabled="True" />
         </ScrollViewer>
     </Border>

@@ -25,6 +25,8 @@ namespace FluentInfo
     /// </summary>
     public sealed partial class TextViewPage : Page
     {
+        private readonly SettingsHolder settings = SettingsHolder.Instance;
+
         public TextViewPage()
         {
             this.InitializeComponent();
