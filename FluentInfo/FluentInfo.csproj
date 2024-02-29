@@ -22,10 +22,10 @@
 		<PackageCertificateKeyFile>FluentInfo_TemporaryKey.pfx</PackageCertificateKeyFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<None Remove="AboutContentPage.xaml" />
-		<None Remove="FailedPage.xaml" />
-		<None Remove="NoFileOpenPage.xaml" />
-		<None Remove="TextViewPage.xaml" />
+		<None Remove="Pages\AboutContentPage.xaml" />
+		<None Remove="Pages\FailedPage.xaml" />
+		<None Remove="Pages\NoFileOpenPage.xaml" />
+		<None Remove="Pages\TextViewPage.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -68,24 +68,27 @@
 		<ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-		<Page Update="AboutContentPage.xaml">
+		<Page Update="Pages\AboutContentPage.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</Page>
 	</ItemGroup>
 	<ItemGroup>
-		<Page Update="FailedPage.xaml">
+		<Page Update="Pages\FailedPage.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</Page>
 	</ItemGroup>
 	<ItemGroup>
-		<Page Update="TextViewPage.xaml">
+		<Page Update="Pages\TextViewPage.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</Page>
 	</ItemGroup>
 	<ItemGroup>
-		<Page Update="NoFileOpenPage.xaml">
+		<Page Update="Pages\NoFileOpenPage.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</Page>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Pages\" />
 	</ItemGroup>
 
 	<!-- 
