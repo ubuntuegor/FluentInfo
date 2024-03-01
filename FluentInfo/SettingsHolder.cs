@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentInfo.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -14,13 +15,19 @@ namespace FluentInfo
 
         private readonly Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
         private const string TEXT_WRAP_ENABLED_PROPERTY = "textWrapEnabledProperty";
+        private const string SELECTED_VIEW_PROPERTY = "selectedViewProperty";
 
         private bool textWrapEnabled = false;
+        private SelectedView selectedView = SelectedView.PrettyView;
 
         private SettingsHolder() {
-            if (localSettings.Values[TEXT_WRAP_ENABLED_PROPERTY] is bool result)
+            if (localSettings.Values[TEXT_WRAP_ENABLED_PROPERTY] is bool textWrapEnabledProperty)
             {
-                textWrapEnabled = result;
+                textWrapEnabled = textWrapEnabledProperty;
+            }
+            if (localSettings.Values[SELECTED_VIEW_PROPERTY] is int selectedViewProperty)
+            {
+                selectedView = (SelectedView)selectedViewProperty;
             }
         }
 
@@ -31,6 +38,17 @@ namespace FluentInfo
             {
                 textWrapEnabled = value;
                 localSettings.Values[TEXT_WRAP_ENABLED_PROPERTY] = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public SelectedView SelectedView
+        {
+            get { return selectedView; }
+            set
+            {
+                selectedView = value;
+                localSettings.Values[SELECTED_VIEW_PROPERTY] = (int)value;
                 OnPropertyChanged();
             }
         }

@@ -1,4 +1,5 @@
 using FluentInfo.Pages;
+using FluentInfo.Model;
 using MediaInfoLib;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
@@ -34,6 +35,7 @@ namespace FluentInfo
     {
         private readonly MediaInfo mediaInfo = new();
         private readonly SettingsHolder settings = SettingsHolder.Instance;
+        private bool fileOpened = false;
 
         public MainWindow(string[] cmdargs)
         {
@@ -51,6 +53,24 @@ namespace FluentInfo
             {
                 navigationFrame.Navigate(typeof(NoFileOpenPage));
             }
+
+            settings.PropertyChanged += Settings_PropertyChanged;
+            ReactToSettings();
+        }
+
+        private void Settings_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            ReactToSettings();
+
+            if (e.PropertyName == nameof(settings.SelectedView))
+            {
+                RefreshPage();
+            }
+        }
+
+        private void ReactToSettings()
+        {
+            wrapTextOptionButton.IsEnabled = settings.SelectedView == SelectedView.TextView;
         }
 
         private async void OpenFilePicker(object sender, RoutedEventArgs e)
@@ -69,17 +89,26 @@ namespace FluentInfo
             }
         }
 
+        private void RefreshPage()
+        {
+            if (!fileOpened) return;
+
+            var selectedPage = Converters.SelectedViewToPage(settings.SelectedView);
+            navigationFrame.Navigate(selectedPage, mediaInfo, new EntranceNavigationTransitionInfo());
+        }
+
         private void UpdateInfoForFile(string path)
         {
             var success = mediaInfo.Open(path);
 
             if (success)
             {
-                string info = mediaInfo.Inform();
-                navigationFrame.Navigate(typeof(TextViewPage), info, new EntranceNavigationTransitionInfo());
+                fileOpened = true;
+                RefreshPage();
             }
             else
             {
+                fileOpened = false;
                 navigationFrame.Navigate(typeof(FailedPage), path, new EntranceNavigationTransitionInfo());
             }
         }
@@ -121,7 +150,7 @@ namespace FluentInfo
             UpdateInfoForFile(storageFile.Path);
         }
 
-        private async void HelpMenuItem_Click(object sender, RoutedEventArgs e)
+        private async void OpenAboutWindow(object sender, RoutedEventArgs e)
         {
             var appName = Application.Current.Resources["AppTitleName"] as string;
 
@@ -135,6 +164,21 @@ namespace FluentInfo
             };
 
             await dialog.ShowAsync();
+        }
+
+        ~MainWindow()
+        {
+            settings.PropertyChanged -= Settings_PropertyChanged;
+        }
+
+        private void SelectPrettyView(object sender, RoutedEventArgs e)
+        {
+            settings.SelectedView = SelectedView.PrettyView;
+        }
+
+        private void SelectTextView(object sender, RoutedEventArgs e)
+        {
+            settings.SelectedView = SelectedView.TextView;
         }
     }
 }

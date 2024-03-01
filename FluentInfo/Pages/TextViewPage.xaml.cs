@@ -34,7 +34,9 @@ namespace FluentInfo.Pages
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            string info = e.Parameter as string;
+            MediaInfo mediaInfo = e.Parameter as MediaInfo;
+            mediaInfo.Option("Inform", "Text");
+            string info = mediaInfo.Inform();
 
             var inlines = infoTextBlock.Inlines;
             inlines.Clear();

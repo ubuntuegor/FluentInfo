@@ -25,6 +25,7 @@
 		<None Remove="Pages\AboutContentPage.xaml" />
 		<None Remove="Pages\FailedPage.xaml" />
 		<None Remove="Pages\NoFileOpenPage.xaml" />
+		<None Remove="Pages\PrettyViewPage.xaml" />
 		<None Remove="Pages\TextViewPage.xaml" />
 	</ItemGroup>
 
@@ -88,7 +89,9 @@
 		</Page>
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Pages\" />
+	  <Page Update="Pages\PrettyViewPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </Page>
 	</ItemGroup>
 
 	<!-- 

@@ -52,10 +52,22 @@
                 </MenuFlyoutItem>
             </MenuBarItem>
             <MenuBarItem Title="View">
-                <ToggleMenuFlyoutItem Text="Wrap text" IsChecked="{x:Bind settings.TextWrapEnabled, Mode=TwoWay}"/>
+                <RadioMenuFlyoutItem
+                    Text="Pretty"
+                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'PrettyView')}"
+                    Click="SelectPrettyView"/>
+                <RadioMenuFlyoutItem
+                    Text="Text"
+                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'TextView')}"
+                    Click="SelectTextView"/>
+                <MenuFlyoutSeparator/>
+                <ToggleMenuFlyoutItem
+                    x:Name="wrapTextOptionButton"
+                    Text="Wrap text"
+                    IsChecked="{x:Bind settings.TextWrapEnabled, Mode=TwoWay}"/>
             </MenuBarItem>
             <MenuBarItem Title="Help">
-                <MenuFlyoutItem Text="About" Click="HelpMenuItem_Click"></MenuFlyoutItem>
+                <MenuFlyoutItem Text="About" Click="OpenAboutWindow"></MenuFlyoutItem>
             </MenuBarItem>
         </MenuBar>
 
