@@ -1,5 +1,4 @@
-﻿using FluentInfo.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -9,6 +8,12 @@ using System.Threading.Tasks;
 
 namespace FluentInfo
 {
+    enum SelectedView
+    {
+        TextView,
+        PrettyView
+    }
+
     class SettingsHolder : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged = delegate { };

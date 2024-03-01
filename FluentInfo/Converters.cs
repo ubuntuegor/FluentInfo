@@ -1,5 +1,4 @@
-﻿using FluentInfo.Model;
-using FluentInfo.Pages;
+﻿using FluentInfo.Pages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System;

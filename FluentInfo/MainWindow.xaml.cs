@@ -1,5 +1,4 @@
 using FluentInfo.Pages;
-using FluentInfo.Model;
 using MediaInfoLib;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
