@@ -1,7 +1,9 @@
+using Microsoft.UI.Text;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
+using Microsoft.UI.Xaml.Documents;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
@@ -28,7 +30,13 @@ namespace FluentInfo.Controls.PrettyView
 
             foreach (var (field, value) in items)
             {
-                stackPanel.Children.Add(new SectionItemControl { Field = field, Value = value });
+                var paragraph = new Paragraph
+                {
+                    Margin = new Thickness(0, 10, 0, 0)
+                };
+                paragraph.Inlines.Add(new Run { Text = field + ":", FontWeight = FontWeights.SemiBold });
+                paragraph.Inlines.Add(new Run { Text = " " + value });
+                textBlock.Blocks.Add(paragraph);
             }
         }
     }

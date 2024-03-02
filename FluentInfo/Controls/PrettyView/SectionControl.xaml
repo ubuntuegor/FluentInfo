@@ -14,6 +14,6 @@
         CornerRadius="8"
         BorderThickness="1"
         Padding="16">
-        <StackPanel x:Name="stackPanel" Orientation="Vertical" Spacing="10" />
+        <RichTextBlock x:Name="textBlock" Style="{StaticResource BodyTextBlockStyle}" IsTextSelectionEnabled="true" />
     </Border>
 </UserControl>
