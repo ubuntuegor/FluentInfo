@@ -41,7 +41,7 @@ namespace FluentInfo.Pages
             var inlines = infoTextBlock.Inlines;
             inlines.Clear();
 
-            var lines = info.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
+            var lines = Utils.SplitToLines(info);
 
             foreach (var line in lines)
             {

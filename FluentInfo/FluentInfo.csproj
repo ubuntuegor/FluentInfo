@@ -22,6 +22,9 @@
 		<PackageCertificateKeyFile>FluentInfo_TemporaryKey.pfx</PackageCertificateKeyFile>
 	</PropertyGroup>
 	<ItemGroup>
+		<None Remove="Controls\PrettyView\SectionControl.xaml" />
+		<None Remove="Controls\PrettyView\SectionItemControl.xaml" />
+		<None Remove="Controls\PrettyView\TitleControl.xaml" />
 		<None Remove="Pages\AboutContentPage.xaml" />
 		<None Remove="Pages\FailedPage.xaml" />
 		<None Remove="Pages\NoFileOpenPage.xaml" />
@@ -69,6 +72,16 @@
 		<ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj" />
 	</ItemGroup>
 	<ItemGroup>
+	  <Page Update="Controls\PrettyView\SectionItemControl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </Page>
+	</ItemGroup>
+	<ItemGroup>
+	  <Page Update="Controls\PrettyView\SectionControl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </Page>
+	</ItemGroup>
+	<ItemGroup>
 		<Page Update="Pages\AboutContentPage.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</Page>
@@ -90,6 +103,11 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Page Update="Pages\PrettyViewPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </Page>
+	</ItemGroup>
+	<ItemGroup>
+	  <Page Update="Controls\PrettyView\TitleControl.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </Page>
 	</ItemGroup>

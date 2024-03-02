@@ -8,7 +8,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
-        <TextBlock Text="hii :3"></TextBlock>
-    </Grid>
+    <ScrollViewer
+        VerticalScrollMode="Auto"
+        HorizontalScrollMode="Disabled">
+        <StackPanel x:Name="content" Orientation="Vertical" HorizontalAlignment="Stretch" Margin="24" Spacing="16"></StackPanel>
+    </ScrollViewer>
 </Page>
