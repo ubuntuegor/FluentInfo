@@ -14,6 +14,6 @@
         CornerRadius="8"
         BorderThickness="1"
         Padding="16">
-        <RichTextBlock x:Name="textBlock" Style="{StaticResource BodyTextBlockStyle}" IsTextSelectionEnabled="true" />
+        <RichTextBlock x:Name="textBlock" IsTextSelectionEnabled="True" />
     </Border>
 </UserControl>
