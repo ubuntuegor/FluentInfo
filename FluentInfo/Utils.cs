@@ -10,9 +10,11 @@ namespace FluentInfo
     {
         private Utils() { }
 
+        internal static readonly string[] newLineSeparator = ["\r\n", "\r", "\n"];
+
         public static string[] SplitToLines(string value, StringSplitOptions options = StringSplitOptions.None)
         {
-            return value.Split(new[] { "\r\n", "\r", "\n" }, options);
+            return value.Split(newLineSeparator, options);
         }
     }
 }
