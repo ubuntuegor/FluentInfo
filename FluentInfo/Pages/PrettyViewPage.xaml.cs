@@ -1,4 +1,5 @@
 using FluentInfo.Controls.PrettyView;
+using FluentInfo.Data;
 using MediaInfoLib;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -26,8 +27,6 @@ namespace FluentInfo.Pages
     /// </summary>
     public sealed partial class PrettyViewPage : Page
     {
-        private const string Separator = " : ";
-
         public PrettyViewPage()
         {
             this.InitializeComponent();
@@ -42,39 +41,16 @@ namespace FluentInfo.Pages
             var children = content.Children;
             children.Clear();
 
-            var lines = Utils.SplitToLines(info, StringSplitOptions.RemoveEmptyEntries);
+            var sections = MediaInfoTextParser.Parse(info);
 
-            var sectionItems = new List<(string, string)>();
-
-            foreach (string line in lines)
+            foreach (var section in sections)
             {
-                var index = line.IndexOf(Separator);
-
-                if (index == -1)
+                if (section.Title != null)
                 {
-                    // current line is a title
-                    if (sectionItems.Count > 0)
-                    {
-                        children.Add(new SectionControl(sectionItems));
-                        sectionItems = [];
-                    }
-
-                    var title = line.Trim();
-                    children.Add(new TitleControl { Title = title });
+                    children.Add(new TitleControl { Title = section.Title });
                 }
-                else
-                {
-                    // current line is a field
-                    var name = line[..index].Trim();
-                    var value = line[(index + Separator.Length)..].Trim();
 
-                    sectionItems.Add((name, value));
-                }
-            }
-
-            if (sectionItems.Count > 0)
-            {
-                children.Add(new SectionControl(sectionItems));
+                children.Add(new SectionControl(section.Properties));
             }
 
             base.OnNavigatedTo(e);

@@ -1,3 +1,4 @@
+using FluentInfo.Data;
 using Microsoft.UI.Text;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -24,11 +25,11 @@ namespace FluentInfo.Controls.PrettyView
 {
     public sealed partial class SectionControl : UserControl
     {
-        public SectionControl(List<(string, string)> items)
+        public SectionControl(OrderedProperties items)
         {
             this.InitializeComponent();
 
-            foreach (var (field, value) in items)
+            foreach (var (field, value) in items.GetPairs())
             {
                 var paragraph = new Paragraph
                 {
