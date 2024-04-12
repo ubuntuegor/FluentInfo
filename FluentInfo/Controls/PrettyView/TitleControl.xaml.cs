@@ -30,6 +30,7 @@ namespace FluentInfo.Controls.PrettyView
                 SectionType.AUDIO => "\xE8D6",
                 SectionType.TEXT => "\xED1E",
                 SectionType.MENU => "\xE8FD",
+                SectionType.IMAGE => "\uE8B9",
                 _ => "",
             };
         }

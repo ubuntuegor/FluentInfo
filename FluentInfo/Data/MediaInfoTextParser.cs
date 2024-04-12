@@ -76,6 +76,22 @@ namespace FluentInfo.Data
             return [properties.Count + " entries"];
         }
 
+        private static List<string> GetChipsForImage(OrderedProperties properties)
+        {
+            string resulution = null;
+            var width = properties.Get("Width");
+            var height = properties.Get("Height");
+
+            if (width != null && height != null)
+            {
+                width = width.Replace("pixels", "").Replace(" ", "");
+                height = height.Replace("pixels", "").Replace(" ", "");
+                resulution = width + "x" + height;
+            }
+
+            return [properties.Get("Format"), resulution];
+        }
+
         private static List<string> GetChips(SectionType type, OrderedProperties properties)
         {
             var chips = type switch
@@ -85,6 +101,7 @@ namespace FluentInfo.Data
                 SectionType.AUDIO => GetChipsForAudio(properties),
                 SectionType.TEXT => GetChipsForText(properties),
                 SectionType.MENU => GetChipsForMenu(properties),
+                SectionType.IMAGE => GetChipsForImage(properties),
                 _ => [],
             };
 
@@ -104,6 +121,7 @@ namespace FluentInfo.Data
                 else if (title.StartsWith("Audio")) type = SectionType.AUDIO;
                 else if (title.StartsWith("Text")) type = SectionType.TEXT;
                 else if (title.StartsWith("Menu")) type = SectionType.MENU;
+                else if (title.StartsWith("Image")) type = SectionType.IMAGE;
             }
 
             var subtitle = GetSubtitle(type, properties);

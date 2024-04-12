@@ -13,6 +13,7 @@ namespace FluentInfo.Data
         AUDIO,
         TEXT,
         MENU,
+        IMAGE,
         OTHER
     }
 
