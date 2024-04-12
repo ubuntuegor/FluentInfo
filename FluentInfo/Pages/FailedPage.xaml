@@ -9,7 +9,7 @@
     mc:Ignorable="d">
 
     <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="4">
-        <FontIcon Glyph="&#xE783;" FontSize="24" Foreground="{StaticResource SystemFillColorCriticalBrush}"/>
+        <FontIcon Glyph="&#xE783;" FontSize="24" Foreground="{ThemeResource SystemFillColorCriticalBrush}"/>
         <TextBlock x:Name="errorTextBlock" MaxWidth="400" TextWrapping="Wrap" TextAlignment="Center"/>
     </StackPanel>
 </Page>

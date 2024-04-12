@@ -9,8 +9,8 @@
     mc:Ignorable="d">
 
     <Border
-        Background="{StaticResource CardBackgroundFillColorDefault}"
-        BorderBrush="{StaticResource CardStrokeColorDefaultBrush}"
+        Background="{ThemeResource CardBackgroundFillColorDefault}"
+        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
         BorderThickness="1">
         <ScrollViewer
             HorizontalScrollMode="{x:Bind local:Converters.BooleanToScrollMode(settings.TextWrapEnabled), Mode=OneWay}"

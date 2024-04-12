@@ -9,7 +9,7 @@
     mc:Ignorable="d">
 
     <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="4">
-        <FontIcon Glyph="&#xE8E5;" FontSize="24" Foreground="{StaticResource TextFillColorSecondary}"/>
-        <TextBlock Text="Drag a file here" Style="{StaticResource CaptionTextBlockStyle}" Foreground="{StaticResource TextFillColorSecondary}"/>
+        <FontIcon Glyph="&#xE8E5;" FontSize="24" Foreground="{ThemeResource TextFillColorSecondary}"/>
+        <TextBlock Text="Drag a file here" Style="{StaticResource CaptionTextBlockStyle}" Foreground="{ThemeResource TextFillColorSecondary}"/>
     </StackPanel>
 </Page>

@@ -9,8 +9,8 @@
     mc:Ignorable="d">
 
     <Border
-        Background="{StaticResource CardBackgroundFillColorDefault}"
-        BorderBrush="{StaticResource CardStrokeColorDefaultBrush}"
+        Background="{ThemeResource CardBackgroundFillColorDefault}"
+        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
         CornerRadius="8"
         BorderThickness="1"
         Padding="16">
