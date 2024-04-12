@@ -25,25 +25,12 @@ namespace FluentInfo.Data
             }
         }
 
-        private static void PrepareChips(List<List<string>> chips)
+        private static List<string> GetChipsForGeneral(OrderedProperties properties)
         {
-            foreach (var row in chips)
-            {
-                row.RemoveAll(x => x == null);
-            }
-
-            chips.RemoveAll(x => x.Count == 0);
+            return [properties.Get("Format"), properties.Get("File size"), properties.Get("Duration")];
         }
 
-        private static List<List<string>> GetChipsForGeneral(OrderedProperties properties)
-        {
-            return [
-                [properties.Get("Format"), properties.Get("File size")],
-                [properties.Get("Duration")]
-            ];
-        }
-
-        private static List<List<string>> GetChipsForVideo(OrderedProperties properties)
+        private static List<string> GetChipsForVideo(OrderedProperties properties)
         {
             string resulution = null;
             var width = properties.Get("Width");
@@ -68,31 +55,28 @@ namespace FluentInfo.Data
                 }
             }
 
+            return [properties.Get("Format"), resulution, framerate, properties.Get("Bit rate")];
+        }
+
+        private static List<string> GetChipsForAudio(OrderedProperties properties)
+        {
             return [
-                [properties.Get("Format"), resulution],
-                [framerate, properties.Get("Bit rate")]
+                properties.Get("Format"), properties.Get("Language"),
+                properties.Get("Channel(s)"), properties.Get("Bit rate")
             ];
         }
 
-        private static List<List<string>> GetChipsForAudio(OrderedProperties properties)
+        private static List<string> GetChipsForText(OrderedProperties properties)
         {
-            return [
-                [properties.Get("Format"), properties.Get("Language")],
-                [properties.Get("Channel(s)"), properties.Get("Bit rate")]
-            ];
+            return [properties.Get("Format"), properties.Get("Language")];
         }
 
-        private static List<List<string>> GetChipsForText(OrderedProperties properties)
+        private static List<string> GetChipsForMenu(OrderedProperties properties)
         {
-            return [[properties.Get("Format"), properties.Get("Language")]];
+            return [properties.Count + " entries"];
         }
 
-        private static List<List<string>> GetChipsForMenu(OrderedProperties properties)
-        {
-            return [[properties.Count + " entries"]];
-        }
-
-        private static List<List<string>> GetChips(SectionType type, OrderedProperties properties)
+        private static List<string> GetChips(SectionType type, OrderedProperties properties)
         {
             var chips = type switch
             {
@@ -104,7 +88,7 @@ namespace FluentInfo.Data
                 _ => [],
             };
 
-            PrepareChips(chips);
+            chips.RemoveAll(x => x == null);
 
             return chips;
         }

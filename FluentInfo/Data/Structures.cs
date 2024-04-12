@@ -16,13 +16,11 @@ namespace FluentInfo.Data
         OTHER
     }
 
-
-
     public record Section(
         SectionType Type,
         string Title,
         string SubTitle,
-        List<List<string>> Chips,
+        List<string> Chips,
         OrderedProperties Properties
     );
 }

@@ -6,6 +6,7 @@
     xmlns:local="using:FluentInfo.Controls.PrettyView"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     mc:Ignorable="d">
 
     <Grid>
@@ -15,13 +16,13 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
         <FontIcon x:Name="typeIcon" Margin="0,4,12,0" VerticalAlignment="Center"/>
         <TextBlock x:Name="titleText" Grid.Column="1" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="WrapWholeWords" VerticalAlignment="Center"/>
-        <StackPanel x:Name="chipsPanel" Grid.Column="2" Margin="12,0,0,0" Orientation="Vertical" VerticalAlignment="Center" Spacing="2"/>
+        <controls:WrapPanel x:Name="chipsPanel" Grid.Column="2" Margin="12,6,0,0" VerticalAlignment="Center" VerticalSpacing="2" HorizontalSpacing="2"/>
         <TextBlock x:Name="subtitleText" Grid.Row="1" Grid.ColumnSpan="3" Margin="0,4,0,0" TextWrapping="Wrap" FontSize="16" Foreground="{ThemeResource TextFillColorSecondaryBrush}" FontWeight="SemiBold"/>
     </Grid>
 </UserControl>

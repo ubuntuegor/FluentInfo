@@ -34,7 +34,7 @@ namespace FluentInfo.Controls.PrettyView
             };
         }
 
-        public TitleControl(SectionType type, string title, string subtitle, List<List<string>> chips)
+        public TitleControl(SectionType type, string title, string subtitle, List<string> chips)
         {
             this.InitializeComponent();
             titleText.Text = title;
@@ -57,22 +57,9 @@ namespace FluentInfo.Controls.PrettyView
                 subtitleText.Visibility = Visibility.Collapsed;
             }
 
-            foreach (var row in chips)
+            foreach (var chip in chips)
             {
-                var rowPanel = new StackPanel
-                {
-                    Orientation = Orientation.Horizontal,
-                    HorizontalAlignment = HorizontalAlignment.Right,
-                    Spacing = 2,
-                };
-
-                foreach (var chip in row)
-                {
-                    var chipControl = new ChipControl(chip);
-                    rowPanel.Children.Add(chipControl);
-                }
-
-                chipsPanel.Children.Add(rowPanel);
+                chipsPanel.Children.Add(new ChipControl(chip));
             }
         }
     }

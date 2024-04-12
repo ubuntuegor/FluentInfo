@@ -42,6 +42,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Primitives" Version="7.1.2" />
 		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240404000" />
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.3233" />
 		<PackageReference Include="WinUIEx" Version="2.3.4" />
