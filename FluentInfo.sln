@@ -6,11 +6,16 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentInfo", "FluentInfo\FluentInfo.csproj", "{6EA6A3F4-0509-4DB7-BBA9-C2199FA74E04}"
 	ProjectSection(ProjectDependencies) = postProject
 		{09C7FC6E-E5FD-495D-9206-B47117A21B18} = {09C7FC6E-E5FD-495D-9206-B47117A21B18}
+		{CB9F2328-5C49-4FC6-A1D5-452CEB0B5B60} = {CB9F2328-5C49-4FC6-A1D5-452CEB0B5B60}
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaInfoLib", "MediaInfo\MediaInfoLib.csproj", "{0482D646-5027-4301-BB4F-F2E65F108DE9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FluentInfoShellExtension", "FluentInfoShellExtension\FluentInfoShellExtension.vcxproj", "{09C7FC6E-E5FD-495D-9206-B47117A21B18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentInfoTest", "FluentInfoTest\FluentInfoTest.csproj", "{AB865952-F825-4946-A451-D314A20BEDAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentInfoCommon", "FluentInfoCommon\FluentInfoCommon.csproj", "{CB9F2328-5C49-4FC6-A1D5-452CEB0B5B60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +53,22 @@ Global
 		{09C7FC6E-E5FD-495D-9206-B47117A21B18}.Release|x64.Build.0 = Release|x64
 		{09C7FC6E-E5FD-495D-9206-B47117A21B18}.Release|x86.ActiveCfg = Release|Win32
 		{09C7FC6E-E5FD-495D-9206-B47117A21B18}.Release|x86.Build.0 = Release|Win32
+		{AB865952-F825-4946-A451-D314A20BEDAA}.Debug|x64.ActiveCfg = Debug|x64
+		{AB865952-F825-4946-A451-D314A20BEDAA}.Debug|x64.Build.0 = Debug|x64
+		{AB865952-F825-4946-A451-D314A20BEDAA}.Debug|x86.ActiveCfg = Debug|x86
+		{AB865952-F825-4946-A451-D314A20BEDAA}.Debug|x86.Build.0 = Debug|x86
+		{AB865952-F825-4946-A451-D314A20BEDAA}.Release|x64.ActiveCfg = Release|x64
+		{AB865952-F825-4946-A451-D314A20BEDAA}.Release|x64.Build.0 = Release|x64
+		{AB865952-F825-4946-A451-D314A20BEDAA}.Release|x86.ActiveCfg = Release|x86
+		{AB865952-F825-4946-A451-D314A20BEDAA}.Release|x86.Build.0 = Release|x86
+		{CB9F2328-5C49-4FC6-A1D5-452CEB0B5B60}.Debug|x64.ActiveCfg = Debug|x64
+		{CB9F2328-5C49-4FC6-A1D5-452CEB0B5B60}.Debug|x64.Build.0 = Debug|x64
+		{CB9F2328-5C49-4FC6-A1D5-452CEB0B5B60}.Debug|x86.ActiveCfg = Debug|x86
+		{CB9F2328-5C49-4FC6-A1D5-452CEB0B5B60}.Debug|x86.Build.0 = Debug|x86
+		{CB9F2328-5C49-4FC6-A1D5-452CEB0B5B60}.Release|x64.ActiveCfg = Release|x64
+		{CB9F2328-5C49-4FC6-A1D5-452CEB0B5B60}.Release|x64.Build.0 = Release|x64
+		{CB9F2328-5C49-4FC6-A1D5-452CEB0B5B60}.Release|x86.ActiveCfg = Release|x86
+		{CB9F2328-5C49-4FC6-A1D5-452CEB0B5B60}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

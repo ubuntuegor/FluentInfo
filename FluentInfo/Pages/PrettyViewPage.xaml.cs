@@ -1,5 +1,5 @@
 using FluentInfo.Controls.PrettyView;
-using FluentInfo.Data;
+using FluentInfoCommon;
 using MediaInfoLib;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;

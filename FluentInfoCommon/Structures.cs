@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FluentInfo.Data
+namespace FluentInfoCommon
 {
     public enum SectionType
     {

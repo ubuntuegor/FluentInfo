@@ -70,6 +70,7 @@
 		<ProjectCapability Include="Msix" />
 	</ItemGroup>
 	<ItemGroup>
+		<ProjectReference Include="..\FluentInfoCommon\FluentInfoCommon.csproj" />
 		<ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj" />
 	</ItemGroup>
 	<ItemGroup>
