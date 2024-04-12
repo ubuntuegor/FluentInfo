@@ -13,6 +13,102 @@ namespace FluentInfo.Data
 
         private MediaInfoTextParser() { }
 
+        private static string GetSubtitle(SectionType type, OrderedProperties properties)
+        {
+            if (type == SectionType.GENERAL)
+            {
+                return properties.Get("Movie name");
+            }
+            else
+            {
+                return properties.Get("Title");
+            }
+        }
+
+        private static void PrepareChips(List<List<string>> chips)
+        {
+            foreach (var row in chips)
+            {
+                row.RemoveAll(x => x == null);
+            }
+
+            chips.RemoveAll(x => x.Count == 0);
+        }
+
+        private static List<List<string>> GetChipsForGeneral(OrderedProperties properties)
+        {
+            return [
+                [properties.Get("Format"), properties.Get("File size")],
+                [properties.Get("Duration")]
+            ];
+        }
+
+        private static List<List<string>> GetChipsForVideo(OrderedProperties properties)
+        {
+            string resulution = null;
+            var width = properties.Get("Width");
+            var height = properties.Get("Height");
+
+            if (width != null && height != null)
+            {
+                width = width.Replace("pixels", "").Replace(" ", "");
+                height = height.Replace("pixels", "").Replace(" ", "");
+                resulution = width + "x" + height;
+            }
+
+            var framerate = properties.Get("Frame rate");
+            if (framerate != null)
+            {
+                var open = framerate.IndexOf('(');
+                var close = framerate.IndexOf(')');
+
+                if (open != -1 && close != -1)
+                {
+                    framerate = framerate.Remove(open, close - open + 2);
+                }
+            }
+
+            return [
+                [properties.Get("Format"), resulution],
+                [framerate, properties.Get("Bit rate")]
+            ];
+        }
+
+        private static List<List<string>> GetChipsForAudio(OrderedProperties properties)
+        {
+            return [
+                [properties.Get("Format"), properties.Get("Language")],
+                [properties.Get("Channel(s)"), properties.Get("Bit rate")]
+            ];
+        }
+
+        private static List<List<string>> GetChipsForText(OrderedProperties properties)
+        {
+            return [[properties.Get("Format"), properties.Get("Language")]];
+        }
+
+        private static List<List<string>> GetChipsForMenu(OrderedProperties properties)
+        {
+            return [[properties.Count + " entries"]];
+        }
+
+        private static List<List<string>> GetChips(SectionType type, OrderedProperties properties)
+        {
+            var chips = type switch
+            {
+                SectionType.GENERAL => GetChipsForGeneral(properties),
+                SectionType.VIDEO => GetChipsForVideo(properties),
+                SectionType.AUDIO => GetChipsForAudio(properties),
+                SectionType.TEXT => GetChipsForText(properties),
+                SectionType.MENU => GetChipsForMenu(properties),
+                _ => [],
+            };
+
+            PrepareChips(chips);
+
+            return chips;
+        }
+
         private static Section CreateSection(string title, OrderedProperties properties)
         {
             SectionType type = SectionType.OTHER;
@@ -26,7 +122,10 @@ namespace FluentInfo.Data
                 else if (title.StartsWith("Menu")) type = SectionType.MENU;
             }
 
-            return new Section(type, title, null, [], properties);
+            var subtitle = GetSubtitle(type, properties);
+            var chips = GetChips(type, properties);
+
+            return new Section(type, title, subtitle, chips, properties);
         }
 
         public static List<Section> Parse(string text)

@@ -22,6 +22,7 @@
 		<PackageCertificateKeyFile>FluentInfo_TemporaryKey.pfx</PackageCertificateKeyFile>
 	</PropertyGroup>
 	<ItemGroup>
+		<None Remove="Controls\PrettyView\ChipControl.xaml" />
 		<None Remove="Controls\PrettyView\SectionControl.xaml" />
 		<None Remove="Controls\PrettyView\TitleControl.xaml" />
 		<None Remove="Pages\AboutContentPage.xaml" />
@@ -69,6 +70,11 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Page Update="Controls\PrettyView\ChipControl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </Page>
 	</ItemGroup>
 	<ItemGroup>
 	  <Page Update="Controls\PrettyView\SectionControl.xaml">

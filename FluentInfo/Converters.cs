@@ -33,15 +33,12 @@ namespace FluentInfo
 
         public static System.Type SelectedViewToPage(SelectedView selectedView)
         {
-            switch (selectedView)
+            return selectedView switch
             {
-                case SelectedView.TextView:
-                    return typeof(TextViewPage);
-                case SelectedView.PrettyView:
-                    return typeof(PrettyViewPage);
-                default:
-                    return typeof(FailedPage);
-            }
+                SelectedView.TextView => typeof(TextViewPage),
+                SelectedView.PrettyView => typeof(PrettyViewPage),
+                _ => typeof(FailedPage),
+            };
         }
     }
 }

@@ -1,3 +1,4 @@
+using FluentInfo.Data;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -20,18 +21,59 @@ namespace FluentInfo.Controls.PrettyView
 {
     public sealed partial class TitleControl : UserControl
     {
-        public TitleControl()
+        private static string SectionTypeToGlyph(SectionType type)
+        {
+            return type switch
+            {
+                SectionType.GENERAL => "\xE7C3",
+                SectionType.VIDEO => "\xE714",
+                SectionType.AUDIO => "\xE8D6",
+                SectionType.TEXT => "\xED1E",
+                SectionType.MENU => "\xE8FD",
+                _ => "",
+            };
+        }
+
+        public TitleControl(SectionType type, string title, string subtitle, List<List<string>> chips)
         {
             this.InitializeComponent();
-        }
+            titleText.Text = title;
 
-        public string Title
-        {
-            get { return (string)GetValue(TitleProperty); }
-            set { SetValue(TitleProperty, value); }
-        }
+            if (type == SectionType.OTHER)
+            {
+                typeIcon.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                typeIcon.Glyph = SectionTypeToGlyph(type);
+            }
 
-        public static readonly DependencyProperty TitleProperty =
-            DependencyProperty.Register("Title", typeof(string), typeof(TitleControl), new PropertyMetadata(null));
+            if (subtitle != null)
+            {
+                subtitleText.Text = subtitle;
+            }
+            else
+            {
+                subtitleText.Visibility = Visibility.Collapsed;
+            }
+
+            foreach (var row in chips)
+            {
+                var rowPanel = new StackPanel
+                {
+                    Orientation = Orientation.Horizontal,
+                    HorizontalAlignment = HorizontalAlignment.Right,
+                    Spacing = 2,
+                };
+
+                foreach (var chip in row)
+                {
+                    var chipControl = new ChipControl(chip);
+                    rowPanel.Children.Add(chipControl);
+                }
+
+                chipsPanel.Children.Add(rowPanel);
+            }
+        }
     }
 }

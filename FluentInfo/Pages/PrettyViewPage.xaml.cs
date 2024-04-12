@@ -47,7 +47,7 @@ namespace FluentInfo.Pages
             {
                 if (section.Title != null)
                 {
-                    children.Add(new TitleControl { Title = section.Title });
+                    children.Add(new TitleControl(section.Type, section.Title, section.SubTitle, section.Chips));
                 }
 
                 children.Add(new SectionControl(section.Properties));
