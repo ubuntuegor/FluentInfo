@@ -1,3 +1,4 @@
+using MediaInfoLib;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -23,9 +24,16 @@ namespace FluentInfo.Pages
     /// </summary>
     public sealed partial class AboutContentPage : Page
     {
-        public AboutContentPage()
+        public AboutContentPage(MediaInfo mediaInfo)
         {
             this.InitializeComponent();
+            string version = mediaInfo.Option("info_version", string.Empty);
+            int index = version.IndexOf(" - v");
+            if (index != -1)
+            {
+                version = version[(index + 3)..];
+            }
+            versionText.Text = version;
         }
 
         private async void SourceCode_Click(object sender, RoutedEventArgs e)

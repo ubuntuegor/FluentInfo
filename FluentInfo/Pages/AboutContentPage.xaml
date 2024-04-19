@@ -18,7 +18,7 @@
         <TextBlock TextWrapping="Wrap">
             This product uses
             <Hyperlink NavigateUri="http://mediaarea.net/MediaInfo">MediaInfo</Hyperlink> 
-            <Run Text="{StaticResource MediaInfoLibVersion}"></Run>
+            <Run x:Name="versionText"></Run>
             library,<LineBreak/>Copyright (c) 2002-2020 MediaArea.net SARL.
         </TextBlock>
     </StackPanel>

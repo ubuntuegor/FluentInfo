@@ -157,7 +157,7 @@ namespace FluentInfo
             {
                 XamlRoot = rootPanel.XamlRoot,
                 Title = appName,
-                Content = new AboutContentPage(),
+                Content = new AboutContentPage(mediaInfo),
                 CloseButtonText = "Close",
                 Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style,
             };

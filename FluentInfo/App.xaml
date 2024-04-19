@@ -20,8 +20,6 @@
             </Style>
 
             <x:String x:Key="AppTitleName">FluentInfo</x:String>
-
-            <x:String x:Key="MediaInfoLibVersion">24.04</x:String>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
