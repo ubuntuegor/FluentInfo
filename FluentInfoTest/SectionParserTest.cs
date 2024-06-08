@@ -23,7 +23,7 @@ namespace FluentInfoTest
 
         [TestMethod]
         [DeploymentItem(@"Assets\test.mkv")]
-        public void TestFile()
+        public void TestMkvFile()
         {
             string filePath = "test.mkv";
             Assert.IsTrue(File.Exists(filePath));
@@ -42,6 +42,36 @@ namespace FluentInfoTest
             CheckSection(audioSection, SectionType.AUDIO, "Audio Title", ["AAC LC", "English", "2 channels", "2 091 b/s"]);
             CheckSection(textSection, SectionType.TEXT, "Sub Title", ["UTF-8", "English"]);
             CheckSection(menuSection, SectionType.MENU, null, ["2 entries"]);
+        }
+
+        [TestMethod]
+        [DeploymentItem(@"Assets\test.mp3")]
+        public void TestMp3File()
+        {
+            string filePath = "test.mp3";
+            Assert.IsTrue(File.Exists(filePath));
+
+            var info = ReadMediaInfoForFile(filePath);
+            var sections = MediaInfoTextParser.Parse(info);
+
+            var generalSection = sections[0];
+
+            CheckSection(generalSection, SectionType.GENERAL, "Rick Astley - Never Gonna Give You Up", ["MPEG Audio", "41.8 KiB", "5 s 41 ms"]);
+        }
+
+        [TestMethod]
+        [DeploymentItem(@"Assets\test.webm")]
+        public void TestWebmAudioFile()
+        {
+            string filePath = "test.webm";
+            Assert.IsTrue(File.Exists(filePath));
+
+            var info = ReadMediaInfoForFile(filePath);
+            var sections = MediaInfoTextParser.Parse(info);
+
+            var generalSection = sections[0];
+
+            CheckSection(generalSection, SectionType.GENERAL, "Infekt - Projectile", ["WebM", "65.6 KiB", "5 s 8 ms"]);
         }
     }
 }

@@ -16,7 +16,17 @@ namespace FluentInfoCommon
         {
             if (type == SectionType.GENERAL)
             {
-                return properties.Get("Movie name");
+                var performer = properties.Get("Performer") ?? properties.Get("ARTIST");
+                var title = properties.Get("Track name") ?? properties.Get("Movie name");
+
+                if (performer == null || title == null)
+                {
+                    return title;
+                }
+                else
+                {
+                    return performer + " - " + title;
+                }
             }
             else
             {
