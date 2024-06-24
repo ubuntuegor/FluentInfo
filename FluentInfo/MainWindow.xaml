@@ -10,9 +10,7 @@
     mc:Ignorable="d"
     Title="{StaticResource AppTitleName}"
     MinWidth="300"
-    MinHeight="200"
-    Width="600"
-    Height="600">
+    MinHeight="200">
     <Window.SystemBackdrop>
         <MicaBackdrop />
     </Window.SystemBackdrop>

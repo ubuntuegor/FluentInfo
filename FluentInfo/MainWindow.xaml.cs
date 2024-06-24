@@ -43,6 +43,9 @@ namespace FluentInfo
             SetTitleBar(appTitleBar);
             this.SetIcon("Assets/fluentinfo.ico");
 
+            Width = settings.WindowWidth;
+            Height = settings.WindowHeight;
+
             if (cmdargs.Length > 1)
             {
                 var path = cmdargs[1];
@@ -55,6 +58,15 @@ namespace FluentInfo
 
             settings.PropertyChanged += Settings_PropertyChanged;
             ReactToSettings();
+
+            SizeChanged += MainWindow_SizeChanged;
+            
+        }
+
+        private void MainWindow_SizeChanged(object sender, WindowSizeChangedEventArgs args)
+        {
+            settings.WindowWidth = args.Size.Width;
+            settings.WindowHeight = args.Size.Height;
         }
 
         private void Settings_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -168,6 +180,7 @@ namespace FluentInfo
         ~MainWindow()
         {
             settings.PropertyChanged -= Settings_PropertyChanged;
+            SizeChanged -= MainWindow_SizeChanged;
         }
 
         private void SelectPrettyView(object sender, RoutedEventArgs e)
