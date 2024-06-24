@@ -9,7 +9,7 @@
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Vertical">
+    <StackPanel Orientation="Vertical" Margin="0,0,0,16">
         <StackPanel Orientation="Horizontal" Spacing="12">
             <FontIcon x:Name="typeIcon" Margin="2,4,0,0" VerticalAlignment="Center"/>
             <TextBlock x:Name="titleText" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="WrapWholeWords" VerticalAlignment="Center"/>

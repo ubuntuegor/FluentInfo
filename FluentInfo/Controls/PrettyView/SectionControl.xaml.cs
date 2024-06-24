@@ -25,9 +25,14 @@ namespace FluentInfo.Controls.PrettyView
 {
     public sealed partial class SectionControl : UserControl
     {
-        public SectionControl(OrderedProperties items)
+        public SectionControl(TitleControl title, OrderedProperties items)
         {
             this.InitializeComponent();
+
+            if (title != null)
+            {
+                content.Children.Insert(0, title);
+            }
 
             foreach (var (field, value) in items.GetPairs())
             {

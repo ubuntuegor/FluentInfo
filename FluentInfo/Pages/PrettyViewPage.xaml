@@ -6,11 +6,12 @@
     xmlns:local="using:FluentInfo.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     mc:Ignorable="d">
 
     <ScrollViewer
         VerticalScrollMode="Auto"
         HorizontalScrollMode="Disabled">
-        <StackPanel x:Name="content" Orientation="Vertical" HorizontalAlignment="Stretch" Margin="24" Spacing="16"></StackPanel>
+        <controls:StaggeredPanel x:Name="content" DesiredColumnWidth="500" Margin="24" ColumnSpacing="16" RowSpacing="16" />
     </ScrollViewer>
 </Page>

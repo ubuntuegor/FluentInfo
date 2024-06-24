@@ -45,12 +45,10 @@ namespace FluentInfo.Pages
 
             foreach (var section in sections)
             {
-                if (section.Title != null)
-                {
-                    children.Add(new TitleControl(section.Type, section.Title, section.SubTitle, section.Chips));
-                }
-
-                children.Add(new SectionControl(section.Properties));
+                var title = section.Title != null ?
+                    new TitleControl(section.Type, section.Title, section.SubTitle, section.Chips) :
+                    null;
+                children.Add(new SectionControl(title, section.Properties));
             }
 
             base.OnNavigatedTo(e);

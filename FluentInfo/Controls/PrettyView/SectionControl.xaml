@@ -8,12 +8,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Border
-        Background="{ThemeResource CardBackgroundFillColorDefault}"
-        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
-        CornerRadius="8"
-        BorderThickness="1"
-        Padding="16">
-        <RichTextBlock x:Name="textBlock" IsTextSelectionEnabled="True" />
-    </Border>
+    <StackPanel Orientation="Vertical" x:Name="content">
+        <Border
+            Background="{ThemeResource CardBackgroundFillColorDefault}"
+            BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+            CornerRadius="8"
+            BorderThickness="1"
+            Padding="16">
+            <RichTextBlock x:Name="textBlock" IsTextSelectionEnabled="True" />
+        </Border>
+    </StackPanel>
 </UserControl>
