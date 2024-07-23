@@ -28,14 +28,24 @@
 
         <Border
             x:Name="appTitleBar"
-            Height="32"
-            VerticalAlignment="Stretch">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                <Image Height="16" Margin="16,0" Source="ms-appx:///Assets/Square44x44Logo.targetsize-32.png" />
+            Height="32">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Height="16" Margin="16,0" VerticalAlignment="Center" Source="ms-appx:///Assets/Square44x44Logo.targetsize-32.png" />
                 <TextBlock
+                    x:Name="titleTextBlock"
+                    Grid.Column="1"
                     Text="{StaticResource AppTitleName}"
-                    Style="{StaticResource CaptionTextBlockStyle}"/>
-            </StackPanel>
+                    Style="{StaticResource CaptionTextBlockStyle}"
+                    TextWrapping="NoWrap"
+                    TextTrimming="CharacterEllipsis"
+                    VerticalAlignment="Center"
+                    Margin="0,0,140,0" />
+            </Grid>
         </Border>
 
         <MenuBar Grid.Row="1">

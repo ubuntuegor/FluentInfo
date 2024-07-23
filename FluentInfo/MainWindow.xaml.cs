@@ -32,6 +32,7 @@ namespace FluentInfo
     /// </summary>
     public sealed partial class MainWindow : WinUIEx.WindowEx
     {
+        private readonly string appName = Application.Current.Resources["AppTitleName"] as string;
         private readonly MediaInfo mediaInfo = new();
         private readonly SettingsHolder settings = SettingsHolder.Instance;
         private bool fileOpened = false;
@@ -42,6 +43,7 @@ namespace FluentInfo
             ExtendsContentIntoTitleBar = true;
             SetTitleBar(appTitleBar);
             this.SetIcon("Assets/fluentinfo.ico");
+            SetTitle(appName);
 
             Width = settings.WindowWidth;
             Height = settings.WindowHeight;
@@ -111,6 +113,9 @@ namespace FluentInfo
         private void UpdateInfoForFile(string path)
         {
             var success = mediaInfo.Open(path);
+            var fileName = Path.GetFileName(path);
+
+            SetTitle(fileName + " - " + appName);
 
             if (success)
             {
@@ -163,8 +168,6 @@ namespace FluentInfo
 
         private async void OpenAboutWindow(object sender, RoutedEventArgs e)
         {
-            var appName = Application.Current.Resources["AppTitleName"] as string;
-
             var dialog = new ContentDialog()
             {
                 XamlRoot = rootPanel.XamlRoot,
@@ -175,6 +178,12 @@ namespace FluentInfo
             };
 
             await dialog.ShowAsync();
+        }
+
+        private void SetTitle(string title)
+        {
+            Title = title;
+            titleTextBlock.Text = title;
         }
 
         ~MainWindow()
