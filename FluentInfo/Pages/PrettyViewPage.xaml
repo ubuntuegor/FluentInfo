@@ -11,6 +11,7 @@
 
     <ScrollViewer
         VerticalScrollMode="Auto"
+        VerticalScrollBarVisibility="Auto"
         HorizontalScrollMode="Disabled">
         <controls:StaggeredPanel x:Name="content" DesiredColumnWidth="500" Margin="24" ColumnSpacing="16" RowSpacing="16" />
     </ScrollViewer>
