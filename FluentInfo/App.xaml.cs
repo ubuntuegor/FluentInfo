@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml;
+﻿using ManagedCommon;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
@@ -46,6 +47,7 @@ namespace FluentInfo
             m_window = new MainWindow(cmdargs);
             m_window.CenterOnScreen();
             m_window.Activate();
+            WindowHelpers.BringToForeground(m_window.GetWindowHandle());
         }
 
         private Window m_window;
