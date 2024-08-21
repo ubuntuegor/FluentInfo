@@ -1,3 +1,4 @@
+using FluentInfoCommon;
 using MediaInfoLib;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;

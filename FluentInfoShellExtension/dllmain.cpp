@@ -155,6 +155,15 @@ struct __declspec(uuid("5C9CE5A1-7DC5-4613-A61B-75A47E86A41C"))
 			&processInformation
 		);
 
+		if (!CloseHandle(processInformation.hProcess))
+		{
+			return HRESULT_FROM_WIN32(GetLastError());
+		}
+		if (!CloseHandle(processInformation.hThread))
+		{
+			return HRESULT_FROM_WIN32(GetLastError());
+		}
+
 		return S_OK;
 	}
 
