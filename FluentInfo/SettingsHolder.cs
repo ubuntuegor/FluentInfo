@@ -14,7 +14,7 @@ namespace FluentInfo
         PrettyView
     }
 
-    class SettingsHolder : INotifyPropertyChanged
+    partial class SettingsHolder : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
 
