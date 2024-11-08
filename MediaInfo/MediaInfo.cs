@@ -3,18 +3,18 @@ using System.Runtime.InteropServices;
 
 namespace MediaInfoLib
 {
-    public class MediaInfo
+    public partial class MediaInfo
     {
-        [DllImport("MediaInfo.dll")]
-        private static extern IntPtr MediaInfo_New();
-        [DllImport("MediaInfo.dll")]
-        private static extern void MediaInfo_Delete(IntPtr handle);
-        [DllImport("MediaInfo.dll", CharSet = CharSet.Unicode)]
-        private static extern IntPtr MediaInfo_Option(IntPtr handle, string parameter, string value);
-        [DllImport("MediaInfo.dll", CharSet = CharSet.Unicode)]
-        private static extern IntPtr MediaInfo_Open(IntPtr handle, string filename);
-        [DllImport("MediaInfo.dll")]
-        private static extern IntPtr MediaInfo_Inform(IntPtr handle, IntPtr reserved);
+        [LibraryImport("MediaInfo.dll")]
+        private static partial IntPtr MediaInfo_New();
+        [LibraryImport("MediaInfo.dll")]
+        private static partial void MediaInfo_Delete(IntPtr handle);
+        [LibraryImport("MediaInfo.dll", StringMarshalling = StringMarshalling.Utf16)]
+        private static partial IntPtr MediaInfo_Option(IntPtr handle, string parameter, string value);
+        [LibraryImport("MediaInfo.dll", StringMarshalling = StringMarshalling.Utf16)]
+        private static partial IntPtr MediaInfo_Open(IntPtr handle, string filename);
+        [LibraryImport("MediaInfo.dll")]
+        private static partial IntPtr MediaInfo_Inform(IntPtr handle, IntPtr reserved);
 
         private readonly IntPtr handle;
 
