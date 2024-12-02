@@ -23,4 +23,4 @@ jobs:
     - name: Build Solution
       run: msbuild.exe FluentInfo.sln /p:platform="x64" /p:configuration="Release" /p:PublishReadyToRun=false
     - name: Run Tests
-      run: vstest.console.exe .\FluentInfoTest\bin\x64\Release\net8.0-windows\FluentInfoTest.dll
+      run: vstest.console.exe .\FluentInfoTest\bin\x64\Release\net9.0-windows\FluentInfoTest.dll
