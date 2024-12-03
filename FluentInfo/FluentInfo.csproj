@@ -53,14 +53,15 @@
 		<Manifest Include="$(ApplicationManifest)" />
 	</ItemGroup>
 
-	<ItemGroup Condition=" '$(Platform)' == 'x64'">
-		<Content Include="..\FluentInfoShellExtension\bin\x64\$(Configuration)\FluentInfoShellExtension.dll" Link="%(Filename)%(Extension)">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
-	</ItemGroup>
+	<PropertyGroup Condition="'$(Platform)' == 'x64'">
+		<CompilationTarget>x86_64-pc-windows-msvc</CompilationTarget>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Platform)' == 'x86'">
+		<CompilationTarget>i686-pc-windows-msvc</CompilationTarget>
+	</PropertyGroup>
 
-	<ItemGroup Condition=" '$(Platform)' == 'x86'">
-		<Content Include="..\FluentInfoShellExtension\bin\Win32\$(Configuration)\FluentInfoShellExtension.dll" Link="%(Filename)%(Extension)">
+	<ItemGroup>
+		<Content Include="..\FluentInfoShellExtension\target\$(CompilationTarget)\release\fluent_info_shell_extension.dll" Link="FluentInfoShellExtension.dll">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>

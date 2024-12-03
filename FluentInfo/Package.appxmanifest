@@ -58,7 +58,151 @@
 
 				<desktop4:Extension Category="windows.fileExplorerContextMenus">
 					<desktop4:FileExplorerContextMenus>
-						<desktop5:ItemType Type="*">
+						<desktop5:ItemType Type=".aiff">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".aif">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".avi">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".m2ts">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".mts">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".flv">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".heif">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".heic">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".avif">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".ts">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".mov">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".mp4">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".m4v">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".m4a">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".3gpp">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".3gp">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".qt">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".ogg">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".opus">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".swf">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".wma">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".wmv">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".avc">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".h264">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".hevc">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".h265">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".aac">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".ac3">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".ac4">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".amr">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".dts">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".dtshd">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".eac3">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".ec3">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".flac">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".mp1">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".mp2">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".mp3">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".wav">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".bmp">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".gif">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".ico">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".jpg">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".jpeg">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".png">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".tif">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".tiff">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".mkv">
+							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
+						</desktop5:ItemType>
+						<desktop5:ItemType Type=".webm">
 							<desktop5:Verb Id="COpenFluentInfo" Clsid="BEBB29FA-FBE2-406B-8CF3-BFA47C45D545" />
 						</desktop5:ItemType>
 					</desktop4:FileExplorerContextMenus>
