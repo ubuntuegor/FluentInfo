@@ -2,7 +2,7 @@
 
 A MediaInfo GUI that integrates well with Windows 11.
 
-<a href="https://apps.microsoft.com/store/detail/9N949BZL5KM2?launch=true&mode=full"><img width=200 src="https://get.microsoft.com/images/en-US%20dark.svg"/></a>
+<a href="https://apps.microsoft.com/store/detail/9N949BZL5KM2?launch=true&mode=full"><img width=200 src="https://get.microsoft.com/images/en-us%20dark.svg"/></a>
 
 
 ## Screenshots
