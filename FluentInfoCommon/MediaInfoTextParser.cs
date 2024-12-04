@@ -45,8 +45,6 @@ public static class MediaInfoTextParser
 
     private static List<string?> GetChipsForVideo(OrderedProperties properties)
     {
-        var resolution = GetResolution(properties, "Resolution");
-
         var framerate = properties.Get("Frame rate");
         if (framerate != null)
         {
@@ -59,7 +57,7 @@ public static class MediaInfoTextParser
             }
         }
 
-        return [properties.Get("Format"), resolution, framerate, properties.Get("Bit rate")];
+        return [properties.Get("Format"), GetResolution(properties), framerate, properties.Get("Bit rate")];
     }
 
     private static List<string?> GetChipsForAudio(OrderedProperties properties)
