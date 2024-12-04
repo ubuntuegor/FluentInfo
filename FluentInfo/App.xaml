@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <Application
     x:Class="FluentInfo.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:FluentInfo">
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -15,8 +15,8 @@
             <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled">Transparent</SolidColorBrush>
 
             <Style TargetType="TextBlock" x:Key="InfoTextStyle">
-                <Setter Property="FontFamily" Value="Cascadia Mono, Consolas"/>
-                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="FontFamily" Value="Cascadia Mono, Consolas" />
+                <Setter Property="FontSize" Value="12" />
             </Style>
 
             <x:String x:Key="AppTitleName">FluentInfo</x:String>

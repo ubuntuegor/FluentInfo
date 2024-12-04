@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <winex:WindowEx
     x:Class="FluentInfo.MainWindow"
     xmlns:winex="using:WinUIEx"
@@ -16,28 +17,29 @@
     </Window.SystemBackdrop>
 
     <Grid
-        x:Name="rootPanel"
+        x:Name="RootPanel"
         AllowDrop="True"
         DragOver="Window_DragOver"
         Drop="Window_Drop">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Border
-            x:Name="appTitleBar"
+            x:Name="AppTitleBar"
             Height="32">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <Image Height="16" Margin="16,0" VerticalAlignment="Center" Source="ms-appx:///Assets/Square44x44Logo.targetsize-32.png" />
+                <Image Height="16" Margin="16,0" VerticalAlignment="Center"
+                       Source="ms-appx:///Assets/Square44x44Logo.targetsize-32.png" />
                 <TextBlock
-                    x:Name="titleTextBlock"
+                    x:Name="TitleTextBlock"
                     Grid.Column="1"
                     Text="{StaticResource AppTitleName}"
                     Style="{StaticResource CaptionTextBlockStyle}"
@@ -52,27 +54,27 @@
             <MenuBarItem Title="File">
                 <MenuFlyoutItem Text="Open" Click="OpenFilePicker">
                     <MenuFlyoutItem.Icon>
-                        <FontIcon Glyph="&#xE838;"/>
+                        <FontIcon Glyph="&#xE838;" />
                     </MenuFlyoutItem.Icon>
                     <MenuFlyoutItem.KeyboardAccelerators>
-                        <KeyboardAccelerator Modifiers="Control" Key="O"/>
+                        <KeyboardAccelerator Modifiers="Control" Key="O" />
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
             </MenuBarItem>
             <MenuBarItem Title="View">
                 <RadioMenuFlyoutItem
                     Text="Pretty"
-                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'PrettyView')}"
-                    Click="SelectPrettyView"/>
+                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'PRETTY_VIEW')}"
+                    Click="SelectPrettyView" />
                 <RadioMenuFlyoutItem
                     Text="Text"
-                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'TextView')}"
-                    Click="SelectTextView"/>
-                <MenuFlyoutSeparator/>
+                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'TEXT_VIEW')}"
+                    Click="SelectTextView" />
+                <MenuFlyoutSeparator />
                 <ToggleMenuFlyoutItem
-                    x:Name="wrapTextOptionButton"
+                    x:Name="WrapTextOptionButton"
                     Text="Wrap text"
-                    IsChecked="{x:Bind settings.TextWrapEnabled, Mode=TwoWay}"/>
+                    IsChecked="{x:Bind settings.TextWrapEnabled, Mode=TwoWay}" />
             </MenuBarItem>
             <MenuBarItem Title="Help">
                 <MenuFlyoutItem Text="About" Click="OpenAboutWindow"></MenuFlyoutItem>
@@ -80,9 +82,9 @@
         </MenuBar>
 
         <Frame
-            x:Name="navigationFrame"
+            x:Name="NavigationFrame"
             IsNavigationStackEnabled="False"
             Background="Transparent"
-            Grid.Row="2"/>
+            Grid.Row="2" />
     </Grid>
 </winex:WindowEx>

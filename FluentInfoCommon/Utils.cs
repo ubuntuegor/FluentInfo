@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace FluentInfoCommon;
 
-namespace FluentInfoCommon
+public static class Utils
 {
-    public class Utils
+    private static readonly string[] NewLineSeparator = ["\r\n", "\r", "\n"];
+
+    public static string[] SplitToLines(string value, StringSplitOptions options = StringSplitOptions.None)
     {
-        private Utils() { }
-
-        private static readonly string[] newLineSeparator = ["\r\n", "\r", "\n"];
-
-        public static string[] SplitToLines(string value, StringSplitOptions options = StringSplitOptions.None)
-        {
-            return value.Split(newLineSeparator, options);
-        }
+        return value.Split(NewLineSeparator, options);
     }
 }

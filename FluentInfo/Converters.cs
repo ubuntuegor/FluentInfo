@@ -2,43 +2,38 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FluentInfo
+namespace FluentInfo;
+
+internal static class Converters
 {
-    class Converters
+    public static TextWrapping BooleanToWrapping(bool value)
     {
-        public static TextWrapping BooleanToWrapping(bool value)
-        {
-            return value ? TextWrapping.Wrap : TextWrapping.NoWrap;
-        }
+        return value ? TextWrapping.Wrap : TextWrapping.NoWrap;
+    }
 
-        public static ScrollMode BooleanToScrollMode(bool value)
-        {
-            return value ? ScrollMode.Disabled : ScrollMode.Auto;
-        }
+    public static ScrollMode BooleanToScrollMode(bool value)
+    {
+        return value ? ScrollMode.Disabled : ScrollMode.Auto;
+    }
 
-        public static ScrollBarVisibility BooleanToScrollBarVisibility(bool value)
-        {
-            return value ? ScrollBarVisibility.Disabled : ScrollBarVisibility.Auto;
-        }
+    public static ScrollBarVisibility BooleanToScrollBarVisibility(bool value)
+    {
+        return value ? ScrollBarVisibility.Disabled : ScrollBarVisibility.Auto;
+    }
 
-        public static bool SelectedViewToBool(SelectedView selectedView, string name)
-        {
-            return selectedView == Enum.Parse<SelectedView>(name);
-        }
+    public static bool SelectedViewToBool(SelectedView selectedView, string name)
+    {
+        return selectedView == Enum.Parse<SelectedView>(name);
+    }
 
-        public static System.Type SelectedViewToPage(SelectedView selectedView)
+    public static Type SelectedViewToPage(SelectedView selectedView)
+    {
+        return selectedView switch
         {
-            return selectedView switch
-            {
-                SelectedView.TextView => typeof(TextViewPage),
-                SelectedView.PrettyView => typeof(PrettyViewPage),
-                _ => typeof(FailedPage),
-            };
-        }
+            SelectedView.TEXT_VIEW => typeof(TextViewPage),
+            SelectedView.PRETTY_VIEW => typeof(PrettyViewPage),
+            _ => typeof(FailedPage)
+        };
     }
 }

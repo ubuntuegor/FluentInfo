@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <Page
     x:Class="FluentInfo.Pages.TextViewPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -17,7 +18,7 @@
             HorizontalScrollBarVisibility="{x:Bind local:Converters.BooleanToScrollBarVisibility(settings.TextWrapEnabled), Mode=OneWay}"
             VerticalScrollMode="Enabled">
             <TextBlock
-                x:Name="infoTextBlock"
+                x:Name="InfoTextBlock"
                 Margin="16"
                 Style="{StaticResource InfoTextStyle}"
                 TextWrapping="{x:Bind local:Converters.BooleanToWrapping(settings.TextWrapEnabled), Mode=OneWay}"

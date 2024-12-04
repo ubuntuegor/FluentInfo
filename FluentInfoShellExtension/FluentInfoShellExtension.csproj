@@ -1,18 +1,18 @@
 ﻿<Project Sdk="Microsoft.Build.NoTargets/3.7.56">
-	<ItemGroup>
-		<Compile Include="src\**\*.rs" />
-	</ItemGroup>
-	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
-		<Platforms>x64;x86</Platforms>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Platform)' == 'x64'">
-		<CompilationTarget>x86_64-pc-windows-msvc</CompilationTarget>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Platform)' == 'x86'">
-		<CompilationTarget>i686-pc-windows-msvc</CompilationTarget>
-	</PropertyGroup>
-	<Target Name="RustBuild" BeforeTargets="BeforeBuild" Inputs="@(Compile);Cargo.toml;Cargo.lock" Outputs="target\$(CompilationTarget)\release\fluent_info_shell_extension.dll">
-		<Exec Command="cargo build -r --target $(CompilationTarget)" />
-	</Target>
+    <ItemGroup>
+        <Compile Include="src\**\*.rs"/>
+    </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Platforms>x64;x86</Platforms>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Platform)' == 'x64'">
+        <CompilationTarget>x86_64-pc-windows-msvc</CompilationTarget>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Platform)' == 'x86'">
+        <CompilationTarget>i686-pc-windows-msvc</CompilationTarget>
+    </PropertyGroup>
+    <Target Name="RustBuild" BeforeTargets="BeforeBuild" Inputs="@(Compile);Cargo.toml;Cargo.lock" Outputs="target\$(CompilationTarget)\release\fluent_info_shell_extension.dll">
+        <Exec Command="cargo build -r --target $(CompilationTarget)"/>
+    </Target>
 </Project>
