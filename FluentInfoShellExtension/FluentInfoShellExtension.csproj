@@ -4,7 +4,7 @@
     </ItemGroup>
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <Platforms>x64;x86</Platforms>
+        <Platforms>x64;x86;ARM64</Platforms>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Platform)' == 'x64'">
         <CompilationTarget>x86_64-pc-windows-msvc</CompilationTarget>
@@ -12,6 +12,9 @@
     <PropertyGroup Condition="'$(Platform)' == 'x86'">
         <CompilationTarget>i686-pc-windows-msvc</CompilationTarget>
     </PropertyGroup>
+	<PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+		<CompilationTarget>aarch64-pc-windows-msvc</CompilationTarget>
+	</PropertyGroup>
     <Target Name="RustBuild" BeforeTargets="BeforeBuild" Inputs="@(Compile);Cargo.toml;Cargo.lock" Outputs="target\$(CompilationTarget)\release\fluent_info_shell_extension.dll">
         <Exec Command="cargo build -r --target $(CompilationTarget)"/>
     </Target>

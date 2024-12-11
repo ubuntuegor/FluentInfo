@@ -1,32 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net9.0-windows10.0.22621.0</TargetFramework>
-        <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
-        <RootNamespace>FluentInfo</RootNamespace>
-        <ApplicationManifest>app.manifest</ApplicationManifest>
-        <Platforms>x86;x64</Platforms>
-        <RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
-        <PublishProfile>win-$(Platform).pubxml</PublishProfile>
-        <Nullable>enable</Nullable>
-        <UseWinUI>true</UseWinUI>
-        <EnableMsixTooling>true</EnableMsixTooling>
-        <PublishReadyToRun>True</PublishReadyToRun>
-        <PublishTrimmed>True</PublishTrimmed>
-        <PublishAot>True</PublishAot>
-        <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
-        <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
-        <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
-        <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
-        <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
-        <GenerateTestArtifacts>False</GenerateTestArtifacts>
-        <AppxBundle>Never</AppxBundle>
-        <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
-        <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
-        <PackageCertificateKeyFile>FluentInfo_TemporaryKey.pfx</PackageCertificateKeyFile>
-        <ApplicationIcon>Assets\fluentinfo.ico</ApplicationIcon>
-    </PropertyGroup>
-    <ItemGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows10.0.22621.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+		<RootNamespace>FluentInfo</RootNamespace>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<Platforms>x86;x64;ARM64</Platforms>
+		<RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+		<PublishProfile>win-$(Platform).pubxml</PublishProfile>
+		<Nullable>enable</Nullable>
+		<UseWinUI>true</UseWinUI>
+		<EnableMsixTooling>true</EnableMsixTooling>
+		<PublishReadyToRun>True</PublishReadyToRun>
+		<PublishTrimmed>True</PublishTrimmed>
+		<PublishAot>True</PublishAot>
+		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+		<GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+		<AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+		<AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+		<GenerateTestArtifacts>False</GenerateTestArtifacts>
+		<AppxBundle>Never</AppxBundle>
+		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+		<GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+		<PackageCertificateKeyFile>FluentInfo_TemporaryKey.pfx</PackageCertificateKeyFile>
+		<ApplicationIcon>Assets\fluentinfo.ico</ApplicationIcon>
+	</PropertyGroup>
+	<ItemGroup>
         <None Remove="Controls\PrettyView\ChipControl.xaml"/>
         <None Remove="Controls\PrettyView\SectionControl.xaml"/>
         <None Remove="Controls\PrettyView\TitleControl.xaml"/>
@@ -35,98 +35,101 @@
         <None Remove="Pages\NoFileOpenPage.xaml"/>
         <None Remove="Pages\PrettyViewPage.xaml"/>
         <None Remove="Pages\TextViewPage.xaml"/>
-    </ItemGroup>
+	</ItemGroup>
 
-    <ItemGroup>
+	<ItemGroup>
         <Content Include="Assets\SplashScreen.scale-200.png"/>
         <Content Include="Assets\LockScreenLogo.scale-200.png"/>
         <Content Include="Assets\Square150x150Logo.scale-200.png"/>
         <Content Include="Assets\Square44x44Logo.scale-200.png"/>
         <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png"/>
         <Content Include="Assets\Wide310x150Logo.scale-200.png"/>
-    </ItemGroup>
+	</ItemGroup>
 
-    <ItemGroup>
+	<ItemGroup>
         <PackageReference Include="CommunityToolkit.WinUI.Controls.Primitives" Version="8.1.240916"/>
         <PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.2.0"/>
         <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.241114003"/>
         <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742"/>
         <PackageReference Include="WinUIEx" Version="2.5.0"/>
         <Manifest Include="$(ApplicationManifest)"/>
-    </ItemGroup>
+	</ItemGroup>
 
-    <PropertyGroup Condition="'$(Platform)' == 'x64'">
-        <CompilationTarget>x86_64-pc-windows-msvc</CompilationTarget>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(Platform)' == 'x86'">
-        <CompilationTarget>i686-pc-windows-msvc</CompilationTarget>
-    </PropertyGroup>
+	<PropertyGroup Condition="'$(Platform)' == 'x64'">
+		<CompilationTarget>x86_64-pc-windows-msvc</CompilationTarget>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Platform)' == 'x86'">
+		<CompilationTarget>i686-pc-windows-msvc</CompilationTarget>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+		<CompilationTarget>aarch64-pc-windows-msvc</CompilationTarget>
+	</PropertyGroup>
 
-    <ItemGroup>
-        <Content Include="..\FluentInfoShellExtension\target\$(CompilationTarget)\release\fluent_info_shell_extension.dll" Link="FluentInfoShellExtension.dll">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
-    </ItemGroup>
+	<ItemGroup>
+		<Content Include="..\FluentInfoShellExtension\target\$(CompilationTarget)\release\fluent_info_shell_extension.dll" Link="FluentInfoShellExtension.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
 
-    <!-- 
+	<!-- 
     Defining the "Msix" ProjectCapability here allows the Single-project MSIX Packaging
     Tools extension to be activated for this project even if the Windows App SDK Nuget
     package has not yet been restored.
   -->
-    <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+	<ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
         <ProjectCapability Include="Msix"/>
-    </ItemGroup>
-    <ItemGroup>
+	</ItemGroup>
+	<ItemGroup>
         <ProjectReference Include="..\FluentInfoCommon\FluentInfoCommon.csproj"/>
         <ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj"/>
-    </ItemGroup>
-    <ItemGroup>
-        <Page Update="Controls\PrettyView\ChipControl.xaml">
-            <Generator>MSBuild:Compile</Generator>
-        </Page>
-    </ItemGroup>
-    <ItemGroup>
-        <Page Update="Controls\PrettyView\SectionControl.xaml">
-            <Generator>MSBuild:Compile</Generator>
-        </Page>
-    </ItemGroup>
-    <ItemGroup>
-        <Page Update="Pages\AboutContentPage.xaml">
-            <Generator>MSBuild:Compile</Generator>
-        </Page>
-    </ItemGroup>
-    <ItemGroup>
-        <Page Update="Pages\FailedPage.xaml">
-            <Generator>MSBuild:Compile</Generator>
-        </Page>
-    </ItemGroup>
-    <ItemGroup>
-        <Page Update="Pages\TextViewPage.xaml">
-            <Generator>MSBuild:Compile</Generator>
-        </Page>
-    </ItemGroup>
-    <ItemGroup>
-        <Page Update="Pages\NoFileOpenPage.xaml">
-            <Generator>MSBuild:Compile</Generator>
-        </Page>
-    </ItemGroup>
-    <ItemGroup>
-        <Page Update="Pages\PrettyViewPage.xaml">
-            <Generator>MSBuild:Compile</Generator>
-        </Page>
-    </ItemGroup>
-    <ItemGroup>
-        <Page Update="Controls\PrettyView\TitleControl.xaml">
-            <Generator>MSBuild:Compile</Generator>
-        </Page>
-    </ItemGroup>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Controls\PrettyView\ChipControl.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Controls\PrettyView\SectionControl.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Pages\AboutContentPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Pages\FailedPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Pages\TextViewPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Pages\NoFileOpenPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Pages\PrettyViewPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Controls\PrettyView\TitleControl.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
 
-    <!-- 
+	<!-- 
     Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution 
     Explorer "Package and Publish" context menu entry to be enabled for this project even if 
     the Windows App SDK Nuget package has not yet been restored.
   -->
-    <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
-        <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
-    </PropertyGroup>
+	<PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+		<HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
+	</PropertyGroup>
 </Project>

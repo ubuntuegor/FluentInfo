@@ -4,13 +4,14 @@
 		<TargetFramework>net9.0-windows</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<Platforms>x64;x86</Platforms>
+		<Platforms>x64;x86;ARM64</Platforms>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<MediaInfoDll Include="source-x64.txt" Platform="x64" />
 		<MediaInfoDll Include="source-x86.txt" Platform="x86" />
+		<MediaInfoDll Include="source-arm64.txt" Platform="ARM64" />
 	</ItemGroup>
 
 	<Target Name="GetMediaInfoDlls" Inputs="@(MediaInfoDll)" Outputs="%(MediaInfoDll.Platform)\MediaInfo.dll" BeforeTargets="Compile">
