@@ -1,6 +1,12 @@
-use std::ptr::null_mut;
+use std::{
+    collections::HashSet,
+    ffi::OsString,
+    os::windows::ffi::{OsStrExt, OsStringExt},
+    path::{Path, PathBuf},
+    ptr::null_mut,
+    sync::LazyLock,
+};
 
-use widestring::{u16str, U16CStr, U16CString, U16Str, U16String};
 use windows::{
     core::*,
     Win32::{
@@ -18,24 +24,42 @@ use windows::{
     },
 };
 
-static mut DLL_INSTANCE: HINSTANCE = HINSTANCE(null_mut());
+static mut DLL_INSTANCE: Option<HINSTANCE> = None;
+static SUPPORTED_EXTENSIONS: LazyLock<HashSet<&str>> = LazyLock::new(|| {
+    HashSet::from([
+        "aiff", "aif", "avi", "m2ts", "mts", "flv", "heif", "heic", "avif", "ts", "mov", "mp4",
+        "m4v", "m4a", "3gpp", "3gp", "qt", "ogg", "opus", "swf", "wma", "wmv", "avc", "h264",
+        "hevc", "h265", "aac", "ac3", "ac4", "amr", "dts", "dtshd", "eac3", "ec3", "flac", "mp1",
+        "mp2", "mp3", "wav", "bmp", "gif", "ico", "jpg", "jpeg", "png", "tif", "tiff", "mkv",
+        "webm", "oga", "ogv",
+    ])
+});
 
-fn get_module_folder() -> U16CString {
-    let mut buf = [0; (MAX_PATH + 1) as usize];
-    unsafe { GetModuleFileNameW(DLL_INSTANCE, &mut buf) };
+fn get_module_folder() -> PathBuf {
+    let mut buf: [u16; 261] = [0; (MAX_PATH + 1) as usize];
+    let len = unsafe { GetModuleFileNameW(DLL_INSTANCE.map(|x| x.into()), &mut buf) as usize };
 
-    if unsafe { GetLastError() } == ERROR_INSUFFICIENT_BUFFER {
-        let mut long_buf = vec![0; 0xFFFF]; // should be always enough
-        unsafe { GetModuleFileNameW(DLL_INSTANCE, &mut long_buf) };
-        unsafe {
-            let _ = PathRemoveFileSpecW(PWSTR::from_raw(long_buf.as_mut_ptr()));
-        };
-        U16CString::from_vec_truncate(long_buf)
+    let path = if unsafe { GetLastError() } == ERROR_INSUFFICIENT_BUFFER {
+        let mut buf = vec![0; 0xFFFF]; // should be always enough
+        let len = unsafe { GetModuleFileNameW(DLL_INSTANCE.map(|x| x.into()), &mut buf) as usize };
+        OsString::from_wide(&buf[..len])
     } else {
-        unsafe {
-            let _ = PathRemoveFileSpecW(PWSTR::from_raw(buf.as_mut_ptr()));
-        };
-        U16CString::from_ustr_truncate(U16Str::from_slice(&buf))
+        OsString::from_wide(&buf[..len])
+    };
+
+    Path::new(&path).parent().unwrap().to_path_buf()
+}
+
+trait ToWideWithNul {
+    fn to_wide_with_nul(&self) -> Vec<u16>;
+}
+
+impl<T> ToWideWithNul for T
+where
+    T: ?Sized + OsStrExt,
+{
+    fn to_wide_with_nul(&self) -> Vec<u16> {
+        self.encode_wide().chain(Some(0)).collect()
     }
 }
 
@@ -43,19 +67,20 @@ fn get_module_folder() -> U16CString {
 struct COpenFluentInfo;
 
 impl IExplorerCommand_Impl for COpenFluentInfo_Impl {
-    fn GetTitle(&self, _psiitemarray: Option<&IShellItemArray>) -> Result<PWSTR> {
+    fn GetTitle(&self, _psiitemarray: Ref<IShellItemArray>) -> Result<PWSTR> {
         unsafe { SHStrDupW(w!("FluentInfo")) }
     }
 
-    fn GetIcon(&self, _psiitemarray: Option<&IShellItemArray>) -> Result<PWSTR> {
-        let mut path = get_module_folder().into_ustring();
-        path += u16str!("\\Assets\\fluentinfo.ico");
+    fn GetIcon(&self, _psiitemarray: Ref<IShellItemArray>) -> Result<PWSTR> {
+        let mut path = get_module_folder();
+        path.push("Assets");
+        path.push("fluentinfo.ico");
 
-        let path = unsafe { U16CString::from_ustr_unchecked(path) };
+        let path = path.as_os_str().to_wide_with_nul();
         unsafe { SHStrDupW(PCWSTR::from_raw(path.as_ptr())) }
     }
 
-    fn GetToolTip(&self, _psiitemarray: Option<&IShellItemArray>) -> Result<PWSTR> {
+    fn GetToolTip(&self, _psiitemarray: Ref<IShellItemArray>) -> Result<PWSTR> {
         Err(E_NOTIMPL.into())
     }
 
@@ -63,49 +88,59 @@ impl IExplorerCommand_Impl for COpenFluentInfo_Impl {
         Ok(GUID::zeroed())
     }
 
-    fn GetState(&self, psiitemarray: Option<&IShellItemArray>, _foktobeslow: BOOL) -> Result<u32> {
-        let array = psiitemarray.ok_or(E_INVALIDARG)?;
+    fn GetState(&self, psiitemarray: Ref<IShellItemArray>, _foktobeslow: BOOL) -> Result<u32> {
+        let array = psiitemarray.ok()?;
         let count = unsafe { array.GetCount() }?;
 
         if count == 0 || count > 1 {
             return Ok(ECS_HIDDEN.0 as u32);
         }
 
-        Ok(ECS_ENABLED.0 as u32)
+        let item = unsafe { array.GetItemAt(0) }?;
+        let filepath = unsafe { item.GetDisplayName(SIGDN_FILESYSPATH) }?;
+        let my_filepath = OsString::from_wide(unsafe { filepath.as_wide() });
+        unsafe { CoTaskMemFree(Some(filepath.as_ptr() as *const core::ffi::c_void)) };
+
+        let extension = Path::new(&my_filepath).extension().ok_or(E_FAIL)?;
+        if SUPPORTED_EXTENSIONS.contains(extension.to_str().unwrap()) {
+            Ok(ECS_ENABLED.0 as u32)
+        } else {
+            Ok(ECS_HIDDEN.0 as u32)
+        }
     }
 
-    fn Invoke(
-        &self,
-        psiitemarray: Option<&IShellItemArray>,
-        _pbc: Option<&IBindCtx>,
-    ) -> Result<()> {
-        let array = psiitemarray.ok_or(E_INVALIDARG)?;
+    fn Invoke(&self, psiitemarray: Ref<IShellItemArray>, _pbc: Ref<IBindCtx>) -> Result<()> {
+        let array = psiitemarray.ok()?;
         let item = unsafe { array.GetItemAt(0) }?;
         let filepath = unsafe { item.GetDisplayName(SIGDN_FILESYSPATH) }?;
 
-        let exe_path = get_module_folder().into_ustring() + u16str!("\\FluentInfo.exe");
-        let mut cmd_line: U16String = u16str!("\"").into();
+        let mut exe_path = get_module_folder();
+        exe_path.push("FluentInfo.exe");
+        let mut cmd_line = OsString::new();
+        cmd_line.push("\"");
         cmd_line.push(&exe_path);
-        cmd_line.push(u16str!("\" \""));
-        cmd_line.push(unsafe { U16CStr::from_ptr_str(filepath.as_ptr()) });
-        cmd_line.push(u16str!("\""));
+        cmd_line.push("\" \"");
+        cmd_line.push(OsString::from_wide(unsafe { filepath.as_wide() }));
+        cmd_line.push("\"");
 
         unsafe { CoTaskMemFree(Some(filepath.as_ptr() as *const core::ffi::c_void)) };
 
-        let mut startup_info = STARTUPINFOW::default();
-        startup_info.cb = size_of::<STARTUPINFOW>() as u32;
-        startup_info.dwFlags = STARTF_USESHOWWINDOW;
-        startup_info.wShowWindow = SW_SHOWNORMAL.0 as u16;
+        let startup_info = STARTUPINFOW {
+            cb: size_of::<STARTUPINFOW>() as u32,
+            dwFlags: STARTF_USESHOWWINDOW,
+            wShowWindow: SW_SHOWNORMAL.0 as u16,
+            ..Default::default()
+        };
 
         let mut process_information = PROCESS_INFORMATION::default();
 
-        let exe_path = unsafe { U16CString::from_ustr_unchecked(exe_path) };
-        let mut cmd_line = unsafe { U16CString::from_ustr_unchecked(cmd_line) };
+        let exe_path = exe_path.as_os_str().to_wide_with_nul();
+        let mut cmd_line = cmd_line.to_wide_with_nul();
 
         unsafe {
             CreateProcessW(
                 PCWSTR::from_raw(exe_path.as_ptr()),
-                PWSTR::from_raw(cmd_line.as_mut_ptr()),
+                Some(PWSTR::from_raw(cmd_line.as_mut_ptr())),
                 None,
                 None,
                 false,
@@ -138,7 +173,7 @@ struct CClassFactory;
 impl IClassFactory_Impl for CClassFactory_Impl {
     fn CreateInstance(
         &self,
-        punkouter: Option<&IUnknown>,
+        punkouter: Ref<IUnknown>,
         riid: *const GUID,
         ppvobject: *mut *mut core::ffi::c_void,
     ) -> Result<()> {
@@ -162,7 +197,7 @@ extern "system" fn DllMain(
     _lpvreserved: *mut core::ffi::c_void,
 ) -> bool {
     if fdwreason == DLL_PROCESS_ATTACH {
-        unsafe { DLL_INSTANCE = hinstdll };
+        unsafe { DLL_INSTANCE = Some(hinstdll) };
     }
 
     true
