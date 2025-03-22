@@ -7,10 +7,10 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-windows-core = "0.60"
+windows-core = "0.61"
 
 [dependencies.windows]
-version = "0.60"
+version = "0.61"
 features = [
     "Win32_System_Com",
     "Win32_UI_Shell",
