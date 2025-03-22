@@ -11,22 +11,22 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="coverlet.collector" Version="6.0.2">
+        <PackageReference Include="coverlet.collector" Version="6.0.4">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0"/>
-        <PackageReference Include="MSTest.TestAdapter" Version="3.6.3"/>
-        <PackageReference Include="MSTest.TestFramework" Version="3.6.3"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+        <PackageReference Include="MSTest.TestAdapter" Version="3.8.3" />
+        <PackageReference Include="MSTest.TestFramework" Version="3.8.3" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\FluentInfoCommon\FluentInfoCommon.csproj"/>
-        <ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj"/>
+        <ProjectReference Include="..\FluentInfoCommon\FluentInfoCommon.csproj" />
+        <ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting"/>
+        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
     </ItemGroup>
 
     <ItemGroup>

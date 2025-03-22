@@ -27,32 +27,32 @@
 		<ApplicationIcon>Assets\fluentinfo.ico</ApplicationIcon>
 	</PropertyGroup>
 	<ItemGroup>
-        <None Remove="Controls\PrettyView\ChipControl.xaml"/>
-        <None Remove="Controls\PrettyView\SectionControl.xaml"/>
-        <None Remove="Controls\PrettyView\TitleControl.xaml"/>
-        <None Remove="Pages\AboutContentPage.xaml"/>
-        <None Remove="Pages\FailedPage.xaml"/>
-        <None Remove="Pages\NoFileOpenPage.xaml"/>
-        <None Remove="Pages\PrettyViewPage.xaml"/>
-        <None Remove="Pages\TextViewPage.xaml"/>
+        <None Remove="Controls\PrettyView\ChipControl.xaml" />
+        <None Remove="Controls\PrettyView\SectionControl.xaml" />
+        <None Remove="Controls\PrettyView\TitleControl.xaml" />
+        <None Remove="Pages\AboutContentPage.xaml" />
+        <None Remove="Pages\FailedPage.xaml" />
+        <None Remove="Pages\NoFileOpenPage.xaml" />
+        <None Remove="Pages\PrettyViewPage.xaml" />
+        <None Remove="Pages\TextViewPage.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
-        <Content Include="Assets\SplashScreen.scale-200.png"/>
-        <Content Include="Assets\LockScreenLogo.scale-200.png"/>
-        <Content Include="Assets\Square150x150Logo.scale-200.png"/>
-        <Content Include="Assets\Square44x44Logo.scale-200.png"/>
-        <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png"/>
-        <Content Include="Assets\Wide310x150Logo.scale-200.png"/>
+        <Content Include="Assets\SplashScreen.scale-200.png" />
+        <Content Include="Assets\LockScreenLogo.scale-200.png" />
+        <Content Include="Assets\Square150x150Logo.scale-200.png" />
+        <Content Include="Assets\Square44x44Logo.scale-200.png" />
+        <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+        <Content Include="Assets\Wide310x150Logo.scale-200.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-        <PackageReference Include="CommunityToolkit.WinUI.Controls.Primitives" Version="8.1.240916"/>
-        <PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.2.0"/>
-        <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.241114003"/>
-        <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742"/>
-        <PackageReference Include="WinUIEx" Version="2.5.0"/>
-        <Manifest Include="$(ApplicationManifest)"/>
+        <PackageReference Include="CommunityToolkit.WinUI.Controls.Primitives" Version="8.1.240916" />
+        <PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.2.0" />
+        <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250310001" />
+        <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
+        <PackageReference Include="WinUIEx" Version="2.5.1" />
+        <Manifest Include="$(ApplicationManifest)" />
 	</ItemGroup>
 
 	<PropertyGroup Condition="'$(Platform)' == 'x64'">
@@ -77,11 +77,11 @@
     package has not yet been restored.
   -->
 	<ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
-        <ProjectCapability Include="Msix"/>
+        <ProjectCapability Include="Msix" />
 	</ItemGroup>
 	<ItemGroup>
-        <ProjectReference Include="..\FluentInfoCommon\FluentInfoCommon.csproj"/>
-        <ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj"/>
+        <ProjectReference Include="..\FluentInfoCommon\FluentInfoCommon.csproj" />
+        <ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj" />
 	</ItemGroup>
 	<ItemGroup>
 		<Page Update="Controls\PrettyView\ChipControl.xaml">
