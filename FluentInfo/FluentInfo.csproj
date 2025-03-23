@@ -25,6 +25,7 @@
 		<GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
 		<PackageCertificateKeyFile>FluentInfo_TemporaryKey.pfx</PackageCertificateKeyFile>
 		<ApplicationIcon>Assets\fluentinfo.ico</ApplicationIcon>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 	<ItemGroup>
         <None Remove="Controls\PrettyView\ChipControl.xaml" />
