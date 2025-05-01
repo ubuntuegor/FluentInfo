@@ -102,7 +102,8 @@ impl IExplorerCommand_Impl for COpenFluentInfo_Impl {
         unsafe { CoTaskMemFree(Some(filepath.as_ptr() as *const core::ffi::c_void)) };
 
         let extension = Path::new(&my_filepath).extension().ok_or(E_FAIL)?;
-        if SUPPORTED_EXTENSIONS.contains(extension.to_str().unwrap()) {
+        let extension_lowercase = extension.to_str().ok_or(E_FAIL)?.to_lowercase();
+        if SUPPORTED_EXTENSIONS.contains(extension_lowercase.as_str()) {
             Ok(ECS_ENABLED.0 as u32)
         } else {
             Ok(ECS_HIDDEN.0 as u32)
