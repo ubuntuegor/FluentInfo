@@ -31,7 +31,7 @@ static SUPPORTED_EXTENSIONS: LazyLock<HashSet<&str>> = LazyLock::new(|| {
         "m4v", "m4a", "3gpp", "3gp", "qt", "ogg", "opus", "swf", "wma", "wmv", "avc", "h264",
         "hevc", "h265", "aac", "ac3", "ac4", "amr", "dts", "dtshd", "eac3", "ec3", "flac", "mp1",
         "mp2", "mp3", "wav", "bmp", "gif", "ico", "jpg", "jpeg", "png", "tif", "tiff", "mkv",
-        "webm", "oga", "ogv",
+        "webm", "webp", "oga", "ogv",
     ])
 });
 
