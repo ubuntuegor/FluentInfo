@@ -61,19 +61,30 @@
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
             </MenuBarItem>
+            <MenuBarItem Title="Edit">
+                <MenuFlyoutItem Text="Copy text" Click="CopyText" IsEnabled="{x:Bind IsFileOpened, Mode=OneWay}">
+                    <MenuFlyoutItem.Icon>
+                        <FontIcon Glyph="&#xE8C8;" />
+                    </MenuFlyoutItem.Icon>
+                    <MenuFlyoutItem.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control,Shift" Key="C" />
+                    </MenuFlyoutItem.KeyboardAccelerators>
+                </MenuFlyoutItem>
+            </MenuBarItem>
             <MenuBarItem Title="View">
                 <RadioMenuFlyoutItem
                     Text="Pretty"
-                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'PRETTY_VIEW')}"
+                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'PRETTY_VIEW'), Mode=OneWay}"
                     Click="SelectPrettyView" />
                 <RadioMenuFlyoutItem
                     Text="Text"
-                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'TEXT_VIEW')}"
+                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'TEXT_VIEW'), Mode=OneWay}"
                     Click="SelectTextView" />
                 <MenuFlyoutSeparator />
                 <ToggleMenuFlyoutItem
                     x:Name="WrapTextOptionButton"
                     Text="Wrap text"
+                    IsEnabled="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'TEXT_VIEW'), Mode=OneWay}"
                     IsChecked="{x:Bind settings.TextWrapEnabled, Mode=TwoWay}" />
             </MenuBarItem>
             <MenuBarItem Title="Help">

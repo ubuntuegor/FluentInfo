@@ -4,6 +4,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Animation;
 using System;
+using System.ComponentModel;
 using System.IO;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
@@ -12,12 +13,27 @@ using WinUIEx;
 
 namespace FluentInfo;
 
-public sealed partial class MainWindow
+public sealed partial class MainWindow : INotifyPropertyChanged
 {
     private readonly string appName = (Application.Current.Resources["AppTitleName"] as string)!;
     private readonly MediaInfo mediaInfo = new();
     private readonly SettingsHolder settings = SettingsHolder.Instance;
-    private bool fileOpened;
+
+    public event PropertyChangedEventHandler? PropertyChanged;
+
+    private bool _isFileOpened = false;
+    private bool IsFileOpened
+    {
+        get => _isFileOpened;
+        set
+        {
+            if (_isFileOpened != value)
+            {
+                _isFileOpened = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsFileOpened)));
+            }
+        }
+    }
 
     public MainWindow(string[] cmdargs)
     {
@@ -41,8 +57,6 @@ public sealed partial class MainWindow
         }
 
         settings.PropertyChanged += Settings_PropertyChanged;
-        ReactToSettings();
-
         SizeChanged += MainWindow_SizeChanged;
     }
 
@@ -52,19 +66,12 @@ public sealed partial class MainWindow
         settings.WindowHeight = args.Size.Height;
     }
 
-    private void Settings_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+    private void Settings_PropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
-        ReactToSettings();
-
         if (e.PropertyName == nameof(settings.SelectedView))
         {
             RefreshPage();
         }
-    }
-
-    private void ReactToSettings()
-    {
-        WrapTextOptionButton.IsEnabled = settings.SelectedView == SelectedView.TEXT_VIEW;
     }
 
     private async void OpenFilePicker(object sender, RoutedEventArgs e)
@@ -85,7 +92,7 @@ public sealed partial class MainWindow
 
     private void RefreshPage()
     {
-        if (!fileOpened) return;
+        if (!IsFileOpened) return;
 
         var selectedPage = Converters.SelectedViewToPage(settings.SelectedView);
         NavigationFrame.Navigate(selectedPage, mediaInfo, new EntranceNavigationTransitionInfo());
@@ -100,12 +107,12 @@ public sealed partial class MainWindow
 
         if (success)
         {
-            fileOpened = true;
+            IsFileOpened = true;
             RefreshPage();
         }
         else
         {
-            fileOpened = false;
+            IsFileOpened = false;
             NavigationFrame.Navigate(typeof(FailedPage), path, new EntranceNavigationTransitionInfo());
         }
     }
@@ -181,5 +188,15 @@ public sealed partial class MainWindow
     private void SelectTextView(object sender, RoutedEventArgs e)
     {
         settings.SelectedView = SelectedView.TEXT_VIEW;
+    }
+
+    private void CopyText(object sender, RoutedEventArgs e)
+    {
+        mediaInfo.Option("Inform", "Text");
+        var info = mediaInfo.Inform()!;
+
+        var package = new DataPackage();
+        package.SetText(info);
+        Clipboard.SetContent(package);
     }
 }

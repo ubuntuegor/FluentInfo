@@ -12,7 +12,7 @@ internal enum SelectedView
 
 internal partial class SettingsHolder : INotifyPropertyChanged
 {
-    public event PropertyChangedEventHandler? PropertyChanged = delegate { };
+    public event PropertyChangedEventHandler? PropertyChanged;
 
     private readonly Windows.Storage.ApplicationDataContainer localSettings =
         Windows.Storage.ApplicationData.Current.LocalSettings;
@@ -71,7 +71,7 @@ internal partial class SettingsHolder : INotifyPropertyChanged
 
     private void OnPropertyChanged([CallerMemberName] string? propertyName = null)
     {
-        PropertyChanged!.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 
     private static readonly Lazy<SettingsHolder> LazyInstance = new(() => new SettingsHolder());
