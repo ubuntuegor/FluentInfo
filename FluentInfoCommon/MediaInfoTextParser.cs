@@ -6,13 +6,8 @@ public static class MediaInfoTextParser
 
     private static string? GetSubtitle(SectionType type, OrderedProperties properties)
     {
-        if (type != SectionType.GENERAL)
-        {
-            return properties.Get("Title");
-        }
-
         var performer = properties.Get("Performer") ?? properties.Get("ARTIST");
-        var title = properties.Get("Track name") ?? properties.Get("Movie name");
+        var title = properties.Get("Title");
 
         if (performer != null && title != null)
         {
