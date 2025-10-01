@@ -6,6 +6,7 @@ using Microsoft.UI.Xaml.Media.Animation;
 using System;
 using System.ComponentModel;
 using System.IO;
+using System.Threading.Tasks;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
 using Windows.Storage.Pickers;
@@ -190,7 +191,7 @@ public sealed partial class MainWindow : INotifyPropertyChanged
         settings.SelectedView = SelectedView.TEXT_VIEW;
     }
 
-    private void CopyText(object sender, RoutedEventArgs e)
+    private async void CopyText(object sender, RoutedEventArgs e)
     {
         mediaInfo.Option("Inform", "Text");
         var info = mediaInfo.Inform()!;
@@ -198,5 +199,12 @@ public sealed partial class MainWindow : INotifyPropertyChanged
         var package = new DataPackage();
         package.SetText(info);
         Clipboard.SetContent(package);
+
+        if (!PopupInfoBar.IsOpen)
+        {
+            PopupInfoBar.IsOpen = true;
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            PopupInfoBar.IsOpen = false;
+        }
     }
 }

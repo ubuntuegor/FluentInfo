@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 
 <winex:WindowEx
     x:Class="FluentInfo.MainWindow"
-    xmlns:winex="using:WinUIEx"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:FluentInfo"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:FluentInfo"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
+    xmlns:winex="using:WinUIEx"
     Title="{StaticResource AppTitleName}"
     MinWidth="300"
-    MinHeight="200">
+    MinHeight="200"
+    mc:Ignorable="d">
     <Window.SystemBackdrop>
         <MicaBackdrop />
     </Window.SystemBackdrop>
@@ -27,75 +27,97 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Border
-            x:Name="AppTitleBar"
-            Height="32">
+        <Border x:Name="AppTitleBar" Height="32">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <Image Height="16" Margin="16,0" VerticalAlignment="Center"
-                       Source="ms-appx:///Assets/Square44x44Logo.targetsize-32.png" />
+                <Image
+                    Height="16"
+                    Margin="16,0"
+                    VerticalAlignment="Center"
+                    Source="ms-appx:///Assets/Square44x44Logo.targetsize-32.png" />
                 <TextBlock
                     x:Name="TitleTextBlock"
                     Grid.Column="1"
-                    Text="{StaticResource AppTitleName}"
-                    Style="{StaticResource CaptionTextBlockStyle}"
-                    TextWrapping="NoWrap"
-                    TextTrimming="CharacterEllipsis"
+                    Margin="0,0,140,0"
                     VerticalAlignment="Center"
-                    Margin="0,0,140,0" />
+                    Style="{StaticResource CaptionTextBlockStyle}"
+                    Text="{StaticResource AppTitleName}"
+                    TextTrimming="CharacterEllipsis"
+                    TextWrapping="NoWrap" />
             </Grid>
         </Border>
 
-        <MenuBar Grid.Row="1">
+        <MenuBar x:Name="MyMenuBar" Grid.Row="1">
             <MenuBarItem Title="File">
-                <MenuFlyoutItem Text="Open" Click="OpenFilePicker">
+                <MenuFlyoutItem Click="OpenFilePicker" Text="Open">
                     <MenuFlyoutItem.Icon>
                         <FontIcon Glyph="&#xE838;" />
                     </MenuFlyoutItem.Icon>
                     <MenuFlyoutItem.KeyboardAccelerators>
-                        <KeyboardAccelerator Modifiers="Control" Key="O" />
+                        <KeyboardAccelerator Key="O" Modifiers="Control" />
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
             </MenuBarItem>
             <MenuBarItem Title="Edit">
-                <MenuFlyoutItem Text="Copy text" Click="CopyText" IsEnabled="{x:Bind IsFileOpened, Mode=OneWay}">
+                <MenuFlyoutItem
+                    Click="CopyText"
+                    IsEnabled="{x:Bind IsFileOpened, Mode=OneWay}"
+                    Text="Copy text">
                     <MenuFlyoutItem.Icon>
                         <FontIcon Glyph="&#xE8C8;" />
                     </MenuFlyoutItem.Icon>
                     <MenuFlyoutItem.KeyboardAccelerators>
-                        <KeyboardAccelerator Modifiers="Control,Shift" Key="C" />
+                        <KeyboardAccelerator Key="C" Modifiers="Control,Shift" />
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
             </MenuBarItem>
             <MenuBarItem Title="View">
                 <RadioMenuFlyoutItem
-                    Text="Pretty"
+                    Click="SelectPrettyView"
                     IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'PRETTY_VIEW'), Mode=OneWay}"
-                    Click="SelectPrettyView" />
+                    Text="Pretty" />
                 <RadioMenuFlyoutItem
-                    Text="Text"
+                    Click="SelectTextView"
                     IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'TEXT_VIEW'), Mode=OneWay}"
-                    Click="SelectTextView" />
+                    Text="Text" />
                 <MenuFlyoutSeparator />
                 <ToggleMenuFlyoutItem
                     x:Name="WrapTextOptionButton"
-                    Text="Wrap text"
+                    IsChecked="{x:Bind settings.TextWrapEnabled, Mode=TwoWay}"
                     IsEnabled="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'TEXT_VIEW'), Mode=OneWay}"
-                    IsChecked="{x:Bind settings.TextWrapEnabled, Mode=TwoWay}" />
+                    Text="Wrap text" />
             </MenuBarItem>
             <MenuBarItem Title="Help">
-                <MenuFlyoutItem Text="About" Click="OpenAboutWindow"></MenuFlyoutItem>
+                <MenuFlyoutItem Click="OpenAboutWindow" Text="About" />
             </MenuBarItem>
         </MenuBar>
 
         <Frame
             x:Name="NavigationFrame"
-            IsNavigationStackEnabled="False"
+            Grid.Row="2"
             Background="Transparent"
-            Grid.Row="2" />
+            IsNavigationStackEnabled="False" />
+
+        <Popup
+            x:Name="PopupInfoBar"
+            DesiredPlacement="Bottom"
+            PlacementTarget="{x:Bind MyMenuBar}"
+            VerticalOffset="8">
+            <Popup.ChildTransitions>
+                <TransitionCollection>
+                    <PopupThemeTransition />
+                </TransitionCollection>
+            </Popup.ChildTransitions>
+
+            <InfoBar
+                IsClosable="False"
+                IsOpen="True"
+                Message="Copied as text"
+                Severity="Success" />
+        </Popup>
     </Grid>
 </winex:WindowEx>
