@@ -1,1 +1,1 @@
-https://mediaarea.net/download/binary/libmediainfo0/25.07/MediaInfo_DLL_25.07_Windows_i386_WithoutInstaller.zip
+https://mediaarea.net/download/binary/libmediainfo0/25.09/MediaInfo_DLL_25.09_Windows_i386_WithoutInstaller.zip
