@@ -1,7 +1,6 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using Windows.Storage;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace FluentInfo;
 
@@ -11,7 +10,7 @@ internal enum SelectedView
     PrettyView
 }
 
-internal partial class SettingsHolder : INotifyPropertyChanged
+internal partial class SettingsHolder : ObservableObject
 {
     private const string TextWrapEnabledProperty = "textWrapEnabledProperty";
     private const string SelectedViewProperty = "selectedViewProperty";
@@ -23,58 +22,41 @@ internal partial class SettingsHolder : INotifyPropertyChanged
     private readonly ApplicationDataContainer _localSettings =
         ApplicationData.Current.LocalSettings;
 
+    [ObservableProperty] private SelectedView _selectedView = SelectedView.PrettyView;
+
+    [ObservableProperty] private bool _textWrapEnabled;
+
+    [ObservableProperty] private double _windowHeight = 600;
+
+    [ObservableProperty] private double _windowWidth = 600;
+
     private SettingsHolder()
     {
-    }
-
-    public bool TextWrapEnabled
-    {
-        get => _localSettings.Values[TextWrapEnabledProperty] as bool? ?? false;
-        set
-        {
-            _localSettings.Values[TextWrapEnabledProperty] = value;
-            OnPropertyChanged();
-        }
-    }
-
-    public SelectedView SelectedView
-    {
-        get =>
-            _localSettings.Values[SelectedViewProperty] is int selectedView
-                ? (SelectedView)selectedView
-                : SelectedView.PrettyView;
-        set
-        {
-            _localSettings.Values[SelectedViewProperty] = (int)value;
-            OnPropertyChanged();
-        }
-    }
-
-    public double WindowWidth
-    {
-        get => _localSettings.Values[WindowWidthProperty] as double? ?? 600;
-        set
-        {
-            _localSettings.Values[WindowWidthProperty] = value;
-            OnPropertyChanged();
-        }
-    }
-
-    public double WindowHeight
-    {
-        get => _localSettings.Values[WindowHeightProperty] as double? ?? 600;
-        set
-        {
-            _localSettings.Values[WindowHeightProperty] = value;
-            OnPropertyChanged();
-        }
+        if (_localSettings.Values[SelectedViewProperty] is int selectedView) _selectedView = (SelectedView)selectedView;
+        if (_localSettings.Values[TextWrapEnabledProperty] is bool textWrapEnabled) _textWrapEnabled = textWrapEnabled;
+        if (_localSettings.Values[WindowHeightProperty] is double windowHeight) _windowHeight = windowHeight;
+        if (_localSettings.Values[WindowWidthProperty] is double windowWidth) _windowWidth = windowWidth;
     }
 
     public static SettingsHolder Instance => LazyInstance.Value;
-    public event PropertyChangedEventHandler? PropertyChanged;
 
-    private void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+    partial void OnSelectedViewChanged(SelectedView value)
     {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        _localSettings.Values[SelectedViewProperty] = (int)value;
+    }
+
+    partial void OnTextWrapEnabledChanged(bool value)
+    {
+        _localSettings.Values[TextWrapEnabledProperty] = value;
+    }
+
+    partial void OnWindowWidthChanged(double value)
+    {
+        _localSettings.Values[WindowWidthProperty] = value;
+    }
+
+    partial void OnWindowHeightChanged(double value)
+    {
+        _localSettings.Values[WindowHeightProperty] = value;
     }
 }
