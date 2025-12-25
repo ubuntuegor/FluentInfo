@@ -1,7 +1,7 @@
-﻿using FluentInfo.Pages;
+﻿using System;
+using FluentInfo.Pages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using System;
 
 namespace FluentInfo;
 
@@ -22,17 +22,12 @@ internal static class Converters
         return value ? ScrollBarVisibility.Disabled : ScrollBarVisibility.Auto;
     }
 
-    public static bool SelectedViewToBool(SelectedView selectedView, string name)
-    {
-        return selectedView == Enum.Parse<SelectedView>(name);
-    }
-
     public static Type SelectedViewToPage(SelectedView selectedView)
     {
         return selectedView switch
         {
-            SelectedView.TEXT_VIEW => typeof(TextViewPage),
-            SelectedView.PRETTY_VIEW => typeof(PrettyViewPage),
+            SelectedView.TextView => typeof(TextViewPage),
+            SelectedView.PrettyView => typeof(PrettyViewPage),
             _ => typeof(FailedPage)
         };
     }

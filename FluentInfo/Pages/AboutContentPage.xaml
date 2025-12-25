@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 
 <Page
     x:Class="FluentInfo.Pages.AboutContentPage"
@@ -16,10 +16,12 @@
             </StackPanel>
         </Button>
         <TextBlock TextWrapping="Wrap">
-            This product uses
+            <Run>This product uses</Run>
             <Hyperlink NavigateUri="http://mediaarea.net/MediaInfo">MediaInfo</Hyperlink>
-            <Run x:Name="VersionText"></Run>
-            library,<LineBreak />Copyright (c) 2002-2020 MediaArea.net SARL.
+            <Run x:Name="VersionText" />
+            <Run>library,</Run>
+            <LineBreak />
+            <Run>Copyright (c) 2002-2020 MediaArea.net SARL.</Run>
         </TextBlock>
     </StackPanel>
 </Page>

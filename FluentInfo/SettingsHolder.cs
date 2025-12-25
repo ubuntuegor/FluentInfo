@@ -1,26 +1,27 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using Windows.Storage;
 
 namespace FluentInfo;
 
 internal enum SelectedView
 {
-    TEXT_VIEW,
-    PRETTY_VIEW
+    TextView,
+    PrettyView
 }
 
 internal partial class SettingsHolder : INotifyPropertyChanged
 {
-    public event PropertyChangedEventHandler? PropertyChanged;
-
-    private readonly Windows.Storage.ApplicationDataContainer localSettings =
-        Windows.Storage.ApplicationData.Current.LocalSettings;
-
     private const string TextWrapEnabledProperty = "textWrapEnabledProperty";
     private const string SelectedViewProperty = "selectedViewProperty";
     private const string WindowWidthProperty = "windowWidthProperty";
     private const string WindowHeightProperty = "windowHeightProperty";
+
+    private static readonly Lazy<SettingsHolder> LazyInstance = new(() => new SettingsHolder());
+
+    private readonly ApplicationDataContainer _localSettings =
+        ApplicationData.Current.LocalSettings;
 
     private SettingsHolder()
     {
@@ -28,10 +29,10 @@ internal partial class SettingsHolder : INotifyPropertyChanged
 
     public bool TextWrapEnabled
     {
-        get => localSettings.Values[TextWrapEnabledProperty] as bool? ?? false;
+        get => _localSettings.Values[TextWrapEnabledProperty] as bool? ?? false;
         set
         {
-            localSettings.Values[TextWrapEnabledProperty] = value;
+            _localSettings.Values[TextWrapEnabledProperty] = value;
             OnPropertyChanged();
         }
     }
@@ -39,41 +40,41 @@ internal partial class SettingsHolder : INotifyPropertyChanged
     public SelectedView SelectedView
     {
         get =>
-            localSettings.Values[SelectedViewProperty] is int selectedView
+            _localSettings.Values[SelectedViewProperty] is int selectedView
                 ? (SelectedView)selectedView
-                : SelectedView.PRETTY_VIEW;
+                : SelectedView.PrettyView;
         set
         {
-            localSettings.Values[SelectedViewProperty] = (int)value;
+            _localSettings.Values[SelectedViewProperty] = (int)value;
             OnPropertyChanged();
         }
     }
 
     public double WindowWidth
     {
-        get => localSettings.Values[WindowWidthProperty] as double? ?? 600;
+        get => _localSettings.Values[WindowWidthProperty] as double? ?? 600;
         set
         {
-            localSettings.Values[WindowWidthProperty] = value;
+            _localSettings.Values[WindowWidthProperty] = value;
             OnPropertyChanged();
         }
     }
 
     public double WindowHeight
     {
-        get => localSettings.Values[WindowHeightProperty] as double? ?? 600;
+        get => _localSettings.Values[WindowHeightProperty] as double? ?? 600;
         set
         {
-            localSettings.Values[WindowHeightProperty] = value;
+            _localSettings.Values[WindowHeightProperty] = value;
             OnPropertyChanged();
         }
     }
+
+    public static SettingsHolder Instance => LazyInstance.Value;
+    public event PropertyChangedEventHandler? PropertyChanged;
 
     private void OnPropertyChanged([CallerMemberName] string? propertyName = null)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
-
-    private static readonly Lazy<SettingsHolder> LazyInstance = new(() => new SettingsHolder());
-    public static SettingsHolder Instance => LazyInstance.Value;
 }

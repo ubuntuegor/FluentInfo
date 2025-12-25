@@ -1,8 +1,3 @@
-using FluentInfo.Pages;
-using MediaInfoLib;
-using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Media.Animation;
 using System;
 using System.ComponentModel;
 using System.IO;
@@ -10,31 +5,23 @@ using System.Threading.Tasks;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
 using Windows.Storage.Pickers;
+using FluentInfo.Pages;
+using MediaInfoLib;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media.Animation;
+using WinRT.Interop;
 using WinUIEx;
 
 namespace FluentInfo;
 
 public sealed partial class MainWindow : INotifyPropertyChanged
 {
-    private readonly string appName = (Application.Current.Resources["AppTitleName"] as string)!;
-    private readonly MediaInfo mediaInfo = new();
-    private readonly SettingsHolder settings = SettingsHolder.Instance;
+    private readonly string _appName = (Application.Current.Resources["AppTitleName"] as string)!;
+    private readonly MediaInfo _mediaInfo = new();
+    private readonly SettingsHolder _settings = SettingsHolder.Instance;
 
-    public event PropertyChangedEventHandler? PropertyChanged;
-
-    private bool _isFileOpened = false;
-    private bool IsFileOpened
-    {
-        get => _isFileOpened;
-        set
-        {
-            if (_isFileOpened != value)
-            {
-                _isFileOpened = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsFileOpened)));
-            }
-        }
-    }
+    private bool _isFileOpened;
 
     public MainWindow(string[] cmdargs)
     {
@@ -42,10 +29,10 @@ public sealed partial class MainWindow : INotifyPropertyChanged
         ExtendsContentIntoTitleBar = true;
         SetTitleBar(AppTitleBar);
         this.SetIcon(@"Assets\fluentinfo.ico");
-        SetTitle(appName);
+        SetTitle(_appName);
 
-        Width = settings.WindowWidth;
-        Height = settings.WindowHeight;
+        Width = _settings.WindowWidth;
+        Height = _settings.WindowHeight;
 
         if (cmdargs.Length > 1)
         {
@@ -57,54 +44,61 @@ public sealed partial class MainWindow : INotifyPropertyChanged
             NavigationFrame.Navigate(typeof(NoFileOpenPage));
         }
 
-        settings.PropertyChanged += Settings_PropertyChanged;
+        _settings.PropertyChanged += Settings_PropertyChanged;
         SizeChanged += MainWindow_SizeChanged;
     }
 
+    private bool IsFileOpened
+    {
+        get => _isFileOpened;
+        set
+        {
+            if (_isFileOpened == value) return;
+            _isFileOpened = value;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsFileOpened)));
+        }
+    }
+
+    public event PropertyChangedEventHandler? PropertyChanged;
+
     private void MainWindow_SizeChanged(object sender, WindowSizeChangedEventArgs args)
     {
-        settings.WindowWidth = args.Size.Width;
-        settings.WindowHeight = args.Size.Height;
+        _settings.WindowWidth = args.Size.Width;
+        _settings.WindowHeight = args.Size.Height;
     }
 
     private void Settings_PropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
-        if (e.PropertyName == nameof(settings.SelectedView))
-        {
-            RefreshPage();
-        }
+        if (e.PropertyName == nameof(_settings.SelectedView)) RefreshPage();
     }
 
     private async void OpenFilePicker(object sender, RoutedEventArgs e)
     {
-        var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
+        var hwnd = WindowNative.GetWindowHandle(this);
         var picker = new FileOpenPicker();
-        WinRT.Interop.InitializeWithWindow.Initialize(picker, hwnd);
+        InitializeWithWindow.Initialize(picker, hwnd);
 
         picker.FileTypeFilter.Add("*");
         picker.SuggestedStartLocation = PickerLocationId.VideosLibrary;
         var file = await picker.PickSingleFileAsync();
 
-        if (file != null)
-        {
-            UpdateInfoForFile(file.Path);
-        }
+        if (file != null) UpdateInfoForFile(file.Path);
     }
 
     private void RefreshPage()
     {
         if (!IsFileOpened) return;
 
-        var selectedPage = Converters.SelectedViewToPage(settings.SelectedView);
-        NavigationFrame.Navigate(selectedPage, mediaInfo, new EntranceNavigationTransitionInfo());
+        var selectedPage = Converters.SelectedViewToPage(_settings.SelectedView);
+        NavigationFrame.Navigate(selectedPage, _mediaInfo, new EntranceNavigationTransitionInfo());
     }
 
     private void UpdateInfoForFile(string path)
     {
-        var success = mediaInfo.Open(path);
+        var success = _mediaInfo.Open(path);
         var fileName = Path.GetFileName(path);
 
-        SetTitle(fileName + " - " + appName);
+        SetTitle(fileName + " - " + _appName);
 
         if (success)
         {
@@ -133,24 +127,15 @@ public sealed partial class MainWindow : INotifyPropertyChanged
 
     private async void Window_Drop(object sender, DragEventArgs e)
     {
-        if (!e.DataView.Contains(StandardDataFormats.StorageItems))
-        {
-            return;
-        }
+        if (!e.DataView.Contains(StandardDataFormats.StorageItems)) return;
 
         var items = await e.DataView.GetStorageItemsAsync();
 
-        if (items.Count == 0)
-        {
-            return;
-        }
+        if (items.Count == 0) return;
 
         var storageFile = items[0];
 
-        if (!storageFile.IsOfType(StorageItemTypes.File))
-        {
-            return;
-        }
+        if (!storageFile.IsOfType(StorageItemTypes.File)) return;
 
         UpdateInfoForFile(storageFile.Path);
     }
@@ -160,8 +145,8 @@ public sealed partial class MainWindow : INotifyPropertyChanged
         var dialog = new ContentDialog
         {
             XamlRoot = RootPanel.XamlRoot,
-            Title = appName,
-            Content = new AboutContentPage(mediaInfo),
+            Title = _appName,
+            Content = new AboutContentPage(_mediaInfo),
             CloseButtonText = "Close",
             Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style
         };
@@ -177,24 +162,24 @@ public sealed partial class MainWindow : INotifyPropertyChanged
 
     ~MainWindow()
     {
-        settings.PropertyChanged -= Settings_PropertyChanged;
+        _settings.PropertyChanged -= Settings_PropertyChanged;
         SizeChanged -= MainWindow_SizeChanged;
     }
 
     private void SelectPrettyView(object sender, RoutedEventArgs e)
     {
-        settings.SelectedView = SelectedView.PRETTY_VIEW;
+        _settings.SelectedView = SelectedView.PrettyView;
     }
 
     private void SelectTextView(object sender, RoutedEventArgs e)
     {
-        settings.SelectedView = SelectedView.TEXT_VIEW;
+        _settings.SelectedView = SelectedView.TextView;
     }
 
     private async void CopyText(object sender, RoutedEventArgs e)
     {
-        mediaInfo.Option("Inform", "Text");
-        var info = mediaInfo.Inform()!;
+        _mediaInfo.Option("Inform", "Text");
+        var info = _mediaInfo.Inform()!;
 
         var package = new DataPackage();
         package.SetText(info);

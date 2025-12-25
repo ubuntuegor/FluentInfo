@@ -11,10 +11,7 @@ public sealed partial class SectionControl
     {
         InitializeComponent();
 
-        if (title != null)
-        {
-            RootStackPanel.Children.Insert(0, title);
-        }
+        if (title != null) RootStackPanel.Children.Insert(0, title);
 
         foreach (var (field, value) in items.GetPairs())
         {

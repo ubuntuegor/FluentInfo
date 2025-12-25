@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 
 <UserControl
     x:Class="FluentInfo.Controls.PrettyView.SectionControl"
@@ -8,13 +8,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Vertical" x:Name="RootStackPanel">
+    <StackPanel x:Name="RootStackPanel" Orientation="Vertical">
         <Border
+            Padding="16"
             Background="{ThemeResource CardBackgroundFillColorDefault}"
             BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
-            CornerRadius="8"
             BorderThickness="1"
-            Padding="16">
+            CornerRadius="8">
             <RichTextBlock x:Name="PropertiesTextBlock" IsTextSelectionEnabled="True" />
         </Border>
     </StackPanel>

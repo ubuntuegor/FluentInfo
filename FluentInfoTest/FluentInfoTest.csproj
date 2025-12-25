@@ -15,18 +15,18 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
-        <PackageReference Include="MSTest.TestAdapter" Version="3.10.5" />
-        <PackageReference Include="MSTest.TestFramework" Version="3.10.5" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1"/>
+        <PackageReference Include="MSTest.TestAdapter" Version="3.10.5"/>
+        <PackageReference Include="MSTest.TestFramework" Version="3.10.5"/>
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\FluentInfoCommon\FluentInfoCommon.csproj" />
-        <ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj" />
+        <ProjectReference Include="..\FluentInfoCommon\FluentInfoCommon.csproj"/>
+        <ProjectReference Include="..\MediaInfo\MediaInfoLib.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting"/>
     </ItemGroup>
 
     <ItemGroup>

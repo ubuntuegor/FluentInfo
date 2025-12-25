@@ -2,24 +2,24 @@
 
 public class OrderedProperties
 {
-    private readonly List<(string, string)> storage = [];
-    private readonly Dictionary<string, string> dictionary = [];
+    private readonly Dictionary<string, string> _dictionary = [];
+    private readonly List<(string, string)> _storage = [];
 
-    public int Count => storage.Count;
+    public int Count => _storage.Count;
 
     public void Add(string key, string value)
     {
-        storage.Add((key, value));
-        dictionary[key] = value;
+        _storage.Add((key, value));
+        _dictionary[key] = value;
     }
 
     public string? Get(string key)
     {
-        return dictionary.GetValueOrDefault(key);
+        return _dictionary.GetValueOrDefault(key);
     }
 
     public List<(string, string)> GetPairs()
     {
-        return storage;
+        return _storage;
     }
 }

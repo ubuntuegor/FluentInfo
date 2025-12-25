@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 
 <Page
     x:Class="FluentInfo.Pages.TextViewPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:FluentInfo"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:FluentInfo"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
@@ -14,15 +14,15 @@
         BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
         BorderThickness="1">
         <ScrollViewer
-            HorizontalScrollMode="{x:Bind local:Converters.BooleanToScrollMode(settings.TextWrapEnabled), Mode=OneWay}"
-            HorizontalScrollBarVisibility="{x:Bind local:Converters.BooleanToScrollBarVisibility(settings.TextWrapEnabled), Mode=OneWay}"
+            HorizontalScrollBarVisibility="{x:Bind local:Converters.BooleanToScrollBarVisibility(_settings.TextWrapEnabled), Mode=OneWay}"
+            HorizontalScrollMode="{x:Bind local:Converters.BooleanToScrollMode(_settings.TextWrapEnabled), Mode=OneWay}"
             VerticalScrollMode="Enabled">
             <TextBlock
                 x:Name="InfoTextBlock"
                 Margin="16"
+                IsTextSelectionEnabled="True"
                 Style="{StaticResource InfoTextStyle}"
-                TextWrapping="{x:Bind local:Converters.BooleanToWrapping(settings.TextWrapEnabled), Mode=OneWay}"
-                IsTextSelectionEnabled="True" />
+                TextWrapping="{x:Bind local:Converters.BooleanToWrapping(_settings.TextWrapEnabled), Mode=OneWay}" />
         </ScrollViewer>
     </Border>
 </Page>

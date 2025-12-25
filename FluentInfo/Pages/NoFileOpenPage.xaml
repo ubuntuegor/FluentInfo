@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 
 <Page
     x:Class="FluentInfo.Pages.NoFileOpenPage"
@@ -8,9 +8,18 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="4">
-        <FontIcon Glyph="&#xE8E5;" FontSize="24" Foreground="{ThemeResource TextFillColorSecondary}" />
-        <TextBlock Text="Drag a file here" Style="{StaticResource CaptionTextBlockStyle}"
-                   Foreground="{ThemeResource TextFillColorSecondary}" />
+    <StackPanel
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Orientation="Vertical"
+        Spacing="4">
+        <FontIcon
+            FontSize="24"
+            Foreground="{ThemeResource TextFillColorSecondary}"
+            Glyph="&#xE8E5;" />
+        <TextBlock
+            Foreground="{ThemeResource TextFillColorSecondary}"
+            Style="{StaticResource CaptionTextBlockStyle}"
+            Text="Drag a file here" />
     </StackPanel>
 </Page>

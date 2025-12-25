@@ -7,6 +7,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="using:FluentInfo"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sys="using:System"
     xmlns:winex="using:WinUIEx"
     Title="{StaticResource AppTitleName}"
     MinWidth="300"
@@ -27,7 +28,10 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Border x:Name="AppTitleBar" Height="32">
+        <Border
+            x:Name="AppTitleBar"
+            Grid.Row="0"
+            Height="32">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -78,17 +82,16 @@
             <MenuBarItem Title="View">
                 <RadioMenuFlyoutItem
                     Click="SelectPrettyView"
-                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'PRETTY_VIEW'), Mode=OneWay}"
+                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:SelectedView.PrettyView), Mode=OneWay}"
                     Text="Pretty" />
                 <RadioMenuFlyoutItem
                     Click="SelectTextView"
-                    IsChecked="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'TEXT_VIEW'), Mode=OneWay}"
+                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:SelectedView.TextView), Mode=OneWay}"
                     Text="Text" />
                 <MenuFlyoutSeparator />
                 <ToggleMenuFlyoutItem
-                    x:Name="WrapTextOptionButton"
-                    IsChecked="{x:Bind settings.TextWrapEnabled, Mode=TwoWay}"
-                    IsEnabled="{x:Bind local:Converters.SelectedViewToBool(settings.SelectedView, 'TEXT_VIEW'), Mode=OneWay}"
+                    IsChecked="{x:Bind _settings.TextWrapEnabled, Mode=TwoWay}"
+                    IsEnabled="{x:Bind sys:Object.Equals(_settings.SelectedView, local:SelectedView.TextView), Mode=OneWay}"
                     Text="Wrap text" />
             </MenuBarItem>
             <MenuBarItem Title="Help">
@@ -104,6 +107,7 @@
 
         <Popup
             x:Name="PopupInfoBar"
+            Grid.Row="0"
             DesiredPlacement="Bottom"
             PlacementTarget="{x:Bind MyMenuBar}"
             VerticalOffset="8">

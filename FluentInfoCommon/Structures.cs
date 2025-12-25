@@ -2,13 +2,13 @@
 
 public enum SectionType
 {
-    GENERAL,
-    VIDEO,
-    AUDIO,
-    TEXT,
-    MENU,
-    IMAGE,
-    OTHER
+    General,
+    Video,
+    Audio,
+    Text,
+    Menu,
+    Image,
+    Other
 }
 
 public record Section(

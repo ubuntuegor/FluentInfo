@@ -4,15 +4,12 @@ public static class MediaInfoTextParser
 {
     private const string PropertySeparator = " : ";
 
-    private static string? GetSubtitle(SectionType type, OrderedProperties properties)
+    private static string? GetSubtitle(OrderedProperties properties)
     {
         var performer = properties.Get("Performer") ?? properties.Get("ARTIST");
         var title = properties.Get("Title");
 
-        if (performer != null && title != null)
-        {
-            return performer + " - " + title;
-        }
+        if (performer != null && title != null) return performer + " - " + title;
 
         return title;
     }
@@ -23,10 +20,7 @@ public static class MediaInfoTextParser
         var width = properties.Get(widthKey);
         var height = properties.Get(heightKey);
 
-        if (width == null || height == null)
-        {
-            return null;
-        }
+        if (width == null || height == null) return null;
 
         width = width.Replace("pixels", "").Replace(" ", "");
         height = height.Replace("pixels", "").Replace(" ", "");
@@ -46,10 +40,7 @@ public static class MediaInfoTextParser
             var open = framerate.IndexOf('(');
             var close = framerate.IndexOf(')');
 
-            if (open != -1 && close != -1)
-            {
-                framerate = framerate.Remove(open, close - open + 2);
-            }
+            if (open != -1 && close != -1) framerate = framerate.Remove(open, close - open + 2);
         }
 
         return [properties.Get("Format"), GetResolution(properties), framerate, properties.Get("Bit rate")];
@@ -83,12 +74,12 @@ public static class MediaInfoTextParser
     {
         var chips = type switch
         {
-            SectionType.GENERAL => GetChipsForGeneral(properties),
-            SectionType.VIDEO => GetChipsForVideo(properties),
-            SectionType.AUDIO => GetChipsForAudio(properties),
-            SectionType.TEXT => GetChipsForText(properties),
-            SectionType.MENU => GetChipsForMenu(properties),
-            SectionType.IMAGE => GetChipsForImage(properties),
+            SectionType.General => GetChipsForGeneral(properties),
+            SectionType.Video => GetChipsForVideo(properties),
+            SectionType.Audio => GetChipsForAudio(properties),
+            SectionType.Text => GetChipsForText(properties),
+            SectionType.Menu => GetChipsForMenu(properties),
+            SectionType.Image => GetChipsForImage(properties),
             _ => []
         };
 
@@ -99,19 +90,19 @@ public static class MediaInfoTextParser
 
     private static Section CreateSection(string? title, OrderedProperties properties)
     {
-        var type = SectionType.OTHER;
+        var type = SectionType.Other;
 
         if (title != null)
         {
-            if (title.StartsWith("General")) type = SectionType.GENERAL;
-            else if (title.StartsWith("Video")) type = SectionType.VIDEO;
-            else if (title.StartsWith("Audio")) type = SectionType.AUDIO;
-            else if (title.StartsWith("Text")) type = SectionType.TEXT;
-            else if (title.StartsWith("Menu")) type = SectionType.MENU;
-            else if (title.StartsWith("Image")) type = SectionType.IMAGE;
+            if (title.StartsWith("General")) type = SectionType.General;
+            else if (title.StartsWith("Video")) type = SectionType.Video;
+            else if (title.StartsWith("Audio")) type = SectionType.Audio;
+            else if (title.StartsWith("Text")) type = SectionType.Text;
+            else if (title.StartsWith("Menu")) type = SectionType.Menu;
+            else if (title.StartsWith("Image")) type = SectionType.Image;
         }
 
-        var subtitle = GetSubtitle(type, properties);
+        var subtitle = GetSubtitle(properties);
         var chips = GetChips(type, properties);
 
         return new Section(type, title, subtitle, chips, properties);
@@ -150,10 +141,7 @@ public static class MediaInfoTextParser
             }
         }
 
-        if (properties.Count > 0)
-        {
-            sections.Add(CreateSection(title, properties));
-        }
+        if (properties.Count > 0) sections.Add(CreateSection(title, properties));
 
         return sections;
     }

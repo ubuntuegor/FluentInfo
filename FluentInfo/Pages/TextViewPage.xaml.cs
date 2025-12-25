@@ -7,7 +7,7 @@ namespace FluentInfo.Pages;
 
 public sealed partial class TextViewPage
 {
-    private readonly SettingsHolder settings = SettingsHolder.Instance;
+    private readonly SettingsHolder _settings = SettingsHolder.Instance;
 
     public TextViewPage()
     {

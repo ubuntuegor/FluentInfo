@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 
 <UserControl
     x:Class="FluentInfo.Controls.PrettyView.ChipControl"
@@ -8,9 +8,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Border Background="{ThemeResource ControlFillColorDefaultBrush}" Padding="6,2" CornerRadius="4"
-            BorderBrush="{ThemeResource ControlStrokeColorDefaultBrush}" BorderThickness="1">
-        <TextBlock x:Name="ContentTextBlock" Style="{StaticResource CaptionTextBlockStyle}"
-                   Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+    <Border
+        Padding="6,2"
+        Background="{ThemeResource ControlFillColorDefaultBrush}"
+        BorderBrush="{ThemeResource ControlStrokeColorDefaultBrush}"
+        BorderThickness="1"
+        CornerRadius="4">
+        <TextBlock
+            x:Name="ContentTextBlock"
+            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+            Style="{StaticResource CaptionTextBlockStyle}" />
     </Border>
 </UserControl>
