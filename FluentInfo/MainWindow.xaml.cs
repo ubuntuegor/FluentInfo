@@ -6,7 +6,6 @@ using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 using FluentInfo.Pages;
-using MediaInfoLib;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Animation;
@@ -15,51 +14,42 @@ using WinUIEx;
 
 namespace FluentInfo;
 
-public sealed partial class MainWindow : INotifyPropertyChanged
+public sealed partial class MainWindow
 {
-    private readonly string _appName = (Application.Current.Resources["AppTitleName"] as string)!;
-    private readonly MediaInfo _mediaInfo = new();
+    private readonly AppModel _model;
     private readonly SettingsHolder _settings = SettingsHolder.Instance;
 
-    private bool _isFileOpened;
-
-    public MainWindow(string[] cmdargs)
+    public MainWindow(AppModel model)
     {
         InitializeComponent();
         ExtendsContentIntoTitleBar = true;
         SetTitleBar(AppTitleBar);
         this.SetIcon(@"Assets\fluentinfo.ico");
-        SetTitle(_appName);
 
         Width = _settings.WindowWidth;
         Height = _settings.WindowHeight;
 
-        if (cmdargs.Length > 1)
-        {
-            var path = cmdargs[1];
-            UpdateInfoForFile(path);
-        }
-        else
-        {
-            NavigationFrame.Navigate(typeof(NoFileOpenPage));
-        }
+        _model = model;
+        UpdateTitle();
+        RefreshPage();
 
+        _model.PropertyChanged += ModelOnPropertyChanged;
         _settings.PropertyChanged += Settings_PropertyChanged;
         SizeChanged += MainWindow_SizeChanged;
     }
 
-    private bool IsFileOpened
+    private void ModelOnPropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
-        get => _isFileOpened;
-        set
+        switch (e.PropertyName)
         {
-            if (_isFileOpened == value) return;
-            _isFileOpened = value;
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsFileOpened)));
+            case nameof(_model.CurrentFilePath):
+                UpdateTitle();
+                break;
+            case nameof(_model.InfoText):
+                RefreshPage();
+                break;
         }
     }
-
-    public event PropertyChangedEventHandler? PropertyChanged;
 
     private void MainWindow_SizeChanged(object sender, WindowSizeChangedEventArgs args)
     {
@@ -82,34 +72,25 @@ public sealed partial class MainWindow : INotifyPropertyChanged
         picker.SuggestedStartLocation = PickerLocationId.VideosLibrary;
         var file = await picker.PickSingleFileAsync();
 
-        if (file != null) UpdateInfoForFile(file.Path);
+        if (file != null) _model.OpenFile(file.Path);
     }
 
     private void RefreshPage()
     {
-        if (!IsFileOpened) return;
+        if (_model.CurrentFilePath == null)
+        {
+            NavigationFrame.Navigate(typeof(NoFileOpenPage));
+            return;
+        }
+
+        if (_model.InfoText == null)
+        {
+            NavigationFrame.Navigate(typeof(FailedPage), _model, new EntranceNavigationTransitionInfo());
+            return;
+        }
 
         var selectedPage = Converters.SelectedViewToPage(_settings.SelectedView);
-        NavigationFrame.Navigate(selectedPage, _mediaInfo, new EntranceNavigationTransitionInfo());
-    }
-
-    private void UpdateInfoForFile(string path)
-    {
-        var success = _mediaInfo.Open(path);
-        var fileName = Path.GetFileName(path);
-
-        SetTitle(fileName + " - " + _appName);
-
-        if (success)
-        {
-            IsFileOpened = true;
-            RefreshPage();
-        }
-        else
-        {
-            IsFileOpened = false;
-            NavigationFrame.Navigate(typeof(FailedPage), path, new EntranceNavigationTransitionInfo());
-        }
+        NavigationFrame.Navigate(selectedPage, _model, new EntranceNavigationTransitionInfo());
     }
 
     private void Window_DragOver(object sender, DragEventArgs e)
@@ -130,14 +111,12 @@ public sealed partial class MainWindow : INotifyPropertyChanged
         if (!e.DataView.Contains(StandardDataFormats.StorageItems)) return;
 
         var items = await e.DataView.GetStorageItemsAsync();
-
         if (items.Count == 0) return;
 
         var storageFile = items[0];
-
         if (!storageFile.IsOfType(StorageItemTypes.File)) return;
 
-        UpdateInfoForFile(storageFile.Path);
+        _model.OpenFile(storageFile.Path);
     }
 
     private async void OpenAboutWindow(object sender, RoutedEventArgs e)
@@ -145,8 +124,8 @@ public sealed partial class MainWindow : INotifyPropertyChanged
         var dialog = new ContentDialog
         {
             XamlRoot = RootPanel.XamlRoot,
-            Title = _appName,
-            Content = new AboutContentPage(_mediaInfo),
+            Title = (Application.Current.Resources["AppTitleName"] as string)!,
+            Content = new AboutContentPage(_model),
             CloseButtonText = "Close",
             Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style
         };
@@ -154,8 +133,17 @@ public sealed partial class MainWindow : INotifyPropertyChanged
         await dialog.ShowAsync();
     }
 
-    private void SetTitle(string title)
+    private void UpdateTitle()
     {
+        var appName = (Application.Current.Resources["AppTitleName"] as string)!;
+        var title = appName;
+
+        if (_model.CurrentFilePath != null)
+        {
+            var fileName = Path.GetFileName(_model.CurrentFilePath);
+            title = fileName + " - " + appName;
+        }
+
         Title = title;
         TitleTextBlock.Text = title;
     }
@@ -168,21 +156,18 @@ public sealed partial class MainWindow : INotifyPropertyChanged
 
     private void SelectPrettyView(object sender, RoutedEventArgs e)
     {
-        _settings.SelectedView = SelectedView.PrettyView;
+        _settings.SelectedView = ViewOption.PrettyView;
     }
 
     private void SelectTextView(object sender, RoutedEventArgs e)
     {
-        _settings.SelectedView = SelectedView.TextView;
+        _settings.SelectedView = ViewOption.TextView;
     }
 
     private async void CopyText(object sender, RoutedEventArgs e)
     {
-        _mediaInfo.Option("Inform", "Text");
-        var info = _mediaInfo.Inform()!;
-
         var package = new DataPackage();
-        package.SetText(info);
+        package.SetText(_model.InfoText);
         Clipboard.SetContent(package);
 
         if (!PopupInfoBar.IsOpen)

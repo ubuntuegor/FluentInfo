@@ -69,7 +69,7 @@
             <MenuBarItem Title="Edit">
                 <MenuFlyoutItem
                     Click="CopyText"
-                    IsEnabled="{x:Bind IsFileOpened, Mode=OneWay}"
+                    IsEnabled="{x:Bind local:Converters.NotNull(_model.InfoText), Mode=OneWay}"
                     Text="Copy text">
                     <MenuFlyoutItem.Icon>
                         <FontIcon Glyph="&#xE8C8;" />
@@ -82,16 +82,16 @@
             <MenuBarItem Title="View">
                 <RadioMenuFlyoutItem
                     Click="SelectPrettyView"
-                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:SelectedView.PrettyView), Mode=OneWay}"
+                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.PrettyView), Mode=OneWay}"
                     Text="Pretty" />
                 <RadioMenuFlyoutItem
                     Click="SelectTextView"
-                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:SelectedView.TextView), Mode=OneWay}"
+                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}"
                     Text="Text" />
                 <MenuFlyoutSeparator />
                 <ToggleMenuFlyoutItem
                     IsChecked="{x:Bind _settings.TextWrapEnabled, Mode=TwoWay}"
-                    IsEnabled="{x:Bind sys:Object.Equals(_settings.SelectedView, local:SelectedView.TextView), Mode=OneWay}"
+                    IsEnabled="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}"
                     Text="Wrap text" />
             </MenuBarItem>
             <MenuBarItem Title="Help">

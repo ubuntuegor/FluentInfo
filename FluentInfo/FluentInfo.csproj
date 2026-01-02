@@ -26,6 +26,7 @@
         <PackageCertificateKeyFile>FluentInfo_TemporaryKey.pfx</PackageCertificateKeyFile>
         <ApplicationIcon>Assets\fluentinfo.ico</ApplicationIcon>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
     <ItemGroup>
         <None Remove="Controls\PrettyView\ChipControl.xaml"/>

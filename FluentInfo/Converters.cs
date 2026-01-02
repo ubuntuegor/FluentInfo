@@ -22,13 +22,18 @@ internal static class Converters
         return value ? ScrollBarVisibility.Disabled : ScrollBarVisibility.Auto;
     }
 
-    public static Type SelectedViewToPage(SelectedView selectedView)
+    public static Type SelectedViewToPage(ViewOption viewOption)
     {
-        return selectedView switch
+        return viewOption switch
         {
-            SelectedView.TextView => typeof(TextViewPage),
-            SelectedView.PrettyView => typeof(PrettyViewPage),
+            ViewOption.TextView => typeof(TextViewPage),
+            ViewOption.PrettyView => typeof(PrettyViewPage),
             _ => typeof(FailedPage)
         };
+    }
+
+    public static bool NotNull(object? value)
+    {
+        return value != null;
     }
 }

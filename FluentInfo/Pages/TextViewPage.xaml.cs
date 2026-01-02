@@ -1,5 +1,4 @@
 using FluentInfoCommon;
-using MediaInfoLib;
 using Microsoft.UI.Xaml.Documents;
 using Microsoft.UI.Xaml.Navigation;
 
@@ -16,9 +15,8 @@ public sealed partial class TextViewPage
 
     protected override void OnNavigatedTo(NavigationEventArgs e)
     {
-        var mediaInfo = (e.Parameter as MediaInfo)!;
-        mediaInfo.Option("Inform", "Text");
-        var info = mediaInfo.Inform()!;
+        var model = (e.Parameter as AppModel)!;
+        var info = model.InfoText!;
 
         var inlines = InfoTextBlock.Inlines;
         inlines.Clear();

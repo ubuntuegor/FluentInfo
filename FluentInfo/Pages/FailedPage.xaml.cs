@@ -1,4 +1,3 @@
-using MediaInfoLib;
 using Microsoft.UI.Xaml.Navigation;
 
 namespace FluentInfo.Pages;
@@ -12,9 +11,10 @@ public sealed partial class FailedPage
 
     protected override void OnNavigatedTo(NavigationEventArgs e)
     {
-        ErrorTextBlock.Text = e.Parameter is MediaInfo
-            ? "Unknown view format selected"
-            : $"Could not open file: {e.Parameter}";
+        var model = (e.Parameter as AppModel)!;
+        ErrorTextBlock.Text = model.InfoText == null
+            ? $"Could not open file: {model.CurrentFilePath}"
+            : "Unknown view format selected";
         base.OnNavigatedTo(e);
     }
 }

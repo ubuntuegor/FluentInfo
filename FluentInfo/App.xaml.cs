@@ -7,7 +7,7 @@ namespace FluentInfo;
 
 public partial class App
 {
-    private Window _mainWindow = null!;
+    private readonly AppModel _model = AppModel.Instance;
 
     public App()
     {
@@ -16,10 +16,16 @@ public partial class App
 
     protected override void OnLaunched(LaunchActivatedEventArgs args)
     {
-        var cmdargs = Environment.GetCommandLineArgs();
-        _mainWindow = new MainWindow(cmdargs);
-        _mainWindow.CenterOnScreen();
-        _mainWindow.Activate();
-        WindowHelpers.BringToForeground(_mainWindow.GetWindowHandle());
+        var commandLineArgs = Environment.GetCommandLineArgs();
+        if (commandLineArgs.Length > 1)
+        {
+            var path = commandLineArgs[1];
+            _model.OpenFile(path);
+        }
+
+        var window = new MainWindow(_model);
+        window.CenterOnScreen();
+        window.Activate();
+        WindowHelpers.BringToForeground(window.GetWindowHandle());
     }
 }

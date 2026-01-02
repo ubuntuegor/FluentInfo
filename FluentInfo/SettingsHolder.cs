@@ -4,7 +4,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace FluentInfo;
 
-internal enum SelectedView
+internal enum ViewOption
 {
     TextView,
     PrettyView
@@ -12,8 +12,8 @@ internal enum SelectedView
 
 internal partial class SettingsHolder : ObservableObject
 {
-    private const string TextWrapEnabledProperty = "textWrapEnabledProperty";
     private const string SelectedViewProperty = "selectedViewProperty";
+    private const string TextWrapEnabledProperty = "textWrapEnabledProperty";
     private const string WindowWidthProperty = "windowWidthProperty";
     private const string WindowHeightProperty = "windowHeightProperty";
 
@@ -22,25 +22,22 @@ internal partial class SettingsHolder : ObservableObject
     private readonly ApplicationDataContainer _localSettings =
         ApplicationData.Current.LocalSettings;
 
-    [ObservableProperty] private SelectedView _selectedView = SelectedView.PrettyView;
-
-    [ObservableProperty] private bool _textWrapEnabled;
-
-    [ObservableProperty] private double _windowHeight = 600;
-
-    [ObservableProperty] private double _windowWidth = 600;
-
     private SettingsHolder()
     {
-        if (_localSettings.Values[SelectedViewProperty] is int selectedView) _selectedView = (SelectedView)selectedView;
-        if (_localSettings.Values[TextWrapEnabledProperty] is bool textWrapEnabled) _textWrapEnabled = textWrapEnabled;
-        if (_localSettings.Values[WindowHeightProperty] is double windowHeight) _windowHeight = windowHeight;
-        if (_localSettings.Values[WindowWidthProperty] is double windowWidth) _windowWidth = windowWidth;
+        if (_localSettings.Values[SelectedViewProperty] is int selectedView) SelectedView = (ViewOption)selectedView;
+        if (_localSettings.Values[TextWrapEnabledProperty] is bool textWrapEnabled) TextWrapEnabled = textWrapEnabled;
+        if (_localSettings.Values[WindowHeightProperty] is double windowHeight) WindowHeight = windowHeight;
+        if (_localSettings.Values[WindowWidthProperty] is double windowWidth) WindowWidth = windowWidth;
     }
+
+    [ObservableProperty] public partial ViewOption SelectedView { get; set; } = ViewOption.PrettyView;
+    [ObservableProperty] public partial bool TextWrapEnabled { get; set; } = false;
+    [ObservableProperty] public partial double WindowWidth { get; set; } = 600;
+    [ObservableProperty] public partial double WindowHeight { get; set; } = 600;
 
     public static SettingsHolder Instance => LazyInstance.Value;
 
-    partial void OnSelectedViewChanged(SelectedView value)
+    partial void OnSelectedViewChanged(ViewOption value)
     {
         _localSettings.Values[SelectedViewProperty] = (int)value;
     }

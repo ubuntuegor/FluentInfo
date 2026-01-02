@@ -1,16 +1,15 @@
 using System;
 using Windows.System;
-using MediaInfoLib;
 using Microsoft.UI.Xaml;
 
 namespace FluentInfo.Pages;
 
 public sealed partial class AboutContentPage
 {
-    public AboutContentPage(MediaInfo mediaInfo)
+    public AboutContentPage(AppModel model)
     {
         InitializeComponent();
-        var version = mediaInfo.Option("info_version", string.Empty) ?? "[unknown version]";
+        var version = model.MediaInfoVersion ?? "[unknown version]";
         var index = version.IndexOf(" - v", StringComparison.Ordinal);
         if (index != -1) version = version[(index + 3)..];
 
