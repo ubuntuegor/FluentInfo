@@ -5,9 +5,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="using:FluentInfo"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:sys="using:System"
     xmlns:winex="using:WinUIEx"
     Title="{StaticResource AppTitleName}"
     MinWidth="300"
@@ -17,13 +15,8 @@
         <MicaBackdrop />
     </Window.SystemBackdrop>
 
-    <Grid
-        x:Name="RootPanel"
-        AllowDrop="True"
-        DragOver="Window_DragOver"
-        Drop="Window_Drop">
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
@@ -39,10 +32,11 @@
                 </Grid.ColumnDefinitions>
 
                 <Image
+                    Width="16"
                     Height="16"
                     Margin="16,0"
                     VerticalAlignment="Center"
-                    Source="ms-appx:///Assets/Square44x44Logo.targetsize-32.png" />
+                    Source="/Assets/Square44x44Logo.targetsize-32.png" />
                 <TextBlock
                     x:Name="TitleTextBlock"
                     Grid.Column="1"
@@ -55,73 +49,9 @@
             </Grid>
         </Border>
 
-        <MenuBar x:Name="MyMenuBar" Grid.Row="1">
-            <MenuBarItem Title="File">
-                <MenuFlyoutItem Click="OpenFilePicker" Text="Open">
-                    <MenuFlyoutItem.Icon>
-                        <FontIcon Glyph="&#xE838;" />
-                    </MenuFlyoutItem.Icon>
-                    <MenuFlyoutItem.KeyboardAccelerators>
-                        <KeyboardAccelerator Key="O" Modifiers="Control" />
-                    </MenuFlyoutItem.KeyboardAccelerators>
-                </MenuFlyoutItem>
-            </MenuBarItem>
-            <MenuBarItem Title="Edit">
-                <MenuFlyoutItem
-                    Click="CopyText"
-                    IsEnabled="{x:Bind local:Converters.NotNull(_model.InfoText), Mode=OneWay}"
-                    Text="Copy text">
-                    <MenuFlyoutItem.Icon>
-                        <FontIcon Glyph="&#xE8C8;" />
-                    </MenuFlyoutItem.Icon>
-                    <MenuFlyoutItem.KeyboardAccelerators>
-                        <KeyboardAccelerator Key="C" Modifiers="Control,Shift" />
-                    </MenuFlyoutItem.KeyboardAccelerators>
-                </MenuFlyoutItem>
-            </MenuBarItem>
-            <MenuBarItem Title="View">
-                <RadioMenuFlyoutItem
-                    Click="SelectPrettyView"
-                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.PrettyView), Mode=OneWay}"
-                    Text="Pretty" />
-                <RadioMenuFlyoutItem
-                    Click="SelectTextView"
-                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}"
-                    Text="Text" />
-                <MenuFlyoutSeparator />
-                <ToggleMenuFlyoutItem
-                    IsChecked="{x:Bind _settings.TextWrapEnabled, Mode=TwoWay}"
-                    IsEnabled="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}"
-                    Text="Wrap text" />
-            </MenuBarItem>
-            <MenuBarItem Title="Help">
-                <MenuFlyoutItem Click="OpenAboutWindow" Text="About" />
-            </MenuBarItem>
-        </MenuBar>
-
         <Frame
-            x:Name="NavigationFrame"
-            Grid.Row="2"
-            Background="Transparent"
+            x:Name="RootFrame"
+            Grid.Row="1"
             IsNavigationStackEnabled="False" />
-
-        <Popup
-            x:Name="PopupInfoBar"
-            Grid.Row="0"
-            DesiredPlacement="Bottom"
-            PlacementTarget="{x:Bind MyMenuBar}"
-            VerticalOffset="8">
-            <Popup.ChildTransitions>
-                <TransitionCollection>
-                    <PopupThemeTransition />
-                </TransitionCollection>
-            </Popup.ChildTransitions>
-
-            <InfoBar
-                IsClosable="False"
-                IsOpen="True"
-                Message="Copied as text"
-                Severity="Success" />
-        </Popup>
     </Grid>
 </winex:WindowEx>
