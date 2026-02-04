@@ -66,6 +66,7 @@
         <Frame
             x:Name="NavigationFrame"
             Grid.Row="1"
+            Background="Transparent"
             IsNavigationStackEnabled="False" />
 
         <Popup
