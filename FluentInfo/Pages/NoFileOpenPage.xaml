@@ -18,8 +18,8 @@
             Foreground="{ThemeResource TextFillColorSecondary}"
             Glyph="&#xE8E5;" />
         <TextBlock
+            x:Uid="DragFileHereZoneCaption"
             Foreground="{ThemeResource TextFillColorSecondary}"
-            Style="{StaticResource CaptionTextBlockStyle}"
-            Text="Drag a file here" />
+            Style="{StaticResource CaptionTextBlockStyle}" />
     </StackPanel>
 </Page>

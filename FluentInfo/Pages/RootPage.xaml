@@ -20,8 +20,8 @@
         </Grid.RowDefinitions>
 
         <MenuBar x:Name="MyMenuBar" Grid.Row="0">
-            <MenuBarItem Title="File">
-                <MenuFlyoutItem Click="OpenFilePicker" Text="Open">
+            <MenuBarItem x:Uid="MenuBarItemFile">
+                <MenuFlyoutItem x:Uid="MenuBarItemFileOpen" Click="OpenFilePicker">
                     <MenuFlyoutItem.Icon>
                         <FontIcon Glyph="&#xE838;" />
                     </MenuFlyoutItem.Icon>
@@ -30,11 +30,11 @@
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
             </MenuBarItem>
-            <MenuBarItem Title="Edit">
+            <MenuBarItem x:Uid="MenuBarItemEdit">
                 <MenuFlyoutItem
+                    x:Uid="MenuBarItemEditCopyText"
                     Click="CopyText"
-                    IsEnabled="{x:Bind local:Converters.NotNull(_model.InfoText), Mode=OneWay}"
-                    Text="Copy text">
+                    IsEnabled="{x:Bind local:Converters.NotNull(_model.InfoText), Mode=OneWay}">
                     <MenuFlyoutItem.Icon>
                         <FontIcon Glyph="&#xE8C8;" />
                     </MenuFlyoutItem.Icon>
@@ -43,23 +43,23 @@
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
             </MenuBarItem>
-            <MenuBarItem Title="View">
+            <MenuBarItem x:Uid="MenuBarItemView">
                 <RadioMenuFlyoutItem
+                    x:Uid="MenuBarItemViewPretty"
                     Click="SelectPrettyView"
-                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.PrettyView), Mode=OneWay}"
-                    Text="Pretty" />
+                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.PrettyView), Mode=OneWay}" />
                 <RadioMenuFlyoutItem
+                    x:Uid="MenuBarItemViewText"
                     Click="SelectTextView"
-                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}"
-                    Text="Text" />
+                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}" />
                 <MenuFlyoutSeparator />
                 <ToggleMenuFlyoutItem
+                    x:Uid="MenuBarItemViewWrapText"
                     IsChecked="{x:Bind _settings.TextWrapEnabled, Mode=TwoWay}"
-                    IsEnabled="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}"
-                    Text="Wrap text" />
+                    IsEnabled="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}" />
             </MenuBarItem>
-            <MenuBarItem Title="Help">
-                <MenuFlyoutItem Click="OpenAboutWindow" Text="About" />
+            <MenuBarItem x:Uid="MenuBarItemHelp">
+                <MenuFlyoutItem x:Uid="MenuBarItemHelpAbout" Click="OpenAboutWindow" />
             </MenuBarItem>
         </MenuBar>
 
@@ -82,9 +82,9 @@
             </Popup.ChildTransitions>
 
             <InfoBar
+                x:Uid="CopiedAsTextInfoBar"
                 IsClosable="False"
                 IsOpen="True"
-                Message="Copied as text"
                 Severity="Success" />
         </Popup>
     </Grid>

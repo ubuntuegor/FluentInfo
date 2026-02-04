@@ -7,12 +7,14 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.UI.Xaml.Navigation;
+using Microsoft.Windows.ApplicationModel.Resources;
 using Microsoft.Windows.Storage.Pickers;
 
 namespace FluentInfo.Pages;
 
 public sealed partial class RootPage
 {
+    private readonly ResourceLoader _resourceLoader = new();
     private readonly SettingsHolder _settings = SettingsHolder.Instance;
     private AppModel _model = null!;
 
@@ -77,7 +79,7 @@ public sealed partial class RootPage
         if (e.DataView.Contains(StandardDataFormats.StorageItems))
         {
             e.AcceptedOperation = DataPackageOperation.Copy;
-            e.DragUIOverride.Caption = "Open";
+            e.DragUIOverride.Caption = _resourceLoader.GetString("DragDropFileOpenCaption");
         }
         else
         {
@@ -105,7 +107,7 @@ public sealed partial class RootPage
             XamlRoot = XamlRoot,
             Title = (Application.Current.Resources["AppTitleName"] as string)!,
             Content = new AboutContentPage(_model),
-            CloseButtonText = "Close",
+            CloseButtonText = _resourceLoader.GetString("PopupClose"),
             Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style
         };
 

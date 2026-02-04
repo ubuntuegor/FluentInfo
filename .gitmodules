@@ -1,0 +1,3 @@
+[submodule "External/MediaInfo"]
+	path = External/MediaInfo
+	url = https://github.com/MediaArea/MediaInfo.git
