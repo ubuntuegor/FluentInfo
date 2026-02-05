@@ -10,10 +10,15 @@ function Get-ResourceFileForLang {
     }
 }
 
+$fixISO639 = @{ "gr" = "el" }
+
 $langs = Get-ChildItem "External\MediaInfo\Source\Resource\Plugin\Language"
 
 foreach ($langCsv in $langs) {
     $lang = $langCsv.BaseName
+    if ($fixISO639.ContainsKey($lang)) {
+        $lang = $fixISO639[$lang]
+    }
     Write-Output "updating $lang"
 
     $csvFile = Get-Content $langCsv -Raw
