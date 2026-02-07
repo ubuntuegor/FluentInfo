@@ -11,6 +11,13 @@ function Get-ResourceFileForLang {
 }
 
 $fixISO639 = @{ "gr" = "el" }
+$copyKeys = @{
+    "Language_Name" = "LanguageName";
+    "File"          = "MenuBarItemFile.Title";
+    "Edit"          = "MenuBarItemEdit.Title";
+    "View"          = "MenuBarItemView.Title";
+    "Help"          = "MenuBarItemHelp.Title";
+}
 
 $langs = Get-ChildItem "External\MediaInfo\Source\Resource\Plugin\Language"
 
@@ -26,6 +33,13 @@ foreach ($langCsv in $langs) {
     [xml]$resourcesFileXml = $resourcesFile
 
     $resourcesFileXml.root.data | Where-Object { $_.name -eq "MediaInfoLanguage" } | ForEach-Object { $_.value = $csvFile }
+
+    $csv = Import-Csv -Path $langCsv -Delimiter ";" -Header "Key", "Value"
+    foreach ($mediaInfoKey in $copyKeys.Keys) {
+        $reswKey = $copyKeys[$mediaInfoKey]
+        $localizedValue = ($csv | Where-Object { $_.Key -eq $mediaInfoKey })[0].Value
+        $resourcesFileXml.root.data | Where-Object { $_.name -eq $reswKey } | ForEach-Object { $_.value = $localizedValue }
+    }
 
     $null = New-Item -ItemType Directory -Path "FluentInfo\Strings\$lang\" -Force
     $resourcesFileXml.Save("FluentInfo\Strings\$lang\Resources.resw")

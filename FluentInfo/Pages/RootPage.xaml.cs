@@ -27,12 +27,39 @@ public sealed partial class RootPage
     {
         _model = (e.Parameter as AppModel)!;
 
+        PopulateLanguages();
         RefreshPage();
 
         _model.PropertyChanged += ModelOnPropertyChanged;
         _settings.PropertyChanged += Settings_PropertyChanged;
 
         base.OnNavigatedTo(e);
+    }
+
+    private void PopulateLanguages()
+    {
+        var currentLanguage = _model.Language;
+
+        LanguageMenuBarItem.Items.Insert(LanguageMenuBarItem.Items.Count, new RadioMenuFlyoutItem
+        {
+            Text = _resourceLoader.GetString("SystemLanguage"),
+            GroupName = "LanguageSetting",
+            Command = _model.ChangeLanguageCommand,
+            CommandParameter = "",
+            IsChecked = currentLanguage == string.Empty
+        });
+
+        LanguageMenuBarItem.Items.Insert(LanguageMenuBarItem.Items.Count, new MenuFlyoutSeparator());
+
+        foreach (var language in AppModel.AppLanguages)
+            LanguageMenuBarItem.Items.Insert(LanguageMenuBarItem.Items.Count, new RadioMenuFlyoutItem
+            {
+                Text = language.Name,
+                GroupName = "LanguageSetting",
+                Command = _model.ChangeLanguageCommand,
+                CommandParameter = language.LanguageCode,
+                IsChecked = currentLanguage == language.LanguageCode
+            });
     }
 
     private void ModelOnPropertyChanged(object? sender, PropertyChangedEventArgs e)

@@ -19,49 +19,67 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <MenuBar x:Name="MyMenuBar" Grid.Row="0">
-            <MenuBarItem x:Uid="MenuBarItemFile">
-                <MenuFlyoutItem x:Uid="MenuBarItemFileOpen" Click="OpenFilePicker">
-                    <MenuFlyoutItem.Icon>
-                        <FontIcon Glyph="&#xE838;" />
-                    </MenuFlyoutItem.Icon>
-                    <MenuFlyoutItem.KeyboardAccelerators>
-                        <KeyboardAccelerator Key="O" Modifiers="Control" />
-                    </MenuFlyoutItem.KeyboardAccelerators>
-                </MenuFlyoutItem>
-            </MenuBarItem>
-            <MenuBarItem x:Uid="MenuBarItemEdit">
-                <MenuFlyoutItem
-                    x:Uid="MenuBarItemEditCopyText"
-                    Click="CopyText"
-                    IsEnabled="{x:Bind local:Converters.NotNull(_model.InfoText), Mode=OneWay}">
-                    <MenuFlyoutItem.Icon>
-                        <FontIcon Glyph="&#xE8C8;" />
-                    </MenuFlyoutItem.Icon>
-                    <MenuFlyoutItem.KeyboardAccelerators>
-                        <KeyboardAccelerator Key="C" Modifiers="Control,Shift" />
-                    </MenuFlyoutItem.KeyboardAccelerators>
-                </MenuFlyoutItem>
-            </MenuBarItem>
-            <MenuBarItem x:Uid="MenuBarItemView">
-                <RadioMenuFlyoutItem
-                    x:Uid="MenuBarItemViewPretty"
-                    Click="SelectPrettyView"
-                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.PrettyView), Mode=OneWay}" />
-                <RadioMenuFlyoutItem
-                    x:Uid="MenuBarItemViewText"
-                    Click="SelectTextView"
-                    IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}" />
-                <MenuFlyoutSeparator />
-                <ToggleMenuFlyoutItem
-                    x:Uid="MenuBarItemViewWrapText"
-                    IsChecked="{x:Bind _settings.TextWrapEnabled, Mode=TwoWay}"
-                    IsEnabled="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}" />
-            </MenuBarItem>
-            <MenuBarItem x:Uid="MenuBarItemHelp">
-                <MenuFlyoutItem x:Uid="MenuBarItemHelpAbout" Click="OpenAboutWindow" />
-            </MenuBarItem>
-        </MenuBar>
+        <Grid x:Name="MyMenuBar" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <MenuBar Grid.Column="0">
+                <MenuBarItem x:Uid="MenuBarItemFile">
+                    <MenuFlyoutItem x:Uid="MenuBarItemFileOpen" Click="OpenFilePicker">
+                        <MenuFlyoutItem.Icon>
+                            <FontIcon Glyph="&#xE838;" />
+                        </MenuFlyoutItem.Icon>
+                        <MenuFlyoutItem.KeyboardAccelerators>
+                            <KeyboardAccelerator Key="O" Modifiers="Control" />
+                        </MenuFlyoutItem.KeyboardAccelerators>
+                    </MenuFlyoutItem>
+                </MenuBarItem>
+                <MenuBarItem x:Uid="MenuBarItemEdit">
+                    <MenuFlyoutItem
+                        x:Uid="MenuBarItemEditCopyText"
+                        Click="CopyText"
+                        IsEnabled="{x:Bind local:Converters.NotNull(_model.InfoText), Mode=OneWay}">
+                        <MenuFlyoutItem.Icon>
+                            <FontIcon Glyph="&#xE8C8;" />
+                        </MenuFlyoutItem.Icon>
+                        <MenuFlyoutItem.KeyboardAccelerators>
+                            <KeyboardAccelerator Key="C" Modifiers="Control,Shift" />
+                        </MenuFlyoutItem.KeyboardAccelerators>
+                    </MenuFlyoutItem>
+                </MenuBarItem>
+                <MenuBarItem x:Uid="MenuBarItemView">
+                    <RadioMenuFlyoutItem
+                        x:Uid="MenuBarItemViewPretty"
+                        Click="SelectPrettyView"
+                        GroupName="ViewSetting"
+                        IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.PrettyView), Mode=OneWay}" />
+                    <RadioMenuFlyoutItem
+                        x:Uid="MenuBarItemViewText"
+                        Click="SelectTextView"
+                        GroupName="ViewSetting"
+                        IsChecked="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}" />
+                    <MenuFlyoutSeparator />
+                    <ToggleMenuFlyoutItem
+                        x:Uid="MenuBarItemViewWrapText"
+                        IsChecked="{x:Bind _settings.TextWrapEnabled, Mode=TwoWay}"
+                        IsEnabled="{x:Bind sys:Object.Equals(_settings.SelectedView, local:ViewOption.TextView), Mode=OneWay}" />
+                </MenuBarItem>
+                <MenuBarItem x:Uid="MenuBarItemHelp">
+                    <MenuFlyoutItem x:Uid="MenuBarItemHelpAbout" Click="OpenAboutWindow" />
+                </MenuBarItem>
+            </MenuBar>
+            <MenuBar Grid.Column="1">
+                <MenuBarItem x:Name="LanguageMenuBarItem" Title="&#xE774;">
+                    <MenuBarItem.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="FontFamily" Value="Segoe Fluent Icons, Segoe MDL2 Assets" />
+                        </Style>
+                    </MenuBarItem.Resources>
+                </MenuBarItem>
+            </MenuBar>
+        </Grid>
 
         <Frame
             x:Name="NavigationFrame"

@@ -23,7 +23,7 @@ public sealed partial class MainWindow
 
         _model = model;
         UpdateTitle();
-        RootFrame.Navigate(typeof(RootPage), _model);
+        RefreshRootPage();
 
         _model.PropertyChanged += ModelOnPropertyChanged;
         SizeChanged += MainWindow_SizeChanged;
@@ -31,7 +31,15 @@ public sealed partial class MainWindow
 
     private void ModelOnPropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
-        if (e.PropertyName == nameof(_model.CurrentFilePath)) UpdateTitle();
+        switch (e.PropertyName)
+        {
+            case nameof(_model.CurrentFilePath):
+                UpdateTitle();
+                break;
+            case nameof(_model.Language):
+                RefreshRootPage();
+                break;
+        }
     }
 
     private void MainWindow_SizeChanged(object sender, WindowSizeChangedEventArgs args)
@@ -53,6 +61,11 @@ public sealed partial class MainWindow
 
         Title = title;
         TitleTextBlock.Text = title;
+    }
+
+    private void RefreshRootPage()
+    {
+        RootFrame.Navigate(typeof(RootPage), _model);
     }
 
     ~MainWindow()

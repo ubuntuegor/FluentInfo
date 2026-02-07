@@ -27,6 +27,7 @@
         <ApplicationIcon>Assets\fluentinfo.ico</ApplicationIcon>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>preview</LangVersion>
+        <DefaultLanguage>en</DefaultLanguage>
     </PropertyGroup>
     <ItemGroup>
         <None Remove="Controls\PrettyView\ChipControl.xaml"/>

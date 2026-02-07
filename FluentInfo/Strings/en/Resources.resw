@@ -126,6 +126,9 @@
   <data name="DragFileHereZoneCaption.Text" xml:space="preserve">
     <value>Drag a file here</value>
   </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>English</value>
+  </data>
   <data name="MediaInfoLanguage" xml:space="preserve">
     <value>  Language_ISO639;en
   Author_Email;Info@MediaArea.net
@@ -1678,5 +1681,8 @@ ZZ_AutomaticLanguage_Percent;98
   </data>
   <data name="PopupClose" xml:space="preserve">
     <value>Close</value>
+  </data>
+  <data name="SystemLanguage" xml:space="preserve">
+    <value>System</value>
   </data>
 </root>
