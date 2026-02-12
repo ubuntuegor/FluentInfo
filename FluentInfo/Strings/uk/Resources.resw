@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
-    <value>Copied as text</value>
+    <value>Скопійовано як текст</value>
   </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
-    <value>Open</value>
+    <value>Відкрити</value>
   </data>
   <data name="DragFileHereZoneCaption.Text" xml:space="preserve">
-    <value>Drag a file here</value>
+    <value>Перетягніть файл сюди</value>
   </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Українська</value>
@@ -1645,42 +1645,42 @@ ZZ_Automatic_Percent;90
 ZZ_AutomaticLanguage_Percent;90</value>
   </data>
   <data name="MenuBarItemEdit.Title" xml:space="preserve">
-    <value>Редагувати</value>
+    <value>Змінити</value>
   </data>
   <data name="MenuBarItemEditCopyText.Text" xml:space="preserve">
-    <value>Copy text</value>
+    <value>Копіювати текст</value>
   </data>
   <data name="MenuBarItemFile.Title" xml:space="preserve">
     <value>Файл</value>
   </data>
   <data name="MenuBarItemFileOpen.Text" xml:space="preserve">
-    <value>Open</value>
+    <value>Відкрити</value>
   </data>
   <data name="MenuBarItemHelp.Title" xml:space="preserve">
-    <value>Допомога</value>
+    <value>Довідка</value>
   </data>
   <data name="MenuBarItemHelpAbout.Text" xml:space="preserve">
-    <value>About</value>
+    <value>Про програму</value>
   </data>
   <data name="MenuBarItemView.Title" xml:space="preserve">
     <value>Вигляд</value>
   </data>
   <data name="MenuBarItemViewPretty.Text" xml:space="preserve">
-    <value>Pretty</value>
+    <value>Зручний</value>
   </data>
   <data name="MenuBarItemViewText.Text" xml:space="preserve">
-    <value>Text</value>
+    <value>Текст</value>
   </data>
   <data name="MenuBarItemViewWrapText.Text" xml:space="preserve">
-    <value>Wrap text</value>
+    <value>Переносити текст</value>
   </data>
   <data name="OpenSourceCodeButton.Text" xml:space="preserve">
-    <value>Source code</value>
+    <value>Вихідний код</value>
   </data>
   <data name="PopupClose" xml:space="preserve">
-    <value>Close</value>
+    <value>Закрити</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
-    <value>System</value>
+    <value>Системна</value>
   </data>
 </root>

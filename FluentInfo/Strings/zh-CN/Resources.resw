@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
-    <value>Copied as text</value>
+    <value>已复制为文本</value>
   </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
-    <value>Open</value>
+    <value>打开</value>
   </data>
   <data name="DragFileHereZoneCaption.Text" xml:space="preserve">
-    <value>Drag a file here</value>
+    <value>将文件拖到此处</value>
   </data>
   <data name="LanguageName" xml:space="preserve">
-    <value>简体中文</value>
+    <value>中文(简体)</value>
   </data>
   <data name="MediaInfoLanguage" xml:space="preserve">
     <value>  Language_ISO639;zh-CN
@@ -1648,39 +1648,39 @@ ZZ_AutomaticLanguage_Percent;89</value>
     <value>编辑</value>
   </data>
   <data name="MenuBarItemEditCopyText.Text" xml:space="preserve">
-    <value>Copy text</value>
+    <value>复制文本</value>
   </data>
   <data name="MenuBarItemFile.Title" xml:space="preserve">
     <value>文件</value>
   </data>
   <data name="MenuBarItemFileOpen.Text" xml:space="preserve">
-    <value>Open</value>
+    <value>打开</value>
   </data>
   <data name="MenuBarItemHelp.Title" xml:space="preserve">
     <value>帮助</value>
   </data>
   <data name="MenuBarItemHelpAbout.Text" xml:space="preserve">
-    <value>About</value>
+    <value>关于</value>
   </data>
   <data name="MenuBarItemView.Title" xml:space="preserve">
     <value>视图</value>
   </data>
   <data name="MenuBarItemViewPretty.Text" xml:space="preserve">
-    <value>Pretty</value>
+    <value>美观</value>
   </data>
   <data name="MenuBarItemViewText.Text" xml:space="preserve">
-    <value>Text</value>
+    <value>文本</value>
   </data>
   <data name="MenuBarItemViewWrapText.Text" xml:space="preserve">
-    <value>Wrap text</value>
+    <value>自动换行</value>
   </data>
   <data name="OpenSourceCodeButton.Text" xml:space="preserve">
-    <value>Source code</value>
+    <value>源代码</value>
   </data>
   <data name="PopupClose" xml:space="preserve">
-    <value>Close</value>
+    <value>关闭</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
-    <value>System</value>
+    <value>系统</value>
   </data>
 </root>

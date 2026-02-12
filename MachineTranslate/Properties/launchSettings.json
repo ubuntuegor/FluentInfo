@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MachineTranslate": {
+      "commandName": "Project",
+      "workingDirectory": "$(SolutionDir)"
+    }
+  }
+}

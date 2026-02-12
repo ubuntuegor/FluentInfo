@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
-    <value>Copied as text</value>
+    <value>Disalin sebagai teks</value>
   </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
-    <value>Open</value>
+    <value>Buka</value>
   </data>
   <data name="DragFileHereZoneCaption.Text" xml:space="preserve">
-    <value>Drag a file here</value>
+    <value>Seret file ke sini</value>
   </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Bahasa Indonesia</value>
@@ -1645,42 +1645,42 @@ ZZ_Automatic_Percent;94
 ZZ_AutomaticLanguage_Percent;94</value>
   </data>
   <data name="MenuBarItemEdit.Title" xml:space="preserve">
-    <value>Sunting</value>
+    <value>Edit</value>
   </data>
   <data name="MenuBarItemEditCopyText.Text" xml:space="preserve">
-    <value>Copy text</value>
+    <value>Salin teks</value>
   </data>
   <data name="MenuBarItemFile.Title" xml:space="preserve">
-    <value>Berkas</value>
+    <value>File</value>
   </data>
   <data name="MenuBarItemFileOpen.Text" xml:space="preserve">
-    <value>Open</value>
+    <value>Buka</value>
   </data>
   <data name="MenuBarItemHelp.Title" xml:space="preserve">
     <value>Bantuan</value>
   </data>
   <data name="MenuBarItemHelpAbout.Text" xml:space="preserve">
-    <value>About</value>
+    <value>Tentang</value>
   </data>
   <data name="MenuBarItemView.Title" xml:space="preserve">
     <value>Tampilan</value>
   </data>
   <data name="MenuBarItemViewPretty.Text" xml:space="preserve">
-    <value>Pretty</value>
+    <value>Rapi</value>
   </data>
   <data name="MenuBarItemViewText.Text" xml:space="preserve">
-    <value>Text</value>
+    <value>Teks</value>
   </data>
   <data name="MenuBarItemViewWrapText.Text" xml:space="preserve">
-    <value>Wrap text</value>
+    <value>Bungkus teks</value>
   </data>
   <data name="OpenSourceCodeButton.Text" xml:space="preserve">
-    <value>Source code</value>
+    <value>Kode sumber</value>
   </data>
   <data name="PopupClose" xml:space="preserve">
-    <value>Close</value>
+    <value>Tutup</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
-    <value>System</value>
+    <value>Sistem</value>
   </data>
 </root>

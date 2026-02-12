@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
-    <value>Copied as text</value>
+    <value>Kopieret som tekst</value>
   </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
-    <value>Open</value>
+    <value>Åbn</value>
   </data>
   <data name="DragFileHereZoneCaption.Text" xml:space="preserve">
-    <value>Drag a file here</value>
+    <value>Træk en fil hertil</value>
   </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Dansk</value>
@@ -1648,37 +1648,37 @@ ZZ_AutomaticLanguage_Percent;66</value>
     <value>Rediger</value>
   </data>
   <data name="MenuBarItemEditCopyText.Text" xml:space="preserve">
-    <value>Copy text</value>
+    <value>Kopiér tekst</value>
   </data>
   <data name="MenuBarItemFile.Title" xml:space="preserve">
-    <value>Fil</value>
+    <value>Filer</value>
   </data>
   <data name="MenuBarItemFileOpen.Text" xml:space="preserve">
-    <value>Open</value>
+    <value>Åbn</value>
   </data>
   <data name="MenuBarItemHelp.Title" xml:space="preserve">
     <value>Hjælp</value>
   </data>
   <data name="MenuBarItemHelpAbout.Text" xml:space="preserve">
-    <value>About</value>
+    <value>Om</value>
   </data>
   <data name="MenuBarItemView.Title" xml:space="preserve">
     <value>Vis</value>
   </data>
   <data name="MenuBarItemViewPretty.Text" xml:space="preserve">
-    <value>Pretty</value>
+    <value>Pæn</value>
   </data>
   <data name="MenuBarItemViewText.Text" xml:space="preserve">
-    <value>Text</value>
+    <value>Tekst</value>
   </data>
   <data name="MenuBarItemViewWrapText.Text" xml:space="preserve">
-    <value>Wrap text</value>
+    <value>Ombryd tekst</value>
   </data>
   <data name="OpenSourceCodeButton.Text" xml:space="preserve">
-    <value>Source code</value>
+    <value>Kildekode</value>
   </data>
   <data name="PopupClose" xml:space="preserve">
-    <value>Close</value>
+    <value>Luk</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
     <value>System</value>

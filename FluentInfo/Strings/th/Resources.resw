@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
-    <value>Copied as text</value>
+    <value>คัดลอกเป็นข้อความแล้ว</value>
   </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
-    <value>Open</value>
+    <value>เปิด</value>
   </data>
   <data name="DragFileHereZoneCaption.Text" xml:space="preserve">
-    <value>Drag a file here</value>
+    <value>ลากไฟล์มาที่นี่</value>
   </data>
   <data name="LanguageName" xml:space="preserve">
     <value>ไทย</value>
@@ -1648,39 +1648,39 @@ ZZ_AutomaticLanguage_Percent;59</value>
     <value>แก้ไข</value>
   </data>
   <data name="MenuBarItemEditCopyText.Text" xml:space="preserve">
-    <value>Copy text</value>
+    <value>คัดลอกข้อความ</value>
   </data>
   <data name="MenuBarItemFile.Title" xml:space="preserve">
-    <value>แฟ้ม</value>
+    <value>ไฟล์</value>
   </data>
   <data name="MenuBarItemFileOpen.Text" xml:space="preserve">
-    <value>Open</value>
+    <value>เปิด</value>
   </data>
   <data name="MenuBarItemHelp.Title" xml:space="preserve">
-    <value>ช่วยเหลือ</value>
+    <value>วิธีใช้</value>
   </data>
   <data name="MenuBarItemHelpAbout.Text" xml:space="preserve">
-    <value>About</value>
+    <value>เกี่ยวกับ</value>
   </data>
   <data name="MenuBarItemView.Title" xml:space="preserve">
     <value>มุมมอง</value>
   </data>
   <data name="MenuBarItemViewPretty.Text" xml:space="preserve">
-    <value>Pretty</value>
+    <value>สวยงาม</value>
   </data>
   <data name="MenuBarItemViewText.Text" xml:space="preserve">
-    <value>Text</value>
+    <value>ข้อความ</value>
   </data>
   <data name="MenuBarItemViewWrapText.Text" xml:space="preserve">
-    <value>Wrap text</value>
+    <value>ตัดบรรทัด</value>
   </data>
   <data name="OpenSourceCodeButton.Text" xml:space="preserve">
-    <value>Source code</value>
+    <value>ซอร์สโค้ด</value>
   </data>
   <data name="PopupClose" xml:space="preserve">
-    <value>Close</value>
+    <value>ปิด</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
-    <value>System</value>
+    <value>ระบบ</value>
   </data>
 </root>

@@ -12,11 +12,11 @@ function Get-ResourceFileForLang {
 
 $fixISO639 = @{ "gr" = "el" }
 $copyKeys = @{
-    "Language_Name" = "LanguageName";
-    "File"          = "MenuBarItemFile.Title";
-    "Edit"          = "MenuBarItemEdit.Title";
-    "View"          = "MenuBarItemView.Title";
-    "Help"          = "MenuBarItemHelp.Title";
+#    "Language_Name" = "LanguageName";
+#    "File"          = "MenuBarItemFile.Title";
+#    "Edit"          = "MenuBarItemEdit.Title";
+#    "View"          = "MenuBarItemView.Title";
+#    "Help"          = "MenuBarItemHelp.Title";
 }
 
 $langs = Get-ChildItem "External\MediaInfo\Source\Resource\Plugin\Language"

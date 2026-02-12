@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
-    <value>Copied as text</value>
+    <value>U kopjua si tekst</value>
   </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
-    <value>Open</value>
+    <value>Hap</value>
   </data>
   <data name="DragFileHereZoneCaption.Text" xml:space="preserve">
-    <value>Drag a file here</value>
+    <value>Zvarrit një skedar këtu</value>
   </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Shqip</value>
@@ -1645,42 +1645,42 @@ ZZ_Automatic_Percent;60
 ZZ_AutomaticLanguage_Percent;64</value>
   </data>
   <data name="MenuBarItemEdit.Title" xml:space="preserve">
-    <value>Edito</value>
+    <value>Redakto</value>
   </data>
   <data name="MenuBarItemEditCopyText.Text" xml:space="preserve">
-    <value>Copy text</value>
+    <value>Kopjo tekstin</value>
   </data>
   <data name="MenuBarItemFile.Title" xml:space="preserve">
-    <value>Skedë</value>
+    <value>Skedar</value>
   </data>
   <data name="MenuBarItemFileOpen.Text" xml:space="preserve">
-    <value>Open</value>
+    <value>Hap</value>
   </data>
   <data name="MenuBarItemHelp.Title" xml:space="preserve">
     <value>Ndihmë</value>
   </data>
   <data name="MenuBarItemHelpAbout.Text" xml:space="preserve">
-    <value>About</value>
+    <value>Rreth</value>
   </data>
   <data name="MenuBarItemView.Title" xml:space="preserve">
     <value>Pamje</value>
   </data>
   <data name="MenuBarItemViewPretty.Text" xml:space="preserve">
-    <value>Pretty</value>
+    <value>E bukur</value>
   </data>
   <data name="MenuBarItemViewText.Text" xml:space="preserve">
-    <value>Text</value>
+    <value>Tekst</value>
   </data>
   <data name="MenuBarItemViewWrapText.Text" xml:space="preserve">
-    <value>Wrap text</value>
+    <value>Mbështjell tekstin</value>
   </data>
   <data name="OpenSourceCodeButton.Text" xml:space="preserve">
-    <value>Source code</value>
+    <value>Kodi burimor</value>
   </data>
   <data name="PopupClose" xml:space="preserve">
-    <value>Close</value>
+    <value>Mbyll</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
-    <value>System</value>
+    <value>Sistemi</value>
   </data>
 </root>
