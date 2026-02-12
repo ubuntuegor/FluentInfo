@@ -119,15 +119,19 @@
   </resheader>
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
     <value>Copied as text</value>
+    <comment>Popup after user invoked "Copy text" action</comment>
   </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
     <value>Open</value>
+    <comment>Shown when user drags a file over the app window, as an intent that the file will be opened when it's dropped</comment>
   </data>
   <data name="DragFileHereZoneCaption.Text" xml:space="preserve">
     <value>Drag a file here</value>
+    <comment>Shown in the main window as a hint that files can be drag-and-dropped onto the window</comment>
   </data>
   <data name="LanguageName" xml:space="preserve">
     <value>English</value>
+    <comment>Name of the current language, shown in the language selector. Should not be translated literally; must match the ISO639 code</comment>
   </data>
   <data name="MediaInfoLanguage" xml:space="preserve">
     <value>  Language_ISO639;en
@@ -1648,41 +1652,54 @@ ZZ_AutomaticLanguage_Percent;98
   </data>
   <data name="MenuBarItemEdit.Title" xml:space="preserve">
     <value>Edit</value>
+    <comment>Item in the menu bar</comment>
   </data>
   <data name="MenuBarItemEditCopyText.Text" xml:space="preserve">
     <value>Copy text</value>
+    <comment>Sub-item of "Edit" in the menu bar, allows to copy detailed information about the file to the clipboard</comment>
   </data>
   <data name="MenuBarItemFile.Title" xml:space="preserve">
     <value>File</value>
+    <comment>Item in the menu bar</comment>
   </data>
   <data name="MenuBarItemFileOpen.Text" xml:space="preserve">
     <value>Open</value>
+    <comment>Sub-item of "File", opens the file picker</comment>
   </data>
   <data name="MenuBarItemHelp.Title" xml:space="preserve">
     <value>Help</value>
+    <comment>Item in the menu bar</comment>
   </data>
   <data name="MenuBarItemHelpAbout.Text" xml:space="preserve">
     <value>About</value>
+    <comment>Sub-item of "Help", opens a popup with information about the program</comment>
   </data>
   <data name="MenuBarItemView.Title" xml:space="preserve">
     <value>View</value>
+    <comment>Item in the menu bar</comment>
   </data>
   <data name="MenuBarItemViewPretty.Text" xml:space="preserve">
     <value>Pretty</value>
+    <comment>Sub-item of "View", it's a radio button that allows to choose the presentation of media information. "Pretty" displays information in structured blocks</comment>
   </data>
   <data name="MenuBarItemViewText.Text" xml:space="preserve">
     <value>Text</value>
+    <comment>Sub-item of "View", it's a radio button that allows to choose the presentation of media information. "Text" displays a single text block containing all the media details</comment>
   </data>
   <data name="MenuBarItemViewWrapText.Text" xml:space="preserve">
     <value>Wrap text</value>
+    <comment>Sub-item of "View", checkbox to enable soft wrapping of text in the "Text" view</comment>
   </data>
   <data name="OpenSourceCodeButton.Text" xml:space="preserve">
     <value>Source code</value>
+    <comment>Text on a button which opens the program's source code repository in the browser</comment>
   </data>
   <data name="PopupClose" xml:space="preserve">
     <value>Close</value>
+    <comment>Text on a button that closes a popup</comment>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
     <value>System</value>
+    <comment>Option in the language selector next to all the language names, which stands for "use the system language"</comment>
   </data>
 </root>

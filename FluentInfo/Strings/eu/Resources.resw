@@ -1,0 +1,1686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
+    <value>Copied as text</value>
+  </data>
+  <data name="DragDropFileOpenCaption" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="DragFileHereZoneCaption.Text" xml:space="preserve">
+    <value>Drag a file here</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Euskara</value>
+  </data>
+  <data name="MediaInfoLanguage" xml:space="preserve">
+    <value>  Language_ISO639;eu
+  Author_Email;alexgabi@disroot.org
+  Author_Name;Alexander Gabilondo
+  Author_OldNames;Xabier Aramendi
+  Language_Name;Euskara
+  Config_Text_ColumnSize;40
+  Config_Text_Separator; : 
+  Config_Text_NumberTag; Z
+  Config_Text_FloatSeparator;,
+  Config_Text_ThousandsSeparator; 
+ audio stream1; audio jarioa
+ audio stream2; audio jarioa
+ audio stream3; audio jarioa
+ bit1; bit
+ bit2; bit
+ bit3; bit
+ Bps; Bps
+ bps; bps
+ Byte1; Byte
+ Byte2; Byte
+ Byte3; Byte
+ channel1; kanala
+ channel2; kanala
+ channel3; kanala
+ chapter1; kapitulua
+ chapter2; kapitulua
+ chapter3; kapitulua
+ chapters stream1; kapituluen jarioa
+ chapters stream2; kapituluen jarioa
+ chapters stream3; kapituluen jarioa
+ character1;karaktere
+ character2;karaktere
+ character3;karaktere
+ day1; egun
+ day2; egun
+ day3; egun
+ dB0; dB
+ dB1; dB
+ dB2; dB
+ dB3; dB
+ file1; fitxategia
+ file2; fitxategia
+ file3; fitxategia
+ fps1; fps
+ fps2; fps
+ fps3; fps
+ frame1; fotograma
+ frame2; fotograma
+ frame3; fotograma
+ GB; GB
+ Gb; Gb
+ GBps; GBs-ko
+ Gbps; Gbs-ko
+ GHz; GHz
+ GiB; GiB
+ GibiByte1; GibiByte
+ GibiByte2; GibiByte
+ GibiByte3; GibiByte
+ GiBps; GiBps
+ GigaBit1; GigaBit
+ GigaBit2; GigaBit
+ GigaBit3; GigaBit
+ GigaByte1; GigaByte
+ GigaByte2; GigaByte
+ GigaByte3; GigaByte
+ hour1; ordu
+ hour2; ordu
+ hour3; ordu
+ Hz; Hz
+ image stream1; irudi jarioa
+ image stream2; irudi jarioa
+ image stream3; irudi jarioa
+ KB; KB
+ Kb; Kb
+ KBps; KBps
+ Kbps; Kbps
+ KHz; KHz
+ KiB; KiB
+ KibiBit1; KibiBit
+ KibiBit2; KibiBit
+ KibiBit3; KibiBit
+ KibiByte1; KibiByte
+ KibiByte2; KibiByte
+ KibiByte3; KibiByte
+ KiBps; KiBps
+ KiloBit1; KiloBit
+ KiloBit2; KiloBit
+ KiloBit3; KiloBit
+ KiloByte1; KiloByte
+ KiloByte2; KiloByte
+ KiloByte3; KiloByte
+ MB; MB
+ Mb; Mb
+ MBps; MBps
+ Mbps; Mbps
+ MebiBit1; MebiBit
+ MebiBit2; MebiBit
+ MebiBit3; MebiBit
+ MebiByte1; MebiByte
+ MebiByte2; MebiByte
+ MebiByte3; MebiByte
+ MegaBit1; MegaBit
+ MegaBit2; MegaBit
+ MegaBit3; MegaBit
+ MegaByte1; MegaByte
+ MegaByte2; MegaByte
+ MegaByte3; MegaByte
+ MHz; MHz
+ MiB; MiB
+ Mib; Mib
+ MiBps; MiBps
+ millisecond1; milisegundo
+ millisecond2; milisegundo
+ millisecond3; milisegundo
+ minute1; minutu
+ minute2; minutu
+ minute3; minutu
+ month1; hilabete
+ month2; hilabete
+ month3; hilabete
+ object1; objektu
+ object2; objektu
+ object3; objektu
+ pixel1; pixel
+ pixel2; pixel
+ pixel3; pixel
+ second1; segundo
+ second2; segundo
+ second3; segundo
+ slice per frame1; mozketa fotogramako
+ slice per frame2; mozketa fotogramako
+ slice per frame3; mozketa fotogramako
+ text stream1; testu jarioa
+ text stream2; testu jarioa
+ text stream3; testu jarioa
+ video frames1; bideo fotograma
+ video frames2; bideo fotograma
+ video frames3; bideo fotograma
+ video stream1; bideo jarioa
+ video stream2; bideo jarioa
+ video stream3; bideo jarioa
+ warppoint0;deformazio punturik ez
+ warppoint1; deformazio puntua
+ warppoint2; deformazio puntua
+ warppoint3; deformazio puntua
+ week1; aste
+ week2; aste
+ week3; aste
+ year1; urte
+ year2; urte
+ year3; urte
+, ;, 
+: ;: 
+3D;
+3DType;
+5.1.2ch;
+5.1.4ch;
+5.1ch;
+608_Mode;
+7.1.2ch;
+7.1ch;
+About;Honi buruz
+About_Hint;Nola jarri harremanetan nirekin eta azken bertsioa aurkitu
+AC3_Metadata;
+Accompaniment;Laguntza
+acmod;
+Active_DisplayAspectRatio; Aspektu-ratioa
+Active_Height; Altuera
+Active_Width; Zabalera
+ActiveFormatDescription;Formatu deskribapena
+ActiveFormatDescription_MuxingMode;Formatu deskribapena, Nahasketa modua
+Actor;Antzezlea
+Actor_Character;Pertsonaia
+Add creation date to text output;
+Add version to text output;
+Added_Date;Gehitze eguna
+Address;Helbidea
+AdID;
+ADM: Show ChannelFormats;
+ADM: Show TrackUIDs;
+AdmProfile;
+Advanced mode --&gt;;
+Advanced mode;Modu aurreratua
+Advanced;Aurreratua
+Album;Bilduma
+Album_ReplayGain_Gain;Bilduma berrirakurketa irabazia
+Album_ReplayGain_Peak;Bilduma berrirakurketa irabazi gailurra
+Alignment;Lerrokapena
+Alignment_Aligned;Lerrokatu tarteetan
+Alignment_Split;Banandu tarteetan
+All;Denak
+AllFields;
+AlternateGroup;
+AnalyzeServicesMenu;
+App_About;
+App_Hide;
+App_Quit;
+Archival_Location;Fitxategien kokapena
+Arranger;Konpontzailea
+ArtDirector;Arte-Zuzendaria
+AspectRatio;Aspektu-ratioa
+AssistantDirector;Zuzendari-laguntzailea
+AssociatedVideo_FrameRate;
+At least one file;(Gutxienez fitxategi bat ireki behar duzu)
+at;
+Attachments;Eranskinak
+Audio stream(s);Audio jarioak
+Audio;Audioa
+Audio_Channels_Total;
+Audio_Codec_List;Audio kodekak
+Audio_Format_List;Audio formatuak
+Audio_Format_WithHint_List;
+Audio_Language_List;Audio hizkuntzak
+Audio_No;Audiorik ez
+Audio1;
+Audio2;
+Audio3;
+AudioComments;
+AudioCount;Audio jario zenbatekoa
+AudioDescription;
+AudioDescriptionPresent;
+AudioDescriptionType;
+AudioLoudnessStandard;
+AudioRenderingIndication;
+AudioSceneInfoID;
+AudioTrackLayout;
+Author;Egilea
+Back4ToBack2;
+Balance_FrontBackListener;
+Balance_FrontBackOverheadFloor;
+BarCode;BarraKodea
+Basic;Ohinarrizkoa
+Basic_Note;Oharra: Fitxategi honi buruzko argibide gehiagorako, ikuspegi ezberdin bat hautatu behar duzu (Orria, Zuhaitza...)
+BedChannelConfiguration;
+BedChannelCount;
+BinauralRenderMode;
+BitDepth;Bit sakonera
+BitDepth_Detected;
+BitDepth_Stored;
+BitRate;Bit neurria
+BitRate_Encoded;Kodeketa bit-ratioa
+BitRate_Maximum;Gehinezko bit-ratioa
+BitRate_Minimum;Gutxienezko bit-ratioa
+BitRate_Mode;Bit-ratio modua
+BitRate_Mode_CBR;Aldagaitza
+BitRate_Mode_VBR;Aldakorra
+BitRate_Nominal;Bit-ratio nominala
+Bits-(Pixel*Frame);Bit/(Pixel*Fotograma)
+BitstreamLevel;
+Bring All to Front;
+bsid;
+BufferSize;Buffer neurria
+Cancel;Utzi
+CaptionServiceName;
+CatalogNumber;
+Channel(s);Kanala
+Channel(s)_Original;
+ChannelCoded;
+ChannelConfiguration;
+ChannelFormat;
+ChannelLayout;
+ChannelLayout_Original;
+ChannelMode;
+ChannelPositions;Kanalen kokapenak
+ChannelPositions_Original;
+Chapter(s);Kapituluak
+Chapters stream(s);Kapitulu-jarioa(k)
+Chapters;Kapituluak
+Chapters_Codec_List;Kapitulu kodekak
+Chapters_No;Kapitulurik ez
+Chapters_Pos_Begin;
+Chapters_Pos_End;
+ChaptersCount;Kapitulu jario zenbatekoa
+CharacterSet;
+CheckNewVersion;Egiaztatu bertsio berririk dagoen
+Choose custom sheet;Hautatu gogoko duzun egile orria
+Choose custom text;Hautatu gogoko duzun egile testua
+Choose custom;Hautatu egilea
+Choose export format;Hautatu gogoko duzun esportazio formatua
+Choose file(s);Hautatu irekitzeko fitxategiak
+Choose filename;Hautatu gogoko duzun fitxategi-izena
+Choose language;Hautatu gogoko duzun hizkuntza
+Choreographer;Dantza-musikaria
+Chroma;Margoa
+ChromaSubsampling;Kolore azpilaginketa
+Classifier;
+ClearList;
+Close all before open;Itxi dena ireki aurretik
+Close;Itxi
+CloseAll;
+ClosedCaptionsLanguage;
+ClosedCaptionsPresent;
+ClosedCaptionsType;
+CloseFile;
+CloseWindow;
+cmixlev;
+Codec;Kodeka
+Codec_Description;Kodek azalpena
+Codec_Info;Kodekaren xehetasunak
+Codec_Profile;Kodek profila
+Codec_Settings;Kodek ezarpenak
+Codec_Settings_BVOP;Kodek ezarpenak, BVOP
+Codec_Settings_CABAC;Kodek ezarpenak, CABAC
+Codec_Settings_Endianness;Kodek ezarpenak, Endianness
+Codec_Settings_Firm;Kodek ezarpenak, Firm
+Codec_Settings_Floor;Kodek ezarpenak, Floor
+Codec_Settings_GMC;Kodek ezarpenak, GMC
+Codec_Settings_ITU;Kodek ezarpenak, ITU
+Codec_Settings_Law;Kodek ezarpenak, Law
+Codec_Settings_Matrix;Kodek ezarpenak, Matrix
+Codec_Settings_PacketBitStream;Kodek ezarpenak, Pakete bitjarioa
+Codec_Settings_QPel;Kodek ezarpenak, QPel
+Codec_Settings_Sign;Kodek ezarpenak, Sign
+Codec_Url;Kodekaren weblotura
+CodecConfigurationBox;
+CodecID;Kodek ID-a
+CodecID_Description;Kodekaren deskripzioa:
+CoDirector;Zuzendari albokoa
+Collection;Bilduma
+Colorimetry;Koloremetria
+ColorSpace;Kolore tartea
+ColorTheme;
+ColorTheme_Dark;
+ColorTheme_Light;
+ColorTheme_System;
+colour_description_present;
+colour_description_present_Source;
+colour_primaries;Kolore lehenak
+colour_primaries_Source;
+colour_range;kolore tartea
+colour_range_Source;
+Comment;Iruzkina
+CommissionedBy;Eskatzailea
+Compare;
+CompareView;
+Compilation;Bilketa
+ComplementaryObject;
+CompleteName;Izen osoa
+CompletionDate;
+ComplexityIndex;
+Composer;Konpositorea
+Compression_Mode;Konpresio modua
+Compression_Mode_Lossless;Galera gabe
+Compression_Mode_Lossy;Galerarekin
+Compression_Ratio;Konpresio maila
+comprprof;
+Conductor;Gidaria
+ConformanceCheck;
+ConformanceErrors;
+ConformanceInfos;
+ConformanceWarnings;
+ContactEmail;
+ContactTelephoneNumber;
+Container and general information;Edukiontzia eta informazio orokorra
+Content;Edukia
+ContentType;Eduki-Mota
+CoProducer;Koekoizlea
+Copy;
+Copyright;Copyrighta
+CopyrightYear;Copyright urtea
+CostumeDesigner;jantzien diseinatzailea
+Count;Zenbatekoa
+Country;Herrialdea
+Cover;Azala
+Cover_Datas;Azalaren datuak
+Cover_Description;Azalaren deskripzioa
+Cover_Mime;Azalaren MIME
+Cover_Type;Azal mota
+CoverData;
+CreatedOn;
+Cropped;Mozketa neurriak
+Custom;Pertsonalizatua
+CustomDownmixTargets;
+Customize;Pertsonalizatu
+DarkMode;Modu iluna
+Date;Eguna
+Debug;Garbiketa
+Decimal point;Hamartarren puntua
+Default translation;
+Default;Lehenetsia
+Default_Setting;
+DefaultTargetDeviceConfig;
+DefaultView;
+Delay;Atzerapena
+Delay_Source;Atzerapena, jatorria
+Delay_Source_Container;Edukiontzia
+Delay_Source_Stream;Raw jarioa
+Delete;Ezabatu
+Description;Deskribapena
+Details;Xehetasunak
+dialnorm;
+dialnorm_Average;
+dialnorm_Count;
+dialnorm_Maximum;
+dialnorm_Minimum;
+DialogueCorrected;
+DialogueEnhancement;
+DialogueNormalization;
+Digitized_Date;Digitalizatze data
+Dimensions;Neurriak
+Director;Zuzendaria
+DirectorOfPhotography;Argazki-zuzendaria
+Disabled;
+DisplayAspectRatio;Erakutsi aspektu-ratioa
+DisplayAspectRatio_CleanAperture;
+DisplayAspectRatio_Original;Jatorrizko aspektu-ratioa
+DisplayCaptions;Erakutsi azpitituluak
+DisplayCaptions_Command;
+DisplayCaptions_Content;
+DisplayCaptions_Stream;
+DistributedBy;Banatzailea
+Distributor;
+Documents;
+Dolby_Atmos_Metadata;
+DolbyAtmos;
+Donate;Eman dirulaguntza bat
+DotsPerInch;Puntu hatzbeteko
+DownloadFile;
+DownloadFileError;
+Downmix;
+Downmix_5.1.x;
+Downmix_5to2;
+DrcSets_Count;
+DrcSets_Effects;
+Duration;Iraupena
+Duration_End;Amaiera denbora
+Duration_End_Command;
+Duration_Source;
+Duration_Start;Hasiera denbora
+Duration_Start_Command;
+Duration_Start2End;
+DynamicObject;
+DynamicRangeControl;
+dynrngprof;
+Eac3DrcProfile;
+Edit;Editatu
+EditedBy;Editatzailea
+EditorialClassification;
+ElementaryStream;
+ElementCount;
+EMail;Post@
+Enable FFmpeg plugin;
+Encoded_Application;Kodeketa aplikazioa
+Encoded_Application_Name;
+Encoded_Application_Version;
+Encoded_Date;Kodeketa data
+Encoded_Hardware;
+Encoded_Library;Kodeketa liburutegia
+Encoded_Library_Name;
+Encoded_Library_Settings;Kodeketa ezarpenak
+Encoded_Library_Version;
+Encoded_Original;Jatorrizko sostengua
+EncodedBy;Kodetzailea
+EPG_Positions;EPG kokapenak (barnean)
+EpisodeTitleNumber;
+Error;
+Error_File;Akatsa fitxategia irakurtzerakoan
+Error_File_Write;
+Error_Open;
+Error_Save;
+Events_MinDuration;
+Events_PaintOn;
+Events_PopOn;
+Events_RollUp;
+Events_Total;
+ExecutiveProducer;Ekoizle exekutiboa
+Exit;Irten
+Exit_Hint;Utzi programa
+Export;Esportatu
+Export_Hint;Esportatu norbere formatu batean
+Extensions;Erabilitako hedapenak
+External_Media_NotMounted;
+Family;Familia
+Fax;Faxa
+Feature_AdvancedMode;
+Feature_FilesCompare;
+Feature_More;
+Feature_SelectView;
+Field;
+File size;Fitxategiaren tamaina
+File;Fitxategia
+File_Append;Gehitu dagoen fitxategiari (Kontuz : zaindu parametroak berdinak izatea)
+File_Created_Date;Fitxategiaren sortze eguna
+File_Created_Date_Local;Fitxategiaren sortze eguna (tokikoa)
+File_Hint;Hautatu aztertzeko multimedia fitxategi bat
+File_Modified_Date;Fitxategiaren azken aldaketa eguna
+File_Modified_Date_Local;Fitxategiaren azken aldaketa eguna (tokikoa)
+FileExtension;Fitxategiaren luzapena
+FileName;Fitxategi izena
+FileNameExtension;
+FileSize;Fitxategiaren tamaina
+Fill with a Dummy movie;
+Fill with a realistic movie;
+FirstDisplay_Delay_Frames;
+FirstDisplay_Type;
+FirstFrameOfAction;
+FlatPanelTv;
+FlowID;
+Folder (R);Karpeta (R)
+Folder (R)_Hint;Hautatu aztertzeko karpeta bat (karpeta guztiak jarraian)
+Folder (Recursively);Karpeta (errekurtsiboa)
+Folder;Karpeta
+Folder_Hint;Hautatu aztertzeko karpeta bat
+FolderName;Karpetaren izena
+Forced;
+Format;Formatua
+Format_AdditionalFeatures;
+Format_Commercial;Merkatal izena
+Format_Commercial_IfAny;Merkatal izena
+Format_Compression;Formatuaren konpresioa
+Format_Description;Formatuaren deskripzioa
+Format_Info;Formatuaren informazioa
+Format_Level;
+Format_Profile;Formatuaren profila
+Format_Settings;Formatuaren ezarpenak
+Format_Settings_BVOP;Formatu ezarpenak, BVOP
+Format_Settings_CABAC;Formatu ezarpenak, CABAC
+Format_Settings_Emphasis;
+Format_Settings_Endianness;Formatu ezarpenak, Endianness
+Format_Settings_Firm;Formatu ezarpenak, Firm
+Format_Settings_Floor;Formatu ezarpenak, Floor
+Format_Settings_FrameMode;Fotograma modua
+Format_Settings_GMC;Formatu ezarpenak, GMC
+Format_Settings_GOP;Formatu ezarpenak, GOP
+Format_Settings_ITU;Formatu ezarpenak, ITU
+Format_Settings_Law;Formatu ezarpenak, Law
+Format_Settings_Matrix;Formatu ezarpenak, Matrix
+Format_Settings_Matrix_Custom;Egilea
+Format_Settings_Matrix_Default;Lehenetsia
+Format_Settings_Mode;Modua
+Format_Settings_ModeExtension;Modu hedapena
+Format_Settings_PacketBitStream;Formatu ezarpenak, Pakete bit-emaria
+Format_Settings_PictureStructure;
+Format_Settings_PS;Formatu ezarpenak, PS
+Format_Settings_Pulldown;Formatu ezarpenak, Pulldown
+Format_Settings_QPel;Formatu ezarpenak, QPel
+Format_Settings_RefFrames;Formatu ezarpenak, RefFrames
+Format_Settings_SBR;Formatu ezarpenak, SBR
+Format_Settings_Sign;Formatu ezarpenak, Sign
+Format_Settings_SliceCount;
+Format_Settings_Wrapping;
+Format_Tier;
+Format_Url;Formatu weblotura
+Format_Version;Formatu bertsioa
+FormatDefinition;
+FpaManufacturer;
+FpaPass;
+FpaVersion;
+FrameCount;Fotograma zenbatekoa
+FrameCount_Source;
+FrameRate;Fotograma ratioa
+FrameRate_Den;
+FrameRate_Maximum;Gehienezko fotograma ratioa
+FrameRate_Minimum;Gutxienezko fotograma ratioa
+FrameRate_Mode;Fotograma ratioa modua
+FrameRate_Mode_CFR;Aldagaitza
+FrameRate_Mode_VFR;Aldakorra
+FrameRate_Nominal;Fotograma ratioa nominala
+FrameRate_Num;
+FrameRate_Original;Jatorrizko fotograma ratioa
+FrameRate_Real;
+FullParsing;
+FullParsingTips;
+Gallery;
+General;Orokorra
+GeneralCompliance;
+Genre;Genero
+Genre_000;Bluesa
+Genre_001;Rock Klasikoa
+Genre_002;Countrya
+Genre_003;Dancea
+Genre_004;Diskoa
+Genre_005;Funka
+Genre_006;Grungea
+Genre_007;Hip-Hopa
+Genre_008;Jazza
+Genre_009;Metala
+Genre_010;New Agea
+Genre_011;Oldiesa
+Genre_012;Beste
+Genre_013;Pop
+Genre_014;R&amp;B-a
+Genre_015;Rapa
+Genre_016;Reggaea
+Genre_017;Rocka
+Genre_018;Teknoa
+Genre_019;Industriala
+Genre_020;Alternatiboa
+Genre_021;Ska
+Genre_022;Death Metala
+Genre_023;Pranksa
+Genre_024;Soundtracka
+Genre_025;Euro-Teknoa
+Genre_026;Ambienta
+Genre_027;Trip-Hopa
+Genre_028;Ahotsa
+Genre_029;Jazza+Funka
+Genre_030;Fusiona
+Genre_031;Tranzea
+Genre_032;Klasikoa
+Genre_033;Instrumentala
+Genre_034;Acid
+Genre_035;House
+Genre_036;Gamea
+Genre_037;Sound Klipa
+Genre_038;Gospela
+Genre_039;Noisea
+Genre_040;AlternRocka
+Genre_041;Bassa
+Genre_042;Soula
+Genre_043;Punka
+Genre_044;Spacea
+Genre_045;Meditatiboa
+Genre_046;Pop Instrumentala
+Genre_047;Rock Instrumentala
+Genre_048;Etnikoa
+Genre_049;Gotikoa
+Genre_050;Darkwavea
+Genre_051;Tekno-Industriala
+Genre_052;Elektronikoa
+Genre_053;Pop-Folka
+Genre_054;Eurodancea
+Genre_055;Dream
+Genre_056;Southern Rocka
+Genre_057;Komedia
+Genre_058;Culta
+Genre_059;Gangsta
+Genre_060;Top 40
+Genre_061;Kristau Rapa
+Genre_062;Pop/Funka
+Genre_063;Junglea
+Genre_064;Indira Amerikarra
+Genre_065;Kabareta
+Genre_066;New Wavea
+Genre_067;Psikodelikoa
+Genre_068;Ravea
+Genre_069;Showtunesa
+Genre_070;Trailerra
+Genre_071;Lo-Fia
+Genre_072;Tribala
+Genre_073;Acid Punka
+Genre_074;Acid Jazza
+Genre_075;Polka
+Genre_076;Retroa
+Genre_077;Musikala
+Genre_078;Rock &amp; Rolla
+Genre_079;Hard Rocka
+Genre_080;Folka
+Genre_081;Folk-Rocka
+Genre_082;Folk Nazionala
+Genre_083;Swinga
+Genre_084;Fast Fusiona
+Genre_085;Beboba
+Genre_086;Latinoa
+Genre_087;Revival
+Genre_088;Zeltiarra
+Genre_089;Bluegrassa
+Genre_090;Avantgardea
+Genre_091;Rock Gotikoa
+Genre_092;Rock Progresiboa
+Genre_093;Rock Psikodelikoa
+Genre_094;Rock Sinfonikoa
+Genre_095;Slow Rocka
+Genre_096;Big Band
+Genre_097;Abesbatza
+Genre_098;Entzun Erraza
+Genre_099;Akustikoa
+Genre_100;Humorea
+Genre_101;Hizketa
+Genre_102;Abestia
+Genre_103;Antzez-abestia
+Genre_104;Ganbara Musika
+Genre_105;Sonata
+Genre_106;Sinfonia
+Genre_107;Booty Bassa
+Genre_108;Primusa
+Genre_109;Porn Groovea
+Genre_110;Satirea
+Genre_111;Slow Jam
+Genre_112;Cluba
+Genre_113;Tangoa
+Genre_114;Samba
+Genre_115;Folklorea
+Genre_116;Balada
+Genre_117;Power Balada
+Genre_118;Soul Ritmikoa
+Genre_119;Freestylea
+Genre_120;Dueta
+Genre_121;Punk Rocka
+Genre_122;Drum Soloa
+Genre_123;A capella
+Genre_124;Euro-Housea
+Genre_125;Dance Halla
+Genre_126;Goa
+Genre_127;Drum &amp; Bassa
+Genre_128;Club-Housea
+Genre_129;Hardcorea
+Genre_130;Beldurrezkoa
+Genre_131;Indiea
+Genre_132;Britpopa
+Genre_133;Negerpunka
+Genre_134;Polsk Punka
+Genre_135;Beata
+Genre_136;Kristau Gangsta Rapa
+Genre_137;Heavy Metal
+Genre_138;Black Metal
+Genre_139;Crossoverra
+Genre_140;Kristau Garaikidea
+Genre_141;Kristau Rocka
+Genre_142;Merengea
+Genre_143;Salsa
+Genre_144;Trash Metal
+Genre_145;Anima
+Genre_146;JPop
+Genre_147;Synthpop
+Genre_148;Abstraktoa
+Genre_149;Art Rocka
+Genre_150;Baroque
+Genre_151;Bhangra
+Genre_152;Big Beata
+Genre_153;Breakbeata
+Genre_154;Chillout
+Genre_155;Downtempoa
+Genre_156;Duba
+Genre_157;EBM
+Genre_158;Eklektikoa
+Genre_159;Elektroa
+Genre_160;Elektroclasha
+Genre_161;Emoa
+Genre_162;Esperimentala
+Genre_163;Garagea
+Genre_164;Globala
+Genre_165;IDM-a
+Genre_166;Illbienta
+Genre_167;Industri-Gotikoa
+Genre_168;Jam Banda
+Genre_169;Krautrocka
+Genre_170;Leftfielda
+Genre_171;Loungea
+Genre_172;Math Rocka
+Genre_173;Erromantiko Berria
+Genre_174;Nu-Breakza
+Genre_175;Post-Punka
+Genre_176;Post-Rocka
+Genre_177;Psytrance
+Genre_178;Shoegaze
+Genre_179;Space Rocka
+Genre_180;Trop Rocka
+Genre_181;Munduko Musika
+Genre_182;Neoklasikoa
+Genre_183;Audio-liburua
+Genre_184;Audio Zinema
+Genre_185;Neue Deutsche Welle
+Genre_186;Podcasta
+Genre_187;Indie Rocka
+Genre_188;G-Funka
+Genre_189;Dubstep
+Genre_190;Garage Rocka
+Genre_191;Psybienta
+Go to WebSite;Joan webgunera
+Gop_OpenClosed;
+Gop_OpenClosed_Closed;
+Gop_OpenClosed_FirstFrame;
+Gop_OpenClosed_Open;
+Graph;
+Group;
+Grouping;
+GroupPreset;
+h; h
+HDR_Format;
+Header file;Sortu goiburu fitxategia
+Height;Altuera
+Height_CleanAperture;
+Height_Original;Jatorrizko altuera
+Help;Laguntza
+HideOthers;
+Hint;Aholkua
+HomeTheaterAvr;
+How many audio streams?;Zenbat audio jario?
+How many chapters streams?;Zenbat kapitulu jario?
+How many text streams?;Zenbat testu jario?
+How many video streams?;Zenbat bideo jario?
+HTML;HTML
+ID;IDa
+IdentClockStart;
+IFrameInterval;
+Image stream(s);Irudi jarioak
+Image;Irudia
+Image_Codec_List;Irudi kodeka
+ImageCount;Irudi jario zenbatekoa
+ImmersiveStereo;
+Info;Informazioa
+Instruments;Tresnak
+IntegratedLoudness;
+IntegratedLoudness_Level;
+IntegratedLoudness_Speech;
+InteractivityEnabled;
+Interlaced_BFF;Beheko Eremua Lehenik
+Interlaced_Interlaced;Elkarlotuta
+Interlaced_PPF;Aurrerakorra
+Interlaced_Progressive;Aurrerakorra
+Interlaced_TFF;Goiko Eremua Lehenik
+Interlacement;Elkarlotura
+Interleave_Duration;Tartekatuta, iraupena
+Interleave_Preload;Tartekatuta, aurregertaketa iraupena
+Interleave_VideoFrames;Tartekatuta, iraupena
+Interleaved;Tartekatuta
+InternetMediaType;Internet multimedia mota
+IRCA;IRCA
+ISBN;ISBN
+ISRC;ISRC
+IsStreamable;
+Keywords;Laterteklak
+Known codecs;Ezagutu kodekak
+Known formats;Ezagutu formatuak
+Known parameters;Ezagutu parametroak
+Label;Etiketa
+Language;Hizkuntza
+Language_aa;Afarera
+Language_ab;Abkhazianera
+Language_ae;Avestanera
+Language_af;Afrikaanera
+Language_ak;Akanera
+Language_am;Amharicera
+Language_an;Aragoiera
+Language_ar;Arabiera
+Language_as;Assamesera
+Language_av;Avarikera
+Language_ay;Aymarera
+Language_az;Azerbaianera
+Language_ba;Bashkirera
+Language_be;Belaerrusiera
+Language_bg;Bulgariera
+Language_bh;Bihariera
+Language_bi;Bislamera
+Language_bm;Bambarera
+Language_bn;Bengaliera
+Language_bo;Tibetera
+Language_br;Bretainiera
+Language_bs;Bosniera
+Language_ca;Kataluniera
+Language_ce;Txetxeniera
+Language_ch;Chamorroera
+Language_cmn;
+Language_co;Korsikera
+Language_cr;Creeera
+Language_cs;Txekiera
+Language_cu;Eslavera
+Language_cv;Chuvashera
+Language_cy;Galesera
+Language_da;Daniera
+Language_de;Alemaniera
+Language_dv;Divehiera
+Language_dz;Dzongkhaera
+Language_ee;Eweera
+Language_el;Greziera
+Language_en;Ingelera
+Language_en-gb;Ingelera (Erresuma Batua)
+Language_en-us;Ingelera (Estatu Batuak)
+Language_eo;Esperantoera
+Language_es;Espainiera
+Language_es-419;
+Language_et;Estoniera
+Language_eu;Euskara
+Language_fa;Persiera
+Language_ff;Fulahera
+Language_fi;Finlandiera
+Language_fil;
+Language_fj;Fijianera
+Language_fo;Faroera
+Language_fr;Frantziera
+Language_fy;Frisiera
+Language_ga;Irlandera
+Language_gd;Gaeliera
+Language_gl;Galiziera
+Language_gn;Guaraniera
+Language_gu;Gujaratiera
+Language_gv;Manxera
+Language_ha;Hausaera
+Language_he;Hebraiera
+Language_hi;Hindera
+Language_ho;Hiri Motuera
+Language_hr;Kroaziera
+Language_ht;Haitiera
+Language_hu;Hungariera
+Language_hy;Armeniera
+Language_hy-az;
+Language_hz;Hereroera
+Language_ia;Hizkuntza Elkarte Laguntzailea
+Language_id;Indonesiera
+Language_ie;Interlinguera
+Language_ig;Igboera
+Language_ii;Sichuan Yiera
+Language_ik;Inupiaqera
+Language_Info;Hizkuntza argibideak
+Language_io;Idoera
+Language_is;Islandiera
+Language_it;Italiera
+Language_iu;Inuktitutera
+Language_ja;Japoniera
+Language_jv;Javanera
+Language_ka;Georgiera
+Language_kg;Kongoera
+Language_ki;Kikuyuera
+Language_kj;Kuanyamaera
+Language_kk;Kazakhera
+Language_kl;Kalaallisutera
+Language_km;Khmerera
+Language_kn;Kannadera
+Language_ko;Koreaera
+Language_kr;Kanuriera
+Language_ks;Kashmiriera
+Language_ku;Kurdistanera
+Language_kv;Komiera
+Language_kw;Korniera
+Language_ky;Kirghizera
+Language_la;Latinera
+Language_lb;Luxenburgera
+Language_lg;Gandaera
+Language_li;Linburgera
+Language_ln;Lingalaera
+Language_lo;Laoera
+Language_lt;Lituaniera
+Language_lu;Luba-Katangera
+Language_lv;Letoniea
+Language_mg;Malagasiera
+Language_mh;Marshallera
+Language_mi;Maoriera
+Language_mk;Mazedoniera
+Language_ml;Malayalamera
+Language_mn;Mongoliera
+Language_mn-cn;
+Language_mo;Moldabiera
+Language_More;Hizkuntza, argibide gehiago
+Language_mr;Marathiera
+Language_ms;Malaiera
+Language_ms-bn;
+Language_mt;Maltaera
+Language_mul;Hizkuntza anitz
+Language_my;Burmesera
+Language_na;Nauruera
+Language_nb;Norbegiera Bokmal
+Language_nd;Ndebelera
+Language_ne;Nepaliera
+Language_ng;Ndongaera
+Language_nl;Herbeherera
+Language_nl-be;
+Language_nn;Norbegiera Nynorsk
+Language_no;Norbegiera
+Language_nr;Ndebelera
+Language_nv;Navajoera
+Language_ny;Nyanjera
+Language_oc;Okzitaniera
+Language_oj;Ojibwaera
+Language_om;Oromoera
+Language_or;Oriyaera
+Language_os;Osetiera
+Language_pa;Panjabiera
+Language_pi;Paliera
+Language_pl;Poloniera
+Language_ps;Pushtoera
+Language_pt;Portugalera
+Language_pt-br;Portugalera (Brazil)
+Language_qu;Quechuera
+Language_rm;Raeto-Erromantzea
+Language_rn;Rundiera
+Language_ro;Errumaniera
+Language_ru;Errusiera
+Language_rw;Kinyarwandera
+Language_sa;Sanskritera
+Language_sc;Sardiniera
+Language_sd;Sindhiera
+Language_se;Ipar Samiera
+Language_sg;Sangoera
+Language_si;Sinhalaera
+Language_sk;Eslobakiera
+Language_sl;Eslobeniera
+Language_sm;Samoera
+Language_smi;
+Language_sn;Shonaera
+Language_so;Somaliera
+Language_sq;Albaniera
+Language_sr;Serbiera
+Language_ss;Swatiera
+Language_st;Sothoera
+Language_su;Sundanera
+Language_sv;Suediera
+Language_sw;Swahiliera
+Language_ta;Tamilera
+Language_te;Teluguera
+Language_tg;Tajikera
+Language_th;Thailandiera
+Language_ti;Tigrinyera
+Language_tk;Turkmeniera
+Language_tl;Tagalogera
+Language_tn;Tswanaera
+Language_to;Tongaera
+Language_tr;Turkiera
+Language_ts;Tsongaera
+Language_tt;Tatarrera
+Language_tw;Twiera
+Language_ty;Tahitiera
+Language_ug;Uighurrera
+Language_uk;Ukrainiera
+Language_ur;Urduera
+Language_uz;Uzbekera
+Language_ve;Vendaera
+Language_vi;Vietnamiera
+Language_vo;Volapukera
+Language_wa;Waloniera
+Language_wo;Wolofera
+Language_xh;Xhosaera
+Language_yi;Yiddiera
+Language_yo;Yorubera
+Language_yue;
+Language_za;Zhuangera
+Language_zh;Txinera
+Language_zh-cmn;
+Language_zh-CN;
+Language_zh-cn;Txinera (Txina)
+Language_zh-Hans;
+Language_zh-Hant;
+Language_zh-TW;
+Language_zh-tw;Txinera (Taiwan)
+Language_zh-yue;
+Language_zu;Zuluera
+LanguageChanges;
+Languages;
+LawRating;Lege maila
+LCCN;LCCN
+LegacyStreamDisplay;
+LfeAttenuationKnown;
+LfeMixGain;
+lfeon;
+Library;Nahasketa liburutegia
+Lifetime_Subscribe_Button;
+Lightness;Argitasuna
+Lines_Count;
+Lines_MaxCountPerEvent;
+LineUpStart;
+LinkedTo_Bed_Pos;
+LinkedTo_ChannelFormat_Pos;
+LinkedTo_ComplementaryObject_Pos;
+LinkedTo_Content_Pos;
+LinkedTo_Group_Pos;
+LinkedTo_Object_Pos;
+LinkedTo_PackFormat_Pos;
+LinkedTo_SignalGroup_Pos;
+LinkedTo_StreamFormat_Pos;
+LinkedTo_Substream_Pos;
+LinkedTo_TrackFormat_Pos;
+LinkedTo_TrackUID_Pos;
+List;Zerrenda
+LongTermLoudness;
+LoRoCenterMixGain;
+LoRoSurroundMixGain;
+Loudness_Anchor;
+Loudness_Anchor_Album;
+Loudness_Count;
+Loudness_Count_Album;
+Loudness_MaximumMomentary;
+Loudness_MaximumMomentary_Album;
+Loudness_MaximumOfRange;
+Loudness_MaximumOfRange_Album;
+Loudness_MaximumShortTerm;
+Loudness_MaximumShortTerm_Album;
+Loudness_ProductionMixingLevel;
+Loudness_ProductionMixingLevel_Album;
+Loudness_Program;
+Loudness_Program_Album;
+Loudness_Range;
+Loudness_Range_Album;
+Loudness_RoomType;
+Loudness_RoomType_Album;
+LtRtCenterMixGain;
+LtRtSurroundMixGain;
+Lyricist;Abestien idazlea
+Lyrics;Letrak
+MacCreatedBy;
+Mastered_Date;Masterizatze eguna
+MasteredBy;Masterizatzailea
+MasteringDisplay_ColorPrimaries;
+MasteringDisplay_Luminance;
+Matrix_Channel(s);
+Matrix_ChannelPositions;
+matrix_coefficients;Matrize ezaugarriak
+matrix_coefficients_Source;
+Matrix_Format;
+MaxCLL;
+MaxFALL;
+MaxGain;
+MaximumMomentaryLoudness;
+MaxTruePeak;
+MD5;
+MD5_Unencoded;
+MediaInfo_About;MediaInfo-k sarbide erraza eskaintzen du bideo eta audio agirien argibide teknikoetara eta etiketara.\r\nSoftware askea da, honek esanahi du dohainekoa dela erabiltzaileentzat eta garatzaileek askatasuna dutela ikertzeko, hobetzeko eta programa birbanatzeko (BSD baimena)
+MediaInfo_About_About;
+MediaInfo_WebSite;
+Menu stream(s);Menu jarioak
+Menu;Menua
+Menu_Codec_List;Menu kodekak
+Menu_Hint;Aukera gehiago
+Menu_No;Menurik ez
+MenuCount;Menu jario zenbatekoa
+MenuID;Menu ID-a
+Metadata_Format;Metadata formatua
+Metadata_Format_Type;
+Metadata_MuxingMode;
+Minimize;
+MixType;
+mn; 
+Mood;Modua
+More;Gehiago
+Movie;Filma izena
+ms; 
+MSDI;MSDI
+MultipleStream;
+MultiView_Count;
+MusicBy;Musikaria
+MuxingMode;Nahasketa modua
+MuxingMode_MoreInfo;Nahasketa modua, informazio gehiago
+MuxingMode_PackedBitstream;Paketatutako bit-jarioa
+Name;Izena
+Nationality;Herrialdetasuna
+NetworkName;Sare izena
+New;Berria
+Newest version;Egiaztatu bertsio berririk dagoen (beharrezkoa Internet konexioa)
+NewVersion_Menu;Bertsio berri bat eskuragarri dago
+NewVersion_Question_Content;Bertsio berri bat (v%Version%) eskuragarri dago, jeistea nahi duzu?
+NewVersion_Question_Title;Bertsio berri bat argitaratu da!
+No;Ez
+Not yet;Oraindik ez
+NumberOfChannelFormats;
+NumberOfContents;
+NumberOfDynamicObjects;
+NumberOfElementaryStreams;
+NumberOfObjects;
+NumberOfPackFormats;
+NumberOfPresentations;
+NumberOfProgrammes;
+NumberOfStreamFormats;
+NumberOfSubstreams;
+NumberOfTrackFormats;
+NumberOfTrackUIDs;
+NumColors;Kolore zenbatekoa
+Object;
+ObjectCount;
+OK;Ongi
+One output file per input file;Irteera fitxategi bat sarrera fitxategiko
+OnlyDiffer;
+OnlyIdentical;
+Open;Ireki
+OpenCaptionsLanguage;
+OpenCaptionsPresent;
+OpenCaptionsType;
+OpenFile;
+OpenFileError;
+OpenRecent;
+Options;Aukerak
+Options_Hint;Hobespenak
+Original;Jatorrizkoa
+OriginalNetworkName;Jatorrizko sare-izena
+OriginalSourceForm;Jatorrizko iturburua forma
+OriginalSourceMedium;Jatorrizko iturburu tartekoa
+OriginalSourceMedium_ID;
+Originator;
+Other;Besterik
+OtherIdentifier;
+OtherIdentifierType;
+OtherViews;
+Output format;Irteera formatua
+Output;Irteera
+OverallBitRate;Bit-ratioa guztira
+OverallBitRate_Maximum;Gehienezko bit-ratio guztira
+OverallBitRate_Minimum;Gutxienezko bit-ratio guztira
+OverallBitRate_Mode;Bit-ratio modua guztira
+OverallBitRate_Nominal;Bit-ratio nominala guztira
+OverallBitRate_Precision_Max;
+OverallBitRate_Precision_Min;
+PackageName;
+PackFormat;
+Part;Zatia
+Part_Count;Zenbatekoa guztira
+PartialParsing;
+PartNumber;
+PartTotal;
+Performer;Egilea
+Period;Aldia
+Phase90FilterInfo;
+Phase90FilterInfo2ch;
+Phone;Telefonoa
+PictureRatio;
+PixelAspectRatio;Pixel aspektu-ratioa
+PixelAspectRatio_CleanAperture;
+PixelAspectRatio_Original;Jatorrizko aspektu-ratioa
+PlayCounter;Erreprodukzio-zenbatzailea
+Played_Count;Erreprodukzio kopurua
+Played_First_Date;Lehen erreproduzitua
+Played_Last_Date;Azken erreproduzitua
+PlayTime;Erreprodukzio-denbora
+PodcastCategory;
+PortableHeadphones;
+PortableSpeakers;
+Position;Kokapena
+Position_Cartesian;
+Position_Polar;
+Position_Total;Guztira
+Preferences;Hobespenak
+PreferredDownmix;
+Premium;
+Premium_Feature;
+Premium_Summary;
+PreselectionLabel;
+Presentation;
+PresentationConfig;
+PresentationConfig_ContentClassifier;
+PresentationID;
+PresentationLevel;
+PreviousDownmixType5ch;
+PreviousMixType2ch;
+PrimaryAudioLanguage;
+Producer;Ekoizlea
+ProductionDesigner;Ekoizpen diseinatzailea
+ProductionNumber;
+ProductionStudio;Ekoizpen estudioa
+ProductPlacement;
+Program name;
+Programme;
+ProgrammeHasText;
+ProgrammeTextLanguage;
+ProgrammeTitle;
+Publisher;Argitaratzailea
+Purchased_Date;Erosketa data
+PurchaseInformation;
+Quote character;Kakotxa karakterea
+RadioStation;Irrati katea
+Rating;Mailaketa
+RealtimeLoudnessCorrected;
+Recorded_Date;Grabaketa eguna
+Recorded_Location;Grabaketa helbidea
+Reel;
+Released_Date;Argitaratze eguna
+RemixedBy;Bernahastzailea
+RenderMode;
+Renew;
+ReplayGain_Gain;Errepikapenaren irabazia
+ReplayGain_Peak;Errepikapenaren irabazi gailurra
+Report;
+ReportBy;
+Resolution;Bereizmena
+RestoreLifetimeSubscription;
+Retry;
+s;s
+Sampled_Height;
+Sampled_Width;
+SamplePeakLevel;
+SamplePeakLevel_Album;
+SamplesPerFrame;
+SamplingCount;Lagin kopurua
+SamplingCount_Source;
+SamplingRate;Laginketa ratioa
+Save;Gorde
+ScanOrder;Mihaketa hurrenkera
+ScanOrder_Original;
+ScanOrder_Stored;
+ScanOrder_StoredDisplayedInverted;
+ScanOrder_StoreMethod;
+ScanType;Mihaketa mota
+ScanType_Original;
+ScanType_StoreMethod;
+ScreenplayBy;Gidoilaria
+ScreenToCenter;
+ScreenToFront;
+Season;Denboraldia
+SecondaryAudioLanguage;
+see below;ikusi behean
+Select your directory;
+SelectAll;
+Send HeaderFile;Mesedez bidalidazu Idazburu agiria hona : http://sourceforge.net/projects/mediainfo/ (Akats arloa)
+Separator_Columns;Zutabe banantzailea
+Separator_Lines;Lerro banatzailea
+SeriesTitle;
+ServiceChannel;Zerbitzuaren kanal kopurua
+ServiceKind;
+ServiceName;Zerbitzuaren izena
+ServiceProvider;Zerbitzu hornitzailea
+Services;
+ServiceType;Zerbitzu mota
+Set;Ezarri
+Set_Count;Ezarri kopurua
+Setup;Ezarpenak
+Sharpness;Garbitasuna
+Sheet (Complete);Orria (Osoa)
+Sheet;Orria
+Shell extension, folder;Karpetentzat ere bai
+Shell extension, separate instance;
+Shell extension;Arakatzailearen hedapena (eskuin-klik egin fitxategian, MediaInfo aukera bat egongo da)
+Shell InfoTip;Explorer Tresnaburua (Explorerrean, mugitu sagua agiriaren gainean, argibideak erakutsiko dira)
+ShimName;
+ShimVersion;
+Show menu;Erakutsi menua
+Show toolbar;Erakutsi tresna-barra
+Show;
+ShowAll;
+ShowMore;
+SignalGroup;
+SigningPresent;
+SignLanguage;
+Sort;Ordenatu honela
+SoundCategory;
+SoundEngineer;Soinu ingeniaria
+Source;Iturburua
+Source_Duration;Iturburu iraupena
+Source_FrameCount;Iturburu fotograma zenbatekoa
+Source_SamplingCount;Iturburu lagin zenbatekoa
+Source_StreamSize;Iturburu jario neurria
+Source_StreamSize_Encoded;Iturburu kodeaketa jario neurria
+SpokenSubtitles;
+Standard;Estandarra
+Stored_Height;
+StoreMethod_InterleavedFields;
+StoreMethod_SeparatedFields;
+StoreMethod_SeparatedFields_1;
+StoreMethod_SeparatedFields_2;
+Stream;Jarioa
+Stream_MoreInfo;Jarioari buruzko informazio gehiago
+StreamCount;Mota honetako jario kopurua
+StreamFormat;
+StreamID;Jario ID-a
+streamIdentifier;
+StreamKind;Jario Mota
+StreamKindID;Jario ezagutarazlea
+StreamKindPos;Jario ezagutarazlea
+StreamOrder;
+Streams;
+StreamSize;Jario neurria
+StreamSize_Demuxed;
+StreamSize_Encoded;Kodeaketa jario neurria
+StreamSize_Proportion;Jario honen proporzioa
+Subject;Gaia
+Subscribe;
+Subscribe_Button;
+Subscribe_Failed;
+Subscribe_Manage;
+Subscribe_Premium;
+Subscribe_Renew;
+Subscribe_Renew_Price;
+Subscribe_Unaviable;
+Subscribe_Waiting;
+Subscription_Active;
+Subscription_Android;
+Subscription_Ended;
+Subscription_Expired;
+Subscription_Lifetime;
+Subscription_Thanks;
+Substream;
+SubTrack;Azpibidea
+SubtstreamIdChannel;
+Summary;Laburpena
+Supported formats;Onartutako formatuak
+Supported?;Onartua?
+SupportUs;
+SupportUs2;
+surmixlev;
+SurroundAttenuationKnown;
+SwitchGroup;
+Synopsis;Laburpena
+SystemId;Id-a
+Tagged_Application;Aplikazio etiketatzea
+Tagged_Date;Etiketatze eguna
+TargetDeviceConfig;
+Technician;Teknikaria
+TermsOfUse;Erabilpen baldintzak
+TertiaryAudioLanguage;
+TestContinuousFileNames;
+Text - Custom;Testua - Egilea
+Text (HTML);Testua (HTML)
+Text stream(s);Testu jarioak
+Text streams;Testu jarioak
+Text;Testua
+Text_Codec_List;Testu kodekak
+Text_Format_List;
+Text_Format_WithHint_List;
+Text_Language_List;
+Text_No;Idazkirik ez
+Text1;Lehen testu jarioa
+Text2;Bigarren testu jarioa
+Text3;Hirugarren testu jarioa
+TextCount;testu jario zenbatekoa
+TextlessElementsExist;
+ThanksTo;Eskerrak
+Thousands separator;Milaka bananatzaile
+TimeCode;Denbora-kodea
+TimeCode_FirstFrame;Denbora-kodea, lehen Framea
+TimeCode_LastFrame;
+TimeCode_MaxFrameNumber;
+TimeCode_MaxFrameNumber_Theory;
+TimeCode_Settings;Denbora-kodea, ezarpenak
+TimeCode_Source;Denbora-kodea, iturburua
+TimeCode_Stripped;
+TimeStamp;TimeZone
+TimeZone;Ordu-Eremua
+Title;Izenburua
+Title_More;Izenburua, informazio gehiago
+Top4ToTop2;
+TopBackToFront;
+TopBackToSide;
+TopFrontToBack;
+TopFrontToFront;
+TopFrontToSide;
+Total;Guztira
+TotalNumberOfParts;
+TotalProgrammeDuration;
+Track;Pistaren izena
+Track_Count;Pista kopurua
+TrackFormat;
+TrackIndex;
+TrackUID;
+transfer_characteristics;Eskualdaketa ezaugarriak
+transfer_characteristics_Source;
+Translate_Reports;
+Translator;Itzultzailea
+Transport;
+Tree &amp; Text;Zuhaitza eta Testua
+Tree;Zuhaitza
+Trim_Center;
+Trim_Height;
+Trim_Surround;
+TrimMode;
+TrimMode0i;
+TrimMode1i;
+TrimMode2i;
+TrimMode3i;
+TrimMode4i;
+TrimMode5i;
+TrimMode6i;
+TrimMode7i;
+TrimMode8i;
+TruePeakLevel;
+TruePeakLevel_Album;
+Type;Mota
+Type_Composer;
+Type_Conductor;
+Type_Cover;
+Type_Cover_Back;
+Type_Cover_Media;
+Type_DuringPerformance;
+Type_DuringRecording;
+Type_FileIcon;
+Type_FileIcon_32x32;
+Type_Illustration;
+Type_LeafletPage;
+Type_Lyricist;
+Type_Performer;
+Type_Performer_Lead;
+Type_PerformerLogo;
+Type_Picture;
+Type_PublisherLogo;
+Type_RecordingLocation;
+Type_ScreenCapture;
+Type_Thumbnail;
+TypeDefinition;
+UniqueID;ID bakarra
+UniversalAdID;
+UniversalAdID_Registry;
+UniversalAdID_Value;
+Unknown;Ezezaguna
+Url;Url-a
+Value;
+Video stream(s);Bideo jarioa(k)
+Video;Bideoa
+Video_Codec_List;Bideo Kodekak
+Video_Delay;Bideoarekiko atzerapena
+Video_Format_List;
+Video_Format_WithHint_List;
+Video_Language_List;
+Video_No;Bideorik ez
+Video0_Delay;Bideo0 atzerapena
+Video1;Lehen bideo jarioa
+Video2;
+Video3;
+VideoComments;
+VideoCount;Bideo jario kopurua
+View;Ikusi
+View_Hint;Aldatu informazioa ikusteko modua
+Views;
+Warning : more streams in the files;Kontuz : jario gehiago daude fitxategietan
+Web;Web
+WebSite;Webgunea
+WebSite_Audio;Joan audio kodek honen webgunera
+WebSite_Audio_More;Joan webgunera (%Url%) audio kodek hau bilatzeko
+WebSite_General;Joan fitxategi honentzako irakurgailu webgunera
+WebSite_General_More;Joan fitxategi honentzako irakurgailu webgunera
+WebSite_Text;Joan testu kode honen webgunera
+WebSite_Text_More;Joan webgunera (%Url%) testu kodek hau bilatzeko
+WebSite_Url;http://MediaArea.net/MediaInfo
+WebSite_Video;Joan bideo kodek honen webgunera
+WebSite_Video_More;Joan webgunera (%Url%) bideo kodek hau bilatzeko
+Width;Zabalera
+Width_CleanAperture;
+Width_Original;Jatorrizko zabalera
+Window;
+WriteMe;Idatzi post@ egileari
+WriteToTranslator;Idatzi itzultzaileari
+Written_Date;Idazte eguna
+Written_Location;Idazte helbidea
+WrittenBy;Idazlea
+Yes;Bai
+Your system;Zure sistema
+Your translation;Zure itzulpena
+Zoom;
+ZZ_Automatic_Percent;67
+ZZ_AutomaticLanguage_Percent;68</value>
+  </data>
+  <data name="MenuBarItemEdit.Title" xml:space="preserve">
+    <value>Editatu</value>
+  </data>
+  <data name="MenuBarItemEditCopyText.Text" xml:space="preserve">
+    <value>Copy text</value>
+  </data>
+  <data name="MenuBarItemFile.Title" xml:space="preserve">
+    <value>Fitxategia</value>
+  </data>
+  <data name="MenuBarItemFileOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="MenuBarItemHelp.Title" xml:space="preserve">
+    <value>Laguntza</value>
+  </data>
+  <data name="MenuBarItemHelpAbout.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="MenuBarItemView.Title" xml:space="preserve">
+    <value>Ikusi</value>
+  </data>
+  <data name="MenuBarItemViewPretty.Text" xml:space="preserve">
+    <value>Pretty</value>
+  </data>
+  <data name="MenuBarItemViewText.Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="MenuBarItemViewWrapText.Text" xml:space="preserve">
+    <value>Wrap text</value>
+  </data>
+  <data name="OpenSourceCodeButton.Text" xml:space="preserve">
+    <value>Source code</value>
+  </data>
+  <data name="PopupClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="SystemLanguage" xml:space="preserve">
+    <value>System</value>
+  </data>
+</root>

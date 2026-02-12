@@ -1,0 +1,1686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
+    <value>Copied as text</value>
+  </data>
+  <data name="DragDropFileOpenCaption" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="DragFileHereZoneCaption.Text" xml:space="preserve">
+    <value>Drag a file here</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Беларуская</value>
+  </data>
+  <data name="MediaInfoLanguage" xml:space="preserve">
+    <value>  Language_ISO639;be
+  Author_Email;dzmitry.zubialevich@gmail.comt
+  Author_Name;Dzmitry Zubialevich
+  Author_OldNames;Micтэр mister-sh@users.sourceforge.net
+  Language_Name;Беларуская
+  Config_Text_ColumnSize;40
+  Config_Text_Separator; : 
+  Config_Text_NumberTag; #
+  Config_Text_FloatSeparator;,
+  Config_Text_ThousandsSeparator; 
+ audio stream1; Аўдыяпаток
+ audio stream2; Аўдыяпатокі
+ audio stream3; Аўдыяпатокаў
+ bit1; біт
+ bit2; біты
+ bit3; біт
+ Bps; байт/сек
+ bps; біт/сек
+ Byte1; байт
+ Byte2; байты
+ Byte3; байт
+ channel1; канал
+ channel2; каналы
+ channel3; каналаў
+ chapter1; раздзел
+ chapter2; раздзелы
+ chapter3; раздзелаў
+ chapters stream1; паток раздзелаў
+ chapters stream2; патокі раздзелаў
+ chapters stream3; патокаў раздзелаў
+ character1; герой
+ character2; героі
+ character3; герояў
+ day1; дзень
+ day2; дні
+ day3; дзён
+ dB0; 0 дБ
+ dB1; дБ
+ dB2; дБ
+ dB3; дБ
+ file1; файл
+ file2; файлы
+ file3; файлаў
+ fps1; кадр/сек
+ fps2; кадры/сек
+ fps3; кадраў/сек
+ frame1; кадр
+ frame2; кадры
+ frame3; кадраў
+ GB; ГБ
+ Gb; Гбіт
+ GBps; ГБ/сек
+ Gbps; Гбіт/сек
+ GHz; ГГц
+ GiB; ГіБ
+ GibiByte1; Гібібайт
+ GibiByte2; Гібібайты
+ GibiByte3; Гібібайт
+ GiBps; ГіБ/сек
+ GigaBit1; Гігабіт
+ GigaBit2; Гігабіты
+ GigaBit3; Гігабіт
+ GigaByte1; Гігабайт
+ GigaByte2; Гігабайты
+ GigaByte3; Гігабайт
+ hour1; гадзіна
+ hour2; гадзіны
+ hour3; гадзін
+ Hz; Гц
+ image stream1; паток відарысаў
+ image stream2; патокі відарысаў
+ image stream3; патокаў відарысаў
+ KB; КБ
+ Kb; Кбіт
+ KBps; КБ/сек
+ Kbps; Кбіт/сек
+ KHz; КГц
+ KiB; КіБ
+ KibiBit1; Кiбiбiт
+ KibiBit2; Кiбiбiты
+ KibiBit3; Кiбiбiт
+ KibiByte1; Кiбiбайт
+ KibiByte2; Кiбiбайты
+ KibiByte3; Кiбiбайт
+ KiBps; КіБ/сек
+ KiloBit1; Кілабіт
+ KiloBit2; Кілабіты
+ KiloBit3; Кілабіт
+ KiloByte1; Кілабайт
+ KiloByte2; Кілабайты
+ KiloByte3; Кілабайт
+ MB; МБ
+ Mb; Мбіт
+ MBps; МБ/сек
+ Mbps; Мбіт/сек
+ MebiBit1; Мебiбiт
+ MebiBit2; Мебiбiты
+ MebiBit3; Мебiбiт
+ MebiByte1; Мебiбайт
+ MebiByte2; Мебiбайты
+ MebiByte3; Мебiбайт
+ MegaBit1; Мегабіт
+ MegaBit2; Мегабіты
+ MegaBit3; Мегабіт
+ MegaByte1; Мегабайт
+ MegaByte2; Мегабайты
+ MegaByte3; Мегабайт
+ MHz; МГц
+ MiB; МіБ
+ Mib; Мібіт
+ MiBps; МіБ/сек
+ millisecond1; мілісекунда
+ millisecond2; мілісекунды
+ millisecond3; мілісекунд
+ minute1; хвіліна
+ minute2; хвіліны
+ minute3; хвілін
+ month1; месяц
+ month2; месяцы
+ month3; месяцаў
+ object1; аб'ект
+ object2; аб'екты
+ object3; аб'ектаў
+ pixel1; пiксель
+ pixel2; пiкселя
+ pixel3; пiкселяў
+ second1; секунда
+ second2; секунды
+ second3; секунд
+ slice per frame1;фрагмент на кадр
+ slice per frame2;фрагменты на кадр
+ slice per frame3;фрагментаў на кадр
+ text stream1; тэкставы паток
+ text stream2; тэкставыя патокі
+ text stream3; тэкставых патокаў
+ video frames1; відэакадр
+ video frames2; відэакадры
+ video frames3; відэакадраў
+ video stream1; відэапаток
+ video stream2; відэапатокі
+ video stream3; відэапатокаў
+ warppoint0;Без пункта пераходу
+ warppoint1; пункт пераходу
+ warppoint2; пункты пераходу
+ warppoint3; пунктаў пераходу
+ week1; тыдзень
+ week2; тыдня
+ week3; тыдняў
+ year1; год
+ year2; гады
+ year3; гадоў
+, ;, 
+: ;: 
+3D;3D
+3DType;Тып 3D
+5.1.2ch;5.1.2
+5.1.4ch;5.1.4
+5.1ch;5.1
+608_Mode;Рэжым пераўтварэння EIA-608
+7.1.2ch;7.1.2
+7.1ch;7.1
+About;Пра праграму
+About_Hint;Кантакты і пошук новай версіі
+AC3_Metadata;
+Accompaniment;Суправаджэнне
+acmod;
+Active_DisplayAspectRatio;Актуальныя суадносіны бакоў дысплея
+Active_Height;Актуальная вышыня
+Active_Width;Актуальная шырыня
+ActiveFormatDescription;Апісанне актуальнага фармату
+ActiveFormatDescription_MuxingMode;Апісанне актуальнага фармату, рэжым мульціплексавання
+Actor;Акцёр
+Actor_Character;Роля
+Add creation date to text output;Дадаць дату стварэння ў тэкставы вывад
+Add version to text output;Дадаць версію ў тэкставы вывад
+Added_Date;Дата дадання
+Address;Адрас
+AdID;Паказальнік рэкламнага ідэнтыфікатара
+ADM: Show ChannelFormats;ADM: паказваць элементы ChannelFormat
+ADM: Show TrackUIDs;ADM: паказваць элементы TrackUID
+AdmProfile;Профіль ADM
+Advanced mode --&gt;;
+Advanced mode;Пашыраны рэжым
+Advanced;Дадаткова
+Album;Альбом
+Album_ReplayGain_Gain;Нармалізатар гуку альбома
+Album_ReplayGain_Peak;Пік нармалізатара гуку альбома
+Alignment;Выраўноўванне
+Alignment_Aligned;Выраўноўванне па прамежках
+Alignment_Split;Падзел па прамежках
+All;Усё
+AllFields;
+AlternateGroup;Альтэрнатыўная група
+AnalyzeServicesMenu;
+App_About;
+App_Hide;
+App_Quit;
+Archival_Location;Месца захоўвання
+Arranger;Аранжыроўшчык
+ArtDirector;Арт-дырэктар
+AspectRatio;Суадносіны
+AssistantDirector;Памочнік рэжысёра
+AssociatedVideo_FrameRate;Адпаведная частата кадраў відэа
+At least one file;(Трэба адкрыць як мінімум адзін файл)
+at;у
+Attachments;
+Audio stream(s);Аўдыяпаток(-і)
+Audio;Аўдыя
+Audio_Channels_Total;
+Audio_Codec_List;Аўдыякодэкі
+Audio_Format_List;
+Audio_Format_WithHint_List;
+Audio_Language_List;
+Audio_No;Няма аўдыя
+Audio1;Першы аўдыяпаток
+Audio2;Другі аўдыяпаток
+Audio3;
+AudioComments;Галасавы каментарый
+AudioCount;Колькасць аўдыяпатокаў
+AudioDescription;Аўдыя апісанне
+AudioDescriptionPresent;Наяўнасць аўдыя апісання
+AudioDescriptionType;Тып аўдыя апісання
+AudioLoudnessStandard;Стандарт гучнасці аўдыя
+AudioRenderingIndication;Індыкацыя рэндэрынгу аўдыя
+AudioSceneInfoID;Ідэнтыфікатар інфармацыі аб аўдыясцэне
+AudioTrackLayout;Макет аўдыядарожкі
+Author;Аўтар
+Back4ToBack2;Чатыры заднія каналы ў два заднія каналы
+Balance_FrontBackListener;Баланс пярэдняга/задняга канала на ўзроўні слухача
+Balance_FrontBackOverheadFloor;Баланс пярэдняга/задняга потолочного/ніжняга канала
+BarCode;Штрыхкод
+Basic;Каротка
+Basic_Note;Увага: для атрымання дадатковай інфармацыі аб гэтым файле абярыце іншы выгляд (табліца, дрэва,...)
+BedChannelConfiguration;Канфігурацыя каналаў бэда
+BedChannelCount;Колькасць каналаў бэда
+BinauralRenderMode;Рэндэрынг у бінаўральным рэжыме
+BitDepth;Бітавая глыбіня
+BitDepth_Detected;Выяўленая бітавая глыбіня
+BitDepth_Stored;Захаваная бітавая глыбіня
+BitRate;Бітрэйт
+BitRate_Encoded;Закадзіраваны бітрэйт
+BitRate_Maximum;Максімальны бітрэйт
+BitRate_Minimum;Мінімальны бітрэйт
+BitRate_Mode;Від бітрэйту
+BitRate_Mode_CBR;Пастаянны
+BitRate_Mode_VBR;Пераменны
+BitRate_Nominal;Намінальны бітрэйт
+Bits-(Pixel*Frame);Біт/(Пікселі*Кадры)
+BitstreamLevel;
+Bring All to Front;
+bsid;
+BufferSize;Памер буфера
+Cancel;Скасаваць
+CaptionServiceName;
+CatalogNumber;
+Channel(s);Канал(ы)
+Channel(s)_Original;
+ChannelCoded;
+ChannelConfiguration;
+ChannelFormat;
+ChannelLayout;
+ChannelLayout_Original;
+ChannelMode;
+ChannelPositions;Размяшчэнне каналаў
+ChannelPositions_Original;
+Chapter(s);Раздзел(ы)
+Chapters stream(s);Паток(і) раздзелаў
+Chapters;Раздзелы
+Chapters_Codec_List;Кодэкі раздзелаў
+Chapters_No;Няма раздзелаў
+Chapters_Pos_Begin;
+Chapters_Pos_End;
+ChaptersCount;Колькасць раздзелаў
+CharacterSet;
+CheckNewVersion;Праверыць наяўнасць новай версіі
+Choose custom sheet;Выбраць табліцу
+Choose custom text;Выбраць тэкст
+Choose custom;Выбраць
+Choose export format;Выберыце фармат вываду
+Choose file(s);Выбраць файл(ы)
+Choose filename;Выбраць назву файла
+Choose language;Выбраць мову
+Choreographer;Харэограф
+Chroma;Колернасць
+ChromaSubsampling;Колеравая субдыскрэтызацыя
+Classifier;Класіфікатар змесціва
+ClearList;Ачысціць спіс
+Close all before open;Закрываць усё перад адкрыццём новых файлаў
+Close;Закрыць
+CloseAll;
+ClosedCaptionsLanguage;Мова субцітраў
+ClosedCaptionsPresent;Наяўнасць субцітраў
+ClosedCaptionsType;Тып субцітраў
+CloseFile;
+CloseWindow;
+cmixlev;
+Codec;Кодэк
+Codec_Description;Апісанне кодэка
+Codec_Info;Падрабязна аб кодэку
+Codec_Profile;Прафайл кодэка
+Codec_Settings;Налады кодэка
+Codec_Settings_BVOP;Налады кодэка, BVOP
+Codec_Settings_CABAC;Налады кодэка, CABAC
+Codec_Settings_Endianness;Налады кодэка, Endianness
+Codec_Settings_Firm;Налады кодэка, Firm
+Codec_Settings_Floor;Налады кодэка, Floor
+Codec_Settings_GMC;Налады кодэка, GMC
+Codec_Settings_ITU;Налады кодэка, ITU
+Codec_Settings_Law;Налады кодэка, Law
+Codec_Settings_Matrix;Налады кодэка, Matrix
+Codec_Settings_PacketBitStream;Налада кодэка, Packet bitstream
+Codec_Settings_QPel;Налады кодэка, QPel
+Codec_Settings_Sign;Налады кодэка, Sign
+Codec_Url;Спасылка на кодэк
+CodecConfigurationBox;Поле канфігурацыі кодэка
+CodecID;Ідэнтыфікатар кодэка
+CodecID_Description;Апісанне кодэка
+CoDirector;Судырэктар
+Collection;Калекцыя
+Colorimetry;Каларыметрыя
+ColorSpace;Колеравая прастора
+ColorTheme;Тэма
+ColorTheme_Dark;Цёмная
+ColorTheme_Light;Светлая
+ColorTheme_System;Сістэмная
+colour_description_present;
+colour_description_present_Source;
+colour_primaries;Асноўныя колеры
+colour_primaries_Source;
+colour_range;Колеравы дыяпазон
+colour_range_Source;
+Comment;Каментарый
+CommissionedBy;Паручыцель
+Compare;
+CompareView;
+Compilation;Кампіляцыя
+ComplementaryObject;
+CompleteName;Поўнае імя
+CompletionDate;
+ComplexityIndex;
+Composer;Кампазітар
+Compression_Mode;Метад сціску
+Compression_Mode_Lossless;Без страт
+Compression_Mode_Lossy;Са стратамі
+Compression_Ratio;Ступень сціску
+comprprof;
+Conductor;Дырыжор
+ConformanceCheck;
+ConformanceErrors;
+ConformanceInfos;
+ConformanceWarnings;
+ContactEmail;
+ContactTelephoneNumber;
+Container and general information;Агульная інфармацыя
+Content;
+ContentType;Тып змесціва
+CoProducer;Супрадзюсар
+Copy;
+Copyright;Аўтарскае права
+CopyrightYear;
+CostumeDesigner;Дызайнер касцюмаў
+Count;Колькасць
+Country;Краіна
+Cover;Вокладка
+Cover_Datas;Даныя вокладкі
+Cover_Description;Апісанне вокладкі
+Cover_Mime;MIME-тып вокладкі
+Cover_Type;Тып вокладкі
+CoverData;
+CreatedOn;
+Cropped;Памеры падрэзкі
+Custom;Выбарачна
+CustomDownmixTargets;Наладжвальныя фарматы паніжальнага міксавання
+Customize;Дапасаваць
+DarkMode;Цёмны рэжым
+Date;Дата
+Debug;Адладка
+Decimal point;Дзесятковая кропка
+Default translation;
+Default;
+Default_Setting;
+DefaultTargetDeviceConfig;
+DefaultView;
+Delay;Затрымка
+Delay_Source;Затрымка ў арыгінале
+Delay_Source_Container;Кантэйнер
+Delay_Source_Stream;«Сыры» паток
+Delete;Выдаліць
+Description;Апісанне
+Details;
+dialnorm;
+dialnorm_Average;
+dialnorm_Count;
+dialnorm_Maximum;
+dialnorm_Minimum;
+DialogueCorrected;
+DialogueEnhancement;
+DialogueNormalization;
+Digitized_Date;Дата алічбоўкі
+Dimensions;Памеры
+Director;Рэжысёр
+DirectorOfPhotography;Аператар
+Disabled;Адключана
+DisplayAspectRatio;Суадносіны бакоў дысплея
+DisplayAspectRatio_CleanAperture;Суадносіны бакоў дысплея чыстай апертуры
+DisplayAspectRatio_Original;Суадносіны бакоў дысплея арыгінала
+DisplayCaptions;
+DisplayCaptions_Command;
+DisplayCaptions_Content;
+DisplayCaptions_Stream;
+DistributedBy;Распаўсюджвальнік
+Distributor;Распаўсюджвальнік
+Documents;
+Dolby_Atmos_Metadata;
+DolbyAtmos;
+Donate;Ахвяраваць
+DotsPerInch;Пунктаў на цалю
+DownloadFile;
+DownloadFileError;
+Downmix;
+Downmix_5.1.x;
+Downmix_5to2;
+DrcSets_Count;
+DrcSets_Effects;
+Duration;Працягласць
+Duration_End;Час канчатку
+Duration_End_Command;Час канчатку (каманды)
+Duration_Source;
+Duration_Start;Час пачатку
+Duration_Start_Command;Час пачатку (каманды)
+Duration_Start2End;
+DynamicObject;
+DynamicRangeControl;
+dynrngprof;
+Eac3DrcProfile;
+Edit;Змяніць
+EditedBy;Зменена
+EditorialClassification;
+ElementaryStream;
+ElementCount;
+EMail;Пошта
+Enable FFmpeg plugin;
+Encoded_Application;Праграма кадзіравання
+Encoded_Application_Name;
+Encoded_Application_Version;
+Encoded_Date;Дата кадзіравання
+Encoded_Hardware;
+Encoded_Library;Бібліятэка кадзіравання
+Encoded_Library_Name;
+Encoded_Library_Settings;Параметры бібліятэкі кадзіравання
+Encoded_Library_Version;
+Encoded_Original;Крыніца арыгінала
+EncodedBy;Кадзіраванне выканаў
+EPG_Positions;Пазіцыі EPG (унутраныя)
+EpisodeTitleNumber;
+Error;
+Error_File;Памылка чытання файла
+Error_File_Write;Памылка запісу файла
+Error_Open;
+Error_Save;
+Events_MinDuration;
+Events_PaintOn;
+Events_PopOn;
+Events_RollUp;
+Events_Total;
+ExecutiveProducer;Выканаўчы прадзюсер
+Exit;Выхад
+Exit_Hint;Выхад з праграмы
+Export;Экспарт
+Export_Hint;Экспарт даных у розных фарматах
+Extensions;Пашырэнні, якія часта выкарыстоўваюцца
+External_Media_NotMounted;Знешні носьбіт недаступны
+Family;Сямейства
+Fax;Факс
+Feature_AdvancedMode;
+Feature_FilesCompare;
+Feature_More;
+Feature_SelectView;
+Field;
+File size;Памер файла
+File;Файл
+File_Append;Дадаць да існуючага файла (Папярэджанне: пераканайцеся ў адпаведнасці параметраў)
+File_Created_Date;Дата стварэння файла
+File_Created_Date_Local;Дата стварэння файла (лакальная)
+File_Hint;Аперацыі з файламі
+File_Modified_Date;Дата змянення файла
+File_Modified_Date_Local;Дата змянення файла (лакальна)
+FileExtension;Пашырэнне файла
+FileName;Назва файла
+FileNameExtension;Пашырэнне назвы файла
+FileSize;Памер файла
+Fill with a Dummy movie;
+Fill with a realistic movie;
+FirstDisplay_Delay_Frames;
+FirstDisplay_Type;
+FirstFrameOfAction;
+FlatPanelTv;
+FlowID;
+Folder (R);Папка (R)
+Folder (R)_Hint;Выберыце папку для апрацоўкі (з усімі ўкладзенымі папкамі)
+Folder (Recursively);Папка (рэкурсіўна)
+Folder;Папка
+Folder_Hint;Выберыце папку для апрацоўкі
+FolderName;Назва папкі
+Forced;Прымусова
+Format;Фармат
+Format_AdditionalFeatures;
+Format_Commercial;Камерцыйная назва
+Format_Commercial_IfAny;Камерцыйная назва
+Format_Compression;Сцісканне
+Format_Description;Апісанне фармату
+Format_Info;Падрабязна пра фармат
+Format_Level;Узровень фармату
+Format_Profile;Профіль фармату
+Format_Settings;Налады фармату
+Format_Settings_BVOP;Налады фармату, BVOP
+Format_Settings_CABAC;Налады фармату, CABAC
+Format_Settings_Emphasis;Акцэнт
+Format_Settings_Endianness;Налады фармату, Endianness
+Format_Settings_Firm;Налады фармату, Firm
+Format_Settings_Floor;Налады фармату, Floor
+Format_Settings_FrameMode;Рэжым кадраў
+Format_Settings_GMC;Налады фармату, GMC
+Format_Settings_GOP;Налады фармату, GOP
+Format_Settings_ITU;Налады фармату, ITU
+Format_Settings_Law;Налады фармату, ITU
+Format_Settings_Matrix;Налады фармату, Matrix
+Format_Settings_Matrix_Custom;Выбарачная
+Format_Settings_Matrix_Default;Прадвызначаная
+Format_Settings_Mode;Рэжым
+Format_Settings_ModeExtension;Пашырэнне рэжыму
+Format_Settings_PacketBitStream;Налады фармату, Packet bitstream
+Format_Settings_PictureStructure;Налады фармату, структура відарыса
+Format_Settings_PS;Налады фармату, PS
+Format_Settings_Pulldown;Налады фармату, Pulldown
+Format_Settings_QPel;Налады фармату, QPel
+Format_Settings_RefFrames;Налады фармату, RefFrames
+Format_Settings_SBR;Налады фармату, SBR
+Format_Settings_Sign;Налады фармату, Sign
+Format_Settings_SliceCount;Налады фармату, кольскасць фрагментаў
+Format_Settings_Wrapping;Налады фармату, рэжым пераносу
+Format_Tier;Узровень фармату
+Format_Url;Спасылка на фармат
+Format_Version;Версія фармату
+FormatDefinition;
+FpaManufacturer;
+FpaPass;
+FpaVersion;
+FrameCount;Лічыльнік кадраў
+FrameCount_Source;
+FrameRate;Частата кадраў
+FrameRate_Den;
+FrameRate_Maximum;Максімальная частата кадраў
+FrameRate_Minimum;Мінімальная частата кадраў
+FrameRate_Mode;Рэжым частаты кадраў
+FrameRate_Mode_CFR;Пастаянны
+FrameRate_Mode_VFR;Пераменны
+FrameRate_Nominal;Намінальная частата кадраў
+FrameRate_Num;
+FrameRate_Original;Частата кадраў у арыгінале
+FrameRate_Real;
+FullParsing;
+FullParsingTips;
+Gallery;
+General;Агульная
+GeneralCompliance;Агульная адпаведнасць
+Genre;Жанр
+Genre_000;Blues
+Genre_001;Classic Rock
+Genre_002;Country
+Genre_003;Dance
+Genre_004;Disco
+Genre_005;Funk
+Genre_006;Grunge
+Genre_007;Hip-Hop
+Genre_008;Jazz
+Genre_009;Metal
+Genre_010;New Age
+Genre_011;Oldies
+Genre_012;Other
+Genre_013;Pop
+Genre_014;R&amp;B
+Genre_015;Rap
+Genre_016;Reggae
+Genre_017;Rock
+Genre_018;Techno
+Genre_019;Industrial
+Genre_020;Alternative
+Genre_021;Ska
+Genre_022;Death Metal
+Genre_023;Pranks
+Genre_024;Soundtrack
+Genre_025;Euro-Techno
+Genre_026;Ambient
+Genre_027;Trip-Hop
+Genre_028;Vocal
+Genre_029;Jazz+Funk
+Genre_030;Fusion
+Genre_031;Trance
+Genre_032;Classical
+Genre_033;Instrumental
+Genre_034;Acid
+Genre_035;House
+Genre_036;Game
+Genre_037;Sound Clip
+Genre_038;Gospel
+Genre_039;Noise
+Genre_040;AlternRock
+Genre_041;Bass
+Genre_042;Soul
+Genre_043;Punk
+Genre_044;Space
+Genre_045;Meditative
+Genre_046;Instrumental Pop
+Genre_047;Instrumental Rock
+Genre_048;Ethnic
+Genre_049;Gothic
+Genre_050;Darkwave
+Genre_051;Techno-Industrial
+Genre_052;Electronic
+Genre_053;Pop-Folk
+Genre_054;Eurodance
+Genre_055;Dream
+Genre_056;Southern Rock
+Genre_057;Comedy
+Genre_058;Cult
+Genre_059;Gangsta
+Genre_060;Top 40
+Genre_061;Christian Rap
+Genre_062;Pop/Funk
+Genre_063;Jungle
+Genre_064;Native American
+Genre_065;Cabaret
+Genre_066;New Wave
+Genre_067;Psychadelic
+Genre_068;Rave
+Genre_069;Showtunes
+Genre_070;Trailer
+Genre_071;Lo-Fi
+Genre_072;Tribal
+Genre_073;Acid Punk
+Genre_074;Acid Jazz
+Genre_075;Polka
+Genre_076;Retro
+Genre_077;Musical
+Genre_078;Rock &amp; Roll
+Genre_079;Hard Rock
+Genre_080;Folk
+Genre_081;Folk-Rock
+Genre_082;National Folk
+Genre_083;Swing
+Genre_084;Fast Fusion
+Genre_085;Bebob
+Genre_086;Latin
+Genre_087;Revival
+Genre_088;Celtic
+Genre_089;Bluegrass
+Genre_090;Avantgarde
+Genre_091;Gothic Rock
+Genre_092;Progressive Rock
+Genre_093;Psychedelic Rock
+Genre_094;Symphonic Rock
+Genre_095;Slow Rock
+Genre_096;Big Band
+Genre_097;Chorus
+Genre_098;Easy Listening
+Genre_099;Acoustic
+Genre_100;Humour
+Genre_101;Speech
+Genre_102;Chanson
+Genre_103;Opera
+Genre_104;Chamber Music
+Genre_105;Sonata
+Genre_106;Symphony
+Genre_107;Booty Bass
+Genre_108;Primus
+Genre_109;Porn Groove
+Genre_110;Satire
+Genre_111;Slow Jam
+Genre_112;Club
+Genre_113;Tango
+Genre_114;Samba
+Genre_115;Folklore
+Genre_116;Ballad
+Genre_117;Power Ballad
+Genre_118;Rhythmic Soul
+Genre_119;Freestyle
+Genre_120;Duet
+Genre_121;Punk Rock
+Genre_122;Drum Solo
+Genre_123;A capella
+Genre_124;Euro-House
+Genre_125;Dance Hall
+Genre_126;Goa
+Genre_127;Drum &amp; Bass
+Genre_128;Club-House
+Genre_129;Hardcore
+Genre_130;Terror
+Genre_131;Indie
+Genre_132;Britpop
+Genre_133;Negerpunk
+Genre_134;Polsk Punk
+Genre_135;Beat
+Genre_136;Christian Gangsta Rap
+Genre_137;Heavy Metal
+Genre_138;Black Metal
+Genre_139;Crossover
+Genre_140;Contemporary Christian
+Genre_141;Christian Rock
+Genre_142;Merengue
+Genre_143;Salsa
+Genre_144;Trash Metal
+Genre_145;Анімэ
+Genre_146;JPop
+Genre_147;Synthpop
+Genre_148;
+Genre_149;
+Genre_150;
+Genre_151;
+Genre_152;
+Genre_153;
+Genre_154;
+Genre_155;
+Genre_156;
+Genre_157;
+Genre_158;
+Genre_159;
+Genre_160;
+Genre_161;
+Genre_162;
+Genre_163;
+Genre_164;
+Genre_165;
+Genre_166;
+Genre_167;
+Genre_168;
+Genre_169;
+Genre_170;
+Genre_171;
+Genre_172;
+Genre_173;
+Genre_174;
+Genre_175;
+Genre_176;
+Genre_177;
+Genre_178;
+Genre_179;
+Genre_180;
+Genre_181;
+Genre_182;
+Genre_183;
+Genre_184;
+Genre_185;
+Genre_186;
+Genre_187;
+Genre_188;
+Genre_189;
+Genre_190;
+Genre_191;
+Go to WebSite;Перайсці на сайт
+Gop_OpenClosed;
+Gop_OpenClosed_Closed;
+Gop_OpenClosed_FirstFrame;
+Gop_OpenClosed_Open;
+Graph;
+Group;
+Grouping;
+GroupPreset;
+h;г.
+HDR_Format;Фармат HDR
+Header file;Стварыць загаловак
+Height;Вышыня
+Height_CleanAperture;
+Height_Original;
+Help;Даведка
+HideOthers;
+Hint;Падказка
+HomeTheaterAvr;
+How many audio streams?;Колькі аўдыяпатокаў?
+How many chapters streams?;Колькі патокаў раздзелаў?
+How many text streams?;Колькі тэкставых патокаў?
+How many video streams?;Колькі відэапатокаў?
+HTML;HTML
+ID;Ідэнтыфікатар
+IdentClockStart;
+IFrameInterval;
+Image stream(s);Паток(і) відарысаў
+Image;Відарысы
+Image_Codec_List;Кодэкі відарысаў
+ImageCount;Колькасць патокаў відарысаў
+ImmersiveStereo;
+Info;Інфармацыя
+Instruments;Інструменты
+IntegratedLoudness;
+IntegratedLoudness_Level;
+IntegratedLoudness_Speech;
+InteractivityEnabled;
+Interlaced_BFF;Спачатку ніжняе поле
+Interlaced_Interlaced;Празрадковая
+Interlaced_PPF;Прагрэсіўная
+Interlaced_Progressive;Прагрэсіўная
+Interlaced_TFF;Спачатку верхняе поле
+Interlacement;Празрадковасць
+Interleave_Duration;Чаргаванне, працягласць
+Interleave_Preload;Чаргаванне, працягласць папярэдняй загрузкі
+Interleave_VideoFrames;Чаргаванне, працягласць
+Interleaved;З чаргаваннем
+InternetMediaType;Інтэрнэт-тып носьбіта
+IRCA;IRCA
+ISBN;ISBN
+ISRC;ISRC
+IsStreamable;
+Keywords;Ключавыя словы
+Known codecs;Вядомыя кодэкі
+Known formats;Вядомыя фарматы
+Known parameters;Вядомыя параметры
+Label;Метка
+Language;Мова
+Language_aa;Afar
+Language_ab;Abkhazian
+Language_ae;Avestan
+Language_af;Afrikaans
+Language_ak;Akan
+Language_am;Amharic
+Language_an;Aragonese
+Language_ar;Arabic
+Language_as;Assamese
+Language_av;Avaric
+Language_ay;Aymara
+Language_az;Azerbaijani
+Language_ba;Bashkir
+Language_be;Беларуская
+Language_bg;Bulgarian
+Language_bh;Bihari
+Language_bi;Bislama
+Language_bm;Bambara
+Language_bn;Bengali
+Language_bo;Tibetan
+Language_br;Breton
+Language_bs;Bosnian
+Language_ca;Catalan
+Language_ce;Chechen
+Language_ch;Chamorro
+Language_cmn;
+Language_co;Corsican
+Language_cr;Cree
+Language_cs;Czech
+Language_cu;Slave
+Language_cv;Chuvash
+Language_cy;Welsh
+Language_da;Danish
+Language_de;German
+Language_dv;Divehi
+Language_dz;Dzongkha
+Language_ee;Ewe
+Language_el;Greek
+Language_en;English
+Language_en-gb;English (Great Britain)
+Language_en-us;English (United States)
+Language_eo;Esperanto
+Language_es;Spanish
+Language_es-419;
+Language_et;Estonian
+Language_eu;Basque
+Language_fa;Persian
+Language_ff;Fulah
+Language_fi;Finnish
+Language_fil;
+Language_fj;Fijian
+Language_fo;Faroese
+Language_fr;French
+Language_fy;Frisian
+Language_ga;Irish
+Language_gd;Gaelic
+Language_gl;Galician
+Language_gn;Guarani
+Language_gu;Gujarati
+Language_gv;Manx
+Language_ha;Hausa
+Language_he;Hebrew
+Language_hi;Hindi
+Language_ho;Hiri Motu
+Language_hr;Croatian
+Language_ht;Haitian
+Language_hu;Hungarian
+Language_hy;Armenian
+Language_hy-az;
+Language_hz;Herero
+Language_ia;Auxiliary Language Association
+Language_id;Indonesian
+Language_ie;Interlingue
+Language_ig;Igbo
+Language_ii;Sichuan Yi
+Language_ik;Inupiaq
+Language_Info;Аб мове
+Language_io;Ido
+Language_is;Icelandic
+Language_it;Italian
+Language_iu;Inuktitut
+Language_ja;Japanese
+Language_jv;Javanese
+Language_ka;Georgian
+Language_kg;Kongo
+Language_ki;Kikuyu
+Language_kj;Kuanyama
+Language_kk;Kazakh
+Language_kl;Kalaallisut
+Language_km;Khmer
+Language_kn;Kannada
+Language_ko;Korean
+Language_kr;Kanuri
+Language_ks;Kashmiri
+Language_ku;Kurdish
+Language_kv;Komi
+Language_kw;Cornish
+Language_ky;Kirghiz
+Language_la;Latin
+Language_lb;Luxembourgish
+Language_lg;Ganda
+Language_li;Limburgish
+Language_ln;Lingala
+Language_lo;Lao
+Language_lt;Lithuanian
+Language_lu;Luba-Katanga
+Language_lv;Latvian
+Language_mg;Malagasy
+Language_mh;Marshallese
+Language_mi;Maori
+Language_mk;Macedonian
+Language_ml;Malayalam
+Language_mn;Mongolian
+Language_mn-cn;
+Language_mo;Moldavian
+Language_More;Яшчэ мовы
+Language_mr;Marathi
+Language_ms;Malay
+Language_ms-bn;
+Language_mt;Maltese
+Language_mul;Некалькі моў
+Language_my;Burmese
+Language_na;Nauru
+Language_nb;Norwegian Bokmal
+Language_nd;Ndebele
+Language_ne;Nepali
+Language_ng;Ndonga
+Language_nl;Dutch
+Language_nl-be;
+Language_nn;Norwegian Nynorsk
+Language_no;Norwegian
+Language_nr;Ndebele
+Language_nv;Navaho
+Language_ny;Nyanja
+Language_oc;Occitan
+Language_oj;Ojibwa
+Language_om;Oromo
+Language_or;Oriya
+Language_os;Ossetic
+Language_pa;Penjabi
+Language_pi;Pali
+Language_pl;Polish
+Language_ps;Pushto
+Language_pt;Portuguese
+Language_pt-br;Portuguese (Brazil)
+Language_qu;Quechua
+Language_rm;Raeto-Romance
+Language_rn;Rundi
+Language_ro;Romanian
+Language_ru;Russian
+Language_rw;Kinyarwanda
+Language_sa;Sanskrit
+Language_sc;Sardinian
+Language_sd;Sindhi
+Language_se;Northern Sami
+Language_sg;Sango
+Language_si;Sinhala
+Language_sk;Slovak
+Language_sl;Slovenian
+Language_sm;Samoan
+Language_smi;
+Language_sn;Shona
+Language_so;Somali
+Language_sq;Albanian
+Language_sr;Serbian
+Language_ss;Swati
+Language_st;Sotho
+Language_su;Sundanese
+Language_sv;Swedish
+Language_sw;Swahili
+Language_ta;Tamil
+Language_te;Telugu
+Language_tg;Tajik
+Language_th;Thai
+Language_ti;Tigrinya
+Language_tk;Turkmen
+Language_tl;Tagalog
+Language_tn;Tswana
+Language_to;Tonga
+Language_tr;Turkish
+Language_ts;Tsonga
+Language_tt;Tatar
+Language_tw;Twi
+Language_ty;Tahitian
+Language_ug;Uighur
+Language_uk;Ukrainian
+Language_ur;Urdu
+Language_uz;Uzbek
+Language_ve;Venda
+Language_vi;Vietnamese
+Language_vo;Volapuk
+Language_wa;Walloon
+Language_wo;Wolof
+Language_xh;Xhosa
+Language_yi;Yiddish
+Language_yo;Yoruba
+Language_yue;
+Language_za;Zhuang
+Language_zh;Chinese
+Language_zh-cmn;
+Language_zh-CN;
+Language_zh-cn;Chinese (China)
+Language_zh-Hans;
+Language_zh-Hant;
+Language_zh-TW;
+Language_zh-tw;Chinese (Taiwan)
+Language_zh-yue;
+Language_zu;Zulu
+LanguageChanges;
+Languages;
+LawRating;Абмежаванне па ўзросце
+LCCN;LCCN
+LegacyStreamDisplay;
+LfeAttenuationKnown;
+LfeMixGain;
+lfeon;
+Library;Бібліятэка мультыплексавання
+Lifetime_Subscribe_Button;
+Lightness;Яркасць
+Lines_Count;Колькасць радкоў
+Lines_MaxCountPerEvent;Максімальная колькасць радкоў на адну падзею
+LineUpStart;
+LinkedTo_Bed_Pos;
+LinkedTo_ChannelFormat_Pos;
+LinkedTo_ComplementaryObject_Pos;
+LinkedTo_Content_Pos;
+LinkedTo_Group_Pos;
+LinkedTo_Object_Pos;
+LinkedTo_PackFormat_Pos;
+LinkedTo_SignalGroup_Pos;
+LinkedTo_StreamFormat_Pos;
+LinkedTo_Substream_Pos;
+LinkedTo_TrackFormat_Pos;
+LinkedTo_TrackUID_Pos;
+List;Спіс
+LongTermLoudness;
+LoRoCenterMixGain;
+LoRoSurroundMixGain;
+Loudness_Anchor;
+Loudness_Anchor_Album;
+Loudness_Count;
+Loudness_Count_Album;
+Loudness_MaximumMomentary;
+Loudness_MaximumMomentary_Album;
+Loudness_MaximumOfRange;
+Loudness_MaximumOfRange_Album;
+Loudness_MaximumShortTerm;
+Loudness_MaximumShortTerm_Album;
+Loudness_ProductionMixingLevel;
+Loudness_ProductionMixingLevel_Album;
+Loudness_Program;
+Loudness_Program_Album;
+Loudness_Range;
+Loudness_Range_Album;
+Loudness_RoomType;
+Loudness_RoomType_Album;
+LtRtCenterMixGain;
+LtRtSurroundMixGain;
+Lyricist;Аўтар тэксту
+Lyrics;Тэкст песен
+MacCreatedBy;
+Mastered_Date;Дата майстарынгу
+MasteredBy;Майстарынг
+MasteringDisplay_ColorPrimaries;
+MasteringDisplay_Luminance;
+Matrix_Channel(s);
+Matrix_ChannelPositions;
+matrix_coefficients;Каэфіцыенты матрыцы
+matrix_coefficients_Source;
+Matrix_Format;
+MaxCLL;
+MaxFALL;
+MaxGain;
+MaximumMomentaryLoudness;
+MaxTruePeak;
+MD5;
+MD5_Unencoded;
+MediaInfo_About;MediaInfo дазваляе атрымаць доступ да падрабязнай інфармацыі\r\nпра мультымедыя-файлы Matroska, OGG (уключаючы OGM)\r\nMPEG1 (уключаючы VCD), MPEG2 (уключаючы DVD і SVCD), MPEG4 (уключаючы iTunes M4A)\r\nQuicktime\r\nRealMedia\r\nWindowsMedia (уключаючы WMV, WMA)\r\nMicrosoft RIFF (уключаючы AVI, WAV, DivX)\r\nгукавыя фарматы (AC3, DTS, SSC, AU, AIFF)
+MediaInfo_About_About;MediaInfo v%MI_VERSION% выкарыстоўвае MediaInfoLib v%MIL_VERSION%
+MediaInfo_WebSite;
+Menu stream(s);Меню патокаў
+Menu;Меню
+Menu_Codec_List;Меню кодэкаў
+Menu_Hint;Дадатковыя магчымасці
+Menu_No;Няма меню
+MenuCount;Колькасць патокаў меню
+MenuID;Ідэнтыфікатар меню
+Metadata_Format;
+Metadata_Format_Type;
+Metadata_MuxingMode;
+Minimize;
+MixType;
+mn;хв.
+Mood;Настрой
+More;Яшчэ
+Movie;Назва фільма
+ms;мс
+MSDI;MSDI
+MultipleStream;
+MultiView_Count;
+MusicBy;Кампазітар
+MuxingMode;Рэжым змешвання
+MuxingMode_MoreInfo;Рэжым змешвання, дадатковая інфармацыя
+MuxingMode_PackedBitstream;Сціснуты бітавы паток
+Name;Назва
+Nationality;Нацыянальнасць
+NetworkName;Назва сеткі
+New;Новы
+Newest version;Правяраць наяўнасць новых версій (патрабуецца падключэнне да інтэрнэту)
+NewVersion_Menu;Даступна новая версія
+NewVersion_Question_Content;Даступна новая версія %Version%, спампаваць?
+NewVersion_Question_Title;Выпушчана новая версія!
+No;Не
+Not yet;Яшчэ не
+NumberOfChannelFormats;
+NumberOfContents;
+NumberOfDynamicObjects;
+NumberOfElementaryStreams;
+NumberOfObjects;
+NumberOfPackFormats;
+NumberOfPresentations;
+NumberOfProgrammes;
+NumberOfStreamFormats;
+NumberOfSubstreams;
+NumberOfTrackFormats;
+NumberOfTrackUIDs;
+NumColors;Колькасць колераў
+Object;
+ObjectCount;
+OK;OK
+One output file per input file;Новы файл для кожнага зыходнага файла
+OnlyDiffer;
+OnlyIdentical;
+Open;Адкрыць
+OpenCaptionsLanguage;
+OpenCaptionsPresent;
+OpenCaptionsType;
+OpenFile;
+OpenFileError;
+OpenRecent;
+Options;Параметры
+Options_Hint;Параметры праграмы
+Original;Арыгінал
+OriginalNetworkName;Арыгінальная назва сеткі
+OriginalSourceForm;Фармат арыгінала
+OriginalSourceMedium;Носьбіт арыгінала
+OriginalSourceMedium_ID;
+Originator;
+Other;Іншае
+OtherIdentifier;
+OtherIdentifierType;
+OtherViews;
+Output format;Фармат вываду
+Output;Вывад
+OverallBitRate;Агульны бітрэйт
+OverallBitRate_Maximum;Максімальны агульны бітрэйт
+OverallBitRate_Minimum;Мінімальны агульны бітрэйт
+OverallBitRate_Mode;Рэжым агульнага бітрэйту
+OverallBitRate_Nominal;Намінальны агульны бітрэйт
+OverallBitRate_Precision_Max;
+OverallBitRate_Precision_Min;
+PackageName;
+PackFormat;
+Part;Частка
+Part_Count;Колькасць частак
+PartialParsing;
+PartNumber;
+PartTotal;
+Performer;Выканаўца
+Period;Перыяд
+Phase90FilterInfo;
+Phase90FilterInfo2ch;
+Phone;Тэлефон
+PictureRatio;
+PixelAspectRatio;Суадносіны бакоў пікселя
+PixelAspectRatio_CleanAperture;
+PixelAspectRatio_Original;Суадносіны бакоў пікселя арыгінала
+PlayCounter;Лічыльнік прайгравання
+Played_Count;Колькасць прайграванняў
+Played_First_Date;Першае прайграванне
+Played_Last_Date;Апошняе прайграванне
+PlayTime;Працягласць
+PodcastCategory;
+PortableHeadphones;
+PortableSpeakers;
+Position;Распалажэнне
+Position_Cartesian;
+Position_Polar;
+Position_Total;Усяго
+Preferences;Параметры
+PreferredDownmix;
+Premium;
+Premium_Feature;
+Premium_Summary;
+PreselectionLabel;
+Presentation;
+PresentationConfig;
+PresentationConfig_ContentClassifier;
+PresentationID;
+PresentationLevel;
+PreviousDownmixType5ch;
+PreviousMixType2ch;
+PrimaryAudioLanguage;
+Producer;Прадзюсар
+ProductionDesigner;Мастак-пастаноўшчык
+ProductionNumber;
+ProductionStudio;Студыя-вытворца
+ProductPlacement;
+Program name;
+Programme;
+ProgrammeHasText;
+ProgrammeTextLanguage;
+ProgrammeTitle;
+Publisher;Выдавец
+Purchased_Date;Дата пакупкі
+PurchaseInformation;
+Quote character;Сімвал двукоссяў
+RadioStation;Радыёстанцыя
+Rating;Рэйтынг
+RealtimeLoudnessCorrected;
+Recorded_Date;Дата запісу
+Recorded_Location;Месца запісу
+Reel;
+Released_Date;Дата выпуску
+RemixedBy;Рэмікс ад
+RenderMode;
+Renew;
+ReplayGain_Gain;Нармалізатар гука
+ReplayGain_Peak;Пік нармалізатара гука
+Report;
+ReportBy;
+Resolution;Раздзяляльнасць
+RestoreLifetimeSubscription;
+Retry;
+s;с
+Sampled_Height;
+Sampled_Width;
+SamplePeakLevel;
+SamplePeakLevel_Album;
+SamplesPerFrame;
+SamplingCount;Колькасць сэмплаў
+SamplingCount_Source;
+SamplingRate;Частата дыскрэтызацыі
+Save;Захаваць
+ScanOrder;Парадак разгорткі
+ScanOrder_Original;
+ScanOrder_Stored;
+ScanOrder_StoredDisplayedInverted;
+ScanOrder_StoreMethod;
+ScanType;Тып разгорткі
+ScanType_Original;
+ScanType_StoreMethod;
+ScreenplayBy;Сцэнарыст
+ScreenToCenter;
+ScreenToFront;
+Season;Сезон
+SecondaryAudioLanguage;
+see below;гл. ніжэй
+Select your directory;
+SelectAll;
+Send HeaderFile;Адпраўце мне загаловак гэтага файла на http://sourceforge.net/projects/mediainfo/ (Раздзел памылак)
+Separator_Columns;Раздзяляльнік слупкоў
+Separator_Lines;Раздзяляльнік радкоў
+SeriesTitle;
+ServiceChannel;Нумар канала сэрвісу
+ServiceKind;
+ServiceName;Назва сэрвісу
+ServiceProvider;Пастаўшчык сэрвісу
+Services;
+ServiceType;Тып сэрвісу
+Set;Канфігурацыя
+Set_Count;Колькасць канфігурацый
+Setup;Наладжванне
+Sharpness;Рэзкасць
+Sheet (Complete);Табліца (поўная)
+Sheet;Табліца
+Shell extension, folder;Пашырэнне ў правадніку для папак
+Shell extension, separate instance;
+Shell extension;Пашырэнне ў правадніку (пункт у кантэкстным меню правадніка Windows пры націску правай кнопкі мышы)
+Shell InfoTip;Усплывальная падказка (паказваць інфармацыю пры размяшчэнні паказальніка мышы над файлам у правадніку Windows)
+ShimName;
+ShimVersion;
+Show menu;Паказваць меню
+Show toolbar;Паказваць панэль
+Show;
+ShowAll;
+ShowMore;
+SignalGroup;
+SigningPresent;
+SignLanguage;
+Sort;Сартаваць па
+SoundCategory;
+SoundEngineer;Гукарэжысёр
+Source;
+Source_Duration;
+Source_FrameCount;
+Source_SamplingCount;
+Source_StreamSize;
+Source_StreamSize_Encoded;
+SpokenSubtitles;
+Standard;Стандарт вяшчання
+Stored_Height;
+StoreMethod_InterleavedFields;
+StoreMethod_SeparatedFields;
+StoreMethod_SeparatedFields_1;
+StoreMethod_SeparatedFields_2;
+Stream;Паток
+Stream_MoreInfo;Дадатковая інфармацыя аб патоку
+StreamCount;Колькасць патокаў
+StreamFormat;
+StreamID;Ідэнтыфікатар патоку
+streamIdentifier;
+StreamKind;Тып патоку
+StreamKindID;Ідэнтыфікатар патоку
+StreamKindPos;Ідэнтыфікатар патоку
+StreamOrder;
+Streams;
+StreamSize;Памер патоку
+StreamSize_Demuxed;
+StreamSize_Encoded;
+StreamSize_Proportion;Прапорцыі патоку
+Subject;Тэма
+Subscribe;
+Subscribe_Button;
+Subscribe_Failed;
+Subscribe_Manage;
+Subscribe_Premium;
+Subscribe_Renew;
+Subscribe_Renew_Price;
+Subscribe_Unaviable;
+Subscribe_Waiting;
+Subscription_Active;
+Subscription_Android;
+Subscription_Ended;
+Subscription_Expired;
+Subscription_Lifetime;
+Subscription_Thanks;
+Substream;
+SubTrack;Паддарожка
+SubtstreamIdChannel;
+Summary;Зводка
+Supported formats;Фарматы, што падтрымліваюцца
+Supported?;Падтрымліваецца?
+SupportUs;
+SupportUs2;
+surmixlev;
+SurroundAttenuationKnown;
+SwitchGroup;
+Synopsis;Коратка
+SystemId;Ідэнтыфікатар
+Tagged_Application;Праграма, якая пазначыла
+Tagged_Date;Дата адзнакі
+TargetDeviceConfig;
+Technician;Тэхнік
+TermsOfUse;Умовы выкарыстання
+TertiaryAudioLanguage;
+TestContinuousFileNames;
+Text - Custom;Тэкст - выбарачна
+Text (HTML);Тэкст (HTML)
+Text stream(s);Тэкставы(я) паток(і)
+Text streams;Тэкставыя патокі
+Text;Тэкст
+Text_Codec_List;Тэкставы кодэк
+Text_Format_List;
+Text_Format_WithHint_List;
+Text_Language_List;
+Text_No;Няма тэксту
+Text1;Першы тэкставы паток
+Text2;Другі тэкставы паток
+Text3;Трэці тэкставы паток
+TextCount;Колькасць тэкставых патокаў
+TextlessElementsExist;
+ThanksTo;Падзякі
+Thousands separator;Раздзяляльнік тысяч
+TimeCode;
+TimeCode_FirstFrame;
+TimeCode_LastFrame;
+TimeCode_MaxFrameNumber;
+TimeCode_MaxFrameNumber_Theory;
+TimeCode_Settings;
+TimeCode_Source;
+TimeCode_Stripped;
+TimeStamp;
+TimeZone;Часавы пояс
+Title;Загаловак
+Title_More;Загаловак, дадаткова
+Top4ToTop2;
+TopBackToFront;
+TopBackToSide;
+TopFrontToBack;
+TopFrontToFront;
+TopFrontToSide;
+Total;Усяго
+TotalNumberOfParts;
+TotalProgrammeDuration;
+Track;Назва дарожкі
+Track_Count;Колькасць дарожак
+TrackFormat;
+TrackIndex;
+TrackUID;
+transfer_characteristics;Характарыстыкі трансферу
+transfer_characteristics_Source;
+Translate_Reports;
+Translator;Перакладчык
+Transport;
+Tree &amp; Text;Дрэва і тэкст
+Tree;Дрэва
+Trim_Center;
+Trim_Height;
+Trim_Surround;
+TrimMode;
+TrimMode0i;
+TrimMode1i;
+TrimMode2i;
+TrimMode3i;
+TrimMode4i;
+TrimMode5i;
+TrimMode6i;
+TrimMode7i;
+TrimMode8i;
+TruePeakLevel;
+TruePeakLevel_Album;
+Type;
+Type_Composer;
+Type_Conductor;
+Type_Cover;
+Type_Cover_Back;
+Type_Cover_Media;
+Type_DuringPerformance;
+Type_DuringRecording;
+Type_FileIcon;
+Type_FileIcon_32x32;
+Type_Illustration;
+Type_LeafletPage;
+Type_Lyricist;
+Type_Performer;
+Type_Performer_Lead;
+Type_PerformerLogo;
+Type_Picture;
+Type_PublisherLogo;
+Type_RecordingLocation;
+Type_ScreenCapture;
+Type_Thumbnail;
+TypeDefinition;
+UniqueID;Унікальны ідэнтыфікатар
+UniversalAdID;
+UniversalAdID_Registry;
+UniversalAdID_Value;
+Unknown;Невядома
+Url;URL-адрас
+Value;
+Video stream(s);Відэапаток(і)
+Video;Відэа
+Video_Codec_List;Відэакодэкі
+Video_Delay;Затрымка відэа
+Video_Format_List;
+Video_Format_WithHint_List;
+Video_Language_List;
+Video_No;Няма відэа
+Video0_Delay;Затрымка відэа
+Video1;Першы відэапаток
+Video2;
+Video3;
+VideoComments;
+VideoCount;Колькасць відэапатокаў
+View;Прагляд
+View_Hint;Змяніце спосаб прагляду інфармацыі
+Views;
+Warning : more streams in the files;Увага: у файлах ёсць яшчэ патокі
+Web;Сайт
+WebSite;
+WebSite_Audio;Сайт аўдыёкодэка
+WebSite_Audio_More;Перайсці на сайт (%Url%) для пошуку гэтага аўдыёкодэка
+WebSite_General;Перайсці на сайт прайгравальніка для гэтага файла
+WebSite_General_More;Перайсці на сайт прайгравальніка для гэтага файла
+WebSite_Text;Перайсці на сайт гэтага тэкставага кодэка
+WebSite_Text_More;Перайсці на сайт (%Url%) для пошуку гэтага тэкставага кодэка
+WebSite_Url;http://MediaArea.net/MediaInfo
+WebSite_Video;Перайсці на сайт гэтага відэакодэка
+WebSite_Video_More;Перайсці на сайт (%Url%) для пошуку гэтага відэакодэка
+Width;Шырыня
+Width_CleanAperture;
+Width_Original;
+Window;
+WriteMe;Напісаць аўтару
+WriteToTranslator;Напісаць перакладчыку
+Written_Date;Дата запісу
+Written_Location;Месца запісу
+WrittenBy;Запісана
+Yes;Так
+Your system;Ваша сістэма
+Your translation;
+Zoom;
+ZZ_Automatic_Percent;66
+ZZ_AutomaticLanguage_Percent;70</value>
+  </data>
+  <data name="MenuBarItemEdit.Title" xml:space="preserve">
+    <value>Змяніць</value>
+  </data>
+  <data name="MenuBarItemEditCopyText.Text" xml:space="preserve">
+    <value>Copy text</value>
+  </data>
+  <data name="MenuBarItemFile.Title" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="MenuBarItemFileOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="MenuBarItemHelp.Title" xml:space="preserve">
+    <value>Даведка</value>
+  </data>
+  <data name="MenuBarItemHelpAbout.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="MenuBarItemView.Title" xml:space="preserve">
+    <value>Прагляд</value>
+  </data>
+  <data name="MenuBarItemViewPretty.Text" xml:space="preserve">
+    <value>Pretty</value>
+  </data>
+  <data name="MenuBarItemViewText.Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="MenuBarItemViewWrapText.Text" xml:space="preserve">
+    <value>Wrap text</value>
+  </data>
+  <data name="OpenSourceCodeButton.Text" xml:space="preserve">
+    <value>Source code</value>
+  </data>
+  <data name="PopupClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="SystemLanguage" xml:space="preserve">
+    <value>System</value>
+  </data>
+</root>

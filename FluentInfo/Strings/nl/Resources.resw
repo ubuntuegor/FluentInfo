@@ -1,0 +1,1686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
+    <value>Copied as text</value>
+  </data>
+  <data name="DragDropFileOpenCaption" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="DragFileHereZoneCaption.Text" xml:space="preserve">
+    <value>Drag a file here</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Nederlands</value>
+  </data>
+  <data name="MediaInfoLanguage" xml:space="preserve">
+    <value>  Language_ISO639;nl
+  Author_Email;fakir@mailxxl.com
+  Author_Name;bvv
+  Author_OldNames;Initial translator
+  Language_Name;Nederlands
+  Config_Text_ColumnSize;40
+  Config_Text_Separator; : 
+  Config_Text_NumberTag; #
+  Config_Text_FloatSeparator;,
+  Config_Text_ThousandsSeparator; 
+ audio stream1; audiostroom
+ audio stream2; audiostromen
+ audio stream3; audiostromen
+ bit1; bit
+ bit2; bits
+ bit3; bits
+ Bps; B/s
+ bps; b/s
+ Byte1; Byte
+ Byte2; Bytes
+ Byte3; Bytes
+ channel1; kanaal
+ channel2; kanalen
+ channel3; kanalen
+ chapter1; hoofdstuk
+ chapter2; hoofdstukken
+ chapter3; hoofdstukken
+ chapters stream1; hoofdstukkenstroom
+ chapters stream2; hoofdstukkenstromen
+ chapters stream3; hoofdstukkenstromen
+ character1;
+ character2;
+ character3;
+ day1; dag
+ day2; dagen
+ day3; dagen
+ dB0;
+ dB1; dB
+ dB2; dB
+ dB3; dB
+ file1; bestand
+ file2; bestanden
+ file3; bestanden
+ fps1; FPS
+ fps2; FPS
+ fps3; FPS
+ frame1; frame
+ frame2; frames
+ frame3; frames
+ GB; GB
+ Gb; Gb
+ GBps; GB/s
+ Gbps; Gb/s
+ GHz; GHz
+ GiB; GiB
+ GibiByte1; GibiBytes
+ GibiByte2; GibiBytes
+ GibiByte3; GibiBytes
+ GiBps; GiB/s
+ GigaBit1; GigaBit
+ GigaBit2; GigaBits
+ GigaBit3; GigaBits
+ GigaByte1; GigaByte
+ GigaByte2; GigaBytes
+ GigaByte3; GigaBytes
+ hour1; uur
+ hour2; uren
+ hour3; uren
+ Hz; Hz
+ image stream1; videostroom
+ image stream2; videostromen
+ image stream3; videostromen
+ KB; kB
+ Kb; kb
+ KBps; kB/s
+ Kbps; kb/s
+ KHz; kHz
+ KiB; KiB
+ KibiBit1; KibiBit
+ KibiBit2; KibiBits
+ KibiBit3; KibiBits
+ KibiByte1; KibiByte
+ KibiByte2; KibiBytes
+ KibiByte3; KibiBytes
+ KiBps; KiB/s
+ KiloBit1; KiloBit
+ KiloBit2; KiloBits
+ KiloBit3; KiloBits
+ KiloByte1; KiloByte
+ KiloByte2; KiloBytes
+ KiloByte3; KiloBytes
+ MB; MB
+ Mb; Mb
+ MBps; MebiBytes
+ Mbps; Mb/s
+ MebiBit1; MebiBit
+ MebiBit2; MebiBits
+ MebiBit3; MebiBits
+ MebiByte1; MebiByte
+ MebiByte2; MebiBytes
+ MebiByte3; MebiBytes
+ MegaBit1; MegaBit
+ MegaBit2; MegaBits
+ MegaBit3; MegaBits
+ MegaByte1; MegaByte
+ MegaByte2; MegaBytes
+ MegaByte3; MegaBytes
+ MHz; MHz
+ MiB; MiB
+ Mib; Mib
+ MiBps; MiB/s
+ millisecond1; milliseconde
+ millisecond2; milliseconden
+ millisecond3; milliseconden
+ minute1; minuut
+ minute2; minuten
+ minute3; minuten
+ month1; maand
+ month2; maanden
+ month3; maanden
+ object1;
+ object2;
+ object3;
+ pixel1; pixel
+ pixel2; pixels
+ pixel3; pixels
+ second1; seconde
+ second2; seconden
+ second3; seconden
+ slice per frame1;
+ slice per frame2;
+ slice per frame3;
+ text stream1; tekststroom
+ text stream2; tekststromen
+ text stream3; tekststromen
+ video frames1; videoframes
+ video frames2; videoframes
+ video frames3; videoframes
+ video stream1; videostroom
+ video stream2; videostromen
+ video stream3; videostromen
+ warppoint0;Geen warppoints
+ warppoint1; warppoint
+ warppoint2; warppoints
+ warppoint3; warppoints
+ week1; week
+ week2; weken
+ week3; weken
+ year1; jaar
+ year2; jaren
+ year3; jaren
+, ;, 
+: ;: 
+3D;
+3DType;
+5.1.2ch;
+5.1.4ch;
+5.1ch;
+608_Mode;
+7.1.2ch;
+7.1ch;
+About;Info
+About_Hint;Hoe neemt u contact met mij op en vindt u de nieuwste versie
+AC3_Metadata;
+Accompaniment;Begeleiding
+acmod;
+Active_DisplayAspectRatio;
+Active_Height;
+Active_Width;
+ActiveFormatDescription;
+ActiveFormatDescription_MuxingMode;
+Actor;Acteur
+Actor_Character;Personage
+Add creation date to text output;
+Add version to text output;
+Added_Date; Toegevoegde datum
+Address;Adres
+AdID;
+ADM: Show ChannelFormats;
+ADM: Show TrackUIDs;
+AdmProfile;
+Advanced mode --&gt;;
+Advanced mode;Geavanceerde modus
+Advanced;Geavanceerd
+Album;Album
+Album_ReplayGain_Gain;Album replay gain
+Album_ReplayGain_Peak;Album replay gain piek
+Alignment; Uitlijning
+Alignment_Aligned;Uitgelijnd op interleaves
+Alignment_Split;Gesplitst over interleaves
+All;Alles
+AllFields;
+AlternateGroup;
+AnalyzeServicesMenu;
+App_About;Over MediaInfo
+App_Hide;Verberg MediaInfo
+App_Quit;Stop MediaInfo
+Archival_Location;Archieflocatie
+Arranger;Arrangeur
+ArtDirector;Artdirector
+AspectRatio;Beeldverhouding
+AssistantDirector;Assistant-regisseur
+AssociatedVideo_FrameRate;
+At least one file;(U moet tenminste één bestand openen)
+at;met
+Attachments;
+Audio stream(s);Audiostromen
+Audio;Audio
+Audio_Channels_Total;
+Audio_Codec_List;Audiocodecs
+Audio_Format_List;
+Audio_Format_WithHint_List;
+Audio_Language_List;
+Audio_No;Geen audio
+Audio1;Eerste audiostroom
+Audio2;Tweede audiostroom
+Audio3;
+AudioComments;
+AudioCount;Telling van audiostromen
+AudioDescription;
+AudioDescriptionPresent;
+AudioDescriptionType;
+AudioLoudnessStandard;
+AudioRenderingIndication;
+AudioSceneInfoID;
+AudioTrackLayout;
+Author;Auteur
+Back4ToBack2;
+Balance_FrontBackListener;
+Balance_FrontBackOverheadFloor;
+BarCode;Streepjescode
+Basic;Elementair
+Basic_Note;Let op : voor meer informatie over dit bestand, moet u een ander beeld kiezen (Blad, Boomstructuur,...)
+BedChannelConfiguration;
+BedChannelCount;
+BinauralRenderMode;
+BitDepth;
+BitDepth_Detected;
+BitDepth_Stored;
+BitRate;Bitrate
+BitRate_Encoded;
+BitRate_Maximum;Maximale bitrate
+BitRate_Minimum;Minimale bitrate
+BitRate_Mode;Bitrate-modus
+BitRate_Mode_CBR;Constant
+BitRate_Mode_VBR;Variabel
+BitRate_Nominal;Nominale bitrate
+Bits-(Pixel*Frame);Bits/(Pixel*Frame)
+BitstreamLevel;
+Bring All to Front;Alles op voorgrond
+bsid;
+BufferSize;
+Cancel;Annuleren
+CaptionServiceName;
+CatalogNumber;
+Channel(s);Kanaal(en)
+Channel(s)_Original;
+ChannelCoded;
+ChannelConfiguration;
+ChannelFormat;
+ChannelLayout;
+ChannelLayout_Original;
+ChannelMode;
+ChannelPositions;Kanaalposities
+ChannelPositions_Original;
+Chapter(s);Hoofdstuk(ken)
+Chapters stream(s);Hoofdstukkenstroom(en)
+Chapters;Hoofdstukken
+Chapters_Codec_List;Hoofdstukkencodecs
+Chapters_No;Geen hoofdstukken
+Chapters_Pos_Begin;
+Chapters_Pos_End;
+ChaptersCount;Telling van hoofdstukkenstromen
+CharacterSet;
+CheckNewVersion;Controleer op versie
+Choose custom sheet;Kies uw gewenste aangepaste blad
+Choose custom text;Kies uw gewenste aangepaste tekst
+Choose custom;Kies aangepast
+Choose export format;Kies uw gewenste exportformaat
+Choose file(s);Kies de te openen bestanden
+Choose filename;Kies uw gewenste bestandsnaam
+Choose language;Kies uw gewenste taal
+Choreographer;Choreograaf
+Chroma;Chroma
+ChromaSubsampling;
+Classifier;
+ClearList;
+Close all before open;Sluit alle alvorens te openen
+Close;Sluiten
+CloseAll;
+ClosedCaptionsLanguage;
+ClosedCaptionsPresent;
+ClosedCaptionsType;
+CloseFile;
+CloseWindow;Venster sluiten
+cmixlev;
+Codec;Codec
+Codec_Description;Codecbeschrijving
+Codec_Info;Details voor codec
+Codec_Profile;Codecprofiel
+Codec_Settings;Codec-instellingen
+Codec_Settings_BVOP;Codec-instellingen, BVOP
+Codec_Settings_CABAC;Codec-instellingen, CABAC
+Codec_Settings_Endianness;Codec-instellingen, Endianness
+Codec_Settings_Firm;Codec-instellingen, Firm
+Codec_Settings_Floor;Codec-instellingen, Floor
+Codec_Settings_GMC;Codec-instellingen, GMC
+Codec_Settings_ITU;Codec-instellingen, ITU
+Codec_Settings_Law;Codec-instellingen, Law
+Codec_Settings_Matrix;Codec-instellingen, Matrix
+Codec_Settings_PacketBitStream;Codec-instellingen, Packet bitstream
+Codec_Settings_QPel;Codec-instellingen, QPel
+Codec_Settings_Sign;Codec-instellingen, Sign
+Codec_Url;Weblink voor codec
+CodecConfigurationBox;
+CodecID;Codec-ID
+CodecID_Description; Beschrijving van de codec
+CoDirector;
+Collection;Collectie
+Colorimetry; Colorimetrie
+ColorSpace;
+ColorTheme;
+ColorTheme_Dark;
+ColorTheme_Light;
+ColorTheme_System;
+colour_description_present;
+colour_description_present_Source;
+colour_primaries;
+colour_primaries_Source;
+colour_range;
+colour_range_Source;
+Comment;Commentaar
+CommissionedBy;In opdracht van
+Compare;
+CompareView;
+Compilation;
+ComplementaryObject;
+CompleteName;Volledige naam
+CompletionDate;
+ComplexityIndex;
+Composer;Componist
+Compression_Mode;
+Compression_Mode_Lossless;
+Compression_Mode_Lossy;
+Compression_Ratio;Compressieverhouding
+comprprof;
+Conductor;Dirigent
+ConformanceCheck;
+ConformanceErrors;
+ConformanceInfos;
+ConformanceWarnings;
+ContactEmail;
+ContactTelephoneNumber;
+Container and general information;Container en algemene informatie
+Content;
+ContentType;Inhoudstype
+CoProducer;Coproducent
+Copy;Kopieer
+Copyright;Auteursrecht
+CopyrightYear;
+CostumeDesigner;Kostuumontwerper
+Count;Telling
+Country;Land
+Cover;Hoes
+Cover_Datas;Covergegevens
+Cover_Description;Coverbeschrijving
+Cover_Mime;Cover-MIME
+Cover_Type;Coversoort
+CoverData;
+CreatedOn;
+Cropped;Cropafmetingen
+Custom;Aangepast
+CustomDownmixTargets;
+Customize;Aanpassen
+DarkMode;
+Date;Datum
+Debug;Debug
+Decimal point;Decimale punt
+Default translation;
+Default;
+Default_Setting;
+DefaultTargetDeviceConfig;
+DefaultView;
+Delay;Vertraging
+Delay_Source;
+Delay_Source_Container;
+Delay_Source_Stream;
+Delete;Verwijderen
+Description;Beschrijving
+Details;
+dialnorm;
+dialnorm_Average;
+dialnorm_Count;
+dialnorm_Maximum;
+dialnorm_Minimum;
+DialogueCorrected;
+DialogueEnhancement;
+DialogueNormalization;
+Digitized_Date;Digitaliseringsdatum
+Dimensions;Afmetingen
+Director;Regisseur
+DirectorOfPhotography;Cinematograaf
+Disabled;
+DisplayAspectRatio;Beeldverhouding
+DisplayAspectRatio_CleanAperture;
+DisplayAspectRatio_Original;Originele beeldverhouding
+DisplayCaptions;
+DisplayCaptions_Command;
+DisplayCaptions_Content;
+DisplayCaptions_Stream;
+DistributedBy;Gedistribueerd door
+Distributor;
+Documents;
+Dolby_Atmos_Metadata;
+DolbyAtmos;
+Donate;Doneren
+DotsPerInch;Punten per inch
+DownloadFile;
+DownloadFileError;
+Downmix;
+Downmix_5.1.x;
+Downmix_5to2;
+DrcSets_Count;
+DrcSets_Effects;
+Duration;Duur
+Duration_End;
+Duration_End_Command;
+Duration_Source;
+Duration_Start;
+Duration_Start_Command;
+Duration_Start2End;
+DynamicObject;
+DynamicRangeControl;
+dynrngprof;
+Eac3DrcProfile;
+Edit;Bewerken
+EditedBy;Bewerkt door
+EditorialClassification;
+ElementaryStream;
+ElementCount;
+EMail;E-Mail
+Enable FFmpeg plugin;
+Encoded_Application;Gebruikt programma
+Encoded_Application_Name;
+Encoded_Application_Version;
+Encoded_Date;Datum codering
+Encoded_Hardware;
+Encoded_Library;Gebruikte encoderbibliotheek
+Encoded_Library_Name;
+Encoded_Library_Settings;Instellingen codering
+Encoded_Library_Version;
+Encoded_Original;Origineel
+EncodedBy;Gecodeerd door
+EPG_Positions;
+EpisodeTitleNumber;
+Error;
+Error_File;Fout tijdens lezen bestand
+Error_File_Write;
+Error_Open;
+Error_Save;
+Events_MinDuration;
+Events_PaintOn;
+Events_PopOn;
+Events_RollUp;
+Events_Total;
+ExecutiveProducer;Uitvoerend producent
+Exit;Afsluiten
+Exit_Hint;Beëindig het programma
+Export;Exporteren
+Export_Hint;Exporteren in aangepast formaat
+Extensions;Gebruikelijke extensies
+External_Media_NotMounted;
+Family;Familie
+Fax;Fax
+Feature_AdvancedMode;
+Feature_FilesCompare;
+Feature_More;
+Feature_SelectView;
+Field;
+File size;Bestandsgrootte
+File;Bestand
+File_Append;Toevoegen aan bestaande bestand (Waarschuwing : gebruik dezelfde parameters)
+File_Created_Date;Aanmaakdatum bestand
+File_Created_Date_Local;
+File_Hint;Kies een te onderzoeken multimediabestand
+File_Modified_Date;Datum laatste bestandswijziging
+File_Modified_Date_Local;
+FileExtension;Bestandsextensie
+FileName;Bestandsnaam
+FileNameExtension;
+FileSize;Bestandsgrootte
+Fill with a Dummy movie;
+Fill with a realistic movie;
+FirstDisplay_Delay_Frames;
+FirstDisplay_Type;
+FirstFrameOfAction;
+FlatPanelTv;
+FlowID;
+Folder (R);Map (R)
+Folder (R)_Hint;Kies een te onderzoeken map (inclusief onderliggende mappen)
+Folder (Recursively);Map (Recursief)
+Folder;Map
+Folder_Hint;Kies een te onderzoeken map
+FolderName;Mapnaam
+Forced;
+Format;Formaat
+Format_AdditionalFeatures;
+Format_Commercial;
+Format_Commercial_IfAny;
+Format_Compression;
+Format_Description;Formaatbeschrijving
+Format_Info;Details over formaat
+Format_Level;
+Format_Profile;Formaatprofiel
+Format_Settings;Formaatinstellingen
+Format_Settings_BVOP;Formaatinstellingen, BVOP
+Format_Settings_CABAC;Formaatinstellingen, CABAC
+Format_Settings_Emphasis;
+Format_Settings_Endianness;Formaatinstellingen, Endianness
+Format_Settings_Firm;Formaatinstellingen, Firm
+Format_Settings_Floor;Formaatinstellingen, Floor
+Format_Settings_FrameMode;
+Format_Settings_GMC;Formaatinstellingen, GMC
+Format_Settings_GOP;
+Format_Settings_ITU;Formaatinstellingen, ITU
+Format_Settings_Law;Formaatinstellingen, Law
+Format_Settings_Matrix;Formaatinstellingen, Matrix
+Format_Settings_Matrix_Custom;Aangepast
+Format_Settings_Matrix_Default;Standaard
+Format_Settings_Mode;
+Format_Settings_ModeExtension;
+Format_Settings_PacketBitStream;Formaatinstellingen, Packet bitstream
+Format_Settings_PictureStructure;
+Format_Settings_PS;Formaatinstellingen, PS
+Format_Settings_Pulldown;Formaatinstellingen, Pulldown
+Format_Settings_QPel;Formaatinstellingen, Qpel
+Format_Settings_RefFrames;Formaatinstellingen, RefFrames
+Format_Settings_SBR;Formaatinstellingen, SBR
+Format_Settings_Sign;Formaatinstellingen, Sign
+Format_Settings_SliceCount;
+Format_Settings_Wrapping;
+Format_Tier;
+Format_Url;Weblink voor formaat
+Format_Version;Formaatversie
+FormatDefinition;
+FpaManufacturer;
+FpaPass;
+FpaVersion;
+FrameCount;Framecount
+FrameCount_Source;
+FrameRate;Framerate
+FrameRate_Den;
+FrameRate_Maximum;Maximale framrate
+FrameRate_Minimum;Minimale framrate
+FrameRate_Mode;Frameratemodus
+FrameRate_Mode_CFR;Constant
+FrameRate_Mode_VFR;Variabel
+FrameRate_Nominal;Nominale framrate
+FrameRate_Num;
+FrameRate_Original;Originele framerate
+FrameRate_Real;
+FullParsing;
+FullParsingTips;
+Gallery;
+General;Algemeen
+GeneralCompliance;
+Genre;Muziekstijl
+Genre_000;Blues
+Genre_001;Classic Rock
+Genre_002;Country
+Genre_003;Dance
+Genre_004;Disco
+Genre_005;Funk
+Genre_006;Grunge
+Genre_007;Hiphop
+Genre_008;Jazz
+Genre_009;Metal
+Genre_010;New Age
+Genre_011;Gouwe Ouwe
+Genre_012;Ander
+Genre_013;Pop
+Genre_014;R&amp;B
+Genre_015;Rap
+Genre_016;Reggae
+Genre_017;Rock
+Genre_018;Techno
+Genre_019;Industrial
+Genre_020;Alternatief
+Genre_021;Ska
+Genre_022;Deathmetal
+Genre_023;Grappen
+Genre_024;Soundtrack
+Genre_025;Eurotechno
+Genre_026;Ambient
+Genre_027;Triphop
+Genre_028;Vocal
+Genre_029;Jazz+Funk
+Genre_030;Fusion
+Genre_031;Trance
+Genre_032;Klassiek
+Genre_033;Instrumentaal
+Genre_034;Acid
+Genre_035;House
+Genre_036;Spel
+Genre_037;Geluidsfragment
+Genre_038;Gospel
+Genre_039;Noise
+Genre_040;Alternatieve Rock
+Genre_041;Bass
+Genre_042;Soul
+Genre_043;Punk
+Genre_044;Space
+Genre_045;Meditatief
+Genre_046;Instrumentale Pop
+Genre_047;Instrumentale Rock
+Genre_048;Etnisch
+Genre_049;Gothic
+Genre_050;Darkwave
+Genre_051;Techno-Industrial
+Genre_052;Electronisch
+Genre_053;Popfolk
+Genre_054;Eurodance
+Genre_055;Dream
+Genre_056;Southern Rock
+Genre_057;Comedy
+Genre_058;Cult
+Genre_059;Gangsta
+Genre_060;Top 40
+Genre_061;Christelijke Rap
+Genre_062;Pop/Funk
+Genre_063;Jungle
+Genre_064;Native American
+Genre_065;Cabaret
+Genre_066;New Wave
+Genre_067;Psychedelisch
+Genre_068;Rave
+Genre_069;Showtunes
+Genre_070;Trailer
+Genre_071;Lo-Fi
+Genre_072;Tribal
+Genre_073;Acid Punk
+Genre_074;Acid Jazz
+Genre_075;Polka
+Genre_076;Retro
+Genre_077;Musical
+Genre_078;Rock-’n-roll
+Genre_079;Hardrock
+Genre_080;Folk
+Genre_081;Folkrock
+Genre_082;National Folk
+Genre_083;Swing
+Genre_084;Fast Fusion
+Genre_085;Bebob
+Genre_086;Latin
+Genre_087;Revival
+Genre_088;Keltisch
+Genre_089;Bluegrass
+Genre_090;Avantgarde
+Genre_091;Gothic Rock
+Genre_092;Progressive Rock
+Genre_093;Psychedelische Rock
+Genre_094;Symphonische Rock
+Genre_095;Slow Rock
+Genre_096;Bigband
+Genre_097;Koor
+Genre_098;Easy Listening
+Genre_099;Akoestisch
+Genre_100;Humor
+Genre_101;Spraak
+Genre_102;Chanson
+Genre_103;Opera
+Genre_104;Kamermuziek
+Genre_105;Sonate
+Genre_106;Symfonie
+Genre_107;Booty Bass
+Genre_108;Primus
+Genre_109;Porn Groove
+Genre_110;Satire
+Genre_111;Slow Jam
+Genre_112;Club
+Genre_113;Tango
+Genre_114;Samba
+Genre_115;Folklore
+Genre_116;Ballad
+Genre_117;Powerballad
+Genre_118;Ritmische Soul
+Genre_119;Freestyle
+Genre_120;Duet
+Genre_121;Punkrock
+Genre_122;Drumsolo
+Genre_123;A capella
+Genre_124;Euro-House
+Genre_125;Dancehall
+Genre_126;Goa
+Genre_127;Drum-’n-bass
+Genre_128;Clubhouse
+Genre_129;Hardcore
+Genre_130;Terror
+Genre_131;Indie
+Genre_132;Britpop
+Genre_133;Negerpunk
+Genre_134;Polsk Punk
+Genre_135;Beat
+Genre_136;Christian Gangsta Rap
+Genre_137;Heavy Metal
+Genre_138;Black Metal
+Genre_139;Crossover
+Genre_140;Gospelrock
+Genre_141;Christelijke Rock
+Genre_142;Merengue
+Genre_143;Salsa
+Genre_144;Trash Metal
+Genre_145;Anime
+Genre_146;JPop
+Genre_147;Synthpop
+Genre_148;
+Genre_149;
+Genre_150;
+Genre_151;
+Genre_152;
+Genre_153;
+Genre_154;
+Genre_155;
+Genre_156;
+Genre_157;
+Genre_158;
+Genre_159;
+Genre_160;
+Genre_161;
+Genre_162;
+Genre_163;
+Genre_164;
+Genre_165;
+Genre_166;
+Genre_167;
+Genre_168;
+Genre_169;
+Genre_170;
+Genre_171;
+Genre_172;
+Genre_173;
+Genre_174;
+Genre_175;
+Genre_176;
+Genre_177;
+Genre_178;
+Genre_179;
+Genre_180;
+Genre_181;
+Genre_182;
+Genre_183;
+Genre_184;
+Genre_185;
+Genre_186;
+Genre_187;
+Genre_188;
+Genre_189;
+Genre_190;
+Genre_191;
+Go to WebSite;Ga naar website
+Gop_OpenClosed;
+Gop_OpenClosed_Closed;
+Gop_OpenClosed_FirstFrame;Grouping
+Gop_OpenClosed_Open;
+Graph;
+Group;
+Grouping;
+GroupPreset;
+h; h
+HDR_Format;
+Header file;Headerbestand maken
+Height;Hoogte
+Height_CleanAperture;
+Height_Original;
+Help;Help
+HideOthers;Anderen verbergen
+Hint;Hint
+HomeTheaterAvr;
+How many audio streams?;Hoeveel audiostromen?
+How many chapters streams?;Hoeveel hoofdstukstromen?
+How many text streams?;Hoeveel tekststromen?
+How many video streams?;Hoeveel videostromen?
+HTML;HTML
+ID;ID
+IdentClockStart;
+IFrameInterval;
+Image stream(s);Videostromen
+Image;Video
+Image_Codec_List;Videocodecs
+ImageCount;Telling van videostromen
+ImmersiveStereo;
+Info;Info
+Instruments;Instrumenten
+IntegratedLoudness;
+IntegratedLoudness_Level;
+IntegratedLoudness_Speech;
+InteractivityEnabled;
+Interlaced_BFF;Onderste Veld Eerst
+Interlaced_Interlaced;Interlaced
+Interlaced_PPF;Progressief
+Interlaced_Progressive;Progressief
+Interlaced_TFF;Bovenste Veld Eerst
+Interlacement;Interlacement
+Interleave_Duration;Interleave, duur
+Interleave_Preload;Interleave, preloadduur
+Interleave_VideoFrames;Interleave, duur
+Interleaved;
+InternetMediaType;
+IRCA;IRCA
+ISBN;ISBN
+ISRC;ISRC
+IsStreamable;
+Keywords;Sleutelwoorden
+Known codecs;Bekende codecs
+Known formats;Bekende formaten
+Known parameters;Bekende parameters
+Label;Label
+Language;Taal
+Language_aa;Afar
+Language_ab;Abchazisch
+Language_ae;Avestaans
+Language_af;Afrikaans
+Language_ak;Akan
+Language_am;Amharic
+Language_an;Aragonees
+Language_ar;Arabisch
+Language_as;Assamitisch
+Language_av;Avaric
+Language_ay;Aymara
+Language_az;Azerbeidzjaans
+Language_ba;Bashkir
+Language_be;Wit-Russisch
+Language_bg;Bulgaars
+Language_bh;Bihari
+Language_bi;Bislama
+Language_bm;Bambara
+Language_bn;Bengali
+Language_bo;Tibetaans
+Language_br;Bretons
+Language_bs;Bosnisch
+Language_ca;Catalaans
+Language_ce;Tsjetsjeens
+Language_ch;Chamorro
+Language_cmn;
+Language_co;Corsicaans
+Language_cr;Cree
+Language_cs;Tsjechisch
+Language_cu;Slave
+Language_cv;Chuvash
+Language_cy;Welsh
+Language_da;Deens
+Language_de;Duits
+Language_dv;Divehi
+Language_dz;Dzongkha
+Language_ee;Ewe
+Language_el;Grieks
+Language_en;Engels
+Language_en-gb;Engels (Groot-Brittannië)
+Language_en-us;Engels (Verenigde Staten)
+Language_eo;Esperanto
+Language_es;Spaans
+Language_es-419;
+Language_et;Estisch
+Language_eu;Baskisch
+Language_fa;Perzisch
+Language_ff;Fulah
+Language_fi;Fins
+Language_fil;
+Language_fj;Fijisch
+Language_fo;Faeroërs
+Language_fr;Frans
+Language_fy;Fries
+Language_ga;Iers
+Language_gd;Gaelisch
+Language_gl;Galicisch
+Language_gn;Guarani
+Language_gu;Gujarati
+Language_gv;Manx
+Language_ha;Hausa
+Language_he;Hebreeuws
+Language_hi;Hindi
+Language_ho;Hiri Motu
+Language_hr;Kroatisch
+Language_ht;Haïtiaans
+Language_hu;Hongaars
+Language_hy;Armeens
+Language_hy-az;
+Language_hz;Herero
+Language_ia;Interlingua
+Language_id;Indonesisch
+Language_ie;Interlingue
+Language_ig;Igbo
+Language_ii;Sichuan Yi
+Language_ik;Inupiaq
+Language_Info;Taalinfo
+Language_io;Ido
+Language_is;IJslands
+Language_it;Italiaans
+Language_iu;Inuktitut
+Language_ja;Japans
+Language_jv;Javaans
+Language_ka;Georgisch
+Language_kg;Congolees
+Language_ki;Kikuyu
+Language_kj;Kuanyama
+Language_kk;Kazachs
+Language_kl;Groenlands
+Language_km;Khmer
+Language_kn;Kannada
+Language_ko;Koreaans
+Language_kr;Kanuri
+Language_ks;Kasjmiri
+Language_ku;Koerdisch
+Language_kv;Zurjeens
+Language_kw;Cornish
+Language_ky;Kirgizisch
+Language_la;Latijn
+Language_lb;Luxemburgs
+Language_lg;Luganda
+Language_li;Limburgs
+Language_ln;Lingala
+Language_lo;Laotiaans
+Language_lt;Litouws
+Language_lu;Luba-Katanga
+Language_lv;Lets
+Language_mg;Malagasy
+Language_mh;Marshallees
+Language_mi;Maori
+Language_mk;Macedonisch
+Language_ml;Malayalam
+Language_mn;Mongools
+Language_mn-cn;
+Language_mo;Moldavisch
+Language_More;Taal, meer info
+Language_mr;Marathi
+Language_ms;Maleis
+Language_ms-bn;
+Language_mt;Maltees
+Language_mul;Meerdere talen
+Language_my;Burmees
+Language_na;Nauruaans
+Language_nb;Noors Bokmal
+Language_nd;Ndebele
+Language_ne;Nepalees
+Language_ng;Ndonga
+Language_nl;Nederlands
+Language_nl-be;
+Language_nn;Noors Bokmal
+Language_no;Noors
+Language_nr;Ndebele
+Language_nv;Navaho
+Language_ny;Nyanja
+Language_oc;Occitaans
+Language_oj;Ojibwa
+Language_om;Oromo
+Language_or;Oriya
+Language_os;Ossetisch
+Language_pa;Punjabi
+Language_pi;Pali
+Language_pl;Pools
+Language_ps;Pasjtoe
+Language_pt;Portugees
+Language_pt-br;Portugees (Brazilië)
+Language_qu;Quechua
+Language_rm;Reto-Romaans
+Language_rn;Kirundi
+Language_ro;Roemeens
+Language_ru;Russisch
+Language_rw;Kinyarwanda
+Language_sa;Sanskriet
+Language_sc;Sardijns
+Language_sd;Sindhi
+Language_se;Laps
+Language_sg;Sango
+Language_si;Sinhala
+Language_sk;Slowaaks
+Language_sl;Sloveens
+Language_sm;Samoaans
+Language_smi;
+Language_sn;Shona
+Language_so;Somalisch
+Language_sq;Albanees
+Language_sr;Servisch
+Language_ss;Swazi
+Language_st;Sotho
+Language_su;Sundanees
+Language_sv;Zweeds
+Language_sw;Swahili
+Language_ta;Tamil
+Language_te;Telugu
+Language_tg;Tadzjieks
+Language_th;Thai
+Language_ti;Tigrinya
+Language_tk;Turkmeens
+Language_tl;Tagalog
+Language_tn;Tswana
+Language_to;Tongaans
+Language_tr;Turks
+Language_ts;Tsonga
+Language_tt;Tataars
+Language_tw;Twi
+Language_ty;Tahitiaans
+Language_ug;Oejgoers
+Language_uk;Oekraïens
+Language_ur;Urdu
+Language_uz;Oezbeeks
+Language_ve;Venda
+Language_vi;Vietnamees
+Language_vo;Volapuk
+Language_wa;Waals
+Language_wo;Wolof
+Language_xh;Xhosa
+Language_yi;Jiddisch
+Language_yo;Yoruba
+Language_yue;
+Language_za;Zhuang
+Language_zh;Chinees
+Language_zh-cmn;
+Language_zh-CN;
+Language_zh-cn;Chinees (China)
+Language_zh-Hans;
+Language_zh-Hant;
+Language_zh-TW;
+Language_zh-tw;Chinees (Taiwan)
+Language_zh-yue;
+Language_zu;Zoeloe
+LanguageChanges;
+Languages;
+LawRating;Wettelijke rating
+LCCN;LCCN
+LegacyStreamDisplay;
+LfeAttenuationKnown;
+LfeMixGain;
+lfeon;
+Library;Muxingbibliotheek
+Lifetime_Subscribe_Button;
+Lightness;Helderheid
+Lines_Count;
+Lines_MaxCountPerEvent;
+LineUpStart;
+LinkedTo_Bed_Pos;
+LinkedTo_ChannelFormat_Pos;
+LinkedTo_ComplementaryObject_Pos;
+LinkedTo_Content_Pos;
+LinkedTo_Group_Pos;
+LinkedTo_Object_Pos;
+LinkedTo_PackFormat_Pos;
+LinkedTo_SignalGroup_Pos;
+LinkedTo_StreamFormat_Pos;
+LinkedTo_Substream_Pos;
+LinkedTo_TrackFormat_Pos;
+LinkedTo_TrackUID_Pos;
+List;Lijst
+LongTermLoudness;
+LoRoCenterMixGain;
+LoRoSurroundMixGain;
+Loudness_Anchor;
+Loudness_Anchor_Album;
+Loudness_Count;
+Loudness_Count_Album;
+Loudness_MaximumMomentary;
+Loudness_MaximumMomentary_Album;
+Loudness_MaximumOfRange;
+Loudness_MaximumOfRange_Album;
+Loudness_MaximumShortTerm;
+Loudness_MaximumShortTerm_Album;
+Loudness_ProductionMixingLevel;
+Loudness_ProductionMixingLevel_Album;
+Loudness_Program;
+Loudness_Program_Album;
+Loudness_Range;
+Loudness_Range_Album;
+Loudness_RoomType;
+Loudness_RoomType_Album;
+LtRtCenterMixGain;
+LtRtSurroundMixGain;
+Lyricist;Tekstschrijver
+Lyrics;Tekst
+MacCreatedBy;
+Mastered_Date;Datum van master
+MasteredBy;Gemastered door
+MasteringDisplay_ColorPrimaries;
+MasteringDisplay_Luminance;
+Matrix_Channel(s);
+Matrix_ChannelPositions;
+matrix_coefficients;
+matrix_coefficients_Source;
+Matrix_Format;
+MaxCLL;
+MaxFALL;
+MaxGain;
+MaximumMomentaryLoudness;
+MaxTruePeak;
+MD5;
+MD5_Unencoded;
+MediaInfo_About;Levert zeer gedetailleerde informatie\r\nover multimediabestanden:\r\nMatroska, OGG (inclusief OGM)\r\nMPEG1 (inclusief VCD)\r\nMPEG2 (inclusief DVD en SVCD)\r\nMPEG4 (inclusief Itunes M4A)\r\nQuicktime\r\nRealMedia\r\nWindowsMedia (inclusief WMV, WMA)\r\nMicrosoft RIFF (inclusief AVI, WAV)\r\nGeluidsformaten (AC3, DTS, AAC, AU, AIFF...)
+MediaInfo_About_About;
+MediaInfo_WebSite;
+Menu stream(s);Menustromen
+Menu;Menu
+Menu_Codec_List;Menucodecs
+Menu_Hint;Meer mogelijkheden
+Menu_No;Geen menu
+MenuCount;Telling van menustromen
+MenuID;Menu-ID
+Metadata_Format;
+Metadata_Format_Type;
+Metadata_MuxingMode;
+Minimize;Minimaliseer
+MixType;
+mn; min
+Mood;Stemming
+More;Meer
+Movie;Filmnaam
+ms; ms
+MSDI;MSDI
+MultipleStream;
+MultiView_Count;
+MusicBy;Muziek door
+MuxingMode;Muxingmodus
+MuxingMode_MoreInfo;
+MuxingMode_PackedBitstream;Packed bitstream
+Name;Naam
+Nationality;Nationaliteit
+NetworkName;
+New;Nieuw
+Newest version;Controleer op nieuwe versies (vereist internetverbinding)
+NewVersion_Menu;
+NewVersion_Question_Content;
+NewVersion_Question_Title;
+No;Nee
+Not yet;Nog niet
+NumberOfChannelFormats;
+NumberOfContents;
+NumberOfDynamicObjects;
+NumberOfElementaryStreams;
+NumberOfObjects;
+NumberOfPackFormats;
+NumberOfPresentations;
+NumberOfProgrammes;
+NumberOfStreamFormats;
+NumberOfSubstreams;
+NumberOfTrackFormats;
+NumberOfTrackUIDs;
+NumColors;Aantal kleuren
+Object;
+ObjectCount;
+OK;OK
+One output file per input file;Eén exportbestand per invoerbestand
+OnlyDiffer;
+OnlyIdentical;
+Open;Open
+OpenCaptionsLanguage;
+OpenCaptionsPresent;
+OpenCaptionsType;
+OpenFile;
+OpenFileError;
+OpenRecent;
+Options;Opties
+Options_Hint;Voorkeuren
+Original;Origineel
+OriginalNetworkName;
+OriginalSourceForm;Originele bronvorm
+OriginalSourceMedium;Originele bronmedium
+OriginalSourceMedium_ID;
+Originator;
+Other;Ander
+OtherIdentifier;
+OtherIdentifierType;
+OtherViews;
+Output format;Uitvoerformaat
+Output;Uitvoer
+OverallBitRate;Totale bitrate
+OverallBitRate_Maximum;Maximale Totale bitrate
+OverallBitRate_Minimum;Minimale Totale bitrate
+OverallBitRate_Mode;Totale bitratemodus
+OverallBitRate_Nominal;Nominale Totale bitrate
+OverallBitRate_Precision_Max;
+OverallBitRate_Precision_Min;
+PackageName;
+PackFormat;
+Part;Deel
+Part_Count;Totale telling
+PartialParsing;
+PartNumber;
+PartTotal;
+Performer;Artiest
+Period;Periode
+Phase90FilterInfo;
+Phase90FilterInfo2ch;
+Phone;Telefoon
+PictureRatio;
+PixelAspectRatio;Pixelverhouding
+PixelAspectRatio_CleanAperture;
+PixelAspectRatio_Original;Originele pixelverhouding
+PlayCounter;Teller
+Played_Count; Keren gespeeld
+Played_First_Date;Eerst gespeeld
+Played_Last_Date;Laatst gespeeld
+PlayTime;Speeltijd
+PodcastCategory;
+PortableHeadphones;
+PortableSpeakers;
+Position;Positie
+Position_Cartesian;
+Position_Polar;
+Position_Total;Totaal
+Preferences;Voorkeuren
+PreferredDownmix;
+Premium;
+Premium_Feature;
+Premium_Summary;
+PreselectionLabel;
+Presentation;
+PresentationConfig;
+PresentationConfig_ContentClassifier;
+PresentationID;
+PresentationLevel;
+PreviousDownmixType5ch;
+PreviousMixType2ch;
+PrimaryAudioLanguage;
+Producer;Producent
+ProductionDesigner;Productieontwerper
+ProductionNumber;
+ProductionStudio;Productiestudio
+ProductPlacement;
+Program name;
+Programme;
+ProgrammeHasText;
+ProgrammeTextLanguage;
+ProgrammeTitle;
+Publisher;Uitgever
+Purchased_Date;Aankoopdatum
+PurchaseInformation;
+Quote character;Aanhalingsteken
+RadioStation;Radiostation
+Rating;Waardering
+RealtimeLoudnessCorrected;
+Recorded_Date;Opnamedatum
+Recorded_Location;Opnamelocatie
+Reel;
+Released_Date;Releasedatum
+RemixedBy;Geremixed door
+RenderMode;
+Renew;
+ReplayGain_Gain;Replay gain
+ReplayGain_Peak;Replay gain piek
+Report;
+ReportBy;
+Resolution;Resolutie
+RestoreLifetimeSubscription;
+Retry;
+s;s
+Sampled_Height;
+Sampled_Width;
+SamplePeakLevel;
+SamplePeakLevel_Album;
+SamplesPerFrame;
+SamplingCount;
+SamplingCount_Source;
+SamplingRate;Samplerate
+Save;Opslaan
+ScanOrder;Scanvolgorde
+ScanOrder_Original;
+ScanOrder_Stored;
+ScanOrder_StoredDisplayedInverted;
+ScanOrder_StoreMethod;
+ScanType;Scansoort
+ScanType_Original;
+ScanType_StoreMethod;
+ScreenplayBy;Draaiboek door
+ScreenToCenter;
+ScreenToFront;
+Season;Seizoen
+SecondaryAudioLanguage;
+see below;zie onder
+Select your directory;
+SelectAll;Alles selecteren
+Send HeaderFile;A.u.b het Header-bestand hierheen sturen : http://sourceforge.net/projects/mediainfo/ (Bug-sectie)
+Separator_Columns;scheidingsteken kolommen
+Separator_Lines;scheidingsteken regels
+SeriesTitle;
+ServiceChannel;Servicekanaalnummer
+ServiceKind;
+ServiceName;Servicenaam
+ServiceProvider;Serviceprovider
+Services;Diensten
+ServiceType;Servicesoort
+Set;Set
+Set_Count;Settelling
+Setup;Setup
+Sharpness;Scherpte
+Sheet (Complete);Blad (Compleet)
+Sheet;Blad
+Shell extension, folder;
+Shell extension, separate instance;
+Shell extension;Shell-extensie (in explorer-rechtsklikmenu zal een Media Info optie te zien zijn...)
+Shell InfoTip;Shell InfoTip (houd in explorer de muiscursor boven een bestand, info wordt getoond)
+ShimName;
+ShimVersion;
+Show menu;Menu tonen
+Show toolbar;Werkbalk tonen
+Show;
+ShowAll;Toon alle
+ShowMore;
+SignalGroup;
+SigningPresent;
+SignLanguage;
+Sort;Gesorteerd op
+SoundCategory;
+SoundEngineer;Geluidstechnicus
+Source;
+Source_Duration;
+Source_FrameCount;
+Source_SamplingCount;
+Source_StreamSize;
+Source_StreamSize_Encoded;
+SpokenSubtitles;
+Standard;Standaard
+Stored_Height;
+StoreMethod_InterleavedFields;
+StoreMethod_SeparatedFields;
+StoreMethod_SeparatedFields_1;
+StoreMethod_SeparatedFields_2;
+Stream;Stroom
+Stream_MoreInfo;Meer informatie over de stroom
+StreamCount;Telling van dit soort stromen
+StreamFormat;
+StreamID;Stroom-ID
+streamIdentifier;
+StreamKind;Soort stroom
+StreamKindID;Stroomidentifier
+StreamKindPos;Stroomidentifier
+StreamOrder;
+Streams;
+StreamSize;Stroomgrootte
+StreamSize_Demuxed;
+StreamSize_Encoded;
+StreamSize_Proportion;Proporties van deze stroom
+Subject;Onderwerp
+Subscribe;
+Subscribe_Button;
+Subscribe_Failed;
+Subscribe_Manage;
+Subscribe_Premium;
+Subscribe_Renew;
+Subscribe_Renew_Price;
+Subscribe_Unaviable;
+Subscribe_Waiting;
+Subscription_Active;
+Subscription_Android;
+Subscription_Ended;
+Subscription_Expired;
+Subscription_Lifetime;
+Subscription_Thanks;
+Substream;
+SubTrack;Ondertiteling
+SubtstreamIdChannel;
+Summary;Samenvatting
+Supported formats;Ondersteunde formaten
+Supported?;Ondersteund?
+SupportUs;
+SupportUs2;
+surmixlev;
+SurroundAttenuationKnown;
+SwitchGroup;
+Synopsis;Samenvatting
+SystemId;Id
+Tagged_Application;Tagapplicatie
+Tagged_Date;Tagdatum
+TargetDeviceConfig;
+Technician;Technicus
+TermsOfUse;Gebruiksvoorwaarden
+TertiaryAudioLanguage;
+TestContinuousFileNames;
+Text - Custom;Tekst - Aangepast
+Text (HTML);Tekst (HTML)
+Text stream(s);Tekststromen
+Text streams;Tekststromen
+Text;Tekst
+Text_Codec_List;Tekstcodecs
+Text_Format_List;
+Text_Format_WithHint_List;
+Text_Language_List;
+Text_No;Geen tekst
+Text1;Eerste tekststroom
+Text2;Tweede teksstroom
+Text3;Derde tekststroom
+TextCount;Telling van tekststromen
+TextlessElementsExist;
+ThanksTo;Dank aan
+Thousands separator;Scheidingsteken duizendtallen
+TimeCode;
+TimeCode_FirstFrame;
+TimeCode_LastFrame;
+TimeCode_MaxFrameNumber;
+TimeCode_MaxFrameNumber_Theory;
+TimeCode_Settings;
+TimeCode_Source;
+TimeCode_Stripped;
+TimeStamp;
+TimeZone;
+Title;Titel
+Title_More;Titel, meer info
+Top4ToTop2;
+TopBackToFront;
+TopBackToSide;
+TopFrontToBack;
+TopFrontToFront;
+TopFrontToSide;
+Total;Totaal
+TotalNumberOfParts;
+TotalProgrammeDuration;
+Track;Tracknaam
+Track_Count;Tracktelling
+TrackFormat;
+TrackIndex;
+TrackUID;
+transfer_characteristics;
+transfer_characteristics_Source;
+Translate_Reports;
+Translator;Vertaler
+Transport;
+Tree &amp; Text;Boomstructuur &amp; Tekst
+Tree;Boomstructuur
+Trim_Center;
+Trim_Height;
+Trim_Surround;
+TrimMode;
+TrimMode0i;
+TrimMode1i;
+TrimMode2i;
+TrimMode3i;
+TrimMode4i;
+TrimMode5i;
+TrimMode6i;
+TrimMode7i;
+TrimMode8i;
+TruePeakLevel;
+TruePeakLevel_Album;
+Type;
+Type_Composer;
+Type_Conductor;
+Type_Cover;
+Type_Cover_Back;
+Type_Cover_Media;
+Type_DuringPerformance;
+Type_DuringRecording;
+Type_FileIcon;
+Type_FileIcon_32x32;
+Type_Illustration;
+Type_LeafletPage;
+Type_Lyricist;
+Type_Performer;
+Type_Performer_Lead;
+Type_PerformerLogo;
+Type_Picture;
+Type_PublisherLogo;
+Type_RecordingLocation;
+Type_ScreenCapture;
+Type_Thumbnail;
+TypeDefinition;
+UniqueID;
+UniversalAdID;
+UniversalAdID_Registry;
+UniversalAdID_Value;
+Unknown;Onbekend
+Url;Url
+Value;
+Video stream(s);Videostroom(en)
+Video;Video
+Video_Codec_List;Videocodecs
+Video_Delay;Video vertraging
+Video_Format_List;
+Video_Format_WithHint_List;
+Video_Language_List;
+Video_No;Geen video
+Video0_Delay;Video0 vertraging
+Video1;Eerste videostroom
+Video2;
+Video3;
+VideoComments;
+VideoCount;Telling van videostromen
+View;Beeld
+View_Hint;Verander de weergave van informatie
+Views;
+Warning : more streams in the files;Waarschuwing : er zijn meer stromen in de bestanden
+Web;Web
+WebSite;
+WebSite_Audio;Ga naar de website van deze audiocodec
+WebSite_Audio_More;Ga naar de website (%Url%) om deze audiocodec te vinden
+WebSite_General;Ga naar de website van een speler voor dit bestand
+WebSite_General_More;Ga naar de website van een speler voor dit bestand
+WebSite_Text;Ga naar de website van deze tekstcodec
+WebSite_Text_More;Ga naar de website (%Url%) om deze tekstcodec te vinden
+WebSite_Url;http://MediaArea.net/MediaInfo
+WebSite_Video;Ga naar de website van deze videocodec
+WebSite_Video_More;Ga naar de website (%Url%) om deze videocodec te vinden
+Width;Breedte
+Width_CleanAperture;
+Width_Original;
+Window;Venster
+WriteMe;Schrijf mij
+WriteToTranslator;Schrijf naar vertaler
+Written_Date;Datum van schrijven
+Written_Location;Locatie van schrijven
+WrittenBy;Geschreven door
+Yes;Ja
+Your system;Uw systeem
+Your translation;
+Zoom;Vergroot/verklein
+ZZ_Automatic_Percent;59
+ZZ_AutomaticLanguage_Percent;63</value>
+  </data>
+  <data name="MenuBarItemEdit.Title" xml:space="preserve">
+    <value>Bewerken</value>
+  </data>
+  <data name="MenuBarItemEditCopyText.Text" xml:space="preserve">
+    <value>Copy text</value>
+  </data>
+  <data name="MenuBarItemFile.Title" xml:space="preserve">
+    <value>Bestand</value>
+  </data>
+  <data name="MenuBarItemFileOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="MenuBarItemHelp.Title" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="MenuBarItemHelpAbout.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="MenuBarItemView.Title" xml:space="preserve">
+    <value>Beeld</value>
+  </data>
+  <data name="MenuBarItemViewPretty.Text" xml:space="preserve">
+    <value>Pretty</value>
+  </data>
+  <data name="MenuBarItemViewText.Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="MenuBarItemViewWrapText.Text" xml:space="preserve">
+    <value>Wrap text</value>
+  </data>
+  <data name="OpenSourceCodeButton.Text" xml:space="preserve">
+    <value>Source code</value>
+  </data>
+  <data name="PopupClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="SystemLanguage" xml:space="preserve">
+    <value>System</value>
+  </data>
+</root>
