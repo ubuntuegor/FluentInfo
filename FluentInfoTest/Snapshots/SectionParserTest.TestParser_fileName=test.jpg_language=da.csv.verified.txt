@@ -15,7 +15,7 @@
     Title: Billede,
     Chips: [
       JPEG,
-      1x1
+      1024x1024
     ],
     Properties: {
       Count: 8

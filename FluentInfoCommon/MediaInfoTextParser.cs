@@ -43,9 +43,9 @@ public partial class MediaInfoTextParser
 
         if (width == null || height == null) return null;
 
-        width = string.Concat(width.TakeWhile(x => char.IsAsciiDigit(x) || char.IsWhiteSpace(x))
+        width = string.Concat(width.TakeWhile(x => char.IsAsciiDigit(x) || char.IsWhiteSpace(x) || ",.".Contains(x))
             .Where(char.IsAsciiDigit));
-        height = string.Concat(height.TakeWhile(x => char.IsAsciiDigit(x) || char.IsWhiteSpace(x))
+        height = string.Concat(height.TakeWhile(x => char.IsAsciiDigit(x) || char.IsWhiteSpace(x) || ",.".Contains(x))
             .Where(char.IsAsciiDigit));
         return width + "x" + height;
     }
