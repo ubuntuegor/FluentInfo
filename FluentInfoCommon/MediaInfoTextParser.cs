@@ -1,7 +1,5 @@
-﻿using System.Globalization;
-using System.Text.RegularExpressions;
-using CsvHelper;
-using CsvHelper.Configuration;
+﻿using System.Text.RegularExpressions;
+using nietras.SeparatedValues;
 
 namespace FluentInfoCommon;
 
@@ -186,19 +184,14 @@ public partial class MediaInfoTextParser
     {
         var result = new Dictionary<string, string>();
 
-        var csvOptions = new CsvConfiguration(CultureInfo.InvariantCulture)
-        {
-            Delimiter = ";",
-            HasHeaderRecord = false
-        };
+        using var reader = Sep.New(';')
+            .Reader(o => o with { HasHeader = false })
+            .FromText(languageText);
 
-        using var stringReader = new StringReader(languageText);
-        using var csv = new CsvReader(stringReader, csvOptions);
-
-        while (csv.Read())
+        foreach (var row in reader)
         {
-            var key = csv.GetField<string>(0)!;
-            var value = csv.GetField<string>(1)!;
+            var key = row[0].ToString();
+            var value = row[1].ToString();
             result.Add(key, value);
         }
 
