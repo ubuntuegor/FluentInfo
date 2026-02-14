@@ -1,11 +1,22 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Xml;
+using nietras.SeparatedValues;
 using OpenAI.Chat;
 
+const bool translateMsStore = true;
 List<string>? langs = null;
-List<string>? includeKeys = null;
+
+List<string>? includeKeysForRes = null;
+List<string>? includeKeysForStore =
+[
+    "Description", "ReleaseNotes", "Feature1", "Feature2", "Feature3", "SearchTerm1", "SearchTerm2", "SearchTerm3",
+    "SearchTerm4", "SearchTerm5", "SearchTerm6", "SearchTerm7"
+];
+var includeKeys = translateMsStore ? includeKeysForStore : includeKeysForRes;
+
 List<string> excludeKeys = ["MediaInfoLanguage"];
 
 const string sourceLang = "en";
@@ -15,14 +26,22 @@ const string context =
 
     FluentInfo is an app for Windows that displays detailed information about various media files using the MediaInfo library. It has multiple settings to configure how this information is displayed.
 
-    Provide a translation for each of the following strings into the language specified by the ISO639 code **{0}**. Use common Windows OS terminology. Try to keep strings the same width as in English. Be consistent when introducing new terminology.
+    Provide a translation for each of the following strings into the language specified by the ISO639 code **{0}**. Use common Windows OS terminology. Try to keep strings the same width as in English. Be consistent when introducing new terminology. Don't translate names like FluentInfo and MediaInfo and file formats.
     """;
 
 var jsonOptions =
-    new JsonSerializerOptions { Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping, WriteIndented = true };
+    new JsonSerializerOptions
+    {
+        Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+        WriteIndented = true
+    };
 
 langs ??= GetLangs();
-var sourceStrings = GetStrings(sourceLang);
+
+var sourceStringsForRes = GetStrings(sourceLang);
+var sourceStringsForStore = GetStringsForMsStore(sourceLang);
+var sourceStrings = translateMsStore ? sourceStringsForStore : sourceStringsForRes;
 
 foreach (var lang in langs)
 {
@@ -36,7 +55,14 @@ foreach (var lang in langs)
         Console.WriteLine(
             $"WARN: Wrong number of strings for lang {lang}! Expected: {sourceStrings.Count}, Got: {translatedStrings.Count}");
 
-    WriteStrings(lang, translatedStrings);
+    if (translateMsStore)
+    {
+        WriteStringsForMsStore(lang, translatedStrings);
+    }
+    else
+    {
+        WriteStrings(lang, translatedStrings);
+    }
 }
 
 return;
@@ -62,6 +88,24 @@ List<ResourceString> GetStrings(string lang)
     return result;
 }
 
+List<ResourceString> GetStringsForMsStore(string lang)
+{
+    using var reader = Sep.Reader(o => o with { Unescape = true })
+        .FromFile("msStoreListingData.csv");
+    var result = new List<ResourceString>();
+
+    foreach (var row in reader)
+    {
+        var key = row["Field"].ToString();
+        if (includeKeys != null && !includeKeys.Contains(key)) continue;
+        if (excludeKeys.Contains(key)) continue;
+        var value = row[lang].ToString();
+        result.Add(new ResourceString(key, value, null));
+    }
+
+    return result;
+}
+
 void WriteStrings(string lang, List<TranslatedString> strings)
 {
     var doc = new XmlDocument();
@@ -74,6 +118,34 @@ void WriteStrings(string lang, List<TranslatedString> strings)
     }
 
     doc.Save(@$"FluentInfo\Strings\{lang}\Resources.resw");
+}
+
+void WriteStringsForMsStore(string lang, List<TranslatedString> strings)
+{
+    using var reader = Sep.Reader(o => o with { Unescape = true })
+        .FromFile("msStoreListingData.csv");
+    using var writer = reader.Spec.Writer(o => o with { Escape = true }).ToText();
+
+    foreach (var row in reader)
+    {
+        var key = row["Field"].ToString();
+        var translated = strings.Find(s => s.Key == key);
+
+        using var newRow = writer.NewRow();
+        foreach (var col in reader.Header.ColNames)
+        {
+            if (translated != null && lang.ToLowerInvariant().Equals(col))
+            {
+                newRow[col].Set(translated.Value);
+            }
+            else
+            {
+                newRow[col].Set(row[col].Span);
+            }
+        }
+    }
+
+    File.WriteAllText("msStoreListingData.csv", writer.ToString());
 }
 
 List<string> GetLangs()
@@ -131,7 +203,7 @@ string FormatPrompt(string lang, List<ResourceString> resourceStrings)
 }
 
 [SuppressMessage("ReSharper", "NotAccessedPositionalProperty.Global")]
-internal record ResourceString(string Key, string EnglishValue, string Comment);
+internal record ResourceString(string Key, string EnglishValue, string? Comment);
 
 [SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
 internal record TranslatedString(string Key, string Value);
