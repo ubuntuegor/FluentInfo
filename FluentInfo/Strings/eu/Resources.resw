@@ -120,6 +120,9 @@
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
     <value>Testu gisa kopiatu da</value>
   </data>
+  <data name="CouldNotOpenFileErrorMessage" xml:space="preserve">
+    <value>Ezin izan da fitxategia ireki: {0}</value>
+  </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
     <value>Ireki</value>
   </data>
@@ -1682,5 +1685,8 @@ ZZ_AutomaticLanguage_Percent;68</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
     <value>Sistema</value>
+  </data>
+  <data name="UnknownViewFormatErrorMessage" xml:space="preserve">
+    <value>Ikuspegi-formatu ezezaguna hautatu da</value>
   </data>
 </root>

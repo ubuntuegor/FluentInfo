@@ -120,6 +120,9 @@
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
     <value>Kopieret som tekst</value>
   </data>
+  <data name="CouldNotOpenFileErrorMessage" xml:space="preserve">
+    <value>Kunne ikke åbne fil: {0}</value>
+  </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
     <value>Åbn</value>
   </data>
@@ -1682,5 +1685,8 @@ ZZ_AutomaticLanguage_Percent;66</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
     <value>System</value>
+  </data>
+  <data name="UnknownViewFormatErrorMessage" xml:space="preserve">
+    <value>Ukendt visningsformat valgt</value>
   </data>
 </root>

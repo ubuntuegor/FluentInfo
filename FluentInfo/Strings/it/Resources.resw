@@ -120,6 +120,9 @@
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
     <value>Copiato come testo</value>
   </data>
+  <data name="CouldNotOpenFileErrorMessage" xml:space="preserve">
+    <value>Impossibile aprire il file: {0}</value>
+  </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
     <value>Apri</value>
   </data>
@@ -1682,5 +1685,8 @@ ZZ_AutomaticLanguage_Percent;93</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
     <value>Sistema</value>
+  </data>
+  <data name="UnknownViewFormatErrorMessage" xml:space="preserve">
+    <value>Selezionato formato di visualizzazione sconosciuto</value>
   </data>
 </root>

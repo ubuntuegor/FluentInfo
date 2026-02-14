@@ -120,6 +120,9 @@
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
     <value>Skopírované ako text</value>
   </data>
+  <data name="CouldNotOpenFileErrorMessage" xml:space="preserve">
+    <value>Nepodarilo sa otvoriť súbor: {0}</value>
+  </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
     <value>Otvoriť</value>
   </data>
@@ -1682,5 +1685,8 @@ ZZ_AutomaticLanguage_Percent;58</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
     <value>Systém</value>
+  </data>
+  <data name="UnknownViewFormatErrorMessage" xml:space="preserve">
+    <value>Vybratý neznámy formát zobrazenia</value>
   </data>
 </root>

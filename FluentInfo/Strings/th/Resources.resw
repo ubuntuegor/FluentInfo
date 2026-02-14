@@ -120,6 +120,9 @@
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
     <value>คัดลอกเป็นข้อความแล้ว</value>
   </data>
+  <data name="CouldNotOpenFileErrorMessage" xml:space="preserve">
+    <value>ไม่สามารถเปิดไฟล์: {0}</value>
+  </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
     <value>เปิด</value>
   </data>
@@ -1682,5 +1685,8 @@ ZZ_AutomaticLanguage_Percent;59</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
     <value>ระบบ</value>
+  </data>
+  <data name="UnknownViewFormatErrorMessage" xml:space="preserve">
+    <value>เลือกรูปแบบมุมมองที่ไม่รู้จัก</value>
   </data>
 </root>

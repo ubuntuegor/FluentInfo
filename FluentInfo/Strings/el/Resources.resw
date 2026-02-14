@@ -120,6 +120,9 @@
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
     <value>Αντιγράφηκε ως κείμενο</value>
   </data>
+  <data name="CouldNotOpenFileErrorMessage" xml:space="preserve">
+    <value>Δεν ήταν δυνατή η άνοιγμα του αρχείου: {0}</value>
+  </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
     <value>Άνοιγμα</value>
   </data>
@@ -1682,5 +1685,8 @@ ZZ_AutomaticLanguage_Percent;55</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
     <value>Σύστημα</value>
+  </data>
+  <data name="UnknownViewFormatErrorMessage" xml:space="preserve">
+    <value>Επιλέχθηκε άγνωστη μορφή προβολής</value>
   </data>
 </root>

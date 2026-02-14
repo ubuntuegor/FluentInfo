@@ -120,6 +120,9 @@
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
     <value>已複製為文字</value>
   </data>
+  <data name="CouldNotOpenFileErrorMessage" xml:space="preserve">
+    <value>無法開啟檔案：{0}</value>
+  </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
     <value>開啟</value>
   </data>
@@ -1682,5 +1685,8 @@ ZZ_AutomaticLanguage_Percent;71</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
     <value>系統</value>
+  </data>
+  <data name="UnknownViewFormatErrorMessage" xml:space="preserve">
+    <value>已選取未知的檢視格式</value>
   </data>
 </root>

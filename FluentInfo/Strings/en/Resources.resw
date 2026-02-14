@@ -121,6 +121,10 @@
     <value>Copied as text</value>
     <comment>Popup after user invoked "Copy text" action</comment>
   </data>
+  <data name="CouldNotOpenFileErrorMessage" xml:space="preserve">
+    <value>Could not open file: {0}</value>
+    <comment>Error message when a file could not be opened. "{0}" should be left intact, it's a placeholder for the file path</comment>
+  </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
     <value>Open</value>
     <comment>Shown when user drags a file over the app window, as an intent that the file will be opened when it's dropped</comment>
@@ -1701,5 +1705,9 @@ ZZ_AutomaticLanguage_Percent;98
   <data name="SystemLanguage" xml:space="preserve">
     <value>System</value>
     <comment>Option in the language selector next to all the language names, which stands for "use the system language"</comment>
+  </data>
+  <data name="UnknownViewFormatErrorMessage" xml:space="preserve">
+    <value>Unknown view format selected</value>
+    <comment>Error shown when the saved setting for view does not correspond to an existing option in the "View" menu bar submenu</comment>
   </data>
 </root>

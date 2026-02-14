@@ -30,7 +30,7 @@ foreach (var lang in langs)
     Console.WriteLine(prompt);
 
     var translatedStrings = TranslateStringsWithGpt(prompt);
-    Console.WriteLine(translatedStrings);
+    Console.WriteLine(JsonSerializer.Serialize(translatedStrings, jsonOptions));
 
     if (translatedStrings.Count != sourceStrings.Count)
         Console.WriteLine(

@@ -120,6 +120,9 @@
   <data name="CopiedAsTextInfoBar.Message" xml:space="preserve">
     <value>Պատճենվել է որպես տեքստ</value>
   </data>
+  <data name="CouldNotOpenFileErrorMessage" xml:space="preserve">
+    <value>Չհաջողվեց բացել ֆայլը․ {0}</value>
+  </data>
   <data name="DragDropFileOpenCaption" xml:space="preserve">
     <value>Բացել</value>
   </data>
@@ -1682,5 +1685,8 @@ ZZ_AutomaticLanguage_Percent;65</value>
   </data>
   <data name="SystemLanguage" xml:space="preserve">
     <value>Համակարգ</value>
+  </data>
+  <data name="UnknownViewFormatErrorMessage" xml:space="preserve">
+    <value>Ընտրված է անհայտ դիտման ձևաչափ</value>
   </data>
 </root>
