@@ -5,6 +5,7 @@
     Subtitle: Projectile,
     Chips: [
       WebM,
+      65.6 KiB,
       5초 8미리초
     ],
     Properties: {

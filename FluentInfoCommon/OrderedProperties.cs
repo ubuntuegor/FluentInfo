@@ -10,16 +10,21 @@ public class OrderedProperties
     public void Add(string key, string value)
     {
         _storage.Add((key, value));
-        _dictionary[key] = value;
+        _dictionary[NormalizeKeyForDictionary(key)] = value;
     }
 
     public string? Get(string key)
     {
-        return _dictionary.GetValueOrDefault(key);
+        return _dictionary.GetValueOrDefault(NormalizeKeyForDictionary(key));
     }
 
     public List<(string, string)> GetPairs()
     {
         return _storage;
+    }
+
+    private static string NormalizeKeyForDictionary(string key)
+    {
+        return key.Replace('\u3000', ' ');
     }
 }

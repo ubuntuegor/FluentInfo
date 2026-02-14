@@ -5,6 +5,7 @@
     Subtitle: File title,
     Chips: [
       Matroska,
+      35.2 KiB,
       30초 23미리초
     ],
     Properties: {

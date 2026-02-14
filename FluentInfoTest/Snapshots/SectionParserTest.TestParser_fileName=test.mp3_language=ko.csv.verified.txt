@@ -5,6 +5,7 @@
     Subtitle: Rick Astley - Never Gonna Give You Up,
     Chips: [
       MPEG Audio,
+      41.8 KiB,
       5초 41미리초
     ],
     Properties: {
