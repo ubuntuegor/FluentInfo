@@ -12,6 +12,11 @@ public partial class MediaInfoTextParser
     [GeneratedRegex(@" *\(.+\) *")]
     private static partial Regex ParenthesesWithSpacesRegex();
 
+    private string LocalKey(string key)
+    {
+        return _strings[key].Length > 0 ? _strings[key] : key;
+    }
+
     public void UpdateLanguage(string languageText)
     {
         _strings = ParseLanguageText(languageText);
@@ -19,8 +24,8 @@ public partial class MediaInfoTextParser
 
     private string? GetSubtitle(OrderedProperties properties)
     {
-        var performer = properties.Get(_strings["Performer"]) ?? properties.Get("ARTIST");
-        var title = properties.Get(_strings["Title"]);
+        var performer = properties.Get(LocalKey("Performer")) ?? properties.Get("ARTIST");
+        var title = properties.Get(LocalKey("Title"));
 
         if (performer != null && title != null) return performer + " - " + title;
 
@@ -29,8 +34,8 @@ public partial class MediaInfoTextParser
 
     private string? GetResolution(OrderedProperties properties)
     {
-        var width = properties.Get(_strings["Width"]);
-        var height = properties.Get(_strings["Height"]);
+        var width = properties.Get(LocalKey("Width"));
+        var height = properties.Get(LocalKey("Height"));
 
         if (width == null || height == null) return null;
 
@@ -43,20 +48,20 @@ public partial class MediaInfoTextParser
     {
         return
         [
-            properties.Get(_strings["Format"]), properties.Get(_strings["FileSize"]),
-            properties.Get(_strings["Duration"])
+            properties.Get(LocalKey("Format")), properties.Get(LocalKey("FileSize")),
+            properties.Get(LocalKey("Duration"))
         ];
     }
 
     private List<string?> GetChipsForVideo(OrderedProperties properties)
     {
-        var framerate = properties.Get(_strings["FrameRate"]);
+        var framerate = properties.Get(LocalKey("FrameRate"));
         if (framerate != null) framerate = ParenthesesWithSpacesRegex().Replace(framerate, " ");
 
         return
         [
-            properties.Get(_strings["Format"]), GetResolution(properties), framerate,
-            properties.Get(_strings["BitRate"])
+            properties.Get(LocalKey("Format")), GetResolution(properties), framerate,
+            properties.Get(LocalKey("BitRate"))
         ];
     }
 
@@ -64,24 +69,24 @@ public partial class MediaInfoTextParser
     {
         return
         [
-            properties.Get(_strings["Format"]), properties.Get(_strings["Language"]),
-            properties.Get(_strings["Channel(s)"]), properties.Get(_strings["BitRate"])
+            properties.Get(LocalKey("Format")), properties.Get(LocalKey("Language")),
+            properties.Get(LocalKey("Channel(s)")), properties.Get(LocalKey("BitRate"))
         ];
     }
 
     private List<string?> GetChipsForText(OrderedProperties properties)
     {
-        return [properties.Get(_strings["Format"]), properties.Get(_strings["Language"])];
+        return [properties.Get(LocalKey("Format")), properties.Get(LocalKey("Language"))];
     }
 
     private List<string?> GetChipsForMenu(OrderedProperties properties)
     {
-        return [_strings["Total"] + ": " + properties.Count];
+        return [LocalKey("Total") + ": " + properties.Count];
     }
 
     private List<string?> GetChipsForImage(OrderedProperties properties)
     {
-        return [properties.Get(_strings["Format"]), GetResolution(properties)];
+        return [properties.Get(LocalKey("Format")), GetResolution(properties)];
     }
 
     private List<string> GetChips(SectionType type, OrderedProperties properties)
@@ -106,12 +111,12 @@ public partial class MediaInfoTextParser
     {
         var type = SectionType.Other;
 
-        var generalName = _strings["General"];
-        var videoName = _strings["Video"];
-        var audioName = _strings["Audio"];
-        var textName = _strings["Text"];
-        var menuName = _strings["Menu"];
-        var imageName = _strings["Image"];
+        var generalName = LocalKey("General");
+        var videoName = LocalKey("Video");
+        var audioName = LocalKey("Audio");
+        var textName = LocalKey("Text");
+        var menuName = LocalKey("Menu");
+        var imageName = LocalKey("Image");
 
         if (title != null)
         {

@@ -5,7 +5,8 @@
     Subtitle: File title,
     Chips: [
       Matroska,
-      35,2 KiB
+      35,2 KiB,
+      30s 23 ms
     ],
     Properties: {
       Count: 12

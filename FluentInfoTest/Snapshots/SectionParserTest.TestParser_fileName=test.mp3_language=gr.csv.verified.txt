@@ -5,7 +5,8 @@
     Subtitle: Rick Astley - Never Gonna Give You Up,
     Chips: [
       MPEG Audio,
-      41,8 KiB
+      41,8 KiB,
+      5s 41 ms
     ],
     Properties: {
       Count: 9
