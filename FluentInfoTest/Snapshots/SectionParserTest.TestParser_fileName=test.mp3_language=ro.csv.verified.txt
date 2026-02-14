@@ -17,7 +17,8 @@
     Title: Audio,
     Chips: [
       MPEG Audio,
-      1canal
+      1canal,
+      64,0 kb/s
     ],
     Properties: {
       Count: 11

@@ -19,7 +19,8 @@
     Chips: [
       AVC,
       320x240,
-      25,000pfs
+      25,000pfs,
+      4 108b/s
     ],
     Properties: {
       Count: 29
@@ -32,7 +33,8 @@
     Chips: [
       AAC LC,
       English,
-      2canale
+      2canale,
+      2 091b/s
     ],
     Properties: {
       Count: 17

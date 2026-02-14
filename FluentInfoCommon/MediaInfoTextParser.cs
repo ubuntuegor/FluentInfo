@@ -14,7 +14,13 @@ public partial class MediaInfoTextParser
 
     private string LocalKey(string key)
     {
-        return _strings[key].Length > 0 ? _strings[key] : key;
+        if (_strings[key].Length > 0) return _strings[key];
+
+        return key switch
+        {
+            "BitRate" => "Bit rate",
+            _ => key
+        };
     }
 
     public void UpdateLanguage(string languageText)
