@@ -4,6 +4,7 @@ using System.Linq;
 using Windows.Globalization;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using FluentInfoCommon;
 using MediaInfoLib;
 using Microsoft.Windows.ApplicationModel.Resources;
 using Microsoft.Windows.AppLifecycle;
@@ -21,6 +22,7 @@ public partial class AppModel : ObservableObject
     });
 
     private readonly MediaInfo _mediaInfoLib = new();
+    public readonly MediaInfoTextParser InfoTextParser = new();
 
     private AppModel()
     {
@@ -74,7 +76,9 @@ public partial class AppModel : ObservableObject
 
     private void UpdateMediaInfoLanguage()
     {
-        _mediaInfoLib.Option("Language", new ResourceLoader().GetString("MediaInfoLanguage"));
+        var languageText = new ResourceLoader().GetString("MediaInfoLanguage");
+        InfoTextParser.UpdateLanguage(languageText);
+        _mediaInfoLib.Option("Language", languageText);
     }
 
     private static string GetLanguageNameByLanguageCode(string languageCode)

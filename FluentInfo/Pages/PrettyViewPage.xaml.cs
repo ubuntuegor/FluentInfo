@@ -1,5 +1,4 @@
 using FluentInfo.Controls.PrettyView;
-using FluentInfoCommon;
 using Microsoft.UI.Xaml.Navigation;
 
 namespace FluentInfo.Pages;
@@ -19,7 +18,7 @@ public sealed partial class PrettyViewPage
         var children = ContentStaggeredPanel.Children;
         children.Clear();
 
-        var sections = MediaInfoTextParser.Parse(info);
+        var sections = model.InfoTextParser.Parse(info);
 
         foreach (var section in sections)
         {

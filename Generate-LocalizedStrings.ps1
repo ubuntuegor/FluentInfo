@@ -43,4 +43,6 @@ foreach ($langCsv in $langs) {
 
     $null = New-Item -ItemType Directory -Path "FluentInfo\Strings\$lang\" -Force
     $resourcesFileXml.Save("FluentInfo\Strings\$lang\Resources.resw")
+
+    Copy-Item $langCsv "FluentInfoTest\Assets\langs\"
 }

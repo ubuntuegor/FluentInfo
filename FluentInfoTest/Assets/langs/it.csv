@@ -1,0 +1,1513 @@
+  Language_ISO639;it
+  Author_Email;dr4k0@altervista.org  - bovirus@live.it
+  Author_Name;Dr4k0 & Bovirus
+  Author_OldNames;
+  Language_Name;Italiano
+  Config_Text_ColumnSize;40
+  Config_Text_Separator;: 
+  Config_Text_NumberTag; #
+  Config_Text_FloatSeparator;,
+  Config_Text_ThousandsSeparator;.
+ audio stream1; traccia audio
+ audio stream2; tracce audio
+ audio stream3; tracce audio
+ bit1; bit
+ bit2; bit
+ bit3; bit
+ Bps; Bps
+ bps; bps
+ Byte1; Byte
+ Byte2; Byte
+ Byte3; Byte
+ channel1; canale
+ channel2; canali
+ channel3; canali
+ chapter1; capitolo
+ chapter2; capitoli
+ chapter3; capitoli
+ chapters stream1; traccia capitoli
+ chapters stream2; traccia capitoli
+ chapters stream3; traccia capitoli
+ character1; carattere
+ character2; caratteri
+ character3; caratteri
+ day1; giorno
+ day2; giorni
+ day3; giorni
+ dB0;0 dB
+ dB1; dB
+ dB2; dB
+ dB3; dB
+ file1; file
+ file2; file
+ file3; file
+ fps1; fps
+ fps2; fps
+ fps3; fps
+ frame1; frame
+ frame2; frame
+ frame3; frame
+ GB; GB
+ Gb; Gb
+ GBps; GBps
+ Gbps; Gbps
+ GHz; GHz
+ GiB; GiB
+ GibiByte1; GibiByte
+ GibiByte2; GibiByte
+ GibiByte3; GibiByte
+ GiBps; GiBps
+ GigaBit1; GigaBit
+ GigaBit2; GigaBit
+ GigaBit3; GigaBit
+ GigaByte1; GigaByte
+ GigaByte2; GigaByte
+ GigaByte3; GigaByte
+ hour1; ora
+ hour2; ore
+ hour3; ore
+ Hz; Hz
+ image stream1; flusso immagine
+ image stream2; flusso immagini
+ image stream3; flusso immagini
+ KB; KB
+ Kb; Kb
+ KBps; kb/s
+ Kbps; kb/s
+ KHz; KHz
+ KiB; KiB
+ KibiBit1; KibiBit
+ KibiBit2; KibiBit
+ KibiBit3; KibiBit
+ KibiByte1; KibiByte
+ KibiByte2; KibiByte
+ KibiByte3; KibiByte
+ KiBps; KiBps
+ KiloBit1; KiloBit
+ KiloBit2; KiloBit
+ KiloBit3; KiloBit
+ KiloByte1; KiloByte
+ KiloByte2; KiloByte
+ KiloByte3; KiloByte
+ MB; MB
+ Mb; Mb
+ MBps; MebiByte
+ Mbps; Mbps
+ MebiBit1; MeBit
+ MebiBit2; MebiBit
+ MebiBit3; MebiBit
+ MebiByte1; MebiByte
+ MebiByte2; MebiByte
+ MebiByte3; MebiByte
+ MegaBit1; MegaBit
+ MegaBit2; MegaBit
+ MegaBit3; MegaBit
+ MegaByte1; MegaByte
+ MegaByte2; MegaByte
+ MegaByte3; MegaByte
+ MHz; MHz
+ MiB; MiB
+ Mib; Mib
+ MiBps; MiBps
+ millisecond1; millisecondo
+ millisecond2; millisecondi
+ millisecond3; millisecondi
+ minute1; minuto
+ minute2; minuti
+ minute3; minuti
+ month1; mese
+ month2; mesi
+ month3; mesi
+ object1; oggetto
+ object2; oggetti
+ object3; oggetti
+ pixel1; pixel
+ pixel2; pixel
+ pixel3; pixel
+ second1; secondo
+ second2; secondi
+ second3; secondi
+ slice per frame1;segmento per frame1
+ slice per frame2;segmento per frame2
+ slice per frame3;segmento per frame 3
+ text stream1; sottotitolo
+ text stream2; sottotitoli
+ text stream3; sottotitoli
+ video frames1; frame
+ video frames2; frame
+ video frames3; frame
+ video stream1; traccia video
+ video stream2; tracce video
+ video stream3; tracce video
+ warppoint0; Nessun warppoint
+ warppoint1; warppoint
+ warppoint2; warppoint
+ warppoint3; warppoint
+ week1; settimana
+ week2; settimane
+ week3; settimane
+ year1; anno
+ year2; anni
+ year3; anni
+, ;, 
+: ;: 
+3D; 3D
+3DType; Tipo 3D
+5.1.2ch; 5.1.1 can
+5.1.4ch;5.1.4 can
+5.1ch;5.1 can
+608_Mode; Modalità conversione EIA-608
+7.1.2ch;7.1.2 can
+7.1ch;7.1 can
+About;Info programma
+About_Hint;Come contattare l'autore e ottenere versione più recente
+AC3_Metadata;
+Accompaniment;Accompagnamento
+acmod;
+Active_DisplayAspectRatio;Display attivo/proporzioni
+Active_Height;Altezza attuale
+Active_Width;Larghezza attuale
+ActiveFormatDescription;Descrizione formato attivo
+ActiveFormatDescription_MuxingMode;Descrizione formato attivo, modo muxing
+Actor;Attore
+Actor_Character;Personaggio
+Add creation date to text output; Aggiungi data creazione all'output testo
+Add version to text output; Aggiungi versione all'output del testo
+Added_Date;Data
+Address;Indirizzo
+AdID; Identificatore ID annuncio
+ADM: Show ChannelFormats; ADM: Visualizza formati canale
+ADM: Show TrackUIDs; ADM: Visualizza TRACKUID
+AdmProfile; Profilo ADM
+Advanced mode -->;Modo avanzato -->
+Advanced mode;Modalità avanzata
+Advanced;Modalità avanzata
+Album;Album
+Album_ReplayGain_Gain;Album replay gain
+Album_ReplayGain_Peak;Picco album replay gain
+Alignment;Allineamento
+Alignment_Aligned;Audio allineato 
+Alignment_Split;Audio suddiviso
+All;Tutti
+AllFields;
+AlternateGroup; Gruppo alternativo
+AnalyzeServicesMenu;
+App_About;Informazione su MediaInfo
+App_Hide;Nascondi MediaInfo
+App_Quit;Esci da MediaInfo
+Archival_Location;Posizione dell'archivio
+Arranger;Compositore
+ArtDirector;Regista
+AspectRatio;Rapporto d'aspetto
+AssistantDirector;Assistente regista
+AssociatedVideo_FrameRate; Frequenza fotogrammi video associata
+At least one file;(Devi aprire almeno un file)
+at;a
+Attachments;Allegati
+Audio stream(s);Tracce audio
+Audio;Audio
+Audio_Channels_Total;
+Audio_Codec_List;Codec audio
+Audio_Format_List;Elenco formati audio
+Audio_Format_WithHint_List;Elenco formati audio con suggerimenti
+Audio_Language_List;Elenco lingua audio
+Audio_No;Nessun audio
+Audio1;Prima traccia audio
+Audio2;Seconda traccia audio
+Audio3;Terza traccia audio
+AudioComments; Commento audio
+AudioCount;Numero tracce sonore
+AudioDescription;Descrizione audio
+AudioDescriptionPresent;Descrizione audio presente
+AudioDescriptionType;Tipo descrizione audio
+AudioLoudnessStandard;Loudness audio standard
+AudioRenderingIndication;Indicazione rendering audio
+AudioSceneInfoID;ID informazioni scena audio
+AudioTrackLayout;Layout traccia audio
+Author;Autore
+Back4ToBack2;Posteriore 4 a posteriore 2
+Balance_FrontBackListener;Bilancia ascolto frontale/posteriore
+Balance_FrontBackOverheadFloor;Bilancia frontale piano sopraelevato
+BarCode;Codice a barre
+Basic;Semplice
+Basic_Note;Nota: per maggiori informazioni seleziona Scheda, Struttura....
+BedChannelConfiguration;Configurazione canale letto
+BedChannelCount;Numero canali letto
+BinauralRenderMode;Modalità rendering binaurale
+BitDepth;Profondità bit
+BitDepth_Detected;Profondità bit rilevata
+BitDepth_Stored;Profondità bit memorizzata
+BitRate;Bitrate
+BitRate_Encoded;Bitrate codifica
+BitRate_Maximum;Bitrate massimo
+BitRate_Minimum;Bitrate minimo
+BitRate_Mode;Modalità bitrate
+BitRate_Mode_CBR;Costante
+BitRate_Mode_VBR;Variabile
+BitRate_Nominal;Bitrate nominale
+Bits-(Pixel*Frame);Bit/(pixel*frame)
+BitstreamLevel;
+Bring All to Front;Porta tutto in primo piano
+bsid;
+BufferSize; Dim. buffer
+Cancel;Annulla
+CaptionServiceName;Titolo nome servizio
+CatalogNumber;Numero catalogo
+Channel(s);Canali
+Channel(s)_Original;Canali originali
+ChannelCoded;Canale codificato
+ChannelConfiguration;Configurazione canale
+ChannelFormat;Formato canale
+ChannelLayout;Layout canale
+ChannelLayout_Original;Layout originale canali
+ChannelMode;Modo canale
+ChannelPositions;Posizione canali
+ChannelPositions_Original;Posizione originale canali
+Chapter(s);Capitoli
+Chapters stream(s);Capitoli
+Chapters;Capitoli
+Chapters_Codec_List;Codec capitoli
+Chapters_No;Nessun capitolo
+Chapters_Pos_Begin;Posizione iniziale capitolo
+Chapters_Pos_End;Posizione finale capitolo
+ChaptersCount;Numero dei capitoli
+CharacterSet;Set caratteri
+CheckNewVersion;Controlla aggiornamenti programma
+Choose custom sheet;Personalizza modalità scheda
+Choose custom text;Personalizza modalità testo
+Choose custom;Vista personalizzata
+Choose export format;Scegli il formato in cui esportare
+Choose file(s);Seleziona i file da aprire
+Choose filename;Inserire il nome del file
+Choose language;Scegli la lingua
+Choreographer;Coreografo
+Chroma;Croma
+ChromaSubsampling;Sottocampionamento croma
+Classifier;Classificatore contenuto
+ClearList;Azzera elenco
+Close all before open;Chiudi tutto prima di aprire
+Close;Chiudi
+CloseAll;
+ClosedCaptionsLanguage;Lingua finestre chiusura
+ClosedCaptionsPresent;Finestre chiusra presenti
+ClosedCaptionsType;Tipo finestre chiusura
+CloseFile;
+CloseWindow;Chiudi finestra
+cmixlev;
+Codec;Codec
+Codec_Description;Descrizione codec
+Codec_Info;Dettagli codec
+Codec_Profile;Profilo codec
+Codec_Settings;Impostazioni codec
+Codec_Settings_BVOP;Impostazioni codec, BVOP
+Codec_Settings_CABAC;Impostazioni codec, CABAC
+Codec_Settings_Endianness;Impostazioni codec, Endianess
+Codec_Settings_Firm;Impostazioni codec, Firm
+Codec_Settings_Floor;Impostazioni codec, Piano
+Codec_Settings_GMC;Impostazioni codec, GMC
+Codec_Settings_ITU;Impostazioni codec, ITU
+Codec_Settings_Law;Impostazioni codec, Law
+Codec_Settings_Matrix;Impostazioni codec, Matrix
+Codec_Settings_PacketBitStream;Impostazioni codec, Packet bitstream
+Codec_Settings_QPel;Impostazioni codec, QPel
+Codec_Settings_Sign;Impostazioni codec, Sign
+Codec_Url;Sito dove scaricare il codec richiesto
+CodecConfigurationBox;Casella configurazione codec
+CodecID;ID codec
+CodecID_Description;Descrizione codec
+CoDirector;Codirettore
+Collection;Collezione
+Colorimetry;Colorimetria
+ColorSpace;Spazio colore
+ColorTheme;Tema colore
+ColorTheme_Dark;Tema scuro
+ColorTheme_Light;Tema chiaro
+ColorTheme_System;Tema sistema
+colour_description_present;
+colour_description_present_Source;
+colour_primaries;Colori primari
+colour_primaries_Source;
+colour_range;Intervallo colore
+colour_range_Source;
+Comment;Commento
+CommissionedBy;Commissionato da
+Compare;
+CompareView;
+Compilation;Compilation
+ComplementaryObject;Oggetto complementare
+CompleteName;Nome completo
+CompletionDate;Data completamento
+ComplexityIndex;Indice complessità
+Composer;Compositore
+Compression_Mode;Modo compressione
+Compression_Mode_Lossless;Senza perdita
+Compression_Mode_Lossy;Con perdita
+Compression_Ratio; Rapporto compressione
+comprprof;
+Conductor;Direttore d'orchestra 
+ConformanceCheck;Controllo di conformità
+ConformanceErrors;Errore conformità
+ConformanceInfos;Info conformità
+ConformanceWarnings;Avviso conformità
+ContactEmail;Email contatto
+ContactTelephoneNumber;Telefono contatto
+Container and general information;Tipo di file e informazioni generali
+Content;Contenuto
+ContentType;Tipo contenuto
+CoProducer;Coproduttore
+Copy;Copia
+Copyright;Copyright
+CopyrightYear;Anno copyright
+CostumeDesigner;Costumista
+Count;Contatore
+Country;Stato
+Cover;Copertina
+Cover_Datas;Dati copertina
+Cover_Description;Descrizione copertina
+Cover_Mime;Copertina MIME
+Cover_Type;Tipo di copertina
+CoverData;Includi immagini copertina HTML, XML e JSON
+CreatedOn;
+Cropped;Dimensioni ritaglio
+Custom;Vista personalizzata
+CustomDownmixTargets;Livello downmix personalizzato
+Customize;Personalizza
+DarkMode;Modo scuro
+Date;Data
+Debug;Debug
+Decimal point;Separatore decimale
+Default translation;Traduzione predefinita
+Default;Predefinito
+Default_Setting;Predefinito sistema
+DefaultTargetDeviceConfig;Configurazione predefinita dispositivo destinazione
+DefaultView;
+Delay;Ritardo
+Delay_Source;Ritardo sorgente
+Delay_Source_Container;Contenitore
+Delay_Source_Stream;Flusso RAW
+Delete;Elimina
+Description;Descrizione
+Details;Dettagli
+dialnorm;Finestra normalizzazione
+dialnorm_Average;
+dialnorm_Count;
+dialnorm_Maximum;
+dialnorm_Minimum;
+DialogueCorrected;Dialogo corretto
+DialogueEnhancement;Miglioramento del dialogo
+DialogueNormalization;Normalizzazione dei dialoghi
+Digitized_Date;Data digitalizzazione
+Dimensions;Dimensioni
+Director;Regista
+DirectorOfPhotography;Direttore della fotografia
+Disabled;Disabilitato/a
+DisplayAspectRatio;Rapporto aspetto visualizzazione
+DisplayAspectRatio_CleanAperture;Rapporto aspetto visualizzazione apertura
+DisplayAspectRatio_Original;Rapporto aspetto originale
+DisplayCaptions;Visualizza didascalie
+DisplayCaptions_Command;Visualizza didascalie - comando
+DisplayCaptions_Content;Visualizza didascalie - contenuto
+DisplayCaptions_Stream;Visualizza didascalie - stream
+DistributedBy;Distribuito da
+Distributor;Distributore
+Documents;Documenti
+Dolby_Atmos_Metadata;Metadati Dolby Atmos
+DolbyAtmos;Dolby Atmos
+Donate;Dona
+DotsPerInch;Punti per pollice
+DownloadFile;
+DownloadFileError;
+Downmix;DownMix
+Downmix_5.1.x;Downmix 5.1 e 5.1.x
+Downmix_5to2;Downmix 5.1 a 2.0 (stereo)
+DrcSets_Count;Numero set RDC
+DrcSets_Effects;Tipi effetti DRC
+Duration;Durata
+Duration_End;Fine
+Duration_End_Command;Fine (comando)
+Duration_Source;Durata sorgente
+Duration_Start;Inizio
+Duration_Start_Command;Inizio (comando)
+Duration_Start2End;Durata contenuto visibile
+DynamicObject;Oggetto dinamico
+DynamicRangeControl;Controllo gamma dinamica
+dynrngprof;
+Eac3DrcProfile;Profilo DRC E-AC-3
+Edit;Modifica
+EditedBy;Modificato da
+EditorialClassification;Classificazione editoriale
+ElementaryStream;Stream elementare
+ElementCount;Numero elementi
+EMail;Email
+Enable FFmpeg plugin;Abilita plugin FFmpeg
+Encoded_Application;Creato con
+Encoded_Application_Name;
+Encoded_Application_Version;
+Encoded_Date;Data codifica
+Encoded_Hardware;
+Encoded_Library;Compressore
+Encoded_Library_Name;Nome libreria codificata
+Encoded_Library_Settings;Impostazioni compressione
+Encoded_Library_Version;Versione libreria codificata
+Encoded_Original;Codificatore originale
+EncodedBy;Compresso da
+EPG_Positions;Posizioni EPG (interne)
+EpisodeTitleNumber;Numero titolo episodio
+Error;
+Error_File;Errore nella lettura del file
+Error_File_Write;Errore durante la scrittura del file
+Error_Open;
+Error_Save;
+Events_MinDuration;Durata minima per evento
+Events_PaintOn;N. eventi PaintOn
+Events_PopOn;N. eventi PopOn
+Events_RollUp;N. eventi RollUp
+Events_Total;N. eventi
+ExecutiveProducer;Produttore esecutivo
+Exit;Esci
+Exit_Hint;Esci dal programma
+Export;Esporta
+Export_Hint;Esporta in un formato personalizzato
+Extensions;Estensione generalmente usata
+External_Media_NotMounted;Supporti esterni non accessibili
+Family;Famiglia
+Fax;Fax
+Feature_AdvancedMode;
+Feature_FilesCompare;
+Feature_More;
+Feature_SelectView;
+Field;
+File size;Dimensione file
+File;File
+File_Append;Aggiungi a un file esistente (attenzione: assicurarsi che abbiano caratteristiche uguali)
+File_Created_Date;Data creazione
+File_Created_Date_Local;Data creazione (locale)
+File_Hint;Seleziona più file da aprire
+File_Modified_Date;Data ultima modifica
+File_Modified_Date_Local;Data ultima modifica (locale)
+FileExtension;Estensione file
+FileName;Nome
+FileNameExtension;Estensione nome file
+FileSize;Dimensione file
+Fill with a Dummy movie;Riempi con un film fittizio
+Fill with a realistic movie;Riempi con un film realistico
+FirstDisplay_Delay_Frames;N. fotogrammi prima del primo evento
+FirstDisplay_Type;Tipo del primo evento
+FirstFrameOfAction;Primo fotogramma azione
+FlatPanelTv;TV a schermo piatto
+FlowID;ID flusso
+Folder (R);Cartella (D)
+Folder (R)_Hint;Seleziona cartella da analizzare (e le sue sottocartelle)
+Folder (Recursively);Cartella (e sottocartelle)
+Folder;Cartella
+Folder_Hint;Seleziona cartella da analizzare
+FolderName;Cartella
+Forced;Forzato
+Format;Formato
+Format_AdditionalFeatures;Formato funzioni aggiuntive
+Format_Commercial;Nome commerciale
+Format_Commercial_IfAny;Nome commerciale
+Format_Compression;Compressione
+Format_Description;Descrizione formato
+Format_Info;Dettagli sui formati
+Format_Level;Livello formato
+Format_Profile;Profilo formato
+Format_Settings;Impostazioni formato
+Format_Settings_BVOP;Impostazioni formato, BVOP
+Format_Settings_CABAC;Impostazioni formato, CABAC
+Format_Settings_Emphasis;Enfasi
+Format_Settings_Endianness;Impostazioni formato, Endianness
+Format_Settings_Firm;Impostazioni formato, Firm
+Format_Settings_Floor;Impostazioni formato, Piano
+Format_Settings_FrameMode;Modo frame
+Format_Settings_GMC;Impostazioni formato, GMC
+Format_Settings_GOP;Impostazioni formato, GOP
+Format_Settings_ITU;Impostazioni formato, ITU
+Format_Settings_Law;Impostazioni formato, Law
+Format_Settings_Matrix;Impostazioni formato, Matrice
+Format_Settings_Matrix_Custom;Personalizzato
+Format_Settings_Matrix_Default;Predefinito
+Format_Settings_Mode;Modo
+Format_Settings_ModeExtension;Estensione modo
+Format_Settings_PacketBitStream;Impostazioni formato, Packet bitstream
+Format_Settings_PictureStructure;Impostazioni formato, struttura immagine
+Format_Settings_PS;Impostazioni formato, PS
+Format_Settings_Pulldown;Impostazioni formato, Pulldown
+Format_Settings_QPel;Impostazioni formato, QPel
+Format_Settings_RefFrames;Impostazioni formato, ReFrames
+Format_Settings_SBR;Impostazioni formato, SBR
+Format_Settings_Sign;Impostazioni formato, Firma
+Format_Settings_SliceCount;Impostazione numero segmenti
+Format_Settings_Wrapping;Impostazioni formato, modo a capo automatico
+Format_Tier;Livello formato
+Format_Url;Sito web formato
+Format_Version;Versione formato
+FormatDefinition;Definizione formato
+FpaManufacturer;Produttore FPA
+FpaPass;Pass FPA
+FpaVersion;Versione FPA
+FrameCount;Numero fotogrammi
+FrameCount_Source;N. fotogrammi sorgente
+FrameRate;Frequenza fotogrammi
+FrameRate_Den;
+FrameRate_Maximum;Frame rate massimo
+FrameRate_Minimum;Frame rate minimo
+FrameRate_Mode;Modalità frame rate
+FrameRate_Mode_CFR;Costante
+FrameRate_Mode_VFR;Variabile
+FrameRate_Nominal;Frequenza fotogrammi nominale
+FrameRate_Num;Frequenza fotogrammi
+FrameRate_Original;Frequenza fotogrammi originale
+FrameRate_Real;Frequenza fotogrammi reale
+FullParsing;Analisi completa
+FullParsingTips;
+Gallery;Galleria
+General;Generale
+GeneralCompliance;Conformità generale
+Genre;Genere
+Genre_000;Blues
+Genre_001;Rock Classico
+Genre_002;Country
+Genre_003;Dance
+Genre_004;Disco
+Genre_005;Funk
+Genre_006;Grunge
+Genre_007;Hip - Hop
+Genre_008;Jazz
+Genre_009;Metal
+Genre_010;New Age
+Genre_011;Intramontabili
+Genre_012;Altri
+Genre_013;Pop
+Genre_014;R&B
+Genre_015;Rap
+Genre_016;Reggae
+Genre_017;Rock
+Genre_018;Techno
+Genre_019;Industriale
+Genre_020;Alternativa
+Genre_021;Ska
+Genre_022;Death Metal
+Genre_023;Pranks
+Genre_024;Colonna sonora
+Genre_025;Euro techno
+Genre_026;Ambiente
+Genre_027;Trip-Hop
+Genre_028;Vocal
+Genre_029;Jazz+Funk
+Genre_030;Fusion
+Genre_031;Trance
+Genre_032;Classica
+Genre_033;Strumentale
+Genre_034;Acid
+Genre_035;House
+Genre_036;Tratta da un gioco
+Genre_037;Brano musicale
+Genre_038;Gospel
+Genre_039;Noise
+Genre_040;Rock alternativo
+Genre_041;Bass
+Genre_042;Soul
+Genre_043;Punk
+Genre_044;Space
+Genre_045;Meditativa
+Genre_046;Strumentale pop
+Genre_047;Strumentale rock
+Genre_048;Etnica
+Genre_049;Gothica
+Genre_050;Darkwave
+Genre_051;Techno-Industriale
+Genre_052;Elettronica
+Genre_053;Pop-Folk
+Genre_054;Eurodance
+Genre_055;Dream
+Genre_056;Rock del Sud
+Genre_057;Commedia
+Genre_058;Cult
+Genre_059;Rap Gangsta
+Genre_060;Top 40
+Genre_061;Rap Cristiano
+Genre_062;Pop/Funk
+Genre_063;Jungle
+Genre_064;Dei Nativi Americani
+Genre_065;Cabaret
+Genre_066;New Wave
+Genre_067;Psichedelica
+Genre_068;Rave
+Genre_069;Showtunes
+Genre_070;Trailer
+Genre_071;Lo-Fi
+Genre_072;Tribal
+Genre_073;Acid Punk
+Genre_074;Acid Jazz
+Genre_075;Polka
+Genre_076;Retro
+Genre_077;Musical
+Genre_078;Rock & Roll
+Genre_079;Hard Rock
+Genre_080;Folk
+Genre_081;Folk-Rock
+Genre_082;Natinal Folk
+Genre_083;Swing
+Genre_084;Fast-Fusion
+Genre_085;Bebop
+Genre_086;Latin
+Genre_087;Revival
+Genre_088;Celtic
+Genre_089;Bluegrass
+Genre_090;Avantgarde
+Genre_091;Gothic Rock
+Genre_092;Progressive Rock
+Genre_093;Psychedelic Rock
+Genre_094;Symphonic Rock
+Genre_095;Slow Rock
+Genre_096;Big Band
+Genre_097;Chorus
+Genre_098;Easy Listening
+Genre_099;Acoustic
+Genre_100;Humour
+Genre_101;Speech
+Genre_102;Chanson
+Genre_103;Opera
+Genre_104;Chamber Music
+Genre_105;Sonata
+Genre_106;Symphony
+Genre_107;Booty Bass
+Genre_108;Primus
+Genre_109;Porn Groove
+Genre_110;Satire
+Genre_111;Slow Jam
+Genre_112;Club
+Genre_113;Tango
+Genre_114;Samba
+Genre_115;Folklore
+Genre_116;Ballad
+Genre_117;Power Ballad
+Genre_118;Rhythmic Soul
+Genre_119;Freestyle
+Genre_120;Duet
+Genre_121;Punk Rock
+Genre_122;Drum Solo
+Genre_123;A cappella
+Genre_124;Euro-House
+Genre_125;Dance Hall
+Genre_126;Goa
+Genre_127;Drum & Bass
+Genre_128;Club-House
+Genre_129;Hardcore
+Genre_130;Terror
+Genre_131;Indie
+Genre_132;Britpop
+Genre_133;Afro-punk
+Genre_134;Polsk Punk
+Genre_135;Beat
+Genre_136;Christian Gangsta Rap
+Genre_137;Heavy Metal
+Genre_138;Black Metal
+Genre_139;Crossover
+Genre_140;Contemporary Christian
+Genre_141;Christian Rock 
+Genre_142;Merengue
+Genre_143;Salsa
+Genre_144;Thrash Metal
+Genre_145;Anime
+Genre_146;JPop
+Genre_147;Synthpop
+Genre_148;Astratto
+Genre_149;Art Rock
+Genre_150;Baroque
+Genre_151;Bhangra
+Genre_152;Big Beat
+Genre_153;Breakbeat
+Genre_154;Chillout
+Genre_155;Downtempo
+Genre_156;Dub
+Genre_157;EBM
+Genre_158;Eclectic
+Genre_159;Electro
+Genre_160;Electroclash
+Genre_161;Emo
+Genre_162;Sperimentale
+Genre_163;Garage
+Genre_164;Globale
+Genre_165;IDM
+Genre_166;Illbient
+Genre_167;Industro-Goth
+Genre_168;Jam Band
+Genre_169;Krautrock
+Genre_170;Leftfield
+Genre_171;Lounge
+Genre_172;Math Rock
+Genre_173;New Romantic
+Genre_174;Nu-Breakz
+Genre_175;Post-Punk
+Genre_176;Post-Rock
+Genre_177;Psytrance
+Genre_178;Shoegaze
+Genre_179;Space Rock
+Genre_180;Trop Rock
+Genre_181;World Music
+Genre_182;Neo classico
+Genre_183;Audiobook
+Genre_184;Audio Theatre
+Genre_185;Neue Deutsche Welle
+Genre_186;Podcast
+Genre_187;Indie Rock
+Genre_188;G-Funk
+Genre_189;Dubstep
+Genre_190;Garage Rock
+Genre_191;Psybient
+Go to WebSite;Sito web MediaInfo
+Gop_OpenClosed;GOP, Apri/chiudi
+Gop_OpenClosed_Closed;Chiudi
+Gop_OpenClosed_FirstFrame;GOP, Apertura/chiusura primo fotogramma
+Gop_OpenClosed_Open;Apri
+Graph;Grafico
+Group;Gruppo
+Grouping;Raggruppamento
+GroupPreset;Profilo gruppo
+h;o
+HDR_Format;Formato HDR
+Header file;Crea intestazione file
+Height;Altezza
+Height_CleanAperture;Altezza apertura pulita
+Height_Original;Altezza originale
+Help;?
+HideOthers;Nascondi altri
+Hint;Suggerimento
+HomeTheaterAvr;AVR Home Thater
+How many audio streams?;Quante sono le tracce audio?
+How many chapters streams?;Quanti sono i capitoli?
+How many text streams?;Quanti sono i sottotitoli?
+How many video streams?;Quante sono le tracce video?
+HTML;HTML
+ID;ID
+IdentClockStart;Avvio contatore ident
+IFrameInterval;Intervallo -I-Frame
+Image stream(s);Flussi immagini
+Image;Immagine
+Image_Codec_List;Codec immagini
+ImageCount;N. flussi immagine
+ImmersiveStereo;Stereo coinvolgente
+Info;Informazioni
+Instruments;Strumenti
+IntegratedLoudness;Loudness integrato
+IntegratedLoudness_Level;Loudness integrato (livello gated)
+IntegratedLoudness_Speech;Loudness integrato livello parlato)
+InteractivityEnabled;Interattività abilitata
+Interlaced_BFF;Prima campo inferiore
+Interlaced_Interlaced;Interlacciato
+Interlaced_PPF;Progressivo
+Interlaced_Progressive;Progressivo
+Interlaced_TFF;Prima campo superiore
+Interlacement;Interlacciamento
+Interleave_Duration;Durata intervallo
+Interleave_Preload; Intervallo pre-caricamento
+Interleave_VideoFrames;Intervallo frame video
+Interleaved;Intervallato
+InternetMediaType;Tipo supporto internet
+IRCA;IRCA
+ISBN;ISBN
+ISRC;ISRC
+IsStreamable;
+Keywords;Parole chiavi
+Known codecs;Codec conosciuti
+Known formats;Formati conosciuti
+Known parameters;Parametri conosciuti
+Label;Etichetta
+Language;Lingua
+Language_aa;Afar
+Language_ab;Abkhaziano
+Language_ae;Avestano
+Language_af;Afrikaans
+Language_ak;Akan
+Language_am;Amarico
+Language_an;Aragonese
+Language_ar;Arabo
+Language_as;Assamese
+Language_av;Avarico
+Language_ay;Aymara
+Language_az;Azero
+Language_ba;Bashkir
+Language_be;Bielorusso
+Language_bg;Bulgaro
+Language_bh;Bihari
+Language_bi;Bislama
+Language_bm;Bambara
+Language_bn;Lingua bengali
+Language_bo;Tibetano
+Language_br;Bretone
+Language_bs;Bosniaco
+Language_ca;Catalano
+Language_ce;Ceceno
+Language_ch;Chamorro
+Language_cmn;Mandarino
+Language_co;Corso
+Language_cr;Cree
+Language_cs;Ceco
+Language_cu;Church Slavonic
+Language_cv;Chuvash
+Language_cy;Gallese
+Language_da;Danese
+Language_de;Tedesco
+Language_dv;Divehi
+Language_dz;Dzongkha
+Language_ee;Ewe
+Language_el;Greco
+Language_en;Inglese
+Language_en-gb;Inglese (Gran Bretagna)
+Language_en-us;Inglese (Americano)
+Language_eo;Esperanto
+Language_es;Spagnolo
+Language_es-419;Spagnolo (America Latina)
+Language_et;Estone
+Language_eu;basco
+Language_fa;Persiano
+Language_ff;Fula
+Language_fi;Finnico
+Language_fil;Filippino
+Language_fj;Fijian
+Language_fo;Faroese
+Language_fr;Francese
+Language_fy;Frisone
+Language_ga;Gaelico irlandese
+Language_gd;Gaelico scozzese
+Language_gl;Galiziano
+Language_gn;Guarani
+Language_gu;Gujarati
+Language_gv;Manx
+Language_ha;Hausa
+Language_he;Ebraico
+Language_hi;Hindi
+Language_ho;Hiri Motu
+Language_hr;Croato
+Language_ht;Haitiano
+Language_hu;Ungherese
+Language_hy;Armeno
+Language_hy-az;Armeno (Azerbaijani)
+Language_hz;Herero
+Language_ia;Interlingua
+Language_id;Indonesiano
+Language_ie;Interlingue
+Language_ig;Igbo
+Language_ii;Sichuan Yi
+Language_ik;Inupiaq
+Language_Info;Info lingua
+Language_io;Ido
+Language_is;Islandese
+Language_it;Italiano
+Language_iu;Inuktitut
+Language_ja;Giapponese
+Language_jv;Giavanese
+Language_ka;Georgiano
+Language_kg;Kongo
+Language_ki;Kikuyu
+Language_kj;Kuanyama
+Language_kk;Kazako
+Language_kl;Groenlandese
+Language_km;Khmer
+Language_kn;Kannada
+Language_ko;Coreano
+Language_kr;Kanuri
+Language_ks;Kashmiri
+Language_ku;Curdo
+Language_kv;Komi
+Language_kw;Cornico
+Language_ky;Kirghiso
+Language_la;Latino
+Language_lb;Lussemburghese
+Language_lg;Ganda
+Language_li;Limburghese
+Language_ln;Lingala
+Language_lo;Lao
+Language_lt;Lituano
+Language_lu;Luba-katanga
+Language_lv;Lettone
+Language_mg;Malagasy
+Language_mh;Marshallese
+Language_mi;Maori
+Language_mk;Macedone
+Language_ml;Malayalam
+Language_mn;Mongolo
+Language_mn-cn;Mongolo (Cina)
+Language_mo;Moldavo
+Language_More;Info aggiuntive lingua
+Language_mr;Marathi
+Language_ms;Malese
+Language_ms-bn;Malese (Brunei)
+Language_mt;Maltese
+Language_mul;Multilingua
+Language_my;Burmese
+Language_na;Nauru
+Language_nb;Norvegese Bokmål
+Language_nd;Ndebele, North
+Language_ne;Nepalese
+Language_ng;Ndonga
+Language_nl;Olandese
+Language_nl-be;Fiammingo
+Language_nn;Norvegese Nynorsk
+Language_no;Norvegese
+Language_nr;Ndebele, South
+Language_nv;Navajo
+Language_ny;Chichewa
+Language_oc;Occitano
+Language_oj;Ojibwa
+Language_om;Oromo
+Language_or;Oriya
+Language_os;Osseto
+Language_pa;Panjabi
+Language_pi;Pali
+Language_pl;Polacco
+Language_ps;Pashto
+Language_pt;Portoghese
+Language_pt-br;Portoghese (Brasile)
+Language_qu;Quechua
+Language_rm;Romancio
+Language_rn;Rundi
+Language_ro;Rumeno
+Language_ru;Russo
+Language_rw;Kinyarwanda
+Language_sa;Sanscrito
+Language_sc;Sardo
+Language_sd;Sindhi
+Language_se;Lingua sami di Northern
+Language_sg;Sango
+Language_si;Sinhalese
+Language_sk;Slovacco
+Language_sl;Sloveno
+Language_sm;Samoan
+Language_smi;Sami
+Language_sn;Shona
+Language_so;Somalo
+Language_sq;Albanese
+Language_sr;Serbo
+Language_ss;Swati
+Language_st;Sotho, Southern
+Language_su;Sundanese
+Language_sv;Svedese
+Language_sw;Swahili
+Language_ta;Tamil
+Language_te;Telugu
+Language_tg;Tagico
+Language_th;Thai
+Language_ti;Tigrino
+Language_tk;Turcmeno
+Language_tl;Tagalog
+Language_tn;Tswana
+Language_to;Tonga
+Language_tr;Turco
+Language_ts;Tsonga
+Language_tt;Tataro
+Language_tw;Twi
+Language_ty;Tahitian
+Language_ug;Uighur
+Language_uk;Ucraino
+Language_ur;Urdu
+Language_uz;Usbeco
+Language_ve;Venda
+Language_vi;Vietnamita
+Language_vo;Volapük
+Language_wa;Vallone
+Language_wo;Wolof
+Language_xh;Xhosa
+Language_yi;Yiddish
+Language_yo;Yoruba
+Language_yue;Cantonese
+Language_za;Zhuang
+Language_zh;Cinese
+Language_zh-cmn;Mandarin
+Language_zh-CN;Cinese (Cina)
+Language_zh-cn;Cinese (Cina)
+Language_zh-Hans;Ciense (semplificato)
+Language_zh-Hant;Ciense (tradizionale)
+Language_zh-TW;Cinese (Taiwan)
+Language_zh-tw;Cinese (Taiwan)
+Language_zh-yue;Cantonese
+Language_zu;Zulu
+LanguageChanges;
+Languages;Lingue
+LawRating;Classificazione legale
+LCCN;LCCN
+LegacyStreamDisplay;Per i flussi video, audio e HD HD/HE 3D/HDR visualizza info compatibilità
+LfeAttenuationKnown;Attenuazione LFE nota
+LfeMixGain;Guadagno min LFE
+lfeon;
+Library;Libreria
+Lifetime_Subscribe_Button;Abbonamento a vita per %PRICE%
+Lightness;Luminosità
+Lines_Count;N. linee
+Lines_MaxCountPerEvent;N. max linee per evento
+LineUpStart;Avvio lineup
+LinkedTo_Bed_Pos;Letto #s
+LinkedTo_ChannelFormat_Pos;Formato canale #s
+LinkedTo_ComplementaryObject_Pos;Oggetto complementare #s
+LinkedTo_Content_Pos;Contenuto #s
+LinkedTo_Group_Pos;Gruppo #s
+LinkedTo_Object_Pos;Oggetto #s
+LinkedTo_PackFormat_Pos;Formato pacchetto #s
+LinkedTo_SignalGroup_Pos;Gruppo segnale #s
+LinkedTo_StreamFormat_Pos;Formato stream #s
+LinkedTo_Substream_Pos;Sotto stream #s
+LinkedTo_TrackFormat_Pos;Formato traccia #s
+LinkedTo_TrackUID_Pos;UID traccia #s
+List;Elenco
+LongTermLoudness;Loudness lungo termine
+LoRoCenterMixGain;Guadagno mix LoRo
+LoRoSurroundMixGain;Guadagno mix surround LoRo
+Loudness_Anchor;Ancoraggio loudness
+Loudness_Anchor_Album;Ancoraggio loudness (album)
+Loudness_Count;N. info loudness
+Loudness_Count_Album;N. info loudness (album)
+Loudness_MaximumMomentary;Loudness max momentaneo
+Loudness_MaximumMomentary_Album;Loudness max momentaneo (album)
+Loudness_MaximumOfRange;Intervallo massimo
+Loudness_MaximumOfRange_Album;Intervallo massimo (album)
+Loudness_MaximumShortTerm;Loudness max a breve termine
+Loudness_MaximumShortTerm_Album;Loudness max a breve termine (album)
+Loudness_ProductionMixingLevel;Livello mixing produzione
+Loudness_ProductionMixingLevel_Album;Livello mixing produzione (album)
+Loudness_Program;Loudness programma
+Loudness_Program_Album;Loudness programma (album) 
+Loudness_Range;Intervallo loudness
+Loudness_Range_Album;Intervallo loudness (album)
+Loudness_RoomType;Tipo stanza produzione
+Loudness_RoomType_Album;Tipo stanza produzione (album)
+LtRtCenterMixGain;Guadagno mix LtRt
+LtRtSurroundMixGain;Guadagno mix surround LtRt
+Lyricist;Autore testi
+Lyrics;Testi
+MacCreatedBy;
+Mastered_Date;Data incisione 
+MasteredBy;Inciso da
+MasteringDisplay_ColorPrimaries;Colori primari display mastering
+MasteringDisplay_Luminance;Luminanza display mastering
+Matrix_Channel(s);Codifica a matrice, Canale/i
+Matrix_ChannelPositions;Codifica a matrice, posizione canali
+matrix_coefficients;Coefficienti matrici
+matrix_coefficients_Source;
+Matrix_Format;Codifica a matrice, formato
+MaxCLL;Livello luce contenuto  max
+MaxFALL;Livello luce media fotogramma max
+MaxGain;Guadagno max
+MaximumMomentaryLoudness;Loudness momentaneo max
+MaxTruePeak;Picco reale max
+MD5;MD5
+MD5_Unencoded;MD% contenuto non codificato
+MediaInfo_About;MediaInfo fornisce un accesso veloce alle informazioni tecniche ed alle etichette dei file audio e video.\r\nAd eccezione dell'interfaccia grafica Mac App Store, è un software open source, che significa che è gratuito per l'utente finale e lo sviluppatore è libero di studiare e migliorare e ridistribuire il programma (licenza LGPL)
+MediaInfo_About_About;MediaInfo v% MI_VERSION % usando MediaInfoLib v % MIL_VERSION%
+MediaInfo_WebSite;
+Menu stream(s);Menu flussi
+Menu;Menu
+Menu_Codec_List;Meni codec
+Menu_Hint;Altre possibilità
+Menu_No;Nessun menu
+MenuCount;Numero canali
+MenuID;ID menu
+Metadata_Format;Formato metadati
+Metadata_Format_Type;Tipo fotogramma metadati
+Metadata_MuxingMode;Modo muxing metadati
+Minimize;Riduci a icona
+MixType;Tipo mix
+mn;min
+Mood;Disposizione
+More;Altro
+Movie;Film
+ms;ms
+MSDI;MSDI
+MultipleStream;Tracce multiple
+MultiView_Count;N. viste multiple
+MusicBy;Composto da
+MuxingMode;Modo muxing
+MuxingMode_MoreInfo;Informazioni aggiuntive modo muxing
+MuxingMode_PackedBitstream;Packet Bitstream
+Name;Nome
+Nationality;Nazionalità
+NetworkName;Nome rete
+New;Nuovo
+Newest version;Controlla aggiornamenti (richiede una connessione a internet)
+NewVersion_Menu;È disponibile una nuova versione
+NewVersion_Question_Content;È disponibile una nuova versione (v. %Version%).\r\nVuoi scaricarla ora?
+NewVersion_Question_Title;È stata rilasciata una nuova versione!
+No;No
+Not yet;Non ancora
+NumberOfChannelFormats;N. formati canali
+NumberOfContents;N. contenuti
+NumberOfDynamicObjects;N. oggetti dinamici
+NumberOfElementaryStreams;N. flussi elementari
+NumberOfObjects;N. oggetti
+NumberOfPackFormats;N. formati pacchetto
+NumberOfPresentations;N. presentazioni
+NumberOfProgrammes;N. programmi
+NumberOfStreamFormats;N. formati flussi
+NumberOfSubstreams;N. sotto flussi
+NumberOfTrackFormats;N. formati tracce
+NumberOfTrackUIDs;N. UID traccia
+NumColors;Numero colori
+Object;Oggetto
+ObjectCount;N. oggetti
+OK;OK
+One output file per input file;Un file destinazione per ogni file sorgente
+OnlyDiffer;
+OnlyIdentical;
+Open;Apri
+OpenCaptionsLanguage;Lingua finestre apertura
+OpenCaptionsPresent;Presenti finestre di apertura
+OpenCaptionsType;Tipo finestre di apertura
+OpenFile;
+OpenFileError;
+OpenRecent;
+Options;Opzioni
+Options_Hint;Preferenze
+Original;Originale
+OriginalNetworkName;Nome originale rete
+OriginalSourceForm;Modulo originale sorgente
+OriginalSourceMedium;Supporto originale
+OriginalSourceMedium_ID;ID nel supporto sorgente originale
+Originator;Creatore
+Other;Altri
+OtherIdentifier;Altro identificatore
+OtherIdentifierType;Altro tipo di identificatore
+OtherViews;
+Output format;Formato destinazione
+Output;Destinazione
+OverallBitRate;Bitrate totale
+OverallBitRate_Maximum;Bitrate massimo generale
+OverallBitRate_Minimum;Bitrate minimo generale
+OverallBitRate_Mode;Modo bitrate generale
+OverallBitRate_Nominal;BitRate nominale generale
+OverallBitRate_Precision_Max;
+OverallBitRate_Precision_Min;
+PackageName;Nome pacchetto
+PackFormat;Formato pacchetto
+Part;Parte
+Part_Count;Totale
+PartialParsing;
+PartNumber;Numero parte
+PartTotal;Totale parti
+Performer;Esecutore
+Period;Periodo
+Phase90FilterInfo;Info sul filtro Phase 90
+Phase90FilterInfo2ch;Info sul filtro Phase 90 2 canali
+Phone;Telefono
+PictureRatio;Rapporto immagine
+PixelAspectRatio;Rapporto aspetto pixel
+PixelAspectRatio_CleanAperture;Rapporto aspetto apertura
+PixelAspectRatio_Original;Rapporto aspetto pixel originale
+PlayCounter;Riprodotto per
+Played_Count;Visualizzato
+Played_First_Date;Riprodotto la prima volta
+Played_Last_Date;Riprodotto l'ultima volta
+PlayTime;Durata
+PodcastCategory;Categoria Podcast
+PortableHeadphones;Cuffie portatili
+PortableSpeakers;Altoparlanti portatili
+Position;Posizione
+Position_Cartesian;Posizione (cartesiana)
+Position_Polar;Posizione (polare)
+Position_Total;Totale
+Preferences;Preferenze
+PreferredDownmix;Downmix preferito
+Premium;Premium
+Premium_Feature;
+Premium_Summary;Funzioni abbonamento Premium
+PreselectionLabel;Etichetta preselezione
+Presentation;Presentazione
+PresentationConfig;Configurazione presentazione
+PresentationConfig_ContentClassifier;Configurazione presentazione da classificatori contenuti
+PresentationID;ID presentazione
+PresentationLevel;
+PreviousDownmixType5ch;Downmix tipo 5 canali precedente
+PreviousMixType2ch;Downmix tipo 2 canali precedente
+PrimaryAudioLanguage;Prima lingua audio
+Producer;Produttore
+ProductionDesigner;Designer produzione
+ProductionNumber;N. prodotto
+ProductionStudio;Studio di registrazione
+ProductPlacement;Posizionamento prodotto
+Program name;Nome programma
+Programme;Programma
+ProgrammeHasText;Il programma ha testo
+ProgrammeTextLanguage;Lingua testo programma
+ProgrammeTitle;Titolo programma
+Publisher;Pubblicato da
+Purchased_Date;Data di acquisto
+PurchaseInformation;
+Quote character;Carattere quotatura
+RadioStation;Stazione radio
+Rating;Posizione
+RealtimeLoudnessCorrected;Volume corretto in tempo reale
+Recorded_Date;Data registrazione
+Recorded_Location;Luogo registrazione
+Reel;Bobina
+Released_Date;Data distribuzione
+RemixedBy;Remixato da
+RenderMode;Modo render
+Renew;Rinnova
+ReplayGain_Gain;ReplayGain
+ReplayGain_Peak;Picco ReplayGain
+Report;Rapporto
+ReportBy;
+Resolution;Risoluzione
+RestoreLifetimeSubscription;Ripristina abbonamento a vita
+Retry;
+s;s
+Sampled_Height;
+Sampled_Width;
+SamplePeakLevel;Livello di picco campione
+SamplePeakLevel_Album;Livello di picco campione (album)
+SamplesPerFrame;Campioni per fotogramma
+SamplingCount;N. campioni
+SamplingCount_Source;
+SamplingRate;Frequenza campionamento
+Save;Salva
+ScanOrder;Ordine scansione
+ScanOrder_Original;Ordine scansione
+ScanOrder_Stored;Memorizza ordine scansione
+ScanOrder_StoredDisplayedInverted;Ordine scansione, memorizza/visualizza ordine invertito
+ScanOrder_StoreMethod;Ordine scansione, metodo memorizzazione
+ScanType;Tipo scansione
+ScanType_Original;Tipo scansione originale
+ScanType_StoreMethod;Tipo scansione, metodo memorizzazione
+ScreenplayBy;Sceneggiatura
+ScreenToCenter;Schermo al centro
+ScreenToFront;Schermo in primo piano
+Season;N. stagione
+SecondaryAudioLanguage;Seconda lingua audio
+see below;vedi sotto
+Select your directory;Seleziona cartella
+SelectAll;Seleziona tutto
+Send HeaderFile;Invia l'intestazione a http://sourceforge.net/projects/mediainfo/ (sezione bug)
+Separator_Columns;Separatore colonne
+Separator_Lines;Separatore linea
+SeriesTitle;Titolo serie
+ServiceChannel;Numero canale di servizio
+ServiceKind;Tipo servizio
+ServiceName;Nome servizio
+ServiceProvider;Fornitore servizio
+Services;Servizi
+ServiceType;Tipo servizio
+Set;Imposta
+Set_Count;Imposta contatore
+Setup;Installazione
+Sharpness;Nitidezza
+Sheet (Complete);Scheda (completa)
+Sheet;Scheda
+Shell extension, folder;Anche per le cartelle
+Shell extension, separate instance;Apri ogni elemento in un'istanza separata
+Shell extension;Aggiungi 'Apri con MediaInfo' al menu contestuale
+Shell InfoTip;Informazioni in Explorer (in Explorer, spostati sul file e verranno visualizzate le informazioni)
+ShimName;Nome shim
+ShimVersion;Versione shim
+Show menu;Visualizza menu
+Show toolbar;Visualizza barra strumenti
+Show;
+ShowAll;Mostra tutti
+ShowMore;
+SignalGroup;Gruppo segnale
+SigningPresent;Firma presente
+SignLanguage;Lingua firma
+Sort;Ordinato per
+SoundCategory;Categoria suono
+SoundEngineer;Tecnico del suono
+Source;Sorgente
+Source_Duration;Durata sorgente
+Source_FrameCount;N. fotogramma sorgente
+Source_SamplingCount;N. campioni sorgente
+Source_StreamSize;Dim. flusso sorgente
+Source_StreamSize_Encoded;Dim. traccia codificata sorgente
+SpokenSubtitles;Sottotitoli parlati
+Standard;Standard
+Stored_Height;
+StoreMethod_InterleavedFields;Campi intervallati
+StoreMethod_SeparatedFields;Campi separati
+StoreMethod_SeparatedFields_1;Campi separati (1 campo per blocco)
+StoreMethod_SeparatedFields_2;Campi separati (2 campi per blocco)
+Stream;Traccia
+Stream_MoreInfo;Altre informazioni sulla traccia
+StreamCount;Numero tracce
+StreamFormat;Formato stream
+StreamID;ID traccia
+streamIdentifier;Identificatore traccia
+StreamKind;Tipo traccia
+StreamKindID;Identificatore traccia
+StreamKindPos;Identificatore traccia
+StreamOrder;Ordine stream
+Streams;
+StreamSize;Dimensione traccia
+StreamSize_Demuxed;Dim. flusso quando demuxed
+StreamSize_Encoded;Dim. traccia codificata
+StreamSize_Proportion;Proporzioni traccia
+Subject;Soggetto
+Subscribe;Abbonati
+Subscribe_Button;Abbonamento (%PICE% per un anno)
+Subscribe_Failed;Acquisto annullato o fallito
+Subscribe_Manage;gestione abbonamento
+Subscribe_Premium;
+Subscribe_Renew;Rinnova abbonamento
+Subscribe_Renew_Price;Rinnova abbonamento (%PRICE% per un anno)
+Subscribe_Unaviable;Impossibile ottenere dettagli abbonamento
+Subscribe_Waiting;Acquisto in attesa di approvazione genitore
+Subscription_Active;Abbonamento attivo fino a %DATE%
+Subscription_Android;Periodo di prova di 3 giorni gratis.
+Subscription_Ended;L'abbonamento è scaduto.
+Subscription_Expired;L'abbonamento è scaduto il %DATE%
+Subscription_Lifetime;Rilevato abbonamento a vita
+Subscription_Thanks;Rilevato abbonamento. Grazie per il tuo supporto.
+Substream;sottoflusso
+SubTrack;Sottotitolo
+SubtstreamIdChannel;ID sotto flusso iniziale e indice canale
+Summary;Riassunto
+Supported formats;Formati supportati
+Supported?;Supportato?
+SupportUs;Supportaci. Otterrai il tema scuro e in futuro maggiori funzioni.
+SupportUs2;
+surmixlev;
+SurroundAttenuationKnown;Attenuazione nota surround
+SwitchGroup;Gruppo switch
+Synopsis;Sommario
+SystemId;ID sistema
+Tagged_Application;Applicazione usata
+Tagged_Date;Data
+TargetDeviceConfig;Configurazione dispositivo destinazione
+Technician;Tecnico
+TermsOfUse;Indicazioni per l'uso
+TertiaryAudioLanguage;Terza lingua audio
+TestContinuousFileNames;
+Text - Custom;Testo - Personalizzato
+Text (HTML);Testo (HTML)
+Text stream(s);Sottotitoli
+Text streams;Sottotitoli
+Text;Testo
+Text_Codec_List;Codec sottotitoli
+Text_Format_List;Elenco formati testo
+Text_Format_WithHint_List;Elenco formati testo con suggerimenti
+Text_Language_List;Elenco lingue testo
+Text_No;Nessun sottotitolo
+Text1;Sottotitolo 1
+Text2;Sottotitolo 2
+Text3;Sottotitolo 3
+TextCount;N. sottotitoli
+TextlessElementsExist;Elementi senza testo esistenti
+ThanksTo;Ringraziamenti
+Thousands separator;Separatore centinaia
+TimeCode;Timecode
+TimeCode_FirstFrame;Timecode primo fotogramma
+TimeCode_LastFrame;Timecode ultimo fotogramma
+TimeCode_MaxFrameNumber;N. max di fotogrammi nel timecode
+TimeCode_MaxFrameNumber_Theory;N. max fotogrammi reali nel timecode
+TimeCode_Settings;Impostazioni timecode
+TimeCode_Source;Timecode sorgente
+TimeCode_Stripped;Timecode, rimosso
+TimeStamp;Data/ora
+TimeZone;Fuso orario
+Title;Titolo
+Title_More;Titolo, altre info
+Top4ToTop2;Alto 4 a alto 2
+TopBackToFront;Alto in avanti
+TopBackToSide;Alto a lato
+TopFrontToBack;Alto da avanti a dietro
+TopFrontToFront;Alto avanti a avanti
+TopFrontToSide;Alto avanti a lato
+Total;Totale
+TotalNumberOfParts;Numero totale parti
+TotalProgrammeDuration;Durata totale programma
+Track;Traccia
+Track_Count;N. traccia
+TrackFormat;Formato traccia
+TrackIndex;Indice traccia
+TrackUID;UID traccia
+transfer_characteristics;Caratteristiche trasferimento
+transfer_characteristics_Source;
+Translate_Reports;Rapporti traduzione
+Translator;Traduzione
+Transport;Trasporto
+Tree & Text;Struttura e testo
+Tree;struttura
+Trim_Center;Ritaglia centro
+Trim_Height;Altezza taglio
+Trim_Surround;Taglio surround
+TrimMode;Modo taglio
+TrimMode0i;Modo taglio audio 2.0 (stereo)
+TrimMode1i;Modo taglio audio 5.1
+TrimMode2i;Modo taglio audio 7.1
+TrimMode3i;Modo taglio audio 2.1.2
+TrimMode4i;Modo taglio audio 5.1.2
+TrimMode5i;Modo taglio audio 7.1.2
+TrimMode6i;Modo taglio audio 2.1.4
+TrimMode7i;Modo taglio audio 5.1.4
+TrimMode8i;Modo taglio audio 7.1.4
+TruePeakLevel;Livello di picco reale
+TruePeakLevel_Album;Livello di picco reale (album)
+Type;Tipo
+Type_Composer;
+Type_Conductor;
+Type_Cover;
+Type_Cover_Back;
+Type_Cover_Media;
+Type_DuringPerformance;
+Type_DuringRecording;
+Type_FileIcon;
+Type_FileIcon_32x32;
+Type_Illustration;
+Type_LeafletPage;
+Type_Lyricist;
+Type_Performer;
+Type_Performer_Lead;
+Type_PerformerLogo;
+Type_Picture;
+Type_PublisherLogo;
+Type_RecordingLocation;
+Type_ScreenCapture;
+Type_Thumbnail;
+TypeDefinition;Definizione tipo
+UniqueID;ID univoco
+UniversalAdID;ID ad universale
+UniversalAdID_Registry;Registro ID ad universale
+UniversalAdID_Value;Valore ID ad universale
+Unknown;Sconosciuto
+Url;URL
+Value;
+Video stream(s);Traccia video
+Video;Video
+Video_Codec_List;Codec video
+Video_Delay;Ritardo video
+Video_Format_List;Elenco formati video
+Video_Format_WithHint_List;Elenco formati video con suggerimenti
+Video_Language_List;Elenco lingue video
+Video_No;Nessuna traccia video
+Video0_Delay;Ritardo video
+Video1;Prima traccia video
+Video2;Seconda traccia video
+Video3;Terza traccia video
+VideoComments;Commenti video
+VideoCount;Tracce video
+View;Visualizza
+View_Hint;Visualizza suggerimenti
+Views;Viste
+Warning : more streams in the files;Attenzione: ci sono diverse tracce nei file
+Web;Web
+WebSite;Sito web
+WebSite_Audio;Vai al sito web di questo codec audio
+WebSite_Audio_More;Per info su questo codec audio vai al sito web (%Url%) 
+WebSite_General;Per questo file vai al sito web del riproduttore 
+WebSite_General_More;Per questo file vai al sito web del riproduttore 
+WebSite_Text;Per questo sottotitolo vai al sito web 
+WebSite_Text_More;Vai al sito web (%Url%) per info su questo sottotitolo
+WebSite_Url;http://MediaArea.net/MediaInfo
+WebSite_Video;Vai al sito web per info su questo codec video
+WebSite_Video_More;Per info su questo video vai al sito web (%Url%) 
+Width;Larghezza
+Width_CleanAperture;larghezza apertura
+Width_Original;Larghezza originale
+Window;Finestra
+WriteMe;Invia email all'autore
+WriteToTranslator;Invia email al traduttore
+Written_Date;Data
+Written_Location;Realizzato in
+WrittenBy;Realizzato da
+Yes;Si
+Your system;Info sul sistema
+Your translation;Traduzione v. 02.08.2025 by RB
+Zoom;Ridimensiona
+ZZ_Automatic_Percent;93
+ZZ_AutomaticLanguage_Percent;93

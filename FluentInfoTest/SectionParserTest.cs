@@ -4,9 +4,17 @@ using MediaInfoLib;
 namespace FluentInfoTest;
 
 [TestClass]
+[DeploymentItem(@"Assets\langs\en.csv")]
 public class SectionParserTest
 {
     private readonly MediaInfo _mediaInfo = new();
+
+    private static MediaInfoTextParser GetParser()
+    {
+        var parser = new MediaInfoTextParser();
+        parser.UpdateLanguage(File.ReadAllText("en.csv"));
+        return parser;
+    }
 
     private string? ReadMediaInfoForFile(string filePath)
     {
@@ -31,7 +39,7 @@ public class SectionParserTest
 
         var info = ReadMediaInfoForFile(filePath);
         Assert.IsNotNull(info);
-        var sections = MediaInfoTextParser.Parse(info);
+        var sections = GetParser().Parse(info);
 
         var generalSection = sections[0];
         var videoSection = sections[1];
@@ -44,7 +52,7 @@ public class SectionParserTest
         CheckSection(audioSection, SectionType.Audio, "Audio Title",
             ["AAC LC", "English", "2 channels", "2 091 b/s"]);
         CheckSection(textSection, SectionType.Text, "Sub Title", ["UTF-8", "English"]);
-        CheckSection(menuSection, SectionType.Menu, null, ["2 entries"]);
+        CheckSection(menuSection, SectionType.Menu, null, ["Total: 2"]);
     }
 
     [TestMethod]
@@ -56,7 +64,7 @@ public class SectionParserTest
 
         var info = ReadMediaInfoForFile(filePath);
         Assert.IsNotNull(info);
-        var sections = MediaInfoTextParser.Parse(info);
+        var sections = GetParser().Parse(info);
 
         var generalSection = sections[0];
 
@@ -73,7 +81,7 @@ public class SectionParserTest
 
         var info = ReadMediaInfoForFile(filePath);
         Assert.IsNotNull(info);
-        var sections = MediaInfoTextParser.Parse(info);
+        var sections = GetParser().Parse(info);
 
         var generalSection = sections[0];
 

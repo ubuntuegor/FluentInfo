@@ -1,0 +1,1513 @@
+  Language_ISO639;sq
+  Author_Email;bgodole@gmail.com
+  Author_Name;Besmir Godole
+  Author_OldNames;Përkthyesi i parë
+  Language_Name;Shqip
+  Config_Text_ColumnSize;40
+  Config_Text_Separator; :
+  Config_Text_NumberTag; #
+  Config_Text_FloatSeparator;.
+  Config_Text_ThousandsSeparator; 
+ audio stream1; rrymë audio
+ audio stream2; rrymë audio
+ audio stream3; rrymë audio
+ bit1; bit
+ bit2; bit
+ bit3; bit
+ Bps; B/s
+ bps; b/s
+ Byte1; Bajt
+ Byte2; Bajt
+ Byte3; Bajt
+ channel1; kanal
+ channel2; kanale
+ channel3; kanale
+ chapter1; kapitull
+ chapter2; kapituj
+ chapter3; kapituj
+ chapters stream1; rrymë kapitulli
+ chapters stream2; rrymë kapitulli
+ chapters stream3; rrymë kapitulli
+ character1;
+ character2;
+ character3;
+ day1; ditë
+ day2; ditë
+ day3; ditë
+ dB0;
+ dB1; dB
+ dB2; dB
+ dB3; dB
+ file1; skedë
+ file2; skeda
+ file3; skeda
+ fps1; FPS
+ fps2; FPS
+ fps3; FPS
+ frame1; kuadër
+ frame2; kuadro
+ frame3; kuadro
+ GB; GB
+ Gb; Gb
+ GBps; GB/s
+ Gbps; Gb/s
+ GHz; GHz
+ GiB; GiB
+ GibiByte1; GibiBajt
+ GibiByte2; Gibibajt
+ GibiByte3; Gibibajt
+ GiBps; GiB/s
+ GigaBit1; GigaBit
+ GigaBit2; GigaBit
+ GigaBit3; GigaBit
+ GigaByte1; GigaBajt
+ GigaByte2; GigaBajt
+ GigaByte3; GigaBajt
+ hour1; orë
+ hour2; orë
+ hour3; orë
+ Hz; Hz
+ image stream1; rrymë figure
+ image stream2; rrymë figure
+ image stream3; rrymë figure
+ KB; kB
+ Kb; kb
+ KBps; kB/s
+ Kbps; kb/s
+ KHz; kHz
+ KiB; KiB
+ KibiBit1; KibiBit
+ KibiBit2; KibiBit
+ KibiBit3; KibiBit
+ KibiByte1; KibiBajt
+ KibiByte2; KibiBajt
+ KibiByte3; KibiBajt
+ KiBps; KiB/s
+ KiloBit1; KiloBit
+ KiloBit2; KiloBit
+ KiloBit3; KiloBit
+ KiloByte1; KiloBajt
+ KiloByte2; KiloBajt
+ KiloByte3; KiloBajt
+ MB; MB
+ Mb; Mb
+ MBps; MebiBajt
+ Mbps; Mb/s
+ MebiBit1; MebiBit
+ MebiBit2; MebiBit
+ MebiBit3; MebiBit
+ MebiByte1; MebiBajt
+ MebiByte2; MebiBajt
+ MebiByte3; MebiBajt
+ MegaBit1; MegaBit
+ MegaBit2; MegaBit
+ MegaBit3; MegaBit
+ MegaByte1; MegaBajt
+ MegaByte2; MegaBajt
+ MegaByte3; MegaBajt
+ MHz; MHz
+ MiB; MiB
+ Mib; Mib
+ MiBps; MiB/s
+ millisecond1; milisekondë
+ millisecond2; milisekonda
+ millisecond3; milisekonda
+ minute1; minutë
+ minute2; minuta
+ minute3; minuta
+ month1; muaj
+ month2; muaj
+ month3; muaj
+ object1;
+ object2;
+ object3;
+ pixel1; piksel
+ pixel2; piksela
+ pixel3; piksela
+ second1; sekondë
+ second2; sekonda
+ second3; sekonda
+ slice per frame1;
+ slice per frame2;
+ slice per frame3;
+ text stream1; rrymë teksti
+ text stream2; rrymë teksti
+ text stream3; rrymë teksti
+ video frames1; kuadër video
+ video frames2; kuadro video
+ video frames3; kuadro video
+ video stream1; rrymë video
+ video stream2; rrymë video
+ video stream3; rrymë video
+ warppoint0;Pa pikëdeformime
+ warppoint1; pikëdoformim
+ warppoint2; pikëdeformime
+ warppoint3; pikëdeformime
+ week1; javë
+ week2; javë
+ week3; javë
+ year1; vit
+ year2; vite
+ year3; vite
+, ;, 
+: ;: 
+3D;
+3DType;
+5.1.2ch;
+5.1.4ch;
+5.1ch;
+608_Mode;
+7.1.2ch;
+7.1ch;
+About;Për
+About_Hint;Si të kontaktohem dhe të gjendet versioni i fundit
+AC3_Metadata;
+Accompaniment;Shoqëruesi
+acmod;
+Active_DisplayAspectRatio;
+Active_Height;
+Active_Width;
+ActiveFormatDescription;
+ActiveFormatDescription_MuxingMode;
+Actor;Aktori
+Actor_Character;Personazhi i luajtur
+Add creation date to text output;
+Add version to text output;
+Added_Date;Data e shtimit
+Address;Adresa
+AdID;
+ADM: Show ChannelFormats;
+ADM: Show TrackUIDs;
+AdmProfile;
+Advanced mode -->;
+Advanced mode;Mënyrë e avancuar
+Advanced;Avancuar
+Album;Albumi
+Album_ReplayGain_Gain;Replay gain i albumit
+Album_ReplayGain_Peak;Piku i replay gain i albumit
+Alignment;Radhitja
+Alignment_Aligned;Radhitur te gërshetimet
+Alignment_Split;Ndarë te gërshetimet
+All;Gjithçka
+AllFields;
+AlternateGroup;
+AnalyzeServicesMenu;
+App_About;
+App_Hide;
+App_Quit;
+Archival_Location;Vendi i arkivimit
+Arranger;Radhitësi
+ArtDirector;RegjisorArtistik
+AspectRatio;Raporti i aspektit
+AssistantDirector;RegjisorAsistent
+AssociatedVideo_FrameRate;
+At least one file;(Duhet hapur të paktën një skedë)
+at;në
+Attachments;
+Audio stream(s);Rrymat e audios
+Audio;Audio
+Audio_Channels_Total;
+Audio_Codec_List;Kodekët e audios
+Audio_Format_List;
+Audio_Format_WithHint_List;
+Audio_Language_List;
+Audio_No;Pa audio
+Audio1;Rryma e parë audio
+Audio2;Rryma e dytë audio
+Audio3;
+AudioComments;
+AudioCount;Numri i rrymave të audios
+AudioDescription;
+AudioDescriptionPresent;
+AudioDescriptionType;
+AudioLoudnessStandard;
+AudioRenderingIndication;
+AudioSceneInfoID;
+AudioTrackLayout;
+Author;Autori
+Back4ToBack2;
+Balance_FrontBackListener;
+Balance_FrontBackOverheadFloor;
+BarCode;BarCode
+Basic;Kryesor
+Basic_Note;Shënim : për më shumë info rreth skedës, mund të zgjidhet një pamje tjetër (Fletë, Pemë...)
+BedChannelConfiguration;
+BedChannelCount;
+BinauralRenderMode;
+BitDepth;
+BitDepth_Detected;
+BitDepth_Stored;
+BitRate;Raporti i bitit
+BitRate_Encoded;
+BitRate_Maximum;Raporti maksimal i bitit
+BitRate_Minimum;Raporti minimal i bitit
+BitRate_Mode;Mënyra e raportit të bitit
+BitRate_Mode_CBR;Konstant
+BitRate_Mode_VBR;Variabël
+BitRate_Nominal;Raporti nominal i bitit
+Bits-(Pixel*Frame);Bit/(Piksel*Kuadër)
+BitstreamLevel;
+Bring All to Front;
+bsid;
+BufferSize;
+Cancel;Anulo
+CaptionServiceName;
+CatalogNumber;
+Channel(s);Kanale
+Channel(s)_Original;
+ChannelCoded;
+ChannelConfiguration;
+ChannelFormat;
+ChannelLayout;
+ChannelLayout_Original;
+ChannelMode;
+ChannelPositions;Pozicionet e kanalit
+ChannelPositions_Original;
+Chapter(s);Kapitull
+Chapters stream(s);Rryma(t) e kapitujve
+Chapters;Kapituj
+Chapters_Codec_List;Kodekët e Kapitujve
+Chapters_No;Pa kapituj
+Chapters_Pos_Begin;
+Chapters_Pos_End;
+ChaptersCount;Numri i rrymave të kapitujve
+CharacterSet;
+CheckNewVersion;Verifiko versionin e ri
+Choose custom sheet;Zgjedh me porosi fletën e dëshiruar
+Choose custom text;Zgjedh me porosi tekstin e dëshiruar
+Choose custom;Zgjedh me porosi
+Choose export format;Zgjedh formatin e eksportimit të dëshiruar
+Choose file(s);Zgjedh skedat që të hapen
+Choose filename;Zgjedh emrin e skedës së dëshiruar
+Choose language;Zgjedh gjuhën e dëshiruar
+Choreographer;Koreografi
+Chroma;Kroma
+ChromaSubsampling;
+Classifier;
+ClearList;
+Close all before open;Mbyll infot para hapjes
+Close;Mbyll
+CloseAll;
+ClosedCaptionsLanguage;
+ClosedCaptionsPresent;
+ClosedCaptionsType;
+CloseFile;
+CloseWindow;
+cmixlev;
+Codec;Kodeku
+Codec_Description;Përshkrimi i kodekut
+Codec_Info;Detajet e kodekut
+Codec_Profile;Profili i kodekut
+Codec_Settings;Vendosjet e kodekut
+Codec_Settings_BVOP;Vendosjet e kodekut, BVOP
+Codec_Settings_CABAC;Vendosjet e kodekut, CABAC
+Codec_Settings_Endianness;Vendosjet e kodekut, Endianness
+Codec_Settings_Firm;Vendosjet e kodekut, Firm
+Codec_Settings_Floor;Vendosjet e kodekut, Floor
+Codec_Settings_GMC;Vendosjet e kodekut, GMC
+Codec_Settings_ITU;Vendosjet e kodekut, ITU
+Codec_Settings_Law;Vendosjet e kodekut, Law
+Codec_Settings_Matrix;Vendosjet e kodekut, Matrix
+Codec_Settings_PacketBitStream;Vendosjet e kodekut, Packet bitstream
+Codec_Settings_QPel;Vendosjet e kodekut, QPel
+Codec_Settings_Sign;Vendosjet e kodekut, Sign
+Codec_Url;Lidhësi në rrjetë i kodekut
+CodecConfigurationBox;
+CodecID;ID i kodekut
+CodecID_Description;Përshkrimi i kodekut
+CoDirector;
+Collection;Koleksioni
+Colorimetry;Kolorimetria
+ColorSpace;
+ColorTheme;
+ColorTheme_Dark;
+ColorTheme_Light;
+ColorTheme_System;
+colour_description_present;
+colour_description_present_Source;
+colour_primaries;Primarët e ngjyrës
+colour_primaries_Source;
+colour_range;
+colour_range_Source;
+Comment;Komenti
+CommissionedBy;Autorizuar nga
+Compare;
+CompareView;
+Compilation;
+ComplementaryObject;
+CompleteName;Emri i plotë
+CompletionDate;
+ComplexityIndex;
+Composer;Kompozitori
+Compression_Mode;
+Compression_Mode_Lossless;
+Compression_Mode_Lossy;
+Compression_Ratio;Raporti i kompresimit
+comprprof;
+Conductor;Dirigjenti
+ConformanceCheck;
+ConformanceErrors;
+ConformanceInfos;
+ConformanceWarnings;
+ContactEmail;
+ContactTelephoneNumber;
+Container and general information;Mbajtësi dhe info në përgjithësi
+Content;
+ContentType;Lloji i përmbajtjes
+CoProducer;Koproducent
+Copy;
+Copyright;Të drejtat e autorit
+CopyrightYear;
+CostumeDesigner;Modeluesi i kostumit
+Count;Numërimi
+Country;Vendi
+Cover;Cover-i
+Cover_Datas;Të dhënat e cover-it
+Cover_Description;Përshkrimi i cover-it
+Cover_Mime;MIME i cover-it
+Cover_Type;Lloji i cover-it
+CoverData;
+CreatedOn;
+Cropped;Dimensionet e prerjes
+Custom;Me porosi
+CustomDownmixTargets;
+Customize;Porosit
+DarkMode;
+Date;Data
+Debug;Debug
+Decimal point;Pika dhjetore
+Default translation;
+Default;
+Default_Setting;
+DefaultTargetDeviceConfig;
+DefaultView;
+Delay;Vonesa
+Delay_Source;
+Delay_Source_Container;
+Delay_Source_Stream;
+Delete;Fshij
+Description;Përshkrimi
+Details;
+dialnorm;
+dialnorm_Average;
+dialnorm_Count;
+dialnorm_Maximum;
+dialnorm_Minimum;
+DialogueCorrected;
+DialogueEnhancement;
+DialogueNormalization;
+Digitized_Date;Data e shifruar
+Dimensions;Dimensione
+Director;Regjisori
+DirectorOfPhotography;Regjisori i fotografisë
+Disabled;
+DisplayAspectRatio;Raporti i aspektit në ekran
+DisplayAspectRatio_CleanAperture;
+DisplayAspectRatio_Original;Raporti origjinal i aspektit në ekran
+DisplayCaptions;
+DisplayCaptions_Command;
+DisplayCaptions_Content;
+DisplayCaptions_Stream;
+DistributedBy;Shpërndarë nga
+Distributor;
+Documents;
+Dolby_Atmos_Metadata;
+DolbyAtmos;
+Donate;Jep kontribut
+DotsPerInch;Pika për inç
+DownloadFile;
+DownloadFileError;
+Downmix;
+Downmix_5.1.x;
+Downmix_5to2;
+DrcSets_Count;
+DrcSets_Effects;
+Duration;Kohëzgjatja
+Duration_End;Koha e përfundimit
+Duration_End_Command;
+Duration_Source;
+Duration_Start;Koha e nisjes
+Duration_Start_Command;
+Duration_Start2End;
+DynamicObject;
+DynamicRangeControl;
+dynrngprof;
+Eac3DrcProfile;
+Edit;Edito
+EditedBy;Edituar nga
+EditorialClassification;
+ElementaryStream;
+ElementCount;
+EMail;Posta-e
+Enable FFmpeg plugin;
+Encoded_Application;Aplikimi i shkrimit
+Encoded_Application_Name;
+Encoded_Application_Version;
+Encoded_Date;Data e kodimit
+Encoded_Hardware;
+Encoded_Library;Libraria e shkrimit
+Encoded_Library_Name;
+Encoded_Library_Settings;Vendosjet e kodimit
+Encoded_Library_Version;
+Encoded_Original;Origjinal
+EncodedBy;Koduar nga
+EPG_Positions;Pozicionet EPG (të brendshme)
+EpisodeTitleNumber;
+Error;
+Error_File;Gabim gjatë leximit të skedës
+Error_File_Write;
+Error_Open;
+Error_Save;
+Events_MinDuration;
+Events_PaintOn;
+Events_PopOn;
+Events_RollUp;
+Events_Total;
+ExecutiveProducer;Producenti ekzekutiv
+Exit;Dalje
+Exit_Hint;Mbyll Programin
+Export;Eksporto
+Export_Hint;Eksporto në format të porositur
+Extensions;Siglat e zakonshme
+External_Media_NotMounted;
+Family;Familja
+Fax;Faks
+Feature_AdvancedMode;
+Feature_FilesCompare;
+Feature_More;
+Feature_SelectView;
+Field;
+File size;Masa e skedës
+File;Skedë
+File_Append;Bashkangjit te skeda ekzistuese (Kujdes : duhen pasur të njëjtët parametra)
+File_Created_Date;Data e krijimit të skedës
+File_Created_Date_Local;Data e krijimit të skedës (lokale)
+File_Hint;Studio një skedë multimediatike
+File_Modified_Date;Modifikimi i fundit i skedës
+File_Modified_Date_Local;Modifikimi i fundit i skedës
+FileExtension;Sigla e skedës
+FileName;Emri i skedës
+FileNameExtension;
+FileSize;Masa e skedës
+Fill with a Dummy movie;
+Fill with a realistic movie;
+FirstDisplay_Delay_Frames;
+FirstDisplay_Type;
+FirstFrameOfAction;
+FlatPanelTv;
+FlowID;
+Folder (R);Dosje (R)
+Folder (R)_Hint;Studio një dosje (me gjithë dosjet si rekursive)
+Folder (Recursively);Dosje (Rekursive)
+Folder;Dosje
+Folder_Hint;Studio një dosje
+FolderName;Emri i dosjes
+Forced;
+Format;Formati
+Format_AdditionalFeatures;
+Format_Commercial;
+Format_Commercial_IfAny;
+Format_Compression;
+Format_Description;Përshkrimi i formatit
+Format_Info;Detajet e formatit
+Format_Level;
+Format_Profile;Profili i formatit
+Format_Settings;Vendosjet e formatit
+Format_Settings_BVOP;Vendosjet e formatit, BVOP
+Format_Settings_CABAC;Vendosjet e formatit, CABAC
+Format_Settings_Emphasis;Emfaza
+Format_Settings_Endianness;Vendosjet e formatit, Endianness
+Format_Settings_Firm;Vendosjet e formatit, Firm
+Format_Settings_Floor;Vendosjet e formatit, Floor
+Format_Settings_FrameMode;Mënyra e Kuadrit
+Format_Settings_GMC;Vendosjet e formatit, GMC
+Format_Settings_GOP;
+Format_Settings_ITU;Vendosjet e formatit, ITU
+Format_Settings_Law;Vendosjet e formatit, Law
+Format_Settings_Matrix;Vendosjet e formatit, Matrix
+Format_Settings_Matrix_Custom;Me porosi
+Format_Settings_Matrix_Default;Tipike
+Format_Settings_Mode;Mënyra
+Format_Settings_ModeExtension;
+Format_Settings_PacketBitStream;Vendosjet e formatit, Packet bitstream
+Format_Settings_PictureStructure;
+Format_Settings_PS;Vendosjet e formatit, PS
+Format_Settings_Pulldown;Vendosjet e formatit, Pulldown
+Format_Settings_QPel;Vendosjet e formatit, QPel
+Format_Settings_RefFrames;Vendosjet e formatit, RefFrames
+Format_Settings_SBR;Vendosjet e formatit, SBR
+Format_Settings_Sign;Vendosjet e formatit, Sign
+Format_Settings_SliceCount;
+Format_Settings_Wrapping;
+Format_Tier;
+Format_Url;Lidhësi në rrjetë i formatit
+Format_Version;Versioni i formatit
+FormatDefinition;
+FpaManufacturer;
+FpaPass;
+FpaVersion;
+FrameCount;Numri i kuadrove
+FrameCount_Source;
+FrameRate;Raporti i kuadrit
+FrameRate_Den;
+FrameRate_Maximum;Raporti maksimal i kuadrit
+FrameRate_Minimum;Raporti minimal i kuadrit
+FrameRate_Mode;Mënyra e raportit të kuadrit
+FrameRate_Mode_CFR;Konstant
+FrameRate_Mode_VFR;Variabël
+FrameRate_Nominal;Raporti nominal i kuadrit
+FrameRate_Num;
+FrameRate_Original;Raporti origjinal i kuadrit
+FrameRate_Real;
+FullParsing;
+FullParsingTips;
+Gallery;
+General;Përgjithësi
+GeneralCompliance;
+Genre;Zhanri
+Genre_000;Blues
+Genre_001;Classic Rock
+Genre_002;Country
+Genre_003;Dance
+Genre_004;Disco
+Genre_005;Funk
+Genre_006;Grunge
+Genre_007;Hip-Hop
+Genre_008;Jazz
+Genre_009;Metal
+Genre_010;New Age
+Genre_011;Oldies
+Genre_012;Other
+Genre_013;Pop
+Genre_014;R&B
+Genre_015;Rap
+Genre_016;Reggae
+Genre_017;Rock
+Genre_018;Techno
+Genre_019;Industrial
+Genre_020;Alternative
+Genre_021;Ska
+Genre_022;Death Metal
+Genre_023;Pranks
+Genre_024;Soundtrack
+Genre_025;Euro-Techno
+Genre_026;Ambient
+Genre_027;Trip-Hop
+Genre_028;Vocal
+Genre_029;Jazz+Funk
+Genre_030;Fusion
+Genre_031;Trance
+Genre_032;Classical
+Genre_033;Instrumental
+Genre_034;Acid
+Genre_035;House
+Genre_036;Game
+Genre_037;Sound Clip
+Genre_038;Gospel
+Genre_039;Noise
+Genre_040;AlternRock
+Genre_041;Bass
+Genre_042;Soul
+Genre_043;Punk
+Genre_044;Space
+Genre_045;Meditative
+Genre_046;Instrumental Pop
+Genre_047;Instrumental Rock
+Genre_048;Ethnic
+Genre_049;Gothic
+Genre_050;Darkwave
+Genre_051;Techno-Industrial
+Genre_052;Electronic
+Genre_053;Pop-Folk
+Genre_054;Eurodance
+Genre_055;Dream
+Genre_056;Southern Rock
+Genre_057;Comedy
+Genre_058;Cult
+Genre_059;Gangsta
+Genre_060;Top 40
+Genre_061;Christian Rap
+Genre_062;Pop/Funk
+Genre_063;Jungle
+Genre_064;Native American
+Genre_065;Cabaret
+Genre_066;New Wave
+Genre_067;Psychadelic
+Genre_068;Rave
+Genre_069;Showtunes
+Genre_070;Trailer
+Genre_071;Lo-Fi
+Genre_072;Tribal
+Genre_073;Acid Punk
+Genre_074;Acid Jazz
+Genre_075;Polka
+Genre_076;Retro
+Genre_077;Musical
+Genre_078;Rock & Roll
+Genre_079;Hard Rock
+Genre_080;Folk
+Genre_081;Folk-Rock
+Genre_082;National Folk
+Genre_083;Swing
+Genre_084;Fast Fusion
+Genre_085;Bebob
+Genre_086;Latin
+Genre_087;Revival
+Genre_088;Celtic
+Genre_089;Bluegrass
+Genre_090;Avantgarde
+Genre_091;Gothic Rock
+Genre_092;Progressive Rock
+Genre_093;Psychedelic Rock
+Genre_094;Symphonic Rock
+Genre_095;Slow Rock
+Genre_096;Big Band
+Genre_097;Chorus
+Genre_098;Easy Listening
+Genre_099;Acoustic
+Genre_100;Humour
+Genre_101;Speech
+Genre_102;Chanson
+Genre_103;Opera
+Genre_104;Chamber Music
+Genre_105;Sonata
+Genre_106;Symphony
+Genre_107;Booty Bass
+Genre_108;Primus
+Genre_109;Porn Groove
+Genre_110;Satire
+Genre_111;Slow Jam
+Genre_112;Club
+Genre_113;Tango
+Genre_114;Samba
+Genre_115;Folklore
+Genre_116;Ballad
+Genre_117;Power Ballad
+Genre_118;Rhythmic Soul
+Genre_119;Freestyle
+Genre_120;Duet
+Genre_121;Punk Rock
+Genre_122;Drum Solo
+Genre_123;A capella
+Genre_124;Euro-House
+Genre_125;Dance Hall
+Genre_126;Goa
+Genre_127;Drum & Bass
+Genre_128;Club-House
+Genre_129;Hardcore
+Genre_130;Terror
+Genre_131;Indie
+Genre_132;Britpop
+Genre_133;Negerpunk
+Genre_134;Polsk Punk
+Genre_135;Beat
+Genre_136;Christian Gangsta Rap
+Genre_137;Heavy Metal
+Genre_138;Black Metal
+Genre_139;Crossover
+Genre_140;Contemporary Christian
+Genre_141;Christian Rock
+Genre_142;Merengue
+Genre_143;Salsa
+Genre_144;Trash Metal
+Genre_145;Anime
+Genre_146;JPop
+Genre_147;Synthpop
+Genre_148;
+Genre_149;
+Genre_150;
+Genre_151;
+Genre_152;
+Genre_153;
+Genre_154;
+Genre_155;
+Genre_156;
+Genre_157;
+Genre_158;
+Genre_159;
+Genre_160;
+Genre_161;
+Genre_162;
+Genre_163;
+Genre_164;
+Genre_165;
+Genre_166;
+Genre_167;
+Genre_168;
+Genre_169;
+Genre_170;
+Genre_171;
+Genre_172;
+Genre_173;
+Genre_174;
+Genre_175;
+Genre_176;
+Genre_177;
+Genre_178;
+Genre_179;
+Genre_180;
+Genre_181;
+Genre_182;
+Genre_183;
+Genre_184;
+Genre_185;
+Genre_186;
+Genre_187;
+Genre_188;
+Genre_189;
+Genre_190;
+Genre_191;
+Go to WebSite;Shko te trualli në rrjetë
+Gop_OpenClosed;
+Gop_OpenClosed_Closed;
+Gop_OpenClosed_FirstFrame;
+Gop_OpenClosed_Open;
+Graph;
+Group;
+Grouping;
+GroupPreset;
+h; h
+HDR_Format;
+Header file;Krijo një kokë skede
+Height;Lartësia
+Height_CleanAperture;
+Height_Original;
+Help;Ndihmë
+HideOthers;
+Hint;Këshillë
+HomeTheaterAvr;
+How many audio streams?;Sa rryma të audios?
+How many chapters streams?;Sa rryma të kapitujve?
+How many text streams?;Sa rryma të tekstit?
+How many video streams?;Sa rryma të videos?
+HTML;HTML
+ID;ID
+IdentClockStart;
+IFrameInterval;
+Image stream(s);Rrymat e imazhit
+Image;Imazh
+Image_Codec_List;Kodekët e imazhit
+ImageCount;Numri i rrymave të imazhit
+ImmersiveStereo;
+Info;Info
+Instruments;Instrumenti
+IntegratedLoudness;
+IntegratedLoudness_Level;
+IntegratedLoudness_Speech;
+InteractivityEnabled;
+Interlaced_BFF;Më Parë Fusha Poshtë
+Interlaced_Interlaced;Gërshetohet
+Interlaced_PPF;Progresiv
+Interlaced_Progressive;Progresiv
+Interlaced_TFF;Më Parë Fusha Sipër
+Interlacement;Gërshetimi
+Interleave_Duration;Gërshetimi, kohëzgjatja
+Interleave_Preload;Gërshetimi, kohëzgjatja para hapjes
+Interleave_VideoFrames;Gërshetimi, kohëzgjatja
+Interleaved;
+InternetMediaType;
+IRCA;IRCA
+ISBN;ISBN
+ISRC;ISRC
+IsStreamable;
+Keywords;Fjalët kyçe
+Known codecs;Kodekët e njohur
+Known formats;Formatet e njohura
+Known parameters;Parametrat e njohur
+Label;Etiketa
+Language;Gjuha
+Language_aa;Afar
+Language_ab;Abkhazian
+Language_ae;Avestan
+Language_af;Afrikaans
+Language_ak;Akan
+Language_am;Amharic
+Language_an;Aragonese
+Language_ar;Arabisht
+Language_as;Assamese
+Language_av;Avaric
+Language_ay;Aymara
+Language_az;Azerbaijani
+Language_ba;Bashkir
+Language_be;Belarusian
+Language_bg;Bullgarisht
+Language_bh;Bihari
+Language_bi;Bislama
+Language_bm;Bambara
+Language_bn;Bengali
+Language_bo;Tibetan
+Language_br;Breton
+Language_bs;Bosnian
+Language_ca;Katalanisht
+Language_ce;Chechen
+Language_ch;Chamorro
+Language_cmn;
+Language_co;Corsican
+Language_cr;Cree
+Language_cs;Çekisht
+Language_cu;Sllavisht
+Language_cv;Chuvash
+Language_cy;Welsh
+Language_da;Danisht
+Language_de;Gjermanisht
+Language_dv;Divehi
+Language_dz;Dzongkha
+Language_ee;Ewe
+Language_el;Greqisht
+Language_en;Anglisht
+Language_en-gb;Anglisht (Britani e Madhe)
+Language_en-us;Anglisht (Shtetet e Bashkuara)
+Language_eo;Esperanto
+Language_es;Spanjisht
+Language_es-419;
+Language_et;Estonian
+Language_eu;Basque
+Language_fa;Persisht
+Language_ff;Fulah
+Language_fi;Finlandisht
+Language_fil;
+Language_fj;Fijian
+Language_fo;Faroese
+Language_fr;Frëngjisht
+Language_fy;Frisian
+Language_ga;Irlandisht
+Language_gd;Gaelic
+Language_gl;Galician
+Language_gn;Guarani
+Language_gu;Gujarati
+Language_gv;Manx
+Language_ha;Hausa
+Language_he;Hebraisht
+Language_hi;Hindi
+Language_ho;Hiri Motu
+Language_hr;Croatian
+Language_ht;Haitian
+Language_hu;Hungarisht
+Language_hy;Armenisht
+Language_hy-az;
+Language_hz;Herero
+Language_ia;Auxiliary Language Association
+Language_id;Indonesian
+Language_ie;Interlingue
+Language_ig;Igbo
+Language_ii;Sichuan Yi
+Language_ik;Inupiaq
+Language_Info;Infot e gjuhës
+Language_io;Ido
+Language_is;Islandisht
+Language_it;Italisht
+Language_iu;Inuktitut
+Language_ja;Japonisht
+Language_jv;Javanese
+Language_ka;Georgian
+Language_kg;Kongo
+Language_ki;Kikuyu
+Language_kj;Kuanyama
+Language_kk;Kazakh
+Language_kl;Kalaallisut
+Language_km;Khmer
+Language_kn;Kannada
+Language_ko;Korean
+Language_kr;Kanuri
+Language_ks;Kashmiri
+Language_ku;Kurdish
+Language_kv;Komi
+Language_kw;Cornish
+Language_ky;Kirghiz
+Language_la;Latinisht
+Language_lb;Luxembourgish
+Language_lg;Ganda
+Language_li;Limburgish
+Language_ln;Lingala
+Language_lo;Lao
+Language_lt;Lituanisht
+Language_lu;Luba-Katanga
+Language_lv;Letonisht
+Language_mg;Malagasy
+Language_mh;Marshallese
+Language_mi;Maori
+Language_mk;Maqedonisht
+Language_ml;Malayalam
+Language_mn;Mongolian
+Language_mn-cn;
+Language_mo;Moldavisht
+Language_More;Gjuha, më tepër info
+Language_mr;Marathi
+Language_ms;Malay
+Language_ms-bn;
+Language_mt;Maltese
+Language_mul;Shumë gjuhë
+Language_my;Burmese
+Language_na;Nauru
+Language_nb;Norwegian Bokmal
+Language_nd;Ndebele
+Language_ne;Nepali
+Language_ng;Ndonga
+Language_nl;Holandisht
+Language_nl-be;
+Language_nn;Norwegian Nynorsk
+Language_no;Norvegjisht
+Language_nr;Ndebele
+Language_nv;Navaho
+Language_ny;Nyanja
+Language_oc;Occitan
+Language_oj;Ojibwa
+Language_om;Oromo
+Language_or;Oriya
+Language_os;Ossetic
+Language_pa;Panjabi
+Language_pi;Pali
+Language_pl;Polonisht
+Language_ps;Pushto
+Language_pt;Portugalisht
+Language_pt-br;Portugalisht (Brazil)
+Language_qu;Quechua
+Language_rm;Raeto-Romance
+Language_rn;Rundi
+Language_ro;Rumanisht
+Language_ru;Rusisht
+Language_rw;Kinyarwanda
+Language_sa;Sanskritisht
+Language_sc;Sardinian
+Language_sd;Sindhi
+Language_se;Northern Sami
+Language_sg;Sango
+Language_si;Sinhala
+Language_sk;Sllovakisht
+Language_sl;Sllovenisht
+Language_sm;Samoan
+Language_smi;
+Language_sn;Shona
+Language_so;Somalisht
+Language_sq;Shqip
+Language_sr;Serbisht
+Language_ss;Swati
+Language_st;Sotho
+Language_su;Sundanisht
+Language_sv;Suedisht
+Language_sw;Swahili
+Language_ta;Tamil
+Language_te;Telugu
+Language_tg;Tajik
+Language_th;Thai
+Language_ti;Tigrinya
+Language_tk;Turkmen
+Language_tl;Tagalog
+Language_tn;Tswana
+Language_to;Tonga
+Language_tr;Turqisht
+Language_ts;Tsonga
+Language_tt;Tatar
+Language_tw;Twi
+Language_ty;Tahitian
+Language_ug;Uighur
+Language_uk;Ukrainian
+Language_ur;Urdu
+Language_uz;Uzbek
+Language_ve;Venda
+Language_vi;Vietnamisht
+Language_vo;Volapuk
+Language_wa;Walloon
+Language_wo;Wolof
+Language_xh;Xhosa
+Language_yi;Yiddish
+Language_yo;Yoruba
+Language_yue;
+Language_za;Zhuang
+Language_zh;Kinezisht
+Language_zh-cmn;
+Language_zh-CN;
+Language_zh-cn;Kinezisht (Kinë)
+Language_zh-Hans;
+Language_zh-Hant;
+Language_zh-TW;
+Language_zh-tw;Kinezisht (Tajvan)
+Language_zh-yue;
+Language_zu;Zulu
+LanguageChanges;
+Languages;
+LawRating;Vlerësimi ligjor
+LCCN;LCCN
+LegacyStreamDisplay;
+LfeAttenuationKnown;
+LfeMixGain;
+lfeon;
+Library;Libraria e muksimit
+Lifetime_Subscribe_Button;
+Lightness;Dritësia
+Lines_Count;
+Lines_MaxCountPerEvent;
+LineUpStart;
+LinkedTo_Bed_Pos;
+LinkedTo_ChannelFormat_Pos;
+LinkedTo_ComplementaryObject_Pos;
+LinkedTo_Content_Pos;
+LinkedTo_Group_Pos;
+LinkedTo_Object_Pos;
+LinkedTo_PackFormat_Pos;
+LinkedTo_SignalGroup_Pos;
+LinkedTo_StreamFormat_Pos;
+LinkedTo_Substream_Pos;
+LinkedTo_TrackFormat_Pos;
+LinkedTo_TrackUID_Pos;
+List;Lista
+LongTermLoudness;
+LoRoCenterMixGain;
+LoRoSurroundMixGain;
+Loudness_Anchor;
+Loudness_Anchor_Album;
+Loudness_Count;
+Loudness_Count_Album;
+Loudness_MaximumMomentary;
+Loudness_MaximumMomentary_Album;
+Loudness_MaximumOfRange;
+Loudness_MaximumOfRange_Album;
+Loudness_MaximumShortTerm;
+Loudness_MaximumShortTerm_Album;
+Loudness_ProductionMixingLevel;
+Loudness_ProductionMixingLevel_Album;
+Loudness_Program;
+Loudness_Program_Album;
+Loudness_Range;
+Loudness_Range_Album;
+Loudness_RoomType;
+Loudness_RoomType_Album;
+LtRtCenterMixGain;
+LtRtSurroundMixGain;
+Lyricist;Shkrimtari
+Lyrics;Fjalët
+MacCreatedBy;
+Mastered_Date;Data e masterizimit
+MasteredBy;Masterizuar nga
+MasteringDisplay_ColorPrimaries;
+MasteringDisplay_Luminance;
+Matrix_Channel(s);
+Matrix_ChannelPositions;
+matrix_coefficients;Koeficientët e matricës
+matrix_coefficients_Source;
+Matrix_Format;
+MaxCLL;
+MaxFALL;
+MaxGain;
+MaximumMomentaryLoudness;
+MaxTruePeak;
+MD5;
+MD5_Unencoded;
+MediaInfo_About;Jep informacione shumë të detajuara për\r\nskedat multimediatike:\r\nMatroska, OGG (përfshirë OGM)\r\nMPEG1 (përfshirë VCD)\r\nMPEG2 (përfshirë DVD dhe SVCD)\r\nMPEG4 (përfshirë Itunes M4A)\r\nQuicktime\r\nRealMedia\r\nWindowsMedia (përfshirë WMV, WMA)\r\nMicrosoft RIFF (përfshirë AVI, WAV)\r\nFormate zanore (AC3, DTS, AAC, AU, AIFF...)
+MediaInfo_About_About;
+MediaInfo_WebSite;
+Menu stream(s);Rrymat e menysë
+Menu;Meny
+Menu_Codec_List;Kodekët e menysë
+Menu_Hint;Mundësi të tjera
+Menu_No;Pa meny
+MenuCount;Numri i rrymave të menysë
+MenuID;ID i menysë
+Metadata_Format;
+Metadata_Format_Type;
+Metadata_MuxingMode;
+Minimize;
+MixType;
+mn; min
+Mood;Gjendja shpirtërore
+More;Akoma
+Movie;Emri i filmit
+ms; ms
+MSDI;MSDI
+MultipleStream;
+MultiView_Count;
+MusicBy;Muzikë nga
+MuxingMode;Mënyra e muksimit
+MuxingMode_MoreInfo;Mënyra e muksimit, më shumë info
+MuxingMode_PackedBitstream;Rryma e bitit e paketuar
+Name;Emri
+Nationality;Kombësia
+NetworkName;Emri i rrjetit
+New;E re
+Newest version;Verifiko versionin më të ri (nevojitet lidhje me internet)
+NewVersion_Menu;Ka dalë një version i ri
+NewVersion_Question_Content;Ka dalë një version i ri (v%Version%), do e shkarkoni?
+NewVersion_Question_Title;Është lëshuar një version i ri!
+No;Jo
+Not yet;Ende jo
+NumberOfChannelFormats;
+NumberOfContents;
+NumberOfDynamicObjects;
+NumberOfElementaryStreams;
+NumberOfObjects;
+NumberOfPackFormats;
+NumberOfPresentations;
+NumberOfProgrammes;
+NumberOfStreamFormats;
+NumberOfSubstreams;
+NumberOfTrackFormats;
+NumberOfTrackUIDs;
+NumColors;Numri i ngjyrave
+Object;
+ObjectCount;
+OK;OK
+One output file per input file;Një skedë output për skedë input
+OnlyDiffer;
+OnlyIdentical;
+Open;Hap
+OpenCaptionsLanguage;
+OpenCaptionsPresent;
+OpenCaptionsType;
+OpenFile;
+OpenFileError;
+OpenRecent;
+Options;Mundësi
+Options_Hint;Pëlqime
+Original;Origjinal
+OriginalNetworkName;Emri origjinal i rrjetit
+OriginalSourceForm;Forma origjinale e burimit
+OriginalSourceMedium;Mediumi origjinal i burimit
+OriginalSourceMedium_ID;
+Originator;
+Other;Tjetër
+OtherIdentifier;
+OtherIdentifierType;
+OtherViews;
+Output format;Formati i outputit
+Output;Outputi
+OverallBitRate;Raporti i plotë i bitit
+OverallBitRate_Maximum;Raporti maksimal i plotë i bitit
+OverallBitRate_Minimum;Raporti minimal i plotë i bitit
+OverallBitRate_Mode;Mënyra e raportit të plotë të bitit
+OverallBitRate_Nominal;Raporti nominal i plotë i bitit
+OverallBitRate_Precision_Max;
+OverallBitRate_Precision_Min;
+PackageName;
+PackFormat;
+Part;Pjesa
+Part_Count;Numri total
+PartialParsing;
+PartNumber;
+PartTotal;
+Performer;Interpretuesi
+Period;Periudha
+Phase90FilterInfo;
+Phase90FilterInfo2ch;
+Phone;Telefoni
+PictureRatio;
+PixelAspectRatio;Raporti i aspektit të pikselit
+PixelAspectRatio_CleanAperture;
+PixelAspectRatio_Original;Raporti origjinal i aspektit të pikselit
+PlayCounter;Njehsori i lojës
+Played_Count;Herët e Luajtura
+Played_First_Date;Luajtur në Fillim
+Played_Last_Date;Luajtur së Fundmi
+PlayTime;Koha e lojës
+PodcastCategory;
+PortableHeadphones;
+PortableSpeakers;
+Position;Pozicioni
+Position_Cartesian;
+Position_Polar;
+Position_Total;Totali
+Preferences;Pëlqime
+PreferredDownmix;
+Premium;
+Premium_Feature;
+Premium_Summary;
+PreselectionLabel;
+Presentation;
+PresentationConfig;
+PresentationConfig_ContentClassifier;
+PresentationID;
+PresentationLevel;
+PreviousDownmixType5ch;
+PreviousMixType2ch;
+PrimaryAudioLanguage;
+Producer;Producenti
+ProductionDesigner;Modeluesi i produksionit
+ProductionNumber;
+ProductionStudio;Studio e produksionit
+ProductPlacement;
+Program name;
+Programme;
+ProgrammeHasText;
+ProgrammeTextLanguage;
+ProgrammeTitle;
+Publisher;Publikuesi
+Purchased_Date;Data e blerjes
+PurchaseInformation;
+Quote character;Citimi i personazhit
+RadioStation;Stacioni i radios
+Rating;Vlerësimi
+RealtimeLoudnessCorrected;
+Recorded_Date;Data e regjistrimit
+Recorded_Location;Vendndodhja e regjistrimit
+Reel;
+Released_Date;Data e lëshimit
+RemixedBy;Miksuar nga
+RenderMode;
+Renew;
+ReplayGain_Gain;Replay gain
+ReplayGain_Peak;Piku i replay gain
+Report;
+ReportBy;
+Resolution;Rezolucioni
+RestoreLifetimeSubscription;
+Retry;
+s;s
+Sampled_Height;
+Sampled_Width;
+SamplePeakLevel;
+SamplePeakLevel_Album;
+SamplesPerFrame;
+SamplingCount;
+SamplingCount_Source;
+SamplingRate;Raporti i shëmbëllimit
+Save;Ruaj
+ScanOrder;Rendi i skanimit
+ScanOrder_Original;
+ScanOrder_Stored;
+ScanOrder_StoredDisplayedInverted;
+ScanOrder_StoreMethod;
+ScanType;Lloji i skanimit
+ScanType_Original;
+ScanType_StoreMethod;
+ScreenplayBy;Vënë në ekran nga
+ScreenToCenter;
+ScreenToFront;
+Season;Sezoni
+SecondaryAudioLanguage;
+see below;shih poshtë
+Select your directory;
+SelectAll;
+Send HeaderFile;Ju lutem dërgojeni këtu Kokën e skedës : http://sourceforge.net/projects/mediainfo/ (Seksioni i problemeve)
+Separator_Columns;ndarësi i kolonave
+Separator_Lines;ndarësi i rreshtave
+SeriesTitle;
+ServiceChannel;Numri i kanalit të shërbimit
+ServiceKind;
+ServiceName;Emri i shërbimit
+ServiceProvider;Siguruesi i shërbimit
+Services;
+ServiceType;Lloji i shërbimit
+Set;Vendos
+Set_Count;Vendos numërimin
+Setup;Sistemimi
+Sharpness;Mprehtësia
+Sheet (Complete);Fletë (Plot)
+Sheet;Fletë
+Shell extension, folder;Edhe për dosjet
+Shell extension, separate instance;
+Shell extension;Shto në bazë (kur klikon në Explorer me të djathtën do jepet mundësia Media Info)
+Shell InfoTip;Këshilla Informuese në bazë (në Explorer, kur çon mausin mbi skedë do shfaqen info)
+ShimName;
+ShimVersion;
+Show menu;Trego menynë
+Show toolbar;Trego brezin e mjeteve
+Show;
+ShowAll;
+ShowMore;
+SignalGroup;
+SigningPresent;
+SignLanguage;
+Sort;Radhitur nga
+SoundCategory;
+SoundEngineer;Inxhinieri i zërit
+Source;
+Source_Duration;
+Source_FrameCount;
+Source_SamplingCount;
+Source_StreamSize;
+Source_StreamSize_Encoded;
+SpokenSubtitles;
+Standard;Standardi
+Stored_Height;
+StoreMethod_InterleavedFields;
+StoreMethod_SeparatedFields;
+StoreMethod_SeparatedFields_1;
+StoreMethod_SeparatedFields_2;
+Stream;Rryma
+Stream_MoreInfo;Më shumë info rreth rrymës
+StreamCount;Numri i rrymave si ky lloj
+StreamFormat;
+StreamID;ID i rrymës
+streamIdentifier;
+StreamKind;Lloji i rrymës
+StreamKindID;Identifikuesi i rrymës
+StreamKindPos;Identifikuesi i rrymës
+StreamOrder;
+Streams;
+StreamSize;Masa e rrymës
+StreamSize_Demuxed;
+StreamSize_Encoded;
+StreamSize_Proportion;Proporcioni i rrymës
+Subject;Subjekti
+Subscribe;
+Subscribe_Button;
+Subscribe_Failed;
+Subscribe_Manage;
+Subscribe_Premium;
+Subscribe_Renew;
+Subscribe_Renew_Price;
+Subscribe_Unaviable;
+Subscribe_Waiting;
+Subscription_Active;
+Subscription_Android;
+Subscription_Ended;
+Subscription_Expired;
+Subscription_Lifetime;
+Subscription_Thanks;
+Substream;
+SubTrack;NënKolona
+SubtstreamIdChannel;
+Summary;Përmbledhja
+Supported formats;Format e përkrahura
+Supported?;Përkrahet?
+SupportUs;
+SupportUs2;
+surmixlev;
+SurroundAttenuationKnown;
+SwitchGroup;
+Synopsis;Konspekti
+SystemId;Id
+Tagged_Application;Aplikimi i etiketimit
+Tagged_Date;Data e etiketimit
+TargetDeviceConfig;
+Technician;Tekniku
+TermsOfUse;Detyrimet e përdorimit
+TertiaryAudioLanguage;
+TestContinuousFileNames;
+Text - Custom;Tekst - Me porosi
+Text (HTML);Tekst (HTML)
+Text stream(s);Rrymat e tekstit
+Text streams;Rrymat e tekstit
+Text;Tekst
+Text_Codec_List;Kodekët e tekstit
+Text_Format_List;
+Text_Format_WithHint_List;
+Text_Language_List;
+Text_No;Pa tekst
+Text1;Rryma e parë tekst
+Text2;Rryma e dytë tekst
+Text3;Rryma e tretë tekst
+TextCount;Numri i rrymave të tekstit
+TextlessElementsExist;
+ThanksTo;Falënderime për
+Thousands separator;Ndarësi i mijësheve
+TimeCode;
+TimeCode_FirstFrame;
+TimeCode_LastFrame;
+TimeCode_MaxFrameNumber;
+TimeCode_MaxFrameNumber_Theory;
+TimeCode_Settings;
+TimeCode_Source;
+TimeCode_Stripped;
+TimeStamp;
+TimeZone;Ora lokale
+Title;Titulli
+Title_More;Titulli, më tepër info
+Top4ToTop2;
+TopBackToFront;
+TopBackToSide;
+TopFrontToBack;
+TopFrontToFront;
+TopFrontToSide;
+Total;Totali
+TotalNumberOfParts;
+TotalProgrammeDuration;
+Track;Emri i kolonës
+Track_Count;Numri i kolonës
+TrackFormat;
+TrackIndex;
+TrackUID;
+transfer_characteristics;Karakteristikat e transferimit
+transfer_characteristics_Source;
+Translate_Reports;
+Translator;Përktheu
+Transport;
+Tree & Text;Pemë & Tekst
+Tree;Pemë
+Trim_Center;
+Trim_Height;
+Trim_Surround;
+TrimMode;
+TrimMode0i;
+TrimMode1i;
+TrimMode2i;
+TrimMode3i;
+TrimMode4i;
+TrimMode5i;
+TrimMode6i;
+TrimMode7i;
+TrimMode8i;
+TruePeakLevel;
+TruePeakLevel_Album;
+Type;
+Type_Composer;
+Type_Conductor;
+Type_Cover;
+Type_Cover_Back;
+Type_Cover_Media;
+Type_DuringPerformance;
+Type_DuringRecording;
+Type_FileIcon;
+Type_FileIcon_32x32;
+Type_Illustration;
+Type_LeafletPage;
+Type_Lyricist;
+Type_Performer;
+Type_Performer_Lead;
+Type_PerformerLogo;
+Type_Picture;
+Type_PublisherLogo;
+Type_RecordingLocation;
+Type_ScreenCapture;
+Type_Thumbnail;
+TypeDefinition;
+UniqueID;
+UniversalAdID;
+UniversalAdID_Registry;
+UniversalAdID_Value;
+Unknown;Nuk e di
+Url;URL
+Value;
+Video stream(s);Rryma(t) e videos
+Video;Video
+Video_Codec_List;Kodekët e videos
+Video_Delay;Vonesa e videos
+Video_Format_List;
+Video_Format_WithHint_List;
+Video_Language_List;
+Video_No;Pa video
+Video0_Delay;Vonesa e videos0
+Video1;Rryma e parë video
+Video2;
+Video3;
+VideoComments;
+VideoCount;Numri i rrymave të videos
+View;Pamje
+View_Hint;Ndrysho mënyrën si paraqitet informacioni
+Views;
+Warning : more streams in the files;Kujdes : në skeda ka më shumë rryma
+Web;Rrjeta
+WebSite;
+WebSite_Audio;Shko te trualli në rrjetë i kodekut për audio
+WebSite_Audio_More;Shko te trualli në rrjetë (%Url%) për të gjetur kodekun për audio
+WebSite_General;Shko te trualli në rrjetë i luajtësit për këtë skedë
+WebSite_General_More;Shko te trualli në rrjetë i luajtësit për këtë skedë
+WebSite_Text;Shko te trualli në rrjetë i kodekut për tekst
+WebSite_Text_More;Shko te trualli në rrjetë (%Url%) për të gjetur kodekun për tekst
+WebSite_Url;http://MediaArea.net/MediaInfo
+WebSite_Video;Shko te trualli në rrjetë i kodekut për video
+WebSite_Video_More;Shko te trualli në rrjetë (%Url%) për të gjetur kodekun për video
+Width;Gjerësia
+Width_CleanAperture;
+Width_Original;
+Window;
+WriteMe;Shkruaji autorit
+WriteToTranslator;Shkruaji përkthyesit
+Written_Date;Data e shkrimit
+Written_Location;Vendi i shkrimit
+WrittenBy;Shkruar nga
+Yes;Po
+Your system;Sistemi yt
+Your translation;
+Zoom;
+ZZ_Automatic_Percent;60
+ZZ_AutomaticLanguage_Percent;64
