@@ -1,0 +1,24 @@
+﻿[
+  {
+    Type: General,
+    Title: Генерално,
+    Chips: [
+      JPEG,
+      1.08КиБ
+    ],
+    Properties: {
+      Count: 3
+    }
+  },
+  {
+    Type: Image,
+    Title: Изображение,
+    Chips: [
+      JPEG,
+      5123x5123
+    ],
+    Properties: {
+      Count: 8
+    }
+  }
+]

@@ -1,0 +1,23 @@
+﻿[
+  {
+    Type: General,
+    Title: 일반,
+    Chips: [
+      JPEG
+    ],
+    Properties: {
+      Count: 3
+    }
+  },
+  {
+    Type: Image,
+    Title: 이미지,
+    Chips: [
+      JPEG,
+      512x512
+    ],
+    Properties: {
+      Count: 8
+    }
+  }
+]

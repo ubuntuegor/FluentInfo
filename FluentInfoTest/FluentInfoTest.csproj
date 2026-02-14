@@ -141,6 +141,9 @@
         <None Update="Assets\langs\zh-TW.csv">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
+        <None Update="Assets\media\test.jpg">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
         <None Update="Assets\media\test.mkv">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>

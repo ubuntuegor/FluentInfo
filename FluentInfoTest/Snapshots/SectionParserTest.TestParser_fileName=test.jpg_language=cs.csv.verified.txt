@@ -1,0 +1,24 @@
+﻿[
+  {
+    Type: General,
+    Title: Hlavní,
+    Chips: [
+      JPEG,
+      1,08 KiB
+    ],
+    Properties: {
+      Count: 3
+    }
+  },
+  {
+    Type: Image,
+    Title: Obrázek,
+    Chips: [
+      JPEG,
+      512x512
+    ],
+    Properties: {
+      Count: 8
+    }
+  }
+]

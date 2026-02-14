@@ -1,0 +1,24 @@
+﻿[
+  {
+    Type: General,
+    Title: Général,
+    Chips: [
+      JPEG,
+      1,08 Kio
+    ],
+    Properties: {
+      Count: 3
+    }
+  },
+  {
+    Type: Image,
+    Title: Image,
+    Chips: [
+      JPEG,
+      512x512
+    ],
+    Properties: {
+      Count: 8
+    }
+  }
+]

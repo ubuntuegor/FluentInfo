@@ -1,0 +1,24 @@
+﻿[
+  {
+    Type: General,
+    Title: Агульная,
+    Chips: [
+      JPEG,
+      1,08 КіБ
+    ],
+    Properties: {
+      Count: 3
+    }
+  },
+  {
+    Type: Image,
+    Title: Відарысы,
+    Chips: [
+      JPEG,
+      512x512
+    ],
+    Properties: {
+      Count: 8
+    }
+  }
+]

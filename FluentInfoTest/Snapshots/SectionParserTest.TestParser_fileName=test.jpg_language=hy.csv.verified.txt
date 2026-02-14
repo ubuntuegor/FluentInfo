@@ -1,0 +1,24 @@
+﻿[
+  {
+    Type: General,
+    Title: Ընդհանուր,
+    Chips: [
+      JPEG,
+      1,08 Կբայթ
+    ],
+    Properties: {
+      Count: 3
+    }
+  },
+  {
+    Type: Image,
+    Title: Պատկերը,
+    Chips: [
+      JPEG,
+      512x512
+    ],
+    Properties: {
+      Count: 8
+    }
+  }
+]
