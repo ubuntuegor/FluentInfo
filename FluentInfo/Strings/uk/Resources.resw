@@ -1061,6 +1061,7 @@ Language_lv;Латиська
 Language_mg;Малагасійська
 Language_mh;Маршальська
 Language_mi;Маорі
+Language_mis;
 Language_mk;Македонська
 Language_ml;Малаялам
 Language_mn;Монгольська
@@ -1137,6 +1138,7 @@ Language_tw;Чві
 Language_ty;Таїтянська
 Language_ug;Уйгурська
 Language_uk;Українська
+Language_und;
 Language_ur;Урду
 Language_uz;Узбецька
 Language_ve;Вендійська
@@ -1159,6 +1161,7 @@ Language_zh-TW;Китайська (Тайвань)
 Language_zh-tw;Китайська (Тайвань)
 Language_zh-yue;Кантонська
 Language_zu;Зулу
+Language_zxx;
 LanguageChanges;
 Languages;
 LawRating;Обмеження за віком

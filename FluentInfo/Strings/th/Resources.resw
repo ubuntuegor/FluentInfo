@@ -1061,6 +1061,7 @@ Language_lv;ลัตเวีย
 Language_mg;Malagasy
 Language_mh;มาร์แชล
 Language_mi;เมารี
+Language_mis;
 Language_mk;มาซิโดเนีย
 Language_ml;มะละยาลัม
 Language_mn;มองโกเลีย
@@ -1137,6 +1138,7 @@ Language_tw;Twi
 Language_ty;ตาฮิติ
 Language_ug;Uighur
 Language_uk;ยูเครน
+Language_und;
 Language_ur;อูรดู
 Language_uz;อุบเบกิสถาน
 Language_ve;เวนดา
@@ -1159,6 +1161,7 @@ Language_zh-TW;
 Language_zh-tw;
 Language_zh-yue;
 Language_zu;ซูลู
+Language_zxx;
 LanguageChanges;
 Languages;
 LawRating;Law rating

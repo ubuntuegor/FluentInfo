@@ -1061,6 +1061,7 @@ Language_lv;Латышский
 Language_mg;Малагасийский
 Language_mh;Маршалльский
 Language_mi;Маори
+Language_mis;
 Language_mk;Македонский
 Language_ml;Малаялам
 Language_mn;Монгольский
@@ -1137,6 +1138,7 @@ Language_tw;Чви
 Language_ty;Таитянский
 Language_ug;Уйгурский
 Language_uk;Украинский
+Language_und;
 Language_ur;Урду
 Language_uz;Узбекский
 Language_ve;Венда
@@ -1159,6 +1161,7 @@ Language_zh-TW;Китайский (Тайвань)
 Language_zh-tw;Китайский (Тайвань)
 Language_zh-yue;Кантонский
 Language_zu;Зулу
+Language_zxx;
 LanguageChanges;Смена языка произойдёт при следующем запуске программы
 Languages;Языки
 LawRating;Возрастное ограничение
@@ -1644,8 +1647,8 @@ Yes;Да
 Your system;Ваша система
 Your translation;Ваш перевод
 Zoom;Изменить масштаб
-ZZ_Automatic_Percent;98
-ZZ_AutomaticLanguage_Percent;98</value>
+ZZ_Automatic_Percent;99
+ZZ_AutomaticLanguage_Percent;99</value>
   </data>
   <data name="MenuBarItemEdit.Title" xml:space="preserve">
     <value>Правка</value>

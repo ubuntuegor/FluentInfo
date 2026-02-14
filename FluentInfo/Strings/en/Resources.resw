@@ -1026,7 +1026,7 @@ Language_hu;Hungarian
 Language_hy;Armenian
 Language_hy-az;Armenian (Azerbaijani)
 Language_hz;Herero
-Language_ia;Auxiliary Language Association
+Language_ia;Interlingua (International Auxiliary Language Association)
 Language_id;Indonesian
 Language_ie;Interlingue
 Language_ig;Igbo
@@ -1066,6 +1066,7 @@ Language_lv;Latvian
 Language_mg;Malagasy
 Language_mh;Marshallese
 Language_mi;Maori
+Language_mis;Uncoded languages
 Language_mk;Macedonian
 Language_ml;Malayalam
 Language_mn;Mongolian
@@ -1142,6 +1143,7 @@ Language_tw;Twi
 Language_ty;Tahitian
 Language_ug;Uighur
 Language_uk;Ukrainian
+Language_und;Undetermined
 Language_ur;Urdu
 Language_uz;Uzbek
 Language_ve;Venda
@@ -1164,6 +1166,7 @@ Language_zh-TW;Chinese (Taiwan)
 Language_zh-tw;Chinese (Taiwan)
 Language_zh-yue;Cantonese
 Language_zu;Zulu
+Language_zxx;No linguistic content or not applicable
 LanguageChanges;Changes take effect after application restart
 Languages;Languages
 LawRating;Law rating
@@ -1649,10 +1652,8 @@ Yes;Yes
 Your system;Your system
 Your translation;Your translation
 Zoom;Zoom
-ZZ_Automatic_Percent;98
-
-ZZ_AutomaticLanguage_Percent;98
-</value>
+ZZ_Automatic_Percent;99
+ZZ_AutomaticLanguage_Percent;99</value>
   </data>
   <data name="MenuBarItemEdit.Title" xml:space="preserve">
     <value>Edit</value>
