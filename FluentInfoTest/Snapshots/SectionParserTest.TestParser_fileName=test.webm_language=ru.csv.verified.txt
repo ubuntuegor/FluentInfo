@@ -1,0 +1,26 @@
+﻿[
+  {
+    Type: General,
+    Title: Общее,
+    Subtitle: Infekt - Projectile,
+    Chips: [
+      WebM,
+      65,6 КиБ,
+      5 с. 8 мс.
+    ],
+    Properties: {
+      Count: 10
+    }
+  },
+  {
+    Type: Audio,
+    Title: Аудио,
+    Chips: [
+      Opus,
+      1 канал
+    ],
+    Properties: {
+      Count: 12
+    }
+  }
+]

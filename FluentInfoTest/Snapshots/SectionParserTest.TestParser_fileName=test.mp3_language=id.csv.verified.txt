@@ -1,0 +1,27 @@
+﻿[
+  {
+    Type: General,
+    Title: Umum,
+    Subtitle: Rick Astley - Never Gonna Give You Up,
+    Chips: [
+      MPEG Audio,
+      41,8 KiB,
+      5 d 41 md
+    ],
+    Properties: {
+      Count: 9
+    }
+  },
+  {
+    Type: Audio,
+    Title: Audio,
+    Chips: [
+      MPEG Audio,
+      1 kanal,
+      64,0 kb/d
+    ],
+    Properties: {
+      Count: 11
+    }
+  }
+]

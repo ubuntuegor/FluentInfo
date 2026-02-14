@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: 一般,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35.2 KiB,
+      30秒 23毫秒
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: 視訊,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25.000 FPS,
+      4 108 b/s
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: 音訊,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      英語 (English),
+      2 聲道,
+      2 091 b/s
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: 文字,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      英語 (English)
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: 選單,
+    Chips: [
+      總和: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

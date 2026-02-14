@@ -1,0 +1,26 @@
+﻿[
+  {
+    Type: General,
+    Title: 全般,
+    Subtitle: Projectile,
+    Chips: [
+      WebM,
+      65.6 KiB,
+      5秒 8ミリ秒
+    ],
+    Properties: {
+      Count: 10
+    }
+  },
+  {
+    Type: Audio,
+    Title: 音声,
+    Chips: [
+      Opus,
+      1 チャンネル
+    ],
+    Properties: {
+      Count: 12
+    }
+  }
+]

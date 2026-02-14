@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: Hlavné parametre,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35,2 kiB,
+      30 sek. 23 ms
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: Video,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25,000 snímok/sek.,
+      4 108 b/s
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: Audio,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      Anglicky,
+      2 kanály,
+      2 091 b/s
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: Text,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      Anglicky
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: Menu,
+    Chips: [
+      Celkom: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

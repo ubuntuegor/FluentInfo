@@ -2,7 +2,7 @@
 
 public enum SectionType
 {
-    General,
+    General = 1,
     Video,
     Audio,
     Text,
@@ -14,7 +14,7 @@ public enum SectionType
 public record Section(
     SectionType Type,
     string? Title,
-    string? SubTitle,
+    string? Subtitle,
     List<string> Chips,
     OrderedProperties Properties
 );

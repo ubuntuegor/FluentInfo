@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: Umum,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35,2 KiB,
+      30 d 23 md
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: Video,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25,000 FPS,
+      4 108 b/d
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: Audio,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      Bhs. Inggris,
+      2 kanal,
+      2 091 b/d
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: Teks,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      Bhs. Inggris
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: Menu,
+    Chips: [
+      Total: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

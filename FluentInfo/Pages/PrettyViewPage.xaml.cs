@@ -23,7 +23,7 @@ public sealed partial class PrettyViewPage
         foreach (var section in sections)
         {
             var title = section.Title != null
-                ? new TitleControl(section.Type, section.Title, section.SubTitle, section.Chips)
+                ? new TitleControl(section.Type, section.Title, section.Subtitle, section.Chips)
                 : null;
             children.Add(new SectionControl(title, section.Properties));
         }

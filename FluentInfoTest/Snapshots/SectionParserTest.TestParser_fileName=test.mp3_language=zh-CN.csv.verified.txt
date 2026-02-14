@@ -1,0 +1,27 @@
+﻿[
+  {
+    Type: General,
+    Title: 概览,
+    Subtitle: Rick Astley - Never Gonna Give You Up,
+    Chips: [
+      MPEG Audio,
+      41.8 KiB,
+      5 秒 41 毫秒
+    ],
+    Properties: {
+      Count: 9
+    }
+  },
+  {
+    Type: Audio,
+    Title: 音频,
+    Chips: [
+      MPEG Audio,
+      1 声道,
+      64.0 kb/s
+    ],
+    Properties: {
+      Count: 11
+    }
+  }
+]

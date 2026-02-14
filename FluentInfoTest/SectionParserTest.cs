@@ -4,87 +4,49 @@ using MediaInfoLib;
 namespace FluentInfoTest;
 
 [TestClass]
-[DeploymentItem(@"Assets\langs\en.csv")]
-public class SectionParserTest
+[UsesVerify]
+public partial class SectionParserTest
 {
+    private const string MediaFolder = @"Assets\media";
+    private const string LanguagesFolder = @"Assets\langs";
+
     private readonly MediaInfo _mediaInfo = new();
+    private readonly MediaInfoTextParser _mediaInfoTextParser = new();
+    private readonly VerifySettings _settings = new();
 
-    private static MediaInfoTextParser GetParser()
+    public SectionParserTest()
     {
-        var parser = new MediaInfoTextParser();
-        parser.UpdateLanguage(File.ReadAllText("en.csv"));
-        return parser;
+        _settings.UseDirectory("Snapshots");
     }
 
-    private string? ReadMediaInfoForFile(string filePath)
+    public static IEnumerable<(string FilePath, string LanguagePath)> ParserTestData
     {
-        return _mediaInfo.Open(filePath) ? _mediaInfo.Inform() : null;
+        get
+        {
+            var files = Directory.GetFiles(MediaFolder).Select(Path.GetFileName);
+            var languages = Directory.GetFiles(LanguagesFolder).Select(Path.GetFileName);
+            return files.SelectMany(f => languages.Select(l => (f!, l!)));
+        }
     }
 
-    private static void CheckSection(Section section, SectionType type, string? subtitle, List<string> chips)
+    private List<Section> RunParser(string filePath, string languageText)
     {
-        Assert.AreEqual(type, section.Type);
-        Assert.AreEqual(subtitle, section.SubTitle);
-        CollectionAssert.AreEqual(chips, section.Chips,
-            "Expected chips: [" + string.Join(",", chips) + "], got chips: [" + string.Join(",", section.Chips) +
-            "]");
-    }
-
-    [TestMethod]
-    [DeploymentItem(@"Assets\test.mkv")]
-    public void TestMkvFile()
-    {
-        const string filePath = "test.mkv";
-        Assert.IsTrue(File.Exists(filePath));
-
-        var info = ReadMediaInfoForFile(filePath);
-        Assert.IsNotNull(info);
-        var sections = GetParser().Parse(info);
-
-        var generalSection = sections[0];
-        var videoSection = sections[1];
-        var audioSection = sections[2];
-        var textSection = sections[3];
-        var menuSection = sections[4];
-
-        CheckSection(generalSection, SectionType.General, "File title", ["Matroska", "35.2 KiB", "30 s 23 ms"]);
-        CheckSection(videoSection, SectionType.Video, "Video Title", ["AVC", "320x240", "25.000 FPS", "4 108 b/s"]);
-        CheckSection(audioSection, SectionType.Audio, "Audio Title",
-            ["AAC LC", "English", "2 channels", "2 091 b/s"]);
-        CheckSection(textSection, SectionType.Text, "Sub Title", ["UTF-8", "English"]);
-        CheckSection(menuSection, SectionType.Menu, null, ["Total: 2"]);
+        _mediaInfoTextParser.UpdateLanguage(languageText);
+        _mediaInfo.Option("Language", languageText);
+        _mediaInfo.Option("Inform", "Text");
+        var mediaInfoText = _mediaInfo.Open(filePath) ? _mediaInfo.Inform() : null;
+        return _mediaInfoTextParser.Parse(mediaInfoText!);
     }
 
     [TestMethod]
-    [DeploymentItem(@"Assets\test.mp3")]
-    public void TestMp3File()
+    [DynamicData(nameof(ParserTestData))]
+    public Task TestParser(string fileName, string language)
     {
-        const string filePath = "test.mp3";
-        Assert.IsTrue(File.Exists(filePath));
-
-        var info = ReadMediaInfoForFile(filePath);
-        Assert.IsNotNull(info);
-        var sections = GetParser().Parse(info);
-
-        var generalSection = sections[0];
-
-        CheckSection(generalSection, SectionType.General, "Rick Astley - Never Gonna Give You Up",
-            ["MPEG Audio", "41.8 KiB", "5 s 41 ms"]);
-    }
-
-    [TestMethod]
-    [DeploymentItem(@"Assets\test.webm")]
-    public void TestWebmAudioFile()
-    {
-        const string filePath = "test.webm";
-        Assert.IsTrue(File.Exists(filePath));
-
-        var info = ReadMediaInfoForFile(filePath);
-        Assert.IsNotNull(info);
-        var sections = GetParser().Parse(info);
-
-        var generalSection = sections[0];
-
-        CheckSection(generalSection, SectionType.General, "Infekt - Projectile", ["WebM", "65.6 KiB", "5 s 8 ms"]);
+        var filePath = Path.Combine(MediaFolder, fileName);
+        var languagePath = Path.Combine(LanguagesFolder, language);
+        Assert.IsTrue(File.Exists(filePath), $"Media file {filePath} does not exist");
+        Assert.IsTrue(File.Exists(languagePath), $"Language file {languagePath} does not exist");
+        var sections = RunParser(filePath, File.ReadAllText(languagePath));
+        return Verify(sections, _settings);
     }
 }

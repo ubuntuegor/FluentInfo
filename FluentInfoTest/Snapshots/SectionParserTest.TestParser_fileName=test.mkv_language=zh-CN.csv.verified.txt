@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: 概览,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35.2 KiB,
+      30 秒 23 毫秒
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: 视频,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25.000 FPS,
+      4 108 b/s
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: 音频,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      英语 (English),
+      2 声道,
+      2 091 b/s
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: 文本,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      英语 (English)
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: 菜单,
+    Chips: [
+      总计: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

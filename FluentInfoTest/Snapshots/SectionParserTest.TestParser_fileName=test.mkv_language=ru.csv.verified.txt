@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: Общее,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35,2 КиБ,
+      30 с. 23 мс.
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: Видео,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25,000 кадров/сек,
+      4 108 бит/сек
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: Аудио,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      Английский,
+      2 канала,
+      2 091 бит/сек
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: Текст,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      Английский
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: Меню,
+    Chips: [
+      Всего: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

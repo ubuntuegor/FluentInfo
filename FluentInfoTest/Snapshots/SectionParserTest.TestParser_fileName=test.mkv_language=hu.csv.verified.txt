@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: Általános,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35,2 KiB,
+      30 mp 23emp
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: Kép,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25,000 FPS,
+      4 108 b/s
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: Hang,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      angol,
+      2 csatorna,
+      2 091 b/s
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: Szöveg,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      angol
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: Menü,
+    Chips: [
+      Összesen: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

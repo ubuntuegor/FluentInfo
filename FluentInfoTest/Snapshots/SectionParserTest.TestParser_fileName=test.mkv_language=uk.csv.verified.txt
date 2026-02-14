@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: Загальна інформація,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35.2 КіБ,
+      30 сек. 23 мс
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: Відео,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25.000 кадрів/сек,
+      4 108 біт/сек
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: Аудіо,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      Англійська,
+      2 канали,
+      2 091 біт/сек
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: Текст,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      Англійська
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: Меню,
+    Chips: [
+      Всього: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

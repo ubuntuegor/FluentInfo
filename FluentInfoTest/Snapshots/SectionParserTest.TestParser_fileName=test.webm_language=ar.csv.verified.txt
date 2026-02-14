@@ -1,0 +1,26 @@
+﻿[
+  {
+    Type: General,
+    Title: عام,
+    Subtitle: Infekt - Projectile,
+    Chips: [
+      WebM,
+      65.6 KiB,
+      5 s 8 ms
+    ],
+    Properties: {
+      Count: 10
+    }
+  },
+  {
+    Type: Audio,
+    Title: صوت,
+    Chips: [
+      Opus,
+      1قناة
+    ],
+    Properties: {
+      Count: 12
+    }
+  }
+]

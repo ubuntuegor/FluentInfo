@@ -1,0 +1,26 @@
+﻿[
+  {
+    Type: General,
+    Title: Općenito,
+    Subtitle: Infekt - Projectile,
+    Chips: [
+      WebM,
+      65,6 KiB,
+      5s 8 ms
+    ],
+    Properties: {
+      Count: 10
+    }
+  },
+  {
+    Type: Audio,
+    Title: Audio,
+    Chips: [
+      Opus,
+      1 kanal
+    ],
+    Properties: {
+      Count: 12
+    }
+  }
+]

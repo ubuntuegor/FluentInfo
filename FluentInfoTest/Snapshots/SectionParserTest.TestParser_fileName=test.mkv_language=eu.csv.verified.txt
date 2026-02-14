@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: Orokorra,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35,2 KiB,
+      30s 23
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: Bideoa,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25,000 fps,
+      4 108 bps
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: Audioa,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      Ingelera,
+      2 kanala,
+      2 091 bps
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: Testua,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      Ingelera
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: Menua,
+    Chips: [
+      Guztira: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

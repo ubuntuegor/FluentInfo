@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: General,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35.2 KiB,
+      30 s 23 ms
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: Video,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25.000 FPS,
+      4 108 b/s
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: Audio,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      English,
+      2 channels,
+      2 091 b/s
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: Text,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      English
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: Menu,
+    Chips: [
+      Total: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

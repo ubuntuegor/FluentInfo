@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: ทั่วไป,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35.2 KiB,
+      30s 23ms
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: วีดีโอ,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25.000 fps,
+      4 108 bps
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: เสียง,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      อังกฤษ,
+      2 ช่อง,
+      2 091 bps
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: ข้อความ,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      อังกฤษ
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: เมนู,
+    Chips: [
+      ทั้งหมด: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

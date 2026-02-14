@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: Generelt,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35,2 KiB,
+      30sek. 23 ms
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: Video,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25,000 FPS,
+      4.108 b/s
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: Lyd,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      Engelsk,
+      2 kanaler,
+      2.091 b/s
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: Tekst,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      Engelsk
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: Menu,
+    Chips: [
+      Totalt: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: عام,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35.2 KiB,
+      30 s 23 ms
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: فيديو,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25.000لقطة في الثاني,
+      4 108بت/الثانية
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: صوت,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      English,
+      2القنوات,
+      2 091بت/الثانية
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: نص,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      English
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: القائمة,
+    Chips: [
+      مجموع: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

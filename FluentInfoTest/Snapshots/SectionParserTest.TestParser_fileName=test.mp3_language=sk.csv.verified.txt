@@ -1,0 +1,27 @@
+﻿[
+  {
+    Type: General,
+    Title: Hlavné parametre,
+    Subtitle: Rick Astley - Never Gonna Give You Up,
+    Chips: [
+      MPEG Audio,
+      41,8 kiB,
+      5 sek. 41 ms
+    ],
+    Properties: {
+      Count: 9
+    }
+  },
+  {
+    Type: Audio,
+    Title: Audio,
+    Chips: [
+      MPEG Audio,
+      1 kanál,
+      64,0 kb/s
+    ],
+    Properties: {
+      Count: 11
+    }
+  }
+]

@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: Pagrindinis,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35,2 KiB,
+      30Video srautai (s) 23 ms
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: Video,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25,000 kps,
+      4 108 b/s
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: Audio,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      Anglų,
+      2kanalai,
+      2 091 b/s
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: Tekstas,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      Anglų
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: Meniu,
+    Chips: [
+      Iš viso: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]

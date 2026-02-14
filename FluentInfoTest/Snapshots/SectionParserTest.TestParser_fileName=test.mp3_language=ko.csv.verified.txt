@@ -1,0 +1,26 @@
+﻿[
+  {
+    Type: General,
+    Title: 일반,
+    Subtitle: Rick Astley - Never Gonna Give You Up,
+    Chips: [
+      MPEG Audio,
+      5초 41미리초
+    ],
+    Properties: {
+      Count: 9
+    }
+  },
+  {
+    Type: Audio,
+    Title: 오디오,
+    Chips: [
+      MPEG Audio,
+      1 채널,
+      64.0 Kbps
+    ],
+    Properties: {
+      Count: 11
+    }
+  }
+]

@@ -1,0 +1,65 @@
+﻿[
+  {
+    Type: General,
+    Title: Ընդհանուր,
+    Subtitle: File title,
+    Chips: [
+      Matroska,
+      35,2 Կբայթ,
+      30 վայր. 23 մվ.
+    ],
+    Properties: {
+      Count: 12
+    }
+  },
+  {
+    Type: Video,
+    Title: Տեսանյութը,
+    Subtitle: Video Title,
+    Chips: [
+      AVC,
+      320x240,
+      25,000 կադր/վայր.,
+      4 108 բիթ/վայր.
+    ],
+    Properties: {
+      Count: 29
+    }
+  },
+  {
+    Type: Audio,
+    Title: Ձայնը,
+    Subtitle: Audio Title,
+    Chips: [
+      AAC LC,
+      English,
+      2 ալիքներ,
+      2 091 բիթ/վայր.
+    ],
+    Properties: {
+      Count: 17
+    }
+  },
+  {
+    Type: Text,
+    Title: Տեքստ,
+    Subtitle: Sub Title,
+    Chips: [
+      UTF-8,
+      English
+    ],
+    Properties: {
+      Count: 13
+    }
+  },
+  {
+    Type: Menu,
+    Title: Ընտրացանկը,
+    Chips: [
+      Ընդամենը: 2
+    ],
+    Properties: {
+      Count: 2
+    }
+  }
+]
