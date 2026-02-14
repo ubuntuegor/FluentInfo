@@ -32,7 +32,7 @@
     Subtitle: Audio Title,
     Chips: [
       AAC LC,
-      English,
+      Anglais,
       2 canaux,
       2 091 b/s
     ],
@@ -46,7 +46,7 @@
     Subtitle: Sub Title,
     Chips: [
       UTF-8,
-      English
+      Anglais
     ],
     Properties: {
       Count: 13
