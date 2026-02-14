@@ -15,7 +15,7 @@
     Title: Изображение,
     Chips: [
       JPEG,
-      5123x5123
+      512x512
     ],
     Properties: {
       Count: 8
