@@ -15,15 +15,7 @@ jobs:
     - uses: actions-rust-lang/setup-rust-toolchain@v1
       with:
         target: x86_64-pc-windows-msvc
-    - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v2
-    - name: Setup NuGet
-      uses: nuget/setup-nuget@v2
-    - name: Setup VSTest.console.exe
-      uses: darenm/Setup-VSTest@v1.2
-    - name: Restore dependencies
-      run: nuget restore FluentInfo.slnx
     - name: Build Solution
-      run: msbuild.exe FluentInfo.slnx /p:platform="x64" /p:configuration="Release" /p:PublishReadyToRun=false
+      run: dotnet build FluentInfo.slnx -property:Platform=x64 -property:Configuration=Release -property:PublishReadyToRun=false
     - name: Run Tests
-      run: vstest.console.exe .\FluentInfoTest\bin\x64\Release\net10.0-windows\FluentInfoTest.dll
+      run: dotnet test FluentInfoTest\bin\x64\Release\net10.0-windows\FluentInfoTest.dll
