@@ -78,7 +78,9 @@ void WriteStrings(string lang, List<TranslatedString> strings)
 
 List<string> GetLangs()
 {
+#pragma warning disable CS8604 // Possible null reference argument.
     return [.. Directory.GetDirectories(@"FluentInfo\Strings").Select(Path.GetFileName).Except([sourceLang])!];
+#pragma warning restore CS8604 // Possible null reference argument.
 }
 
 List<TranslatedString> TranslateStringsWithGpt(string s)
