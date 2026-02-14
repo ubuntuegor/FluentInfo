@@ -4,7 +4,7 @@
     Title: Агульная,
     Chips: [
       JPEG,
-      1,08 КіБ
+      3,33 КіБ
     ],
     Properties: {
       Count: 3
@@ -15,7 +15,7 @@
     Title: Відарысы,
     Chips: [
       JPEG,
-      512x512
+      1024x1024
     ],
     Properties: {
       Count: 8

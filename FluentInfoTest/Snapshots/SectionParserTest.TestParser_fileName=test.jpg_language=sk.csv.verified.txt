@@ -4,7 +4,7 @@
     Title: Hlavné parametre,
     Chips: [
       JPEG,
-      1,08 kiB
+      3,33 kiB
     ],
     Properties: {
       Count: 3
@@ -15,7 +15,7 @@
     Title: Obrázok,
     Chips: [
       JPEG,
-      512x512
+      1024x1024
     ],
     Properties: {
       Count: 8

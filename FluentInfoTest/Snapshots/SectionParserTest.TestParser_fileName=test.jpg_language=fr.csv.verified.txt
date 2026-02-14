@@ -4,7 +4,7 @@
     Title: Général,
     Chips: [
       JPEG,
-      1,08 Kio
+      3,33 Kio
     ],
     Properties: {
       Count: 3
@@ -15,7 +15,7 @@
     Title: Image,
     Chips: [
       JPEG,
-      512x512
+      1024x1024
     ],
     Properties: {
       Count: 8

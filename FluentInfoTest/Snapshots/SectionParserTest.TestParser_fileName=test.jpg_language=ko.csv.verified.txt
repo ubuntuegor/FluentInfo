@@ -4,7 +4,7 @@
     Title: 일반,
     Chips: [
       JPEG,
-      1.08 KiB
+      3.33 KiB
     ],
     Properties: {
       Count: 3
@@ -15,7 +15,7 @@
     Title: 이미지,
     Chips: [
       JPEG,
-      512x512
+      1024x1024
     ],
     Properties: {
       Count: 8

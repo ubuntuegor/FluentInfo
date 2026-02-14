@@ -4,7 +4,7 @@
     Title: მთავარი,
     Chips: [
       JPEG,
-      1.08 კბაიტი
+      3.33 კბაიტი
     ],
     Properties: {
       Count: 3
@@ -15,7 +15,7 @@
     Title: სურათი,
     Chips: [
       JPEG,
-      512x512
+      1024x1024
     ],
     Properties: {
       Count: 8
