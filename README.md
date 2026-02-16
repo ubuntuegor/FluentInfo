@@ -7,8 +7,8 @@ A MediaInfo GUI that integrates well with Windows 11.
 
 ## Screenshots
 
-<img src="https://github.com/ubuntuegor/FluentInfo/assets/6959139/fea6b992-b23f-4b19-b6c3-23260ea06e46" width="500" alt="Pretty view">
+<img src="https://github.com/user-attachments/assets/c91a5a17-6dad-41a3-989b-0aa163243caf" width="900" alt="Pretty view">
 <br>
-<img src="https://github.com/ubuntuegor/FluentInfo/assets/6959139/379210fb-250f-4ee0-95a4-499216529f98" width="500" alt="Text view">
+<img src="https://github.com/user-attachments/assets/e8d7bddd-7580-4c80-9abf-f07c0b53a2fe" width="700" alt="Text view">
 <br>
-<img src="https://github.com/ubuntuegor/FluentInfo/assets/6959139/4b108157-2b41-4a93-88db-57332fa66ffc" width="700" alt="Context menu option">
+<img src="https://github.com/ubuntuegor/FluentInfo/assets/6959139/4b108157-2b41-4a93-88db-57332fa66ffc" width="900" alt="Context menu option">
