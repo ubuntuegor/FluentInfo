@@ -12,8 +12,7 @@ List<string>? langs = null;
 List<string>? includeKeysForRes = null;
 List<string>? includeKeysForStore =
 [
-    "Description", "ReleaseNotes", "Feature1", "Feature2", "Feature3", "SearchTerm1", "SearchTerm2", "SearchTerm3",
-    "SearchTerm4", "SearchTerm5", "SearchTerm6", "SearchTerm7"
+    "ReleaseNotes"
 ];
 var includeKeys = translateMsStore ? includeKeysForStore : includeKeysForRes;
 
@@ -157,7 +156,7 @@ List<string> GetLangs()
 
 List<TranslatedString> TranslateStringsWithGpt(string s)
 {
-    var chatClient = new ChatClient("gpt-5.2", Environment.GetEnvironmentVariable("OPENAI_API_KEY"));
+    var chatClient = new ChatClient("gpt-5.4", Environment.GetEnvironmentVariable("OPENAI_API_KEY"));
     List<ChatMessage> messages = [new UserChatMessage(s)];
     var options = new ChatCompletionOptions
     {
