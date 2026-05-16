@@ -28,10 +28,10 @@ static mut DLL_INSTANCE: Option<HINSTANCE> = None;
 static SUPPORTED_EXTENSIONS: LazyLock<HashSet<&str>> = LazyLock::new(|| {
     HashSet::from([
         "aiff", "aif", "avi", "m2ts", "mts", "flv", "heif", "heic", "avif", "ts", "mov", "mp4",
-        "m4v", "m4a", "3gpp", "3gp", "qt", "ogg", "opus", "swf", "wma", "wmv", "avc", "h264",
-        "hevc", "h265", "aac", "ac3", "ac4", "amr", "dts", "dtshd", "eac3", "ec3", "flac", "mp1",
-        "mp2", "mp3", "wav", "bmp", "gif", "ico", "jpg", "jpeg", "png", "tif", "tiff", "mkv",
-        "webm", "webp", "oga", "ogv", "jxl",
+        "m4v", "m4a", "m4b", "3gpp", "3gp", "qt", "ogg", "opus", "swf", "wma", "wmv", "avc",
+        "h264", "hevc", "h265", "aac", "ac3", "ac4", "amr", "dts", "dtshd", "eac3", "ec3", "flac",
+        "mp1", "mp2", "mp3", "wav", "bmp", "gif", "ico", "jpg", "jpeg", "png", "tif", "tiff",
+        "mkv", "webm", "webp", "oga", "ogv", "jxl",
     ])
 });
 
