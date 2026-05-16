@@ -20,7 +20,7 @@
       AVC,
       320x240,
       25,000 FPS,
-      4 108 b/s
+      4.108 b/s
     ],
     Properties: {
       Count: 29
@@ -34,7 +34,7 @@
       AAC LC,
       Inglés,
       2 canales,
-      2 091 b/s
+      2.091 b/s
     ],
     Properties: {
       Count: 17

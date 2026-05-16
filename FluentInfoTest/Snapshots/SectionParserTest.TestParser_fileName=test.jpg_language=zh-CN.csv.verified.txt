@@ -1,7 +1,7 @@
 ﻿[
   {
     Type: General,
-    Title: 概览,
+    Title: 通用,
     Chips: [
       JPEG,
       3.33 KiB
