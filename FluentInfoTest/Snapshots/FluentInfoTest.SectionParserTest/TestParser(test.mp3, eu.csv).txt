@@ -1,0 +1,18 @@
+- Type: General
+  Title: Orokorra
+  Subtitle: Rick Astley - Never Gonna Give You Up
+  Chips:
+    - MPEG Audio
+    - "41,8 KiB"
+    - 5s 0
+  Properties:
+    Count: 9
+- Type: Audio
+  Title: Audioa
+  Subtitle: null
+  Chips:
+    - MPEG Audio
+    - 1 kanala
+    - "64,0 Kbps"
+  Properties:
+    Count: 13

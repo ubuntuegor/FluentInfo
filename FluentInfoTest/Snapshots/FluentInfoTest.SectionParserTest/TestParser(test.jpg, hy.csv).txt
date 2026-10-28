@@ -1,0 +1,16 @@
+- Type: General
+  Title: Ընդհանուր
+  Subtitle: null
+  Chips:
+    - JPEG
+    - "3,33 Կբայթ"
+  Properties:
+    Count: 3
+- Type: Image
+  Title: Պատկերը
+  Subtitle: null
+  Chips:
+    - JPEG
+    - 1024x1024
+  Properties:
+    Count: 8

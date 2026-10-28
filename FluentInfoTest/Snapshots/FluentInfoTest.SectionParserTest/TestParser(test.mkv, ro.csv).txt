@@ -1,0 +1,44 @@
+- Type: General
+  Title: Generale
+  Subtitle: File title
+  Chips:
+    - Matroska
+    - "35,2 KiB"
+    - 30s 23 ms
+  Properties:
+    Count: 12
+- Type: Video
+  Title: Video
+  Subtitle: Video Title
+  Chips:
+    - AVC
+    - 320x240
+    - "25,000pfs"
+    - 4 108b/s
+  Properties:
+    Count: 29
+- Type: Audio
+  Title: Audio
+  Subtitle: Audio Title
+  Chips:
+    - AAC LC
+    - English
+    - 2canale
+    - 2 091b/s
+  Properties:
+    Count: 17
+- Type: Text
+  Title: Text
+  Subtitle: Sub Title
+  Chips:
+    - UTF-8
+    - English
+  Properties:
+    Count: 13
+- Type: Menu
+  Title: Meniu
+  Subtitle: null
+  Chips:
+    - "Total: 2"
+  Properties:
+    Count: 2

@@ -1,0 +1,16 @@
+- Type: General
+  Title: Pagrindinis
+  Subtitle: null
+  Chips:
+    - JPEG
+    - "3,33 KiB"
+  Properties:
+    Count: 3
+- Type: Image
+  Title: Paveikslėlis
+  Subtitle: null
+  Chips:
+    - JPEG
+    - 1024x1024
+  Properties:
+    Count: 8

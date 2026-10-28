@@ -45,9 +45,6 @@ Generated\ Files/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
-# Verify
-*.received.*
-
 # NUnit
 *.VisualState.xml
 TestResult.xml

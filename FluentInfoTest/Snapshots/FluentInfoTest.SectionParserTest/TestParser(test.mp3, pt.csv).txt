@@ -1,0 +1,18 @@
+- Type: General
+  Title: Geral
+  Subtitle: Rick Astley - Never Gonna Give You Up
+  Chips:
+    - MPEG Audio
+    - 41.8 KiB
+    - 5 s 0 ms
+  Properties:
+    Count: 9
+- Type: Audio
+  Title: Áudio
+  Subtitle: null
+  Chips:
+    - MPEG Audio
+    - 1 canal
+    - 64.0 Kb/s
+  Properties:
+    Count: 13

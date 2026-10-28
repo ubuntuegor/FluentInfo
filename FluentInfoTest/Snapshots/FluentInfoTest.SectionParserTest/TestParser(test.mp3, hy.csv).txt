@@ -1,0 +1,18 @@
+- Type: General
+  Title: Ընդհանուր
+  Subtitle: Rick Astley - Never Gonna Give You Up
+  Chips:
+    - MPEG Audio
+    - "41,8 Կբայթ"
+    - 5 վայր. 0 մվ.
+  Properties:
+    Count: 9
+- Type: Audio
+  Title: Ձայնը
+  Subtitle: null
+  Chips:
+    - MPEG Audio
+    - 1 ալիք
+    - "64,0 Կբիթ/վայր."
+  Properties:
+    Count: 13
