@@ -185,11 +185,20 @@ public partial class MediaInfoTextParser
         var result = new Dictionary<string, string>();
 
         using var reader = Sep.New(';')
-            .Reader(o => o with { HasHeader = false })
+            .Reader(o => o with
+            {
+                HasHeader = false,
+                DisableColCountCheck = true,
+            })
             .FromText(languageText);
 
         foreach (var row in reader)
         {
+            if (row.ColCount < 2)
+            {
+                continue;
+            }
+
             var key = row[0].ToString();
             var value = row[1].ToString();
             result.Add(key, value);
