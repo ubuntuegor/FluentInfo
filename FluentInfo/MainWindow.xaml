@@ -23,33 +23,14 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Border
+        <TitleBar
             x:Name="AppTitleBar"
-            Grid.Row="0"
-            Height="32">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
-                <Image
-                    Width="16"
-                    Height="16"
-                    Margin="16,0"
-                    VerticalAlignment="Center"
-                    Source="/Assets/Square44x44Logo.targetsize-32.png" />
-                <TextBlock
-                    x:Name="TitleTextBlock"
-                    Grid.Column="1"
-                    Margin="0,0,140,0"
-                    VerticalAlignment="Center"
-                    Style="{StaticResource CaptionTextBlockStyle}"
-                    Text="{StaticResource AppTitleName}"
-                    TextTrimming="CharacterEllipsis"
-                    TextWrapping="NoWrap" />
-            </Grid>
-        </Border>
+            Margin="0,0,150,0"
+            Grid.Row="0">
+            <TitleBar.IconSource>
+                <ImageIconSource ImageSource="/Assets/fluentinfo.ico"/>
+            </TitleBar.IconSource>
+        </TitleBar>
 
         <Frame
             x:Name="RootFrame"

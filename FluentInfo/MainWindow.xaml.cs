@@ -52,7 +52,7 @@ public sealed partial class MainWindow
         }
 
         Title = title;
-        TitleTextBlock.Text = title;
+        AppTitleBar.Title = title;
     }
 
     private void RefreshRootPage()
