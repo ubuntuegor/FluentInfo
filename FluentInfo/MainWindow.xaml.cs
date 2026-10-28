@@ -9,7 +9,6 @@ namespace FluentInfo;
 public sealed partial class MainWindow
 {
     private readonly AppModel _model;
-    private readonly SettingsHolder _settings = SettingsHolder.Instance;
 
     public MainWindow(AppModel model)
     {
@@ -18,15 +17,14 @@ public sealed partial class MainWindow
         SetTitleBar(AppTitleBar);
         this.SetIcon(@"Assets\fluentinfo.ico");
 
-        Width = _settings.WindowWidth;
-        Height = _settings.WindowHeight;
+        var manager = WindowManager.Get(this);
+        manager.PersistenceId = "MainWindowId";
 
         _model = model;
         UpdateTitle();
         RefreshRootPage();
 
         _model.PropertyChanged += ModelOnPropertyChanged;
-        SizeChanged += MainWindow_SizeChanged;
     }
 
     private void ModelOnPropertyChanged(object? sender, PropertyChangedEventArgs e)
@@ -40,12 +38,6 @@ public sealed partial class MainWindow
                 RefreshRootPage();
                 break;
         }
-    }
-
-    private void MainWindow_SizeChanged(object sender, WindowSizeChangedEventArgs args)
-    {
-        _settings.WindowWidth = args.Size.Width;
-        _settings.WindowHeight = args.Size.Height;
     }
 
     private void UpdateTitle()
@@ -71,6 +63,5 @@ public sealed partial class MainWindow
     ~MainWindow()
     {
         _model.PropertyChanged -= ModelOnPropertyChanged;
-        SizeChanged -= MainWindow_SizeChanged;
     }
 }

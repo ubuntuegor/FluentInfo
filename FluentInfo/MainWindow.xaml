@@ -8,6 +8,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:winex="using:WinUIEx"
     Title="{StaticResource AppTitleName}"
+    Width="800"
+    Height="600"
     MinWidth="300"
     MinHeight="200"
     mc:Ignorable="d">
