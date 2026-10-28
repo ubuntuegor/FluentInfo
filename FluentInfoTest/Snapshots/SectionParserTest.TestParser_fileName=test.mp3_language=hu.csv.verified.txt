@@ -6,7 +6,7 @@
     Chips: [
       MPEG Audio,
       41,8 KiB,
-      5 mp 41emp
+      5 mp 0emp
     ],
     Properties: {
       Count: 9
@@ -21,7 +21,7 @@
       64,0 kb/s
     ],
     Properties: {
-      Count: 11
+      Count: 13
     }
   }
 ]

@@ -1,7 +1,7 @@
 ﻿[
   {
     Type: General,
-    Title: Hlavní,
+    Title: Obecné,
     Subtitle: File title,
     Chips: [
       Matroska,
@@ -28,11 +28,11 @@
   },
   {
     Type: Audio,
-    Title: Audio,
+    Title: Zvuk,
     Subtitle: Audio Title,
     Chips: [
       AAC LC,
-      English,
+      Angličtina,
       2 kanály,
       2 091 b/s
     ],
@@ -46,7 +46,7 @@
     Subtitle: Sub Title,
     Chips: [
       UTF-8,
-      English
+      Angličtina
     ],
     Properties: {
       Count: 13
@@ -54,7 +54,7 @@
   },
   {
     Type: Menu,
-    Title: Menu,
+    Title: Nabídka,
     Chips: [
       Celkem: 2
     ],

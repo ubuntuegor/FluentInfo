@@ -1,7 +1,7 @@
 ﻿[
   {
     Type: General,
-    Title: Hlavní,
+    Title: Obecné,
     Chips: [
       JPEG,
       3,33 KiB

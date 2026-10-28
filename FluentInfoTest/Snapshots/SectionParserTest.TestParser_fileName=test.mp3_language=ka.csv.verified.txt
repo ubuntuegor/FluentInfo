@@ -6,7 +6,7 @@
     Chips: [
       MPEG Audio,
       41.8 კბაიტი,
-      5s 41ms
+      5s 0ms
     ],
     Properties: {
       Count: 9
@@ -21,7 +21,7 @@
       64.0 კბიტ/წმ
     ],
     Properties: {
-      Count: 11
+      Count: 13
     }
   }
 ]

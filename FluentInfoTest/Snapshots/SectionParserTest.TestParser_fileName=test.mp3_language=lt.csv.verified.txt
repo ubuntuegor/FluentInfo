@@ -6,7 +6,7 @@
     Chips: [
       MPEG Audio,
       41,8 KiB,
-      5Video srautai (s) 41 ms
+      5Video srautai (s) 0 ms
     ],
     Properties: {
       Count: 9
@@ -21,7 +21,7 @@
       64,0 kb/s
     ],
     Properties: {
-      Count: 11
+      Count: 13
     }
   }
 ]

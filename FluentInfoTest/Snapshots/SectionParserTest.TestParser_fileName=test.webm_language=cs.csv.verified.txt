@@ -1,7 +1,7 @@
 ﻿[
   {
     Type: General,
-    Title: Hlavní,
+    Title: Obecné,
     Subtitle: Infekt - Projectile,
     Chips: [
       WebM,
@@ -14,7 +14,7 @@
   },
   {
     Type: Audio,
-    Title: Audio,
+    Title: Zvuk,
     Chips: [
       Opus,
       1 kanál
