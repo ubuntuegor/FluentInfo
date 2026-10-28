@@ -1549,6 +1549,10 @@ TopFrontToSide;
 Total;Iš viso
 TotalNumberOfParts;
 TotalProgrammeDuration;
+TraceLevel0;
+TraceLevel5;
+TraceLevel9;
+TraceLevel10;
 Track;Takelio pavadinimas
 Track_Count;Takelio kiekis
 TrackFormat;

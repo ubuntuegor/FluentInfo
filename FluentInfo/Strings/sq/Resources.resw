@@ -1549,6 +1549,10 @@ TopFrontToSide;
 Total;Totali
 TotalNumberOfParts;
 TotalProgrammeDuration;
+TraceLevel0;
+TraceLevel5;
+TraceLevel9;
+TraceLevel10;
 Track;Emri i kolonës
 Track_Count;Numri i kolonës
 TrackFormat;

@@ -1414,6 +1414,10 @@ TopFrontToSide;
 Total;計
 TotalNumberOfParts;パートの合計数
 TotalProgrammeDuration;プログラム全体の長さ
+TraceLevel0;
+TraceLevel5;
+TraceLevel9;
+TraceLevel10;
 Track;トラック
 Track_Count;トラック数
 TrackFormat;

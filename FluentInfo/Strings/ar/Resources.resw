@@ -1549,6 +1549,10 @@ TopFrontToSide;Top fronts to side
 Total;مجموع
 TotalNumberOfParts;
 TotalProgrammeDuration;
+TraceLevel0;
+TraceLevel5;
+TraceLevel9;
+TraceLevel10;
 Track;اسم المسار
 Track_Count;عدد المسارات
 TrackFormat;Track format

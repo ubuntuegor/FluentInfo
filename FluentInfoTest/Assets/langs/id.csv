@@ -1414,6 +1414,10 @@ TopFrontToSide;Depan atas ke samping
 Total;Total
 TotalNumberOfParts;Total Banyaknya Bagian
 TotalProgrammeDuration;Total Durasi Program
+TraceLevel0;
+TraceLevel5;
+TraceLevel9;
+TraceLevel10;
 Track;Nama trek
 Track_Count;Banyaknya trek
 TrackFormat;Format trek

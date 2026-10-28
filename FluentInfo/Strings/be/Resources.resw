@@ -1549,6 +1549,10 @@ TopFrontToSide;
 Total;Усяго
 TotalNumberOfParts;
 TotalProgrammeDuration;
+TraceLevel0;
+TraceLevel5;
+TraceLevel9;
+TraceLevel10;
 Track;Назва дарожкі
 Track_Count;Колькасць дарожак
 TrackFormat;

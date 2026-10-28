@@ -1414,6 +1414,10 @@ TopFrontToSide;
 Total;總數
 TotalNumberOfParts;部份的總計數量
 TotalProgrammeDuration;總節目時間長度
+TraceLevel0;
+TraceLevel5;
+TraceLevel9;
+TraceLevel10;
 Track;聲頻
 Track_Count;聲頻數
 TrackFormat;

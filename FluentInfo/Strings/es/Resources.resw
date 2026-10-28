@@ -872,7 +872,7 @@ Genre_168;Jam Band
 Genre_169;Krautrock
 Genre_170;Leftfield
 Genre_171;Lounge
-Genre_172;Math Rock
+Genre_172;Math Rock;
 Genre_173;Nueva romántica
 Genre_174;Nu-Breakz
 Genre_175;Post-Punk
@@ -1549,6 +1549,10 @@ TopFrontToSide;Superiores frontales a laterales
 Total;Total
 TotalNumberOfParts;Número total de partes
 TotalProgrammeDuration;Duración total del programa
+TraceLevel0;
+TraceLevel5;
+TraceLevel9;
+TraceLevel10;
 Track;Nombre de pista
 Track_Count;Número de pista
 TrackFormat;Formaro de pista

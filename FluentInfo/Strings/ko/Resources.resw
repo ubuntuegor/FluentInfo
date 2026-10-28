@@ -1549,6 +1549,10 @@ TopFrontToSide;
 Total;총
 TotalNumberOfParts;
 TotalProgrammeDuration;
+TraceLevel0;
+TraceLevel5;
+TraceLevel9;
+TraceLevel10;
 Track;트랙 이름
 Track_Count;트랙 개수
 TrackFormat;

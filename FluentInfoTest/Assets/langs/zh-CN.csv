@@ -1417,6 +1417,10 @@ TopFrontToSide;Top fronts to side
 Total;总计
 TotalNumberOfParts;分段总数
 TotalProgrammeDuration;节目时长总计
+TraceLevel0;
+TraceLevel5;
+TraceLevel9;
+TraceLevel10;
 Track;轨道名称
 Track_Count;轨道数
 TrackFormat;轨道格式
